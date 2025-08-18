@@ -1,0 +1,3 @@
+.text-clamp {
+    font-size: clamp(1.25rem, 1.32vw, 1.65rem);
+}
