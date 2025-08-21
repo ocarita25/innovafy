@@ -1,37 +1,42 @@
+import Stats from "@/components/home/Stats";
+import { Card } from "@/components/ui/common/Card";
 import ImageCard from "@/components/ui/common/ImageCard";
 import Hero from "@/components/ui/common/Title";
 import VideoCard from "@/components/ui/common/VideoCard";
+import { homeStats } from "@/constants/homeStats";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-[#eeeee5] rounded-b-[3.5rem]">
       <Hero title="Extraordinary Digital Experiences" />
       <div className="grid grid-cols-1 lg:grid-cols-2 p-10 gap-10">
-        <VideoCard
-          title="PIQUE"
-          src="/videos/home2.mp4"
-          className="lg:col-span-2 lg:h-[110dvh]"
-        />
+        <Card title={"PIQUE"} className="col-span-2 h-[95dvh]" background={"/images/pique.webp"}>
+          <VideoCard
+            title=""
+            src="/videos/home2.mp4"
+            className="scale-70"
+          />
+        </Card>
         <VideoCard
           className="h-[110dvh]"
           title="Sussex Taps"
           src="/videos/home3.mp4"
         />
-        <div className="">
+        <Card className="flex items-center justify-center" title={"Chaleit"} background={"https://a-us.storyblok.com/f/1017006/1866x2805/5f879805d6/card-portrait.jpg"}>
           <ImageCard
-            className="h-[110dvh]"
-            title="Chaleit"
-            src="https://a-us.storyblok.com/f/1017006/1866x2805/5f879805d6/card-portrait.jpg"
+            className="scale-50"
+            title=""
+            src="/images/chaleit2.webp"
           />
-        </div>
+        </Card>
 
-        <div className="col-span-2">
+        <Card title="Surveillance Watch" className="col-span-2" background={""}>
           <VideoCard
-            className="h-[110dvh]"
-            title="Surveillance Watch"
+            className="h-[95dvh]"
+            title=""
             src="/videos/home4.mp4"
           />
-        </div>
+        </Card>
       </div>
 
       <div className="px-10 flex flex-col lg:grid grid-cols-[2fr_3fr] grid-rows-[auto_auto_1fr] gap-[clamp(3.125rem,3.30vw,4.15rem)]">
@@ -48,18 +53,9 @@ export default function Home() {
           className="h-[90dvh] w-full row-span-2"
         />
         <div className="grid grid-rows-[repeat(3,100px)] lg:grid-rows-3 row-start-3">
-          <div className="grid grid-cols-[50%_1fr] border-b-1 items-center">
-            <span className="font-black text-4xl lg:text-[clamp(3rem,5vw,6rem)]">100%</span>
-            <span className="text-3xl">In-house & independent</span>
-          </div>
-          <div className="grid grid-cols-[50%_1fr] border-b-1 items-center">
-            <span className="font-black text-4xl lg:text-[clamp(3rem,5vw,5rem)]">15</span>
-            <span className="text-3xl">Years crafting digital experiences</span>
-          </div>
-          <div className="grid grid-cols-[50%_1fr] border-b-1 items-center">
-            <span className="font-black text-4xl lg:text-[clamp(3rem,5vw,5rem)]">80+</span>
-            <span className="text-3xl">Awards from AWA, FWA, and Awwwards</span>
-          </div>
+          {homeStats.map((stat, i) => (
+            <Stats key={i} valor={stat.valor} descripcion={stat.descripcion} />
+          ))}
         </div>
 
       </div>

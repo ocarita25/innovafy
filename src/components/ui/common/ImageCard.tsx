@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 
 type ImageCardProps = {
     title: string;
@@ -8,8 +7,8 @@ type ImageCardProps = {
 
 const ImageCard = ({ title, src, ...props }: ImageCardProps) => {
     return (
-        <div className={`relative rounded-4xl overflow-hidden w-full ${props.className ?? ""}`}>
-            <Image src={src} alt={"imagen"} fill className='object-cover' />
+        <div className={`flex relative overflow-hidden ${props.className ?? ""}`}>
+            <img src={src} alt={"imagen"} className='w-full h-full object-contain' />
             <h1 className='absolute bottom-0 left-0 text-white text-2xl px-10 py-5 font-black '>
                 {title}
             </h1>
