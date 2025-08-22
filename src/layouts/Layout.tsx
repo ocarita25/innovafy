@@ -1,13 +1,15 @@
+import Footer from "@/components/layouts/Footer"
+import Header from "@/components/navigation/Header"
 import { Outlet } from "react-router-dom"
-import Header from "../components/navigation/Header"
 
 function Layout() {
     return (
         <>
             <Header />
-            <main className="container lg:max-w-[75rem] mx-auto">
+            <main className=" mx-auto">
                 <Outlet />
             </main>
+            <Footer />
         </>
     )
 }

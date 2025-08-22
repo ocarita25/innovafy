@@ -167,6 +167,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply text-foreground bg-theme-background;
   }
@@ -176,7 +177,8 @@
   .p-fluid {
     padding-inline: clamp(2.5rem, 2.6455026455vw, 3.325rem);
   }
-  .nav-subtitle{
+
+  .nav-subtitle {
     @apply capitalize font-medium text-lg
   }
 }
