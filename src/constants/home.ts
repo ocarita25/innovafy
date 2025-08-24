@@ -11,15 +11,18 @@ export const ourService = {
 
 export const stats = [
     {
-        valor: '100%',
-        descripcion: 'In-house & independent'
+        to: 100,
+        suffix: "%",
+        description: 'In-house & independent'
     },
     {
-        valor: '15',
-        descripcion: 'Years crafting digital experiences'
+        to: 15,
+        suffix: "",
+        description: 'Years crafting digital experiences'
     },
     {
-        valor: '80+',
-        descripcion: 'Awards from AWA, FWA, and Awwwards'
+        to: 80,
+        suffix: "+",
+        description: 'Awards from AWA, FWA, and Awwwards'
     },
 ]
