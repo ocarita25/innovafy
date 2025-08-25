@@ -25,7 +25,7 @@ const Counter = ({ from = 0, to, duration = 2, suffix = "" }: CounterProps) => {
             ease: "expo.out",
             scrollTrigger: {
                 trigger: counterRef.current,
-                start: "top 80%",
+                start: "top 90%",
                 toggleActions: "play none none none",
             },
             onUpdate: () => {

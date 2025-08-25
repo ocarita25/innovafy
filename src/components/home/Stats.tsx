@@ -9,9 +9,9 @@ type StatsProps = {
 
 const Stats = ({ to, suffix, descripcion }: StatsProps) => {
     return (
-        <div className="w-full grid grid-cols-[50%_1fr] border-b-1 items-center first:pb-10 not-first:py-10">
+        <div className="w-full grid grid-cols-[50%_1fr] border-b-1 items-center first:pb-10 not-first:py-5">
             <Counter to={to} suffix={suffix} />
-            <span className="text-3xl">{descripcion}</span>
+            <span className="text-xl lg:text-[clamp(1.375rem,2.5dvw,1.875rem)]">{descripcion}</span>
         </div>
     )
 }

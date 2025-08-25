@@ -11,7 +11,7 @@ const Card = ({ title, children, ...props }: CardProps) => {
         <div className={cn('relative rounded-4xl overflow-hidden w-full', props.className)}>
             {children}
             {title && (
-                <h1 className='absolute bottom-0 left-0 text-white text-2xl px-10 py-5 font-black'>
+                <h1 className='absolute bottom-0 left-0 text-white text-lg lg:text-2xl px-5 py-2.5 lg:px-10 lg:py-5 font-semibold'>
                     {title}
                 </h1>
             )}
