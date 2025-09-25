@@ -27,13 +27,13 @@ const Slider = ({ children }: SliderProps) => {
 
             draggableRef.current = Draggable.create(container, {
                 type: "x",
-                edgeResistance: 0.85,
+                edgeResistance: 0.8,
                 inertia: true, // momentum (InertiaPlugin opcional)
                 bounds: {
-                    minX: -(container.scrollWidth - container.offsetWidth + 40),
+                    minX: -(container.scrollWidth - container.offsetWidth),
                     maxX: 0,
                 },
-                dragResistance: 0.1,
+                dragResistance: -0.15,
                 allowContextMenu: false,
             });
         };
@@ -48,11 +48,11 @@ const Slider = ({ children }: SliderProps) => {
     }, [children]);
 
     return (
-        <div className="relative w-dvw overflow-hidden">
+        <div>
             {/* Contenedor de slides */}
-            <div ref={wrapperRef} className="w-full grid grid-flow-col auto-cols-[380px] gap-5 touch-pan-y">
+            <div ref={wrapperRef} className="w-full grid grid-flow-col auto-cols-[20rem] gap-5 touch-pan-y">
                 {slides.map((child, i) => (
-                    <div key={i} className="">
+                    <div key={i}>
                         {child}
                     </div>
                 ))}

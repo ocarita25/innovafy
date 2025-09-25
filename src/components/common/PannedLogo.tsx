@@ -63,7 +63,7 @@ const PannedLogo = ({ logos, holdMs = 2000 }: PannedLogoProps) => {
         return () => { ctx.revert(); };
     }, [index, chunks.length, holdMs]);
 
-    // Usa clases Tailwind estáticas para evitar purga (nada de `grid-cols-${cols}`)
+    // Usamos clases Tailwind
     const gridColsClass = cols === 5 ? "grid-cols-5" : "grid-cols-3";
 
     return (

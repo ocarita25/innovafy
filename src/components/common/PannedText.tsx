@@ -6,12 +6,13 @@ import React, { useEffect, useRef } from "react";
 gsap.registerPlugin(SplitText);
 
 type PannedTextProps = {
-    title: string
+    children: React.ReactNode
+    spanClass?: string
 } & React.HtmlHTMLAttributes<HTMLHeadingElement>;
 
-const PannedText = ({ title, ...props }: PannedTextProps) => {
+const PannedText = ({ children, spanClass, ...props }: PannedTextProps) => {
 
-    if (!title) return;
+    if (!children) return;
 
     const titleRef = useRef<HTMLDivElement>(null);
 
@@ -21,16 +22,14 @@ const PannedText = ({ title, ...props }: PannedTextProps) => {
 
         // Crear SplitText usando solo el ref local
         const split = new SplitText(titleRef.current, {
-            type: "chars,words",
+            type: "words,chars",
             charsClass: "char",
-            // linesClass: "line",
-            // wordsClass: "word",
-            // mask: "lines",
         });
+
 
         // Animar cada línea
         gsap.from(split.chars, {
-            y: 40, // sube desde fuera del contenedor
+            yPercent: 100, // sube desde fuera del contenedor
             opacity: 0,
             duration: 1,
             ease: "expo.out",
@@ -48,8 +47,8 @@ const PannedText = ({ title, ...props }: PannedTextProps) => {
 
     return (
         <h1 className={cn('flex flex-wrap', props.className)}>
-            <span ref={titleRef} className={"word leading-none tracking-tight will-change-transform mr-3"}>
-                {title}
+            <span ref={titleRef} className={cn("char leading-none will-change-transform mr-3", spanClass)}>
+                {children}
             </span>
         </h1>
     )

@@ -1,5 +1,6 @@
 export const ourService = {
-    description: 'We design, build and ship world-class digital products for forward-thinking brands.',
+    description: 'Diseñamos, construimos y entregamos productos de clase mundial para marcas con visión al futuro.',
+    // description: 'We design, build and ship world-class digital products for forward-thinking brands.',
     clients: [
         { src: '/images/clients/satterley.webp' },
         { src: '/images/clients/sussex.webp' },
@@ -26,17 +27,17 @@ export const stats = [
     {
         to: 100,
         suffix: "%",
-        description: 'In-house & independent'
+        description: 'Equipo propio e independiente'
     },
     {
         to: 15,
         suffix: "",
-        description: 'Years crafting digital experiences'
+        description: 'Años creando experiencias digitales'
     },
     {
         to: 80,
         suffix: "+",
-        description: 'Awards from AWA, FWA, and Awwwards'
+        description: 'Premios de AWA, FWA, and Awwwards'
     },
 ]
 

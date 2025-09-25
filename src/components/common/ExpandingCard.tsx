@@ -1,58 +1,83 @@
 import { cn } from '@/lib/utils'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import React, { useEffect, useRef } from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 
 type ExpandingCardProps = {
     children: React.ReactNode,
+    cardClass?: string
+    start?: string,
+    end?: string,
+    initialScaleX: number,
+    initialScaleY: number,
+    finalScaleX: number,
+    finalScaleY: number,
+    resizeInitial?: boolean,
+    markers?: boolean,
 } & React.HtmlHTMLAttributes<HTMLDivElement>
 
-const ExpandingCard = ({ children, ...props }: ExpandingCardProps) => {
+const ExpandingCard = ({ children, cardClass, start, end, initialScaleX, finalScaleX, initialScaleY, finalScaleY, resizeInitial, markers = false, ...props }: ExpandingCardProps) => {
 
     gsap.registerPlugin(ScrollTrigger)
-    const cardRef = useRef<HTMLDivElement>(null)
-    const containerRef = useRef<HTMLDivElement>(null)
+    const targetRef = useRef<HTMLDivElement>(null)
+    const triggerRef = useRef<HTMLDivElement>(null)
 
-    useEffect(() => {
-        if (!cardRef.current) return;
-        if (!containerRef.current) return;
+    useLayoutEffect(() => {
+        gsap.set(targetRef.current, {
+            scaleX: initialScaleX,
+            scaleY: initialScaleY,
+            borderRadius: "2rem"
+        })
 
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: cardRef.current,
-                start: "top top",       // cuando el card toca arriba
-                end: "bottom top",
-                scrub: true,
-            },
+        if (!targetRef.current) return;
+        if (!triggerRef.current) return;
+
+        const mm = gsap.matchMedia();
+        mm.add("(min-width: 768px)", () => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: triggerRef.current,
+                    start,
+                    end,
+                    scrub: true,
+                    markers,
+                }
+            })
+
+            //Fase 1:
+            tl.to(targetRef.current, {
+                scaleX: finalScaleX,
+                scaleY: finalScaleY,
+                borderRadius: "0rem",
+                ease: "expo.out"
+            })
+            //Fase 2:
+            if (resizeInitial) {
+                tl.to(targetRef.current, {
+                    scaleX: initialScaleX,
+                    scaleY: initialScaleY,
+                    borderRadius: "2rem",
+                    ease: "expo.inOut"
+                })
+            }
+            return () => tl.kill()
+        })
+
+        mm.add("(max-width: 767px)", () => {
+            gsap.set(targetRef.current, {
+                clearProps: "all", // 🔑 limpia transform, scale, etc.
+                scale: 1,
+                borderRadius: "2rem", // o lo que necesites en móvil
+            });
         });
 
-
-        tl.fromTo(
-            cardRef.current,
-            { scale: 0.9, borderRadius: "2rem" },
-            { scale: 1, borderRadius: "0rem", duration: 1, ease: "expo.out" }
-        );
-
-
-        tl.to(cardRef.current, {
-            scale: 1,
-            borderRadius: "0rem",
-            duration: 1,
-        });
-
-
-        tl.to(cardRef.current, {
-            scale: 0.9,
-            borderRadius: "2rem",
-            duration: 1,
-            ease: "power2.inOut",
-        });
+        return () => mm.revert(); // 🔑 revierte TODO al desmontar
 
     }, [])
 
     return (
-        <div ref={containerRef} className={cn('relative aspect-square', props.className)}>
-            <div ref={cardRef} className='sticky top-0 overflow-hidden h-dvh w-dvw'>
+        <div ref={triggerRef} className={cn('', props.className)}>
+            <div ref={targetRef} className={cn('', cardClass)}>
                 {children}
             </div>
         </div>

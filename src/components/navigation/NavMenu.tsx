@@ -24,10 +24,12 @@ function NavMenu() {
                 </Link>
             </MenubarMenu>
             <MenubarMenu>
-                <MenubarTrigger>Trabajo</MenubarTrigger>
+                <Link to="/trabajo">
+                    <MenubarTrigger className={`${isActive("/trabajo")}`}>Trabajo</MenubarTrigger>
+                </Link>
             </MenubarMenu>
             <MenubarMenu>
-                <MenubarTrigger>Pericia</MenubarTrigger>
+                <MenubarTrigger>Servicios</MenubarTrigger>
                 <MenubarContent className="flex px-9 rounded-[2.5rem] space-x-10" align="center">
                     <div className="mb-5 mt-14">
                         <h3 className="nav-subtitle">¿Qué hacemos?</h3>
@@ -48,10 +50,14 @@ function NavMenu() {
                 </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
-                <MenubarTrigger>Pensamiento</MenubarTrigger>
+                <Link to="/ideas">
+                    <MenubarTrigger className={`${isActive("/ideas")}`}>Ideas</MenubarTrigger>
+                </Link>
             </MenubarMenu>
             <MenubarMenu>
-                <MenubarTrigger>Contacto</MenubarTrigger>
+                <Link to="/contacto">
+                    <MenubarTrigger className={`${isActive("/contacto")}`}>Contacto</MenubarTrigger>
+                </Link>
             </MenubarMenu>
         </Menubar >
     )
