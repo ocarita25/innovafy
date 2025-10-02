@@ -48,7 +48,9 @@ function NavMenu() {
                 </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
-                <MenubarTrigger>Pensamiento</MenubarTrigger>
+                <Link to="/thinking">
+                <MenubarTrigger className={`${isActive("/thinking")}`}>Pensamiento</MenubarTrigger>
+                </Link>
             </MenubarMenu>
             <MenubarMenu>
                 <MenubarTrigger>Contacto</MenubarTrigger>
