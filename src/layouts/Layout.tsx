@@ -1,4 +1,3 @@
-import ExpandingCard from "@/components/common/ExpandingCard"
 import Footer from "@/components/layouts/Footer"
 import Header from "@/components/navigation/Header"
 import { Outlet } from "react-router-dom"

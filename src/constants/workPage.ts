@@ -1,9 +1,9 @@
 export const workFilters = [
-    { id: 1, label: "Featured" },
-    { id: 2, label: "Comercial" },
-    { id: 3, label: "Not for profit" },
-    { id: 4, label: "Education" },
-    { id: 5, label: "Community & Purpose" },
-    { id: 6, label: "Innovation" },
-    { id: 7, label: "UI & UX" }
+    { id: 1, label: "Featured", category: "" },
+    { id: 2, label: "Comercial", category: "comercial" },
+    { id: 3, label: "Not for profit", category: "noprofit" },
+    { id: 4, label: "Education", category: "educacion" },
+    { id: 5, label: "Community & Purpose", category: "comunidad" },
+    { id: 6, label: "Innovation", category: "digital" },
+    { id: 7, label: "UI & UX", category: "ux" },
 ]

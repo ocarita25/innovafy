@@ -39,7 +39,7 @@ type ImageCardProps = {
 } & React.HTMLAttributes<HTMLDivElement>
 
 const ImageCard = ({ src, alt, ...props }: ImageCardProps) => {
-    return <img src={src} alt={alt} className={cn('w-full h-full', props.className)} onLoad={() => ScrollTrigger.refresh()} />
+    return <img src={src} alt={alt} className={cn('', props.className)} onLoad={() => ScrollTrigger.refresh()} />
 }
 
 export {

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 type ButtonProps = {
   children: React.ReactNode,
-  isActive: boolean,
+  isActive?: boolean,
 } & React.HTMLAttributes<HTMLDivElement>
 
 const Button = ({ children, isActive, ...props }: ButtonProps) => {

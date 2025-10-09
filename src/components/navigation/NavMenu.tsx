@@ -5,10 +5,10 @@ function NavMenu() {
     const location = useLocation();
 
     const isActive = (path: string) =>
-        location.pathname === path ? "bg-theme-secondary text-theme-primary font-semibold" : "hover:bg-transparent backdrop-blur-sm";
+        location.pathname === path ? "bg-theme-secondary text-theme-primary font-semibold" : "hover:bg-transparent ";
 
     return (
-        <Menubar className="border-none relative">
+        <Menubar className="border-none fixed backdrop-blur-sm">
             <MenubarMenu >
                 <Link to="/">
                     <MenubarTrigger className={`${isActive("/")}`}>

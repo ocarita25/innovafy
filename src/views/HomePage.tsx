@@ -49,7 +49,7 @@ export default function Home() {
             finalScaleX={0.95}
             finalScaleY={0.95}
         >
-            <div id="main" className="flex flex-col min-h-[100dvh] rounded-b-[3.5rem] transition-colors duration-600 max-w-dvw bg-theme-background">
+            <div id="main" className="flex flex-col min-h-[100dvh] rounded-b-[3.5rem] transition-colors duration-600 max-w-dvw bg-theme-background pt-20">
                 <div className='flex items-center h-[35dvh] lg:h-[60dvh] px-5 lg:px-10 w-full'>
                     <div className="w-full tracking-normal font-medium text-[clamp(3rem,7dvw,8dvw)] lg:text-9xl xl:text-[clamp(8.5rem,9dvw,9rem)]">
                         <VerticalPanned from={{ y: 180, opacity: 0, ease: "expo.out", duration: 1.1 }} triggerClass="overflow-hidden">
@@ -108,22 +108,22 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-10 px-5 lg:px-10 mt-10 w-full">
                     <VerticalPanned from={pannedFrom} triggerClass="col-span-2 w-full">
                         <Card title={"PIQUE"} className="relative w-full lg:h-[95dvh] flex items-center justify-center">
-                            <ImageCard src="/images/pique.webp" className="object-cover" />
+                            <ImageCard src="/images/pique.webp" className="w-full object-cover" />
                             <Card className="absolute w-3/4 h-fit">
-                                <VideoCard src="/videos/home2.mp4" className="w-full h-full object-contain" />
+                                <VideoCard src="/videos/pique.mp4" className="w-full h-full object-contain" />
                             </Card>
                         </Card>
                     </VerticalPanned>
 
                     <VerticalPanned from={pannedFrom}>
                         <Card title="Sussex Taps" className="min-h-50dvh aspect-square lg:aspect-auto lg:h-[100dvh] col-span-2 lg:col-span-1">
-                            <VideoCard src="/videos/home3.mp4" className="object-cover" />
+                            <VideoCard src="/videos/sussex.mp4" className="object-cover" />
                         </Card>
                     </VerticalPanned>
 
                     <VerticalPanned from={pannedFrom}>
                         <Card title={"Chaleit"} className="relative flex items-center justify-center h-full aspect-square lg:aspect-auto lg:h-[100dvh] col-span-2 lg:col-span-1">
-                            <ImageCard src="/images/chaleit1.webp" className="object-cover" />
+                            <ImageCard src="/images/chaleit1.webp" className="w-full object-cover" />
                             <Card className="absolute w-2/5 h-fit rounded-2xl">
                                 <ImageCard src="/images/chaleit2.webp" />
                             </Card>
@@ -132,9 +132,9 @@ export default function Home() {
 
                     <VerticalPanned from={pannedFrom} triggerClass="col-span-2 w-full">
                         <Card title="Surveillance Watch" className="relative flex items-center justify-center col-span-2 h-full aspect-video lg:aspect-auto lg:h-[95dvh]">
-                            <VideoCard src="/videos/home4.mp4" className="object-cover" />
-                            <Card className="absolute w-4/5 h-fit">
-                                <ImageCard src="/images/surveillance.webp" />
+                            <VideoCard src="/videos/surveillance-watch.mp4" className="object-cover" />
+                            <Card className="absolute h-3/4 w-3/4">
+                                <ImageCard src="/images/surveillance.webp" className="w-full h-full" />
                             </Card>
                         </Card>
                     </VerticalPanned>
@@ -201,7 +201,7 @@ export default function Home() {
                                 <VerticalPanned key={i} from={{ x: (-140 - (i * 250)), opacity: (0 - i * 4), ease: "expo.out", duration: (0.75 + i * 0.25) }} className="!overflow-visible" triggerClass="!overflow-visible">
                                     <article className="!overflow-visible">
                                         <Card title={n.imgTitle}>
-                                            <ImageCard src={n.img} />
+                                            <ImageCard src={n.img} className="w-full h-full" />
                                         </Card>
                                         <div>
                                             <div className="py-5">

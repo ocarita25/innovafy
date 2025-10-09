@@ -26,6 +26,10 @@ const PannedText = ({ children, spanClass, ...props }: PannedTextProps) => {
             charsClass: "char",
         });
 
+        gsap.set(split.words, {
+            overflowY: "hidden",
+            paddingBottom: 3
+        })
 
         // Animar cada línea
         gsap.from(split.chars, {
@@ -33,7 +37,7 @@ const PannedText = ({ children, spanClass, ...props }: PannedTextProps) => {
             opacity: 0,
             duration: 1,
             ease: "expo.out",
-            stagger: 0.015,
+            stagger: 0.005,
             scrollTrigger: {
                 trigger: titleRef.current,
                 start: "top 90%",
