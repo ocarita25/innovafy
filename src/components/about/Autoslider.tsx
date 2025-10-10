@@ -1,4 +1,3 @@
-import type { MediaTypes } from '@/types/MediaTypes.types'
 import gsap from 'gsap'
 import { Draggable } from 'gsap/Draggable'
 import InertiaPlugin from 'gsap/InertiaPlugin'
@@ -46,10 +45,10 @@ const AutoSlider = ({ children }: AutoSliderProps) => {
     }, [children]);
 
     return (
-        <div className='overflow-hidden w-full px-10'>
-            <div ref={wrapperRef} className='w-full flex flex-row gap-10 touch-pan-y items-center'>
+        <div className='overflow-hidden w-fit px-10'>
+            <div ref={wrapperRef} className='w-fit flex flex-row gap-10 touch-pan-y items-center'>
                 {repeatedSlides.map((child, i) => (
-                    <picture key={i} className='shrink-0 rounded-3xl overflow-hidden w-full max-w-[50dvw]'>
+                    <picture key={i} className='shrink-0 rounded-3xl overflow-hidden w-fit max-w-[30dvw]'>
                         {child}
                     </picture>
                 ))}

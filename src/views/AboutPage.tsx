@@ -1,4 +1,4 @@
-import AutoSlider from "@/components/about/autoslider"
+import AutoSlider from "@/components/about/AutoSlider"
 import { Card, ImageCard } from "@/components/common/Card"
 import ExpandingCard from "@/components/common/ExpandingCard"
 import PannedText from "@/components/common/PannedText"
@@ -58,7 +58,7 @@ function AboutPage() {
                 </PannedText>
                 <AutoSlider>
                     {mediaContent && mediaContent.map(image => (
-                        <img id={image.id.toString()} src={image.src} alt={image.name} className='w-full h-full' />
+                        <img id={image.id.toString()} src={image.src} alt={image.name} className='object-contain w-full max-h-[80dvh]' />
                     ))}
                 </AutoSlider>
                 <div className="px-10">

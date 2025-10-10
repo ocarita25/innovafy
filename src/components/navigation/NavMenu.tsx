@@ -50,8 +50,8 @@ function NavMenu() {
                 </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
-                <Link to="/ideas">
-                    <MenubarTrigger className={`${isActive("/ideas")}`}>Ideas</MenubarTrigger>
+                <Link to="/thinking">
+                    <MenubarTrigger className={`${isActive("/thinking")}`}>Pensamiento</MenubarTrigger>
                 </Link>
             </MenubarMenu>
             <MenubarMenu>
