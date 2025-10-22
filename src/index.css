@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "./styles/aboutHero.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -103,7 +104,7 @@ html {
   --pink-primary: oklch(69.921% 0.20867 357.806);
   --pink-primary-text: oklch(47.613% 0.18993 6.941);
   --pink-secondary: oklch(22.149% 0.09031 357.61);
-  --pink-text: oklch(22.149% 0.09031 357.61 / 0.7);
+  --pink-text: #38001bb3;
   --pink-tertiary: oklch(96.262% 0.02207 348.459);
   --yellow-primary: oklch(87.389% 0.17034 91.227);
   --yellow-primary-text: oklch(51.664% 0.10553 89.428);
@@ -112,8 +113,8 @@ html {
   --yellow-tertiary: oklch(97.926% 0.02715 90.906);
   --blue-primary: oklch(83.98% 0.09977 229.893);
   --blue-primary-text: oklch(63.31% 0.14625 240.49);
-  --blue-secondary: oklch(15.697% 0.09849 275.255);
-  --blue-text: rgba(7, 0, 53, 0.7);
+  --blue-secondary: #070035;
+  --blue-text: #070035b3;
   --blue-tertiary: oklch(97.15% 0.01675 231.15);
   --cyan-primary: oklch(88.496% 0.10053 186.151);
   --cyan-primary-text: oklch(69.27% 0.12034 182.23);
@@ -175,6 +176,10 @@ html {
   body {
     @apply text-foreground bg-theme-background;
   }
+
+  h2 {
+    @apply font-medium;
+  }
 }
 
 @layer utilities {
@@ -184,5 +189,33 @@ html {
 
   .nav-subtitle {
     @apply capitalize font-medium text-lg
+  }
+
+  .text-theme-secondary {
+    color: var(--blue-secondary);
+  }
+
+  .masked-text {
+    /* background-color: #000; */
+    -webkit-mask-image: url("/images/about/abouthero_mask_white.jpg");
+    mask-image: url("/images/about/abouthero_mask_white.jpg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    /* Fuerza uso de luminancia */
+    -webkit-mask-mode: luminance;
+    mask-mode: luminance;
+
+    /* Invierte los valores de luminancia (negro <-> blanco) */
+    -webkit-mask-composite: source-out;
+    mask-composite: exclude;
+
+    /* Safari/Chrome: a veces requiere mezclar con el fondo */
+    mix-blend-mode: normal;
+
   }
 }

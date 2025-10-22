@@ -141,17 +141,17 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col px-5 sm:px-7 lg:px-10 lg:grid grid-cols-[2fr_3fr] grid-rows-[auto_auto_1fr] gap-[clamp(3.125rem,3.30vw,4.15rem)] pt-20 w-full">
-                    <div className="col-span-2 text-5xl lg:text-[clamp(3rem,9dvw,8rem)]">
+                    <div className="flex flex-col gap-3 lg:gap-0 col-span-2 text-3xl lg:text-[clamp(3rem,9dvw,8rem)]">
                         <VerticalPanned from={pannedFrom}>
                             <span>
                                 Grandes trabajos para
                             </span>
                         </VerticalPanned>
                         <VerticalPanned from={pannedFrom}>
-                            <span className="flex items-center gap-4 pr-2 lg:pr-7 leading-none">
+                            <span className="flex items-center gap-2 lg:gap-4 pr-2 lg:pr-7 leading-none">
                                 <span>Grandes</span>
                                 <span className="flex items-end">
-                                    <SmileFace className="w-12 lg:w-[7rem]" />
+                                    <SmileFace className="w-9 lg:w-[7rem]" />
                                 </span>
                                 <span>personas.</span>
                             </span>

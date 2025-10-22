@@ -54,7 +54,7 @@ const Footer = () => {
     }, [location.pathname])
 
     return (
-        <footer ref={triggerRef} className={`px-5 lg:px-20 pb-15 relative ${isExcludedPage ? 'z-0' : '-z-1'}`}>
+        <footer ref={triggerRef} className={`py-20 px-5 lg:px-20 pb-15 relative ${isExcludedPage ? 'z-0' : '-z-1'}`}>
             <div ref={targetRef} className='grid grid-rows-auto h-full'>
                 {!isExcludedPage &&
                     <div className='py-[clamp(2rem,3.25dvh,6dvh)] lg:py-[clamp(3rem,12dvh,12rem)] text-[clamp(3dvw,10dvw,4rem)] lg:text-7xl leading-none font-bold mb-20'>

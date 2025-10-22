@@ -8,7 +8,7 @@ function NavMenu() {
         location.pathname === path ? "bg-theme-secondary text-theme-primary font-semibold" : "hover:bg-transparent ";
 
     return (
-        <Menubar className="border-none fixed backdrop-blur-sm">
+        <Menubar className="border-none fixed backdrop-blur-sm bottom-[1rem] lg:top-[1rem] -translate-x-1/2 left-1/2">
             <MenubarMenu >
                 <Link to="/">
                     <MenubarTrigger className={`${isActive("/")}`}>
@@ -19,7 +19,7 @@ function NavMenu() {
             <MenubarMenu>
                 <Link to="/acerca-de">
                     <MenubarTrigger className={`${isActive("/acerca-de")}`}>
-                        Acerca de
+                        Acerca
                     </MenubarTrigger>
                 </Link>
             </MenubarMenu>
@@ -51,7 +51,7 @@ function NavMenu() {
             </MenubarMenu>
             <MenubarMenu>
                 <Link to="/thinking">
-                    <MenubarTrigger className={`${isActive("/thinking")}`}>Pensamiento</MenubarTrigger>
+                    <MenubarTrigger className={`${isActive("/thinking")}`}>Ideas</MenubarTrigger>
                 </Link>
             </MenubarMenu>
             <MenubarMenu>

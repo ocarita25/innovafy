@@ -6,11 +6,13 @@ import React, { useEffect, useRef } from "react";
 gsap.registerPlugin(SplitText);
 
 type PannedTextProps = {
-    children: React.ReactNode
-    spanClass?: string
+    children: React.ReactNode,
+    paddingBottom?: string,
+    translateY?: string,
+    spanClass?: string,
 } & React.HtmlHTMLAttributes<HTMLHeadingElement>;
 
-const PannedText = ({ children, spanClass, ...props }: PannedTextProps) => {
+const PannedText = ({ children, paddingBottom, translateY, spanClass, ...props }: PannedTextProps) => {
 
     if (!children) return;
 
@@ -27,8 +29,11 @@ const PannedText = ({ children, spanClass, ...props }: PannedTextProps) => {
         });
 
         gsap.set(split.words, {
-            overflowY: "hidden",
-            paddingBottom: 3
+            // overflowY: "hidden",
+            // paddingBottom,
+            // translateY,
+            // display: "inline-block",
+            // whiteSpace: "pre"
         })
 
         // Animar cada línea
@@ -50,11 +55,12 @@ const PannedText = ({ children, spanClass, ...props }: PannedTextProps) => {
     }, [])
 
     return (
-        <h1 className={cn('flex flex-wrap', props.className)}>
-            <span ref={titleRef} className={cn("char leading-none will-change-transform mr-3", spanClass)}>
-                {children}
-            </span>
-        </h1>
+        // <span {...props} className={cn('flex flex-wrap', props.className)}>
+        // <span ref={titleRef} className={cn("char leading-none will-change-transform mr-3", spanClass)}>
+        <span ref={titleRef} {...props}>
+            {children}
+        </span>
+
     )
 }
 
