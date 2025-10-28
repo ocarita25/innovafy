@@ -4,6 +4,7 @@ import AboutPage from "./views/AboutPage"
 import NotFoundPage from "./views/NotFoundPage"
 import Layout from "./layouts/Layout"
 import { Thinking } from "./views/Thinking"
+import { DetailsPost } from "./views/DetailsPost"
 import ContactPage from "./views/ContactPage"
 import WorkPage from "./views/WorkPage"
 
@@ -19,6 +20,7 @@ function AppRouter() {
                     <Route path="/contacto" element={<ContactPage />} />
                     <Route path="*" element={<NotFoundPage />} />
                     <Route path="/thinking" element={<Thinking />}></Route>
+                    <Route path="/post/:id" element={<DetailsPost />} />
                 </Route>
             </Routes>
         </Router>

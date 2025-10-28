@@ -7,6 +7,7 @@ export type Article = {
   description: string;
   author: string;
   authorAvatar: string;
-  date: string; 
+  date: string;
   image: string;
-}
+  content: string; 
+};

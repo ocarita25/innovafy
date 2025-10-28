@@ -3,6 +3,10 @@
 @import "./styles/aboutHero.css";
 @import "./styles/contact.css";
 
+
+
+
+
 @custom-variant dark (&:is(.dark *));
 
 html {
