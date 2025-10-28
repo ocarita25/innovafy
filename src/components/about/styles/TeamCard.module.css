@@ -1,0 +1,56 @@
+.teamCard {
+    display: grid;
+    opacity: 1;
+    transform: translateY(0);
+    grid-row-end: span 2;
+}
+
+.teamCard:nth-child(odd) {
+    grid-column: 1;
+}
+
+.teamCard:nth-child(2) {
+    grid-row-start: 2;
+}
+
+.teamCard:nth-child(2n+2) {
+    grid-column: 2;
+}
+
+.teamCard>* {
+    grid-area: 1 / -1;
+}
+
+
+.teamPicture {
+    border-radius: 30px;
+    background-color: rgb(181, 181, 181);
+    position: relative;
+    z-index: 0;
+}
+
+.teamPill {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin: .6666666667em;
+    padding: .2666666667em;
+    border-radius: 100vw;
+    background-color: #fff;
+    justify-self: center;
+    align-self: flex-end;
+    font-weight: 500;
+    font-size: clamp(.75rem, .7936507937vw, .9975rem);
+}
+
+.teamName {
+    padding: 0.53em 1.27em;
+    border-radius: 100vw;
+    color: var(--blue-primary);
+    background: var(--color-theme-secondary);
+}
+
+.teamRole {
+    padding: 0.27em 0.53em 0.27em 0.27em;
+    color: var(--color-theme-secondary);
+}

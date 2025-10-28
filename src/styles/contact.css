@@ -1,0 +1,41 @@
+.contact-bg-mobile::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    border-radius: inherit;
+    background: linear-gradient(to top, transparent, #BFB7CC, transparent);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: background 0.15s ease-in-out;
+    height: 40%;
+    z-index: 1;
+    top: -20%;
+}
+
+.contact-bg-mobile::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    border-radius: inherit;
+    background: linear-gradient(to top, transparent, var(--theme-background), transparent);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: background .15s ease-in-out;
+    height: 40%;
+    z-index: 1;
+    top: 80%;
+}
+
+.contact-bg-mobile {
+    display: grid;
+}
+
+@media (min-width: 991px) {
+    .contact-bg-mobile {
+        display: none;
+    }
+}

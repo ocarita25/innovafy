@@ -1,64 +1,48 @@
-import { cn } from '@/lib/utils'
+import React, { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import React, { useLayoutEffect, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
+import type { ExpandingCardProps } from '@/types/ExpandingCardProps.types'
 
-type ExpandingCardProps = {
-    children: React.ReactNode,
-    cardClass?: string
-    start?: string,
-    end?: string,
-    initialScaleX: number,
-    initialScaleY: number,
-    finalScaleX: number,
-    finalScaleY: number,
-    resizeInitial?: boolean,
-    markers?: boolean,
+type Props = {
+    children: React.ReactNode
+    resizeInitial?: boolean
+    settings: ExpandingCardProps
 } & React.HtmlHTMLAttributes<HTMLDivElement>
 
-const ExpandingCard = ({ children, cardClass, start, end, initialScaleX, finalScaleX, initialScaleY, finalScaleY, resizeInitial, markers = false, ...props }: ExpandingCardProps) => {
+const ExpandingCard = ({ children, resizeInitial, settings, ...props }: Props) => {
 
     gsap.registerPlugin(ScrollTrigger)
+    const location = useLocation();
     const targetRef = useRef<HTMLDivElement>(null)
     const triggerRef = useRef<HTMLDivElement>(null)
+    const { original, target, sTrigger, cardClass } = settings
 
     useLayoutEffect(() => {
-        gsap.set(targetRef.current, {
-            scaleX: initialScaleX,
-            scaleY: initialScaleY,
-            borderRadius: "2rem"
-        })
+        gsap.set(targetRef.current, { ...original })
 
-        if (!targetRef.current) return;
-        if (!triggerRef.current) return;
+        if (!targetRef.current || !triggerRef.current) return;
 
         const mm = gsap.matchMedia();
         mm.add("(min-width: 768px)", () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: triggerRef.current,
-                    start,
-                    end,
                     scrub: true,
-                    markers,
+                    ...sTrigger,
+                    onUpdate: (self) => {
+                        console.log("Progreso: ", self.progress);
+
+                    }
                 }
             })
 
             //Fase 1:
-            tl.to(targetRef.current, {
-                scaleX: finalScaleX,
-                scaleY: finalScaleY,
-                borderRadius: "0rem",
-                ease: "expo.out"
-            })
+            tl.to(targetRef.current, { ...target })
+
             //Fase 2:
             if (resizeInitial) {
-                tl.to(targetRef.current, {
-                    scaleX: initialScaleX,
-                    scaleY: initialScaleY,
-                    borderRadius: "2rem",
-                    ease: "expo.inOut"
-                })
+                tl.to(targetRef.current, { ...original })
             }
             return () => tl.kill()
         })
@@ -71,13 +55,17 @@ const ExpandingCard = ({ children, cardClass, start, end, initialScaleX, finalSc
             });
         });
 
+        requestAnimationFrame(() => {
+            ScrollTrigger.refresh()
+        })
+
         return () => mm.revert(); // 🔑 revierte TODO al desmontar
 
-    }, [])
+    }, [location.pathname])
 
     return (
-        <div ref={triggerRef} className={cn('', props.className)}>
-            <div ref={targetRef} className={cn('', cardClass)}>
+        <div ref={triggerRef}  {...props}>
+            <div ref={targetRef} className={cardClass}>
                 {children}
             </div>
         </div>

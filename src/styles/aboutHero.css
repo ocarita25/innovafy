@@ -1,9 +1,7 @@
-.about-hero {}
-
 .about-hero-wrapper {
     display: grid;
     position: relative;
-    background: linear-gradient(180deg, #97c2bb, #97c2bb 80%, transparent);
+    background-image: linear-gradient(180deg, #97c2bb, #97c2bb 80%, transparent);
 }
 
 .about-hero-heading {
@@ -25,16 +23,16 @@
 }
 
 .about-hero-image-wrapper {
-    display: grid;
     grid-area: 1 / -1;
     height: 66.13vw;
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 46.3vw;
+    display: grid;
 }
 
 .about-hero-image {
     grid-area: 1 / -1;
-    margin-top: 30vh;
+    margin-top: 46.3vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -45,14 +43,40 @@
     max-width: 100%;
 }
 
-.about-hero-image-mask {
-    z-index: 2;
+@media (width>=992px) {
+    .about-hero-image-wrapper {
+        margin-top: max(13.23vw, 30vh);
+    }
+
+    .about-hero-image {
+        margin-top: max(13.23vw, 30vh);
+    }
 }
 
-.about-hero-image-mask img {
-    background-color: #000;
-    mask-image: url("/images/about/abouthero_mask.png");
+.about-hero-image:nth-of-type(2n-1)::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(180deg, #97c2bb, transparent);
+}
+
+.about-hero-image:nth-of-type(2n)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12.5%;
+    background-image: linear-gradient(to bottom, transparent, #D8E7EE);
+}
+
+.about-hero-image-mask {
     mask-size: 100%;
+    mask-image: url("/images/about/abouthero_mask.png");
+    z-index: 1;
 }
 
 .about-hero-container {
@@ -65,15 +89,12 @@
 }
 
 .about-hero-intro {
-    margin-top: 52.91vw;
-    margin-bottom: 52.91vw;
     box-sizing: content-box;
     will-change: transform;
     position: relative;
     z-index: 1;
     line-height: 1;
-    font-size: clamp(2.5rem, 5.208333vw, 3.325rem);
-    /* font-size: clamp(1.875rem, 3.90625vw, 2.5rem); */
+    font-size: clamp(1.875rem, 3.90625vw, 2.5rem);
     margin: 41.6vw 0 20.83vw;
 }
 
@@ -82,4 +103,112 @@
 .panned-text {
     display: inline-block;
     white-space: pre;
+}
+
+/************************************/
+
+.about-humans {
+    display: grid;
+    color: white;
+    padding: clamp(12.5rem, 13.23vw, 16.625rem) 0;
+}
+
+.about-humans-testimonials {
+    color: #fff;
+    max-width: clamp(64.375rem, 68.1216931217vw, 85.61875rem);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.about-humans-testimonials-slider {
+    display: grid;
+    grid-area: 1 / -1;
+    gap: clamp(3.125rem, 3.31vw, 4.16rem);
+}
+
+.about-humans-testimonial {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: clamp(1.875rem, 3.90625vw, 2.49375rem);
+}
+
+.about-humans-testimonial-quote {
+    line-height: 1.2;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.about-humans-team {
+    display: grid;
+    position: relative;
+    width: 100%;
+    margin: 6.25rem 0 0;
+}
+
+.about-humans-team-heading {
+    grid-area: 1 / -1;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 12.17vw;
+}
+
+.about-humans-team-wrapper {
+    grid-area: 1 / -1;
+    display: grid;
+}
+
+.team-image-main {
+    position: relative;
+    grid-area: 1 / -1;
+    z-index: 0;
+    mask-size: 100%;
+    mask-image: linear-gradient(transparent, black 25%, black 75%, transparent);
+}
+
+.team-image-back {
+    position: relative;
+    grid-area: 1 / -1;
+    z-index: 2;
+    mask-size: 100%;
+    mask-image: url(https://a-us.storyblok.com/f/1017006/3360x2688/e8a90687ee/humaan-mask-back-5-optim.png);
+}
+
+.team-image-front {
+    position: relative;
+    grid-area: 1 / -1;
+    z-index: 4;
+    mask-size: 100%;
+    mask-image: url(https://a-us.storyblok.com/f/1017006/3360x2688/0b6be9fbd5/humaan-mask-front-5-optim.png);
+}
+
+.about-humans-banner {
+    max-width: clamp(89.5rem, 94.708994709vw, 119.035rem);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.about-humans-banner-heading {
+    margin: 0;
+    line-height: 1;
+    font-size: clamp(1.875rem, 3.90625vw, 2.49375rem);
+    max-width: clamp(78.5rem, 83.0687830688vw, 104.405rem);
+}
+
+@media (width>=768px) {
+    .about-hero-intro {
+        margin-top: 52.91vw;
+        /* margin-bottom: 52.91vw; */
+    }
+}
+
+@media (width>=992px) {
+    .about-hero-intro {
+        font-size: clamp(2.5rem, 5.208333vw, 3.325rem);
+    }
 }

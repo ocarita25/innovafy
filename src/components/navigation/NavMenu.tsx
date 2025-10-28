@@ -8,7 +8,8 @@ function NavMenu() {
         location.pathname === path ? "bg-theme-secondary text-theme-primary font-semibold" : "hover:bg-transparent ";
 
     return (
-        <Menubar className="border-none fixed backdrop-blur-sm bottom-[1rem] lg:top-[1rem] -translate-x-1/2 left-1/2">
+        // <Menubar className="border-none fixed backdrop-blur-sm bottom-[1rem] lg:top-[1rem] -translate-x-1/2 left-1/2">
+        <Menubar className="border-none backdrop-blur-sm">
             <MenubarMenu >
                 <Link to="/">
                     <MenubarTrigger className={`${isActive("/")}`}>

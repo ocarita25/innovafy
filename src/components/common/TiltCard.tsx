@@ -3,10 +3,10 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 type TiltCardProps = {
-  children: React.ReactNode
+  img: string
 }
 
-const TiltCard = ({ children }: TiltCardProps) => {
+const TiltCard = ({ img }: TiltCardProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -25,8 +25,8 @@ const TiltCard = ({ children }: TiltCardProps) => {
       const deltaY = e.clientY - centerY;
 
       // Intensidad del efecto
-      const rotationY = (deltaX / rect.width) * 50;
-      const rotationX = -(deltaY / rect.height) * 50;
+      const rotationY = (deltaX / rect.width) * 30;
+      const rotationX = -(deltaY / rect.height) * 30;
 
       gsap.set(card, {
         rotateX: rotationX,
@@ -58,7 +58,9 @@ const TiltCard = ({ children }: TiltCardProps) => {
   return (
     <div ref={containerRef} className="relative flex items-center justify-center">
       <div ref={cardRef} style={{ transformStyle: "preserve-3d", transformOrigin: "center" }}>
-        {children}
+        <div className="flex items-center justify-center bg-[#ffffff4d] aspect-square overflow-hidden rounded-4xl">
+          <img src={img} className="w-3/4 aspect-square rounded-none object-contain" />
+        </div>
       </div>
     </div>
   );

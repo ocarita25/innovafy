@@ -1,16 +1,19 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, type HTMLAttributes } from 'react'
 
 type ThemeTriggerProps = {
     children: React.ReactNode,
     startDesktop: string,
     endDesktop: string,
+    bgColor?: string,
+    bgOriginal?: string,
     startMobile?: string,
     endMobile?: string,
-}
+    contentRef?: React.RefObject<HTMLDivElement | null>,
+} & React.HtmlHTMLAttributes<HTMLDivElement>
 
-const ThemeTrigger = ({ children, startDesktop, endDesktop, startMobile = startDesktop, endMobile = endDesktop }: ThemeTriggerProps) => {
+const ThemeTrigger = ({ children, startDesktop, endDesktop, bgColor, bgOriginal, startMobile = startDesktop, endMobile = endDesktop, ...props }: ThemeTriggerProps) => {
 
     gsap.registerPlugin(ScrollTrigger)
     const triggerRef = useRef<HTMLDivElement>(null)
@@ -18,8 +21,9 @@ const ThemeTrigger = ({ children, startDesktop, endDesktop, startMobile = startD
     useEffect(() => {
         if (!triggerRef.current) return;
 
-        const mainEl = document.getElementById("main")
+        const mainEl = document.getElementById('main');
         if (!mainEl) return;
+
 
         const mm = gsap.matchMedia();
         mm.add("(min-width:500px)", () => {
@@ -27,10 +31,10 @@ const ThemeTrigger = ({ children, startDesktop, endDesktop, startMobile = startD
                 trigger: triggerRef.current,
                 start: startDesktop,
                 end: endDesktop,
-                onEnter: () => mainEl.classList.replace("bg-theme-background", "bg-[var(--purple-primary)]"),
-                onLeave: () => mainEl.classList.replace("bg-[var(--purple-primary)]", "bg-theme-background"),
-                onEnterBack: () => mainEl.classList.replace("bg-theme-background", "bg-[var(--purple-primary)]"),
-                onLeaveBack: () => mainEl.classList.replace("bg-[var(--purple-primary)]", "bg-theme-background"),
+                onEnter: () => mainEl.style.setProperty("--theme-background", `${bgColor}`),
+                onLeave: () => mainEl.style.setProperty("--theme-background", `${bgOriginal}`),
+                onEnterBack: () => mainEl.style.setProperty("--theme-background", `${bgColor}`),
+                onLeaveBack: () => mainEl.style.setProperty("--theme-background", `${bgOriginal}`),
                 // markers: true,
             });
         }
@@ -40,18 +44,22 @@ const ThemeTrigger = ({ children, startDesktop, endDesktop, startMobile = startD
                 trigger: triggerRef.current,
                 start: startMobile,
                 end: endMobile,
-                onEnter: () => mainEl.classList.replace("bg-theme-background", "bg-[var(--purple-primary)]"),
-                onLeave: () => mainEl.classList.replace("bg-[var(--purple-primary)]", "bg-theme-background"),
-                onEnterBack: () => mainEl.classList.replace("bg-theme-background", "bg-[var(--purple-primary)]"),
-                onLeaveBack: () => mainEl.classList.replace("bg-[var(--purple-primary)]", "bg-theme-background"),
+                onEnter: () => mainEl.style.setProperty("--theme-background", `var(${bgColor})`),
+                onLeave: () => mainEl.style.setProperty("--theme-background", `var(${bgOriginal})`),
+                onEnterBack: () => mainEl.style.setProperty("--theme-background", `var(${bgColor})`),
+                onLeaveBack: () => mainEl.style.setProperty("--theme-background", `var(${bgOriginal})`),
                 // markers: true,
             });
         }
         )
+
+        return () => {
+            mm.revert();
+        }
     }, [])
 
     return (
-        <div ref={triggerRef}>
+        <div ref={triggerRef} {...props}>
             {children}
         </div>
     )

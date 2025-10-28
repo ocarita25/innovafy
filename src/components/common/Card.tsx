@@ -9,7 +9,7 @@ type CardProps = {
 
 const Card = ({ title, children, ...props }: CardProps) => {
     return (
-        <div className={cn('relative rounded-4xl overflow-hidden', props.className)}>
+        <div className={cn('flex items-center justify-center relative overflow-hidden', props.className)}>
             {children}
             {title && (
                 <h1 className='absolute bottom-0 left-0 text-white text-lg lg:text-2xl px-5 py-2.5 lg:px-10 lg:py-5 font-semibold'>
@@ -26,7 +26,7 @@ type VideoCardProps = {
 
 const VideoCard = ({ src, ...props }: VideoCardProps) => {
     return (
-        <video autoPlay muted loop className={cn('w-full h-full', props.className)}>
+        <video autoPlay muted loop className={cn('w-full h-full object-cover rounded-4xl', props.className)}>
             <source src={src} type='video/mp4' />
             Tu navegador no soporta el video
         </video>
@@ -39,7 +39,7 @@ type ImageCardProps = {
 } & React.HTMLAttributes<HTMLDivElement>
 
 const ImageCard = ({ src, alt, ...props }: ImageCardProps) => {
-    return <img src={src} alt={alt} className={cn('', props.className)} onLoad={() => ScrollTrigger.refresh()} />
+    return <img src={src} alt={alt} className={cn('w-full h-full object-cover rounded-4xl', props.className)} onLoad={() => ScrollTrigger.refresh()} />
 }
 
 export {

@@ -47,17 +47,17 @@ const Slider = ({ children }: SliderProps) => {
         };
     }, [children]);
 
+    {/* Contenedor de slides */ }
     return (
-        <div>
-            {/* Contenedor de slides */}
-            <div ref={wrapperRef} className="w-full grid grid-flow-col auto-cols-[20rem] gap-5 touch-pan-y">
-                {slides.map((child, i) => (
-                    <div key={i}>
-                        {child}
-                    </div>
-                ))}
-            </div>
+
+        <div ref={wrapperRef} className="max-w-[calc(100dvw-var(--container-gutter)*2)] grid grid-flow-col auto-cols-[clamp(18.75rem,19.85vw,24.94rem)] gap-[clamp(1.25rem,1.32vw,1.66rem)] px-[var(--container-gutter)] cursor-grab touch-pan-y">
+            {slides.map((child, i) => (
+                <div key={i}>
+                    {child}
+                </div>
+            ))}
         </div>
+
     );
 };
 
