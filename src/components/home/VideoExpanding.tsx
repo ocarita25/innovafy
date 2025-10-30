@@ -58,7 +58,7 @@ const VideoExpanding = () => {
             <div ref={expandRef} className='h-dvh col-1 row-1'></div>
             <div ref={shrinkRef} className='h-dvh col-1 row-2'></div>
             <div className={`grid-full sticky top-0 h-dvh grid z-1`}>
-                <div ref={triggerRef} className='grid absolute h-full overflow-hidden object-center grid-full'>
+                <div ref={triggerRef} className='grid absolute h-full overflow-hidden object-center'>
                     <VideoCard src="/videos/home-video.mp4" className='rounded-none' />
                 </div>
             </div>

@@ -142,14 +142,19 @@
     padding: 20px 0;
 }
 
+/* ****************************** */
+/* ****************************** */
+/* ****************************** */
+
 .about-humans-team {
     display: grid;
     position: relative;
     width: 100%;
-    margin: 6.25rem 0 0;
+    margin: 0.25rem 0 0;
 }
 
 .about-humans-team-heading {
+    position: relative;
     grid-area: 1 / -1;
     line-height: 1;
     text-align: center;
@@ -158,31 +163,32 @@
 }
 
 .about-humans-team-wrapper {
+    width: 100%;
     grid-area: 1 / -1;
     display: grid;
 }
 
-.team-image-main {
+.team-image-main,
+.team-image-back,
+.team-image-front {
+    width: 100%;
     position: relative;
     grid-area: 1 / -1;
-    z-index: 0;
     mask-size: 100%;
+}
+
+.team-image-main {
+    z-index: 0;
     mask-image: linear-gradient(transparent, black 25%, black 75%, transparent);
 }
 
 .team-image-back {
-    position: relative;
-    grid-area: 1 / -1;
     z-index: 2;
-    mask-size: 100%;
     mask-image: url(https://a-us.storyblok.com/f/1017006/3360x2688/e8a90687ee/humaan-mask-back-5-optim.png);
 }
 
 .team-image-front {
-    position: relative;
-    grid-area: 1 / -1;
     z-index: 4;
-    mask-size: 100%;
     mask-image: url(https://a-us.storyblok.com/f/1017006/3360x2688/0b6be9fbd5/humaan-mask-front-5-optim.png);
 }
 

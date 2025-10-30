@@ -5,22 +5,23 @@ export const MainCardWrapper: ExpandingCardProps = {
     original: {
         scaleX: 1,
         scaleY: 1,
-        borderRadius: "2rem",
+        borderRadius: "0 0 2rem 2rem",
         ease: "power1.inOut"
     },
 
     target: {
         scaleX: 0.95,
         scaleY: 0.95,
-        borderRadius: "0rem",
+        borderRadius: "4rem",
         ease: "power1.inOut"
     },
 
     sTrigger: {
         start: "bottom bottom",
         end: "bottom 40%",
+        markers: true
     },
-    cardClass: "origin-bottom",
+    cardClass: "origin-bottom relative z-0 col-1 row-1 pt-20 bg-theme-background",
 
     // className: "relative z-0 col-1 row-1",
 }

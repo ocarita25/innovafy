@@ -5,8 +5,7 @@ import 'animate.css';
 
 function Header() {
     return (
-        // <header className="col-1 row-1 absolute top-0 z-50 w-full grid grid-cols-[auto_1fr_auto] gap-15 p-fluid items-center h-20">
-        <header className="z-1 self-start w-full grid col-1 row-1 h-20 ">
+        <header className="z-20 self-start w-full grid col-1 row-1 h-20 ">
             <div className="h-20 w-full p-fluid grid grid-cols-[auto_1fr_auto] gap-15 items-center mb-20">
                 <a className="z-10">
                     <Logo />

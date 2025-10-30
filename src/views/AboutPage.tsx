@@ -1,24 +1,21 @@
 import { HeaderFace } from "@/assets"
 import AboutHeroImage from "@/components/about/AboutHeroImage"
-import AboutTeamMobile from "@/components/about/AboutTeamMobile"
+import AboutTeam from "@/components/about/AboutTeam"
 import AboutTitle from "@/components/about/AboutTitle"
 import AutoSlider from "@/components/about/Autoslider"
-import { Card, ImageCard } from "@/components/common/Card"
 import PannedText from "@/components/common/PannedText"
+import Scrollable from "@/components/common/Scrollable"
 import ThemeTrigger from "@/components/common/ThemeTrigger"
 import TiltCard from "@/components/common/TiltCard"
-import { media } from "@/constants/images"
-import type { MediaTypes } from "@/types/MediaTypes.types"
-import { useEffect, useState } from "react"
+import Main from "@/components/layouts/Main"
+import { clientsImages, whatWeDo, whatWeDont } from "@/constants/about"
+import { useEffect } from "react"
 
 function AboutPage() {
 
-    const images = media.filter(m => m.pages?.includes("acerca"))
+    const { images, clientes } = clientsImages()
     const bgOriginal = "#D8E7EE"
     const bgColor = "#3799EA"
-
-    const [mediaContent, setMediaContent] = useState<MediaTypes[]>();
-    const [clientsImages, setClientImages] = useState<MediaTypes[]>();
 
     useEffect(() => {
         const mainEl = document.getElementById('main')
@@ -26,57 +23,57 @@ function AboutPage() {
         mainEl.style.setProperty("--theme-background", `${bgOriginal}`)
     }, [])
 
-    useEffect(() => {
-        setMediaContent(images)
-    }, [])
-
-    useEffect(() => {
-        const clients = images.filter(i => i.categories?.includes("clients"))
-        setClientImages(clients)
-    }, [])
-
     return (
-        <div className="-mt-20">
-            <div className="about-hero">
+        <Main className="-mt-20 pt-0 grid">
+            <div className="relative">
                 <div>
-                    <div className="about-hero-wrapper">
-                        {/* Texto que se desplaza detrás */}
+                    <div className="grid z-10 bg-[#97c2bb]">
                         <AboutTitle />
-
-                        {/* Imagen completa al frente */}
                         <AboutHeroImage />
                     </div>
 
-                    <div className="about-hero-container">
-                        <PannedText
-                            aria-label="Human experiences are the foundation of everything we do - client relationships, team collaboration and an unwavering focus on the end user. This philosophy is in our name, our core values and underpins our approach to every engagement."
-                        >
-                            <p className="about-hero-intro">Human experiences are the foundation of everything we do - client relationships, team collaboration and an unwavering focus on the end user. This philosophy is in our name, our core values and underpins our approach to every engagement.</p>
+                    <div className="relative text-4xl py-30 px-[var(--container-gutter)] z-20 text-[var(--color-theme-secondary)]">
+                        <PannedText aria-label="Human experiences are the foundation of everything we do - client relationships, team collaboration and an unwavering focus on the end user. This philosophy is in our name, our core values and underpins our approach to every engagement.">
+                            <p>Human experiences are the foundation of everything we do - client relationships, team collaboration and an unwavering focus on the end user. This philosophy is in our name, our core values and underpins our approach to every engagement.</p>
                         </PannedText>
                     </div>
                 </div>
             </div>
 
-            <div className="m-[clamp(6.25rem,13.02vw,9.3125rem)_0] min-[992px]:m-[clamp(15rem,15.87vw,19.95rem)_0]">
-                <AutoSlider>
-                    {mediaContent && mediaContent.map(image => (
-                        <img id={image.id.toString()} src={image.src} alt={image.name} className='object-contain w-full max-h-[80dvh]' />
-                    ))}
-                </AutoSlider>
+            <div className="h-full min-h-dvh grid items-center">
+                <div className="w-full p-fluid">
+                    <AutoSlider>
+                        {images.map(image => (
+                            <img id={image.id.toString()} src={image.src} alt={image.name} className='object-contain w-full max-h-[80dvh]' />
+                        ))}
+                    </AutoSlider>
+                </div>
             </div>
 
-            <div className="grid text-theme-secondary max-w-[calc(clamp(87.5rem,92.6vw,116.375rem))] p-fluid mx-auto w-full gap-[clamp(5rem,5.3vw,6.65rem)]">
+            <div className="flex flex-col text-theme-secondary max-w-[calc(clamp(87.5rem,92.6vw,116.375rem))] p-fluid mx-auto w-full gap-[clamp(5rem,5.3vw,6.65rem)]">
                 <h2 className="text-[clamp(1.875rem,3.90vw,2.49rem)] lg:text-[clamp(2.5rem,5.21vw,3.325rem)] xl:text-[clamp(3.75rem,3.97vw,4.99rem)] max-w-[clamp(66.875rem,70.77vw,88.94rem)] m-0 leading-[1] w-full">
                     <PannedText>
                         <span>Since 2010 we've been working with amazing clients to create meaningful impact and compelling experiences.</span>
                     </PannedText>
                 </h2>
 
-                <div className="grid grid-cols-3 lg:grid-cols-[repeat(5,minmax(auto,1fr))] gap-3">
-                    {clientsImages && clientsImages?.map(ci => (
+                <div className="grid grid-cols-3 lg:grid-cols-[repeat(5,minmax(auto,1fr))] grid-rows-[repeat(auto,minmax(176px,254px))] gap-3 mb-20">
+                    {clientes.map(ci => (
                         <TiltCard key={ci.id} img={ci.src} />
                     ))}
 
+                    {clientes.map(ci => (
+                        <TiltCard key={ci.id} img={ci.src} />
+                    ))}
+                    {clientes.map(ci => (
+                        <TiltCard key={ci.id} img={ci.src} />
+                    ))}
+                    {clientes.map(ci => (
+                        <TiltCard key={ci.id} img={ci.src} />
+                    ))}
+                    {clientes.map(ci => (
+                        <TiltCard key={ci.id} img={ci.src} />
+                    ))}
                 </div>
             </div>
 
@@ -90,7 +87,6 @@ function AboutPage() {
                         <span className="text-3xl lg:text-4xl pb-10">Strategy & UX</span>
                         <ul className="text-lg lg:text-2xl flex flex-col gap-2">
                             <li>Digital Strategy</li>
-
                             <li>User Research</li>
                             <li>User Journey Mapping</li>
                             <li>Information Architecture</li>
@@ -176,10 +172,18 @@ function AboutPage() {
                     </div>
                 </div>
 
-                <div className="about-humans-team">
+                <div className="about-humans-team aspect-[5/4]">
                     <h2 className="about-humans-team-heading">
-                        <div className="absolute whitespace-nowrap z-[1] top-[23%] left-[49.61%] -translate-x-1/2">We're only</div>
-                        <div className="absolute whitespace-nowrap z-[3] top-[34%] left-[47.95%] -translate-x-1/2">Humaan</div>
+                        <div className="absolute whitespace-nowrap z-[1] top-[23%] left-[49.61%] -translate-x-1/2">
+                            <Scrollable yOriginal={0} yTarget={-25} start="top+=200 bottom" end="bottom 50%">
+                                We're only
+                            </Scrollable>
+                        </div>
+                        <div className="absolute whitespace-nowrap z-[3] top-[34%] left-[47.95%] -translate-x-1/2">
+                            <Scrollable yOriginal={0} yTarget={-25} start="top-=50 bottom" end="bottom 40%">
+                                Humaan
+                            </Scrollable>
+                        </div>
                     </h2>
                     <div className="about-humans-team-wrapper">
                         <picture className="team-image-main">
@@ -203,28 +207,27 @@ function AboutPage() {
                 </div>
             </ThemeTrigger>
 
-            <AboutTeamMobile />
+            <AboutTeam />
 
-            <div>
-                <div className="grid max-w-[clamp(87.5rem,92.59vw,116.38rem)] p-fluid w-full gap-[clamp(1.875rem,199vw,2.5rem)] m-[clamp(9.38rem,19.5vw,12.5rem)_auto]">
+            <div className="h-full text-[var(--color-theme-secondary)]">
+                <Scrollable yOriginal={10} yTarget={-5} start="top bottom" end="top 60%">
+                    <div className="grid max-w-[clamp(87.5rem,92.59vw,116.38rem)] p-fluid w-full gap-[clamp(1.875rem,199vw,2.5rem)] my-20">
+                        <h2 className="text-[clamp(1.875rem,3.90vw,2.49rem)] lg:text-[clamp(2.5rem,5.21vw,3.325rem)] xl:text-[clamp(3.75rem,3.97vw,4.99rem)] max-w-[clamp(66.875rem,70.77vw,88.94rem)] m-0 leading-[1] w-full">
+                            <PannedText>
+                                <span>While our focus is on client success, we’re proud to have our work continually <span className="text-purple-800">recognised</span> by the best of the best. </span>
+                            </PannedText>
+                        </h2>
 
-                    <h2 className="text-[clamp(1.875rem,3.90vw,2.49rem)] lg:text-[clamp(2.5rem,5.21vw,3.325rem)] xl:text-[clamp(3.75rem,3.97vw,4.99rem)] max-w-[clamp(66.875rem,70.77vw,88.94rem)] m-0 leading-[1] w-full">
-                        <PannedText>
-                            <span>While our focus is on client success, we’re proud to have our work continually recognised by the best of the best. </span>
-                        </PannedText>
-                    </h2>
-
-                    <div className="grid grid-cols-3 lg:grid-cols-[repeat(5,minmax(auto,1fr))] gap-3">
-                        {clientsImages && clientsImages?.map(ci => (
-                            <TiltCard key={ci.id} img={ci.src} />
-                        ))}
-                        {clientsImages && clientsImages?.map(ci => (
-                            <TiltCard key={ci.id} img={ci.src} />
-                        ))}
+                        <div className="grid grid-cols-3 lg:grid-cols-[repeat(5,minmax(auto,1fr))] gap-3 mt-10">
+                            {clientes.map(ci => (
+                                <TiltCard key={ci.id} img={ci.src} />
+                            ))}
+                            {clientes.map(ci => (
+                                <TiltCard key={ci.id} img={ci.src} />
+                            ))}
+                        </div>
                     </div>
-                </div>
-
-                <div></div>
+                </Scrollable>
             </div>
 
             <div className="grid max-w-[clamp(87.5rem,92.59vw,116.375rem)] p-fluid w-full gap-[clamp(5.625rem,5.95vw,7.48rem)] m-[clamp(6.25rem,6.6137566138vw,8.3125rem)_auto_clamp(9.375rem,9.9206349206vw,12.46875rem)]">
@@ -237,40 +240,23 @@ function AboutPage() {
                     <section className="grid gap-[clamp(2.125rem,2.25vw,2.83rem)] content-start">
                         <h3 className="m-0 text-[clamp(1.5rem,1.58vw,1.99rem)]">What we do</h3>
                         <ul className="grid grid-cols-2 justify-between max-[480px]:gap-[clamp(2.5rem,2.65vw,3.33rem)] gap-[0.6em] m-0 p-0 opacity-70 list-none text-[clamp(1.125rem,1.19vw,1.5rem)]">
-                            <li>World-class digital</li>
-                            <li>Expect creativity</li>
-                            <li>Celebrate success</li>
-                            <li>Obsess over detail</li>
-                            <li>Pub lunch Fridays</li>
-                            <li>Embrace change</li>
-                            <li>Unlock potential</li>
-                            <li>High-five</li>
-                            <li>Outstanding service</li>
-                            <li>Value relationships</li>
-                            <li>Exceed expectations</li>
-                            <li>Party</li>
+                            {whatWeDo.map((text, i) =>
+                                <li key={i}>{text}</li>
+                            )}
                         </ul>
                     </section>
                     <section className="grid gap-[clamp(2.125rem,2.25vw,2.83rem)] content-start">
                         <h3 className="line-through m-0 text-[clamp(1.5rem,1.58vw,1.99rem)]">What we don't</h3>
                         <ul className="grid grid-cols-2 justify-between max-[480px]:gap-[clamp(2.5rem,2.65vw,3.33rem)] gap-[0.6em] m-0 p-0 opacity-70 list-none text-[clamp(1.125rem,1.19vw,1.5rem)]">
-                            <li>Work weekends</li>
-                            <li>Outsource</li>
-                            <li>Resist cake</li>
-                            <li>Lose at Mario Kart</li>
-                            <li>‘Make it pop’</li>
-                            <li>Free pitches</li>
-                            <li>Sacrifice quality for profit</li>
-                            <li>Egos</li>
-                            <li>Overpromise</li>
-                            <li>Cut corners</li>
-                            <li>Accept mediocrity</li>
-                            <li>Decaf</li>
+                            {whatWeDont.map((text, i) =>
+                                <li key={i}>{text}</li>
+                            )}
+
                         </ul>
                     </section>
                 </div>
             </div>
-        </div >
+        </Main >
     )
 }
 

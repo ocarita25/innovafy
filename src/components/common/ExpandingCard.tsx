@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLocation } from 'react-router-dom'
 import type { ExpandingCardProps } from '@/types/ExpandingCardProps.types'
+import { cn } from '@/lib/utils'
 
 type Props = {
     children: React.ReactNode
@@ -19,21 +20,25 @@ const ExpandingCard = ({ children, resizeInitial, settings, ...props }: Props) =
     const { original, target, sTrigger, cardClass } = settings
 
     useLayoutEffect(() => {
-        gsap.set(targetRef.current, { ...original })
+
+        const handleLoad = () => ScrollTrigger.refresh();
+        // requestAnimationFrame(() => { ScrollTrigger.refresh() })
+
+        if (location.pathname === "/contacto") return;
 
         if (!targetRef.current || !triggerRef.current) return;
 
+        gsap.set(targetRef.current, { ...original })
+
         const mm = gsap.matchMedia();
+
         mm.add("(min-width: 768px)", () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: triggerRef.current,
                     scrub: true,
+                    invalidateOnRefresh: true,
                     ...sTrigger,
-                    onUpdate: (self) => {
-                        console.log("Progreso: ", self.progress);
-
-                    }
                 }
             })
 
@@ -55,17 +60,18 @@ const ExpandingCard = ({ children, resizeInitial, settings, ...props }: Props) =
             });
         });
 
-        requestAnimationFrame(() => {
-            ScrollTrigger.refresh()
-        })
+        console.log("Actualizado");
+        return () => {
+            window.removeEventListener("load", handleLoad)
+            mm.revert(); // 🔑 revierte TODO al desmontar
+        }
 
-        return () => mm.revert(); // 🔑 revierte TODO al desmontar
 
     }, [location.pathname])
 
     return (
-        <div ref={triggerRef}  {...props}>
-            <div ref={targetRef} className={cardClass}>
+        <div ref={triggerRef} {...props}>
+            <div ref={targetRef} className={cn("transition-colors duration-300 ease-in", cardClass)}>
                 {children}
             </div>
         </div>

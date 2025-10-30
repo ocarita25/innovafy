@@ -3,6 +3,7 @@ import { Card, ImageCard, VideoCard } from '@/components/common/Card'
 import ExpandingCard from '@/components/common/ExpandingCard'
 import PannedText from '@/components/common/PannedText'
 import VerticalPanned from '@/components/common/VerticalPanned'
+import Main from '@/components/layouts/Main'
 import { media } from '@/constants/images'
 import { workFilters } from '@/constants/workPage'
 import type { MediaTypes } from '@/types/MediaTypes.types'
@@ -42,21 +43,21 @@ const WorkPage = () => {
     }
 
     return (
-        <div>
-            <div className="px-10 pr-20 w-full py-20 tracking-normal font-medium text-[clamp(3rem,8dvw,9dvw)] lg:text-[clamp(5rem,7dvw,12dvw)]">
-                <PannedText className='overflow-hidden pb-2'>
+        <Main className="-mt-20 grid pb-17">
+            <div className="flex flex-col text-[var(--color-theme-secondary)] px-[var(--container-gutter)] w-full py-25 tracking-normal font-medium text-[clamp(3rem,8dvw,9dvw)] lg:text-[clamp(5rem,7dvw,12dvw)]">
+                <PannedText className='overflow-hidden'>
                     <span>World-class digital</span>
                 </PannedText>
-                <PannedText className='overflow-hidden pb-2 -translate-y-3 z-10'>
+                <PannedText className='overflow-hidden -translate-y-3 z-10'>
                     <span>products, idea to execution.</span>
                 </PannedText>
             </div>
-            <div className='flex flex-wrap gap-2 px-10 pb-20'>
+            <div className='flex flex-wrap gap-2 px-[var(--container-gutter)] pb-20'>
                 {workFilters.map(filter => (
                     <Button key={filter.id} isActive={filter.id === idFilterActive} onClick={() => filterContent(filter.id, filter.category)}>{filter.label}</Button>
                 ))}
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-2 px-5 lg:px-10 gap-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 px-[var(--container-gutter)] gap-10'>
                 {mediaContent && mediaContent.map((m, i) => {
 
                     const colSpan = i === 0 || i % 3 === 0 ? "col-span-1 lg:col-span-2" : "col-span-1"
@@ -86,7 +87,7 @@ const WorkPage = () => {
                     )
                 })}
             </div>
-        </div>
+        </Main>
     )
 }
 

@@ -1,21 +1,19 @@
 import { Card, ImageCard, VideoCard } from "@/components/common/Card";
-import { logoClients, news, ourService, stats } from "@/constants/home";
-import ExpandingCard from "@/components/common/ExpandingCard";
+import { logoClients, news, ourService } from "@/constants/home";
 import SmileFace from "@/assets/SmileFace";
 import PannedText from "@/components/common/PannedText";
 import Slider from "@/components/common/Slide";
 import ThemeTrigger from "@/components/common/ThemeTrigger";
 import VerticalRoulette from "@/components/common/VerticalRoulette";
 import VerticalPanned from "@/components/common/VerticalPanned";
-import Counter from "@/components/common/Counter";
 import Button from "@/components/common/Button";
 import Arrow from "@/assets/Arrow";
 import { useEffect } from "react";
 import SubTitles from "@/components/common/SubTitles";
-import { HomeVideoWrapper } from "@/constants/expandingCardProps";
 import Slide from "@/components/home/Slide";
 import Stats from "@/components/home/Stats";
 import VideoExpanding from "@/components/home/VideoExpanding";
+import Main from "@/components/layouts/Main";
 
 export default function Home() {
 
@@ -54,7 +52,7 @@ export default function Home() {
     }
 
     return (
-        <div>
+        <Main>
             <div className='w-full px-[var(--container-gutter)] grid items-center content-center min-h-[30vh] min-[992px]:min-h-[80dvh]'>
                 <h1 className="w-full tracking-normal font-medium text-[clamp(3rem,7dvw,8dvw)] lg:text-9xl xl:text-[clamp(8.5rem,9dvw,9rem)] text-[var(--color-theme-secondary)]">
                     <VerticalPanned from={{ y: 180, opacity: 0, ease: "expo.out", duration: 1.1 }} triggerClass="overflow-hidden">
@@ -208,6 +206,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div >
+        </Main>
     );
 }

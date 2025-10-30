@@ -1,14 +1,13 @@
 import React from 'react'
 import style from './styles/TeamCard.module.css'
 
-
-const TeamCard = () => {
+const TeamCard = ({ isMobile }: { isMobile?: Boolean }) => {
     return (
-        <div className={style.teamCard}>
-            <picture className={style.teamPicture}>
+        <div className={isMobile ? style.teamCardMobile : style.teamCard}>
+            <picture className={`grid-full ${style.teamPicture}`}>
                 <img src='/images/staff/persona2.webp' alt='team-member' className='w-full h-auto rounded-[inherit]' />
             </picture>
-            <div className={style.teamPill}>
+            <div className={`grid-full ${style.teamPill}`}>
                 <span className={style.teamName}>Oscar</span>
                 <span className={style.teamRole}>Front-end Developer</span>
             </div>

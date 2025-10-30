@@ -34,19 +34,22 @@ const AboutHeroImage = () => {
     }, [])
 
     return (
-        <div ref={triggerRef} className="about-hero-image-wrapper">
-            <picture ref={contentRef} className="about-hero-image">
+        // <div ref={triggerRef} className="about-hero-image-wrapper">
+        <div ref={triggerRef} className="grid grid-full relative w-full min-h-dvw mt-57 mb-30">
+            {/* <picture ref={contentRef} className="about-hero-image"> */}
+            <picture ref={contentRef} className="grid-full">
                 <img
                     src="/images/about/digital_products.jpg"
                     alt="Actores"
-                    className="w-full h-auto object-cover "
+                    className="w-full h-full object-cover [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] "
                 />
             </picture>
-            <picture ref={contentRef} className="about-hero-image about-hero-image-mask">
+            {/* <picture ref={contentRef} className="about-hero-image about-hero-image-mask"> */}
+            <picture ref={contentRef} className="grid-full about-hero-image-mask">
                 <img
                     src="/images/about/digital_products.jpg"
                     alt="Actores"
-                    className="w-full h-auto object-cover "
+                    className="w-full h-full object-cover [mask-image:linear-gradient(to_top,transparent,black_20%)]"
                 />
             </picture>
         </div>
