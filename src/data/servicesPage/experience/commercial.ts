@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/commercial"
+const path = "services/commercial"
 
 export const commercialPage: ServicePageType =
 {
@@ -8,7 +8,7 @@ export const commercialPage: ServicePageType =
     heading: {
         pill: "Comercial",
         title: "Plataformas digitales inspiradoras que generan resultados",
-        heroImage: `${path}/heroImage.webp`,
+        heroImage: `/images/${path}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -38,19 +38,19 @@ export const commercialPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.webp`,
+                media: `/images/${path}/value1.webp`,
                 mediaType: "image",
                 title: "Aumenta la interacción y fortalece tu marca.",
                 text: "En un entorno digital fragmentado y a menudo complejo, un único sitio web cumple múltiples funciones para su audiencia en diferentes momentos. Gracias a nuestra experiencia, su presencia en línea puede equilibrar la comunicación de marca con la funcionalidad táctica en todas las etapas del recorrido de su audiencia.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "Impulsa las conversiones a través de una mejor estrategia digital.",
                 text: "Utilizamos información basada en datos para optimizar cada aspecto de tu plataforma, asegurando que conecte con tu público y lo impulse hacia la conversión. Desde diseños web intuitivos hasta aplicaciones móviles fluidas, no solo mejoramos tu presencia digital, sino que también convertimos esa mayor visibilidad en resultados de negocio tangibles.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Asociaciones gratificantes",
                 text: "Detrás de cada producto digital de primer nivel hay una entrega innovadora y una colaboración estrecha entre agencia y cliente. Trabajamos codo a codo para lograr resultados que ofrecen experiencias extraordinarias y generan beneficios. Los premios son importantes, pero tu éxito significa mucho más.",

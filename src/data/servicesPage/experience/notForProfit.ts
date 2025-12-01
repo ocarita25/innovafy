@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/not-for-profit"
+const path = "services/not-for-profit"
 
 export const notForProfitPage: ServicePageType =
 {
@@ -8,7 +8,7 @@ export const notForProfitPage: ServicePageType =
     heading: {
         pill: "Sin ánimo de lucro",
         title: "Potenciar la participación, el impacto y las donaciones",
-        heroImage: `${path}/heroImage.webp`,
+        heroImage: `/images/${path}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -38,25 +38,25 @@ export const notForProfitPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.webp`,
+                media: `/images/${path}/value1.webp`,
                 mediaType: "image",
                 title: "Aumentar las donaciones y la fidelidad de los simpatizantes",
                 text: "Las experiencias memorables son fundamentales para generar confianza entre una organización y su público. Fomenta la conexión emocional con tus seguidores mediante un diseño cuidado y de gran impacto. Impulsa las donaciones con una experiencia de usuario excepcionalmente sencilla.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "Resultados tangibles con menos esfuerzo",
                 text: "Nos apasiona ofrecer productos digitales intuitivos, sencillos y prácticos. Nuestras soluciones, diseñadas específicamente para este fin, se integran fácilmente en el flujo de trabajo de nuestros clientes, facilitando la transición a una plataforma más eficiente y la obtención de resultados tangibles.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Una plataforma para el crecimiento",
                 text: "Con años de experiencia en el sector sin fines de lucro, sabemos qué funciona: crear plataformas digitales que conecten con los usuarios y, al mismo tiempo, impulsen el crecimiento y los objetivos de la organización. Implementamos estrategias digitales efectivas que superan las expectativas del negocio y ofrecemos soluciones que fomentan el crecimiento continuo, reduciendo la carga administrativa. ¿Necesita integración personalizada de CRM, SSO, seguimiento de donaciones o búsquedas complejas? No hay problema.",
             },
             {
-                media: `${path}/value4.webp`,
+                media: `/images/${path}/value4.webp`,
                 mediaType: "image",
                 title: "Generar claridad, impulsar el impacto",
                 text: "Una narrativa clara y bien definida impulsa su misión, inspira acciones y genera impacto. Desde plataformas de donación hasta portales de investigación, nuestros diseños son intuitivos, accesibles y se alinean con los objetivos de su organización, garantizando que cada interacción digital contribuya significativamente a su causa y potencie su capacidad para marcar la diferencia.",

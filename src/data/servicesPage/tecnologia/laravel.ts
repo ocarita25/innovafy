@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/laravel"
+const path = "services/laravel"
 
 export const laravelPage: ServicePageType =
 {
@@ -8,7 +8,7 @@ export const laravelPage: ServicePageType =
     heading: {
         pill: "laravel",
         title: "Escalabilidad sin complejidad, con la tecnología de Laravel.",
-        heroImage: `${path}/heroImage.webp`,
+        heroImage: `/images/${path}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -38,25 +38,25 @@ export const laravelPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.webp`,
+                media: `/images/${path}/value1.webp`,
                 mediaType: "image",
                 title: "Elegancia de principio a fin",
                 text: "Gracias al completo y ampliamente soportado framework de Laravel, podemos crear soluciones web sofisticadas y optimizadas que se adaptan a cualquier aplicación. Es elegancia integral: herramientas de calidad para un desarrollo placentero, que generan resultados brillantes.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "Evoluciona contigo",
                 text: "A medida que su negocio crece, también lo harán sus necesidades tecnológicas. Implementamos una combinación práctica de pensamiento estratégico, experiencia digital y conocimientos técnicos para desarrollar aplicaciones Laravel que escalan y se adaptan sin esfuerzo con el paso del tiempo.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Desde startups hasta empresas",
                 text: "Trabajamos con clientes de todos los tamaños, desde startups con gran potencial de crecimiento hasta empresas consolidadas que buscan optimizar su infraestructura digital sin complicaciones innecesarias. Nuestras aplicaciones web Laravel, diseñadas específicamente para este fin, impulsan el éxito empresarial en cada etapa.",
             },
             {
-                media: `${path}/value4.mp4`,
+                media: `/videos/${path}/value4.mp4`,
                 mediaType: "video",
                 title: "Socios para el largo plazo",
                 text: "Detrás de cada sitio web de primera categoría hay una colaboración estrecha entre la agencia y el cliente. Trabajamos codo a codo con usted para garantizar resultados que ofrezcan experiencias extraordinarias y generen beneficios. Los premios son importantes, pero su éxito es mucho más valioso.",

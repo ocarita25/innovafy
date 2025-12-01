@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/innovation-startups"
+const path = "services/innovation-startups"
 
 export const innovationPage: ServicePageType =
 {
@@ -8,7 +8,7 @@ export const innovationPage: ServicePageType =
     heading: {
         pill: "Innovación y startups",
         title: "Innovar, diseñar, construir, enviar. Repetir.",
-        heroImage: `${path}/heroImage.webp`,
+        heroImage: `/images/${path}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -38,19 +38,19 @@ export const innovationPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.webp`,
+                media: `/images/${path}/value1.webp`,
                 mediaType: "image",
                 title: "Imagina lo posible",
                 text: "Entendemos que el camino desde la idea hasta la comercialización está lleno de desafíos, y nos sentimos muy cómodos trabajando en lo abstracto e indefinido. Desde novedosas aplicaciones web hasta innovadores productos digitales, compartimos tu pasión por tu idea de negocio y trabajamos contigo para convertirla en realidad.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "Un proceso de iteración",
                 text: "A menudo, encontrar la solución adecuada está justo delante de nosotros; otras veces, requiere un proceso de eliminación. Nuestras fases de estrategia, UX y diseño nos permiten explorar ideas en conjunto, y el uso de prototipos rápidos nos permite identificar las buenas ideas y descartar las malas.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Estamos juntos en esto",
                 text: "Detrás de cada producto de clase mundial hay una entrega que define la categoría y una colaboración estrecha entre agencia y cliente. Trabajamos codo a codo para garantizar resultados que ofrezcan experiencias extraordinarias y logren resultados excepcionales. Los premios son importantes, pero tu éxito lo es aún más.",

@@ -1,13 +1,13 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/ai-automation"
+const path = "services/ai-automation"
 
 export const aiAtuomationPage: ServicePageType = {
     slug: "ia-automatizacion",
     heading: {
         pill: "IA & Automatización",
         title: "Posiciona tu negocio en la vanguardia tecnológica.",
-        heroImage: `${path}/heroVideo.mp4`,
+        heroImage: `/videos/${path}/heroVideo.mp4`,
         mediaType: "video"
     },
     description: {
@@ -37,25 +37,25 @@ export const aiAtuomationPage: ServicePageType = {
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.webp`,
+                media: `/images/${path}/value1.webp`,
                 mediaType: "image",
                 title: "Automatizar operaciones",
                 text: "Libera a tu equipo de procesos manuales repetitivos e impulsa tu negocio con automatización basada en IA, diseñada para optimizar las operaciones y mejorar la precisión. Desde la entrada de datos y el etiquetado de contenido hasta la calificación de clientes potenciales y las comunicaciones internas, la automatización reduce el error humano y agiliza la entrega. Creamos flujos de trabajo inteligentes e integrados que conectan tus sistemas, simplifican la toma de decisiones y permiten que tu personal se concentre en lo que realmente importa.",
             },
             {
-                media: `${path}/value2.mp4`,
+                media: `/videos/${path}/value2.mp4`,
                 mediaType: "video",
                 title: "Innovación a la carta",
                 text: "Al combinar el pensamiento creativo con la experiencia técnica, ayudamos a las organizaciones a explorar las posibilidades: descubriendo nuevas ideas de productos, servicios más inteligentes y modelos de negocio innovadores. Nuestro enfoque colaborativo ayuda a los equipos a experimentar, crear prototipos y escalar ideas con la seguridad de que están respaldadas por datos reales y tecnología de vanguardia.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Plataformas y herramientas",
                 text: "Colaboramos con plataformas líderes de IA como Google, OpenAI y Anthropic para impulsar soluciones inteligentes, seguras y escalables. Al mismo tiempo, exploramos tecnologías emergentes y herramientas innovadoras que desafían los límites de lo posible. Nuestro enfoque combina una fiabilidad probada con la innovación en sus primeras etapas, aunando una infraestructura de confianza con la agilidad necesaria para experimentar, prototipar y adaptarnos.",
             },
             {
-                media: `${path}/value4.mp4`,
+                media: `/videos/${path}/value4.mp4`,
                 mediaType: "video",
                 title: "Preparado para el futuro",
                 text: "El panorama digital evoluciona rápidamente. Nuestras soluciones están diseñadas para crecer con su organización, con especial atención a las arquitecturas flexibles, la gobernanza transparente y el uso ético de la IA. Creamos sistemas que se adaptan a nuevos modelos, integran herramientas emergentes y escalan al ritmo de sus ambiciones. El resultado es una infraestructura digital eficiente hoy y preparada para el futuro.",

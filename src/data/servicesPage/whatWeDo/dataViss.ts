@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/data-viss"
+const path = "services/data-viss"
 
 export const dataVissPage: ServicePageType =
 {
@@ -8,7 +8,7 @@ export const dataVissPage: ServicePageType =
     heading: {
         pill: "Visualización de datos y narración de historias",
         title: "Visualizaciones de datos y narración de historias de alto impacto",
-        heroImage: `${path}/heroVideo.mp4`,
+        heroImage: `/videos/${path}/heroVideo.mp4`,
         mediaType: "video"
     },
     description: {
@@ -38,19 +38,19 @@ export const dataVissPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.mp4`,
+                media: `/videos/${path}/value1.mp4`,
                 mediaType: "video",
                 title: "Cuenta una historia con datos.",
                 text: "Transforma conjuntos de datos complejos en narrativas inmersivas que informan e inspiran a la acción. Nuestro enfoque combina elementos visuales impactantes con análisis profundos, creando una experiencia fluida y atractiva. Ya sea que busques impulsar el cambio, destacar tendencias o demostrar el impacto, organiza tus datos de la mejor manera para lograr experiencias digitales poderosas con un impacto duradero.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "Informes y paneles de control atractivos",
                 text: "Obtenga información valiosa a partir de datos sin procesar con experiencias interactivas visualmente atractivas y puntos de contacto consolidados. Diseñamos y creamos interfaces basadas en datos que se adaptan a cualquier objetivo, desde informes inmersivos para el público general hasta herramientas y paneles internos personalizados que apoyan e informan a las partes interesadas.",
             },
             {
-                media: `${path}/value3.mp4`,
+                media: `/videos/${path}/value3.mp4`,
                 mediaType: "video",
                 title: "Sus datos, nuestra experiencia",
                 text: "Aproveche nuestra experiencia y transforme sus datos en experiencias únicas y atractivas que eduquen, inspiren y deleiten. Al combinar sus datos con nuestra experiencia en infografía, visualización de datos y diseño de interfaces modernas, le ayudamos a liberar todo su potencial y a crear experiencias digitales con un impacto duradero.",

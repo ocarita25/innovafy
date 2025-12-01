@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/design-systems"
+const path = "services/design-systems"
 
 export const designSystemPage: ServicePageType =
 {
@@ -8,7 +8,7 @@ export const designSystemPage: ServicePageType =
     heading: {
         pill: "Sistemas de diseño",
         title: "Diseño escalable",
-        heroImage: `${path}/heroVideo.mp4`,
+        heroImage: `/videos/${path}/heroVideo.mp4`,
         mediaType: "video"
     },
     description: {
@@ -38,25 +38,25 @@ export const designSystemPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.webp`,
+                media: `/images/${path}/value1.webp`,
                 mediaType: "image",
                 title: "Un lenguaje de diseño acorde con la marca",
                 text: "Desarrolla tu propio lenguaje de diseño, basado en tu marca. Con una biblioteca de componentes a medida, que incluye elementos de interfaz de usuario modulares y patrones de diseño, podrás ofrecer a tu público una experiencia visual e interactiva coherente, independientemente de dónde se encuentren en tu ecosistema digital. Fomenta la confianza en la marca y facilita la navegación eliminando las barreras innecesarias que impiden a los visitantes llegar a donde necesitan ir.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "Simplifica tus esfuerzos de diseño y desarrollo.",
                 text: "Libera a tus equipos para que se centren en resolver problemas más complejos. Con una gran cantidad de recursos de diseño a tu disposición, tus equipos de diseño, desarrollo y contenido pueden crear y replicar componentes y patrones rápidamente y a gran escala, ahorrando horas en replantear ideas, rehacer trabajo y corregir inconsistencias accidentales.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Un estilo que perdura",
                 text: "Como parte de su sistema de diseño, podemos ofrecerle una guía de estilo completa que abarca las mejores prácticas para el uso de los recursos de su biblioteca de componentes y de patrones, incluyendo la justificación de las decisiones de diseño específicas de su marca. El objetivo es crear un estilo perdurable, independientemente de quién utilice las herramientas o en qué parte del mundo se encuentre.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Hecho para humanos, con Humaan",
                 text: "Detrás de cada producto de excelencia hay una colaboración estrecha entre agencia y cliente. Todo lo que creamos es totalmente personalizado, tan único como la historia que usted cuenta. Con un equipo interno de estrategas, diseñadores, desarrolladores y gestores de proyectos, podemos ofrecer diversas perspectivas, resultados impecables y un proceso de diseño y entrega verdaderamente colaborativo.",

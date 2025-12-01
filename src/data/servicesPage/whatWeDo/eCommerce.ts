@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/ecommerce"
+const path = "services/ecommerce"
 
 export const eCommercePage: ServicePageType =
 {
@@ -8,11 +8,11 @@ export const eCommercePage: ServicePageType =
     heading: {
         pill: "eCommerce",
         title: "Hermosas tiendas online que atraen y convierten",
-        heroImage: `${path}/heroImage.webp`,
+        heroImage: `/images/${path}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
-        title: "De 1 producto a más de 10 000.",
+        title: "De 1 producto a más de 10 000.",
         subtitle: "Sitios web de comercio electrónico galardonados que convierten a los visitantes en clientes.",
         capabilities: [
             {
@@ -38,19 +38,19 @@ export const eCommercePage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.webp`,
+                media: `/images/${path}/value1.webp`,
                 mediaType: "image",
                 title: "Mejora la experiencia de tu marca",
                 text: "Cada interacción con el cliente contribuye a la experiencia de marca global. Nuestro enfoque de UX ética y diseño de conversión se basa en esta filosofía, garantizando mejores experiencias para el cliente que perduran mucho después de la venta final.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "Funcionalidad completa de comercio electrónico",
                 text: "Ofrecemos un conjunto integral de funcionalidades diseñadas para optimizar cada aspecto de tu tienda online. Desde la gestión de productos y pasarelas de pago seguras hasta recomendaciones personalizadas y procesos de compra sencillos, equipamos tu plataforma de comercio electrónico con todas las herramientas necesarias para operar de forma eficiente, adaptarse a los cambios del mercado y ofrecer una experiencia de compra excepcional.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Da vida a tus productos online",
                 text: "Nos esforzamos por trasladar la experiencia tangible de sus productos al entorno digital, llegando a una nueva base de clientes mediante interfaces visualmente atractivas que realzan sus productos y convierten la atención en ventas. Desde vistas de producto en 360 grados hasta realidad aumentada, animamos a los clientes a explorar e interactuar con los productos de una forma rica e inmersiva.",

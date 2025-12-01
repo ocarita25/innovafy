@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/web-applications"
+const path = "services/web-applications"
 
 export const webAppsPage: ServicePageType =
 {
@@ -8,7 +8,7 @@ export const webAppsPage: ServicePageType =
     heading: {
         pill: "Aplicaciones Web",
         title: "Plataformas digitales personalizadas, desde la idea hasta la ejecución",
-        heroImage: `${path}/heroImage.webp`,
+        heroImage: `/images/${path}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -38,19 +38,19 @@ export const webAppsPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.mp4`,
+                media: `/videos/${path}/value1.mp4`,
                 mediaType: "video",
                 title: "Ready for scale",
                 text: "A medida que su negocio evoluciona, también lo harán sus necesidades tecnológicas. Implementamos una combinación práctica de soluciones probadas y tecnologías de vanguardia para crear aplicaciones que se adaptan y expanden sin esfuerzo. Sea relevante hoy y manténgase relevante en el futuro.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "From startups to enterprise",
                 text: "Trabajamos con clientes de todos los tamaños, desde startups con gran potencial de crecimiento hasta empresas consolidadas que buscan optimizar su infraestructura digital. Nuestras aplicaciones web, diseñadas a medida y desarrolladas específicamente para cada necesidad, impulsan el éxito empresarial en todas sus etapas.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Entirely bespoke",
                 text: "Las empresas únicas requieren soluciones únicas. Desde plataformas de comercio electrónico hasta automatización, trabajamos con cada socio para diseñar, implementar y desarrollar aplicaciones web a medida que se integran con sus sistemas empresariales existentes.",

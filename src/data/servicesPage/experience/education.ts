@@ -1,6 +1,6 @@
 import type { ServicePageType } from "@/types/ServicePage.types";
 
-const path = "/images/services/education"
+const path = "services/education"
 
 export const educationPage: ServicePageType =
 {
@@ -8,7 +8,7 @@ export const educationPage: ServicePageType =
     heading: {
         pill: "Educación",
         title: "Espacios digitales donde el conocimiento puede prosperar",
-        heroImage: `${path}/heroVideo.mp4`,
+        heroImage: `/videos/${path}/heroVideo.mp4`,
         mediaType: "video"
     },
     description: {
@@ -38,19 +38,19 @@ export const educationPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `${path}/value1.webp`,
+                media: `/images/${path}/value1.webp`,
                 mediaType: "image",
                 title: "Impulsar las visitas y las consultas de inscripción",
                 text: "La competencia por captar la atención se intensifica año tras año. Transformamos tu plataforma digital en una poderosa herramienta que atrae e inspira, convirtiendo a los estudiantes potenciales en miembros activos de tu comunidad.",
             },
             {
-                media: `${path}/value2.webp`,
+                media: `/images/${path}/value2.webp`,
                 mediaType: "image",
                 title: "Potencia tu marca",
                 text: "Cada producto que creamos es totalmente personalizado; una experiencia digital diseñada específicamente para llevar tu marca al siguiente nivel. Combinamos diseño innovador, tecnología de vanguardia y contenido estratégico para ofrecer sitios web y aplicaciones educativas que no solo son visualmente atractivos, sino también altamente interactivos y funcionales.",
             },
             {
-                media: `${path}/value3.webp`,
+                media: `/images/${path}/value3.webp`,
                 mediaType: "image",
                 title: "Potenciando el aprendizaje a través de la innovación digital",
                 text: "La innovación es clave para conectar con los estudiantes, y las expectativas nunca han sido tan altas. Desde módulos de aprendizaje en línea hasta plataformas personalizadas, creamos experiencias de aprendizaje interactivas e inmersivas que cautivan, motivan y educan a los estudiantes.",
