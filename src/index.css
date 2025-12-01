@@ -11,6 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   height: 100%;
+  font-family: "PP Neue Montreal";
 }
 
 @theme inline {
@@ -208,11 +209,15 @@ html {
 
 @layer utilities {
   .p-fluid {
-    padding-inline: clamp(2.5rem, 2.6455026455vw, 3.325rem);
+    padding-inline: var(--container-gutter);
   }
 
   .nav-subtitle {
-    @apply capitalize font-medium text-lg
+    @apply capitalize font-medium text-lg;
+  }
+
+  .max-container {
+    width: clamp(78.5rem, 83.0687830688vw, 104.405rem);
   }
 
   .text-theme-secondary {
@@ -223,30 +228,35 @@ html {
     background-color: var(--theme-background);
   }
 
-  .grid-full {
-    grid-area: 1/-1;
+  .button {
+    @apply w-fit flex items-center px-4 py-2.5 font-medium gap-3 rounded-full outline-hidden hover:cursor-pointer transition-colors duration-300 ease-in-out;
   }
 
-  .masked-text {
-    /* background-color: #000; */
-    -webkit-mask-image: url("/images/about/abouthero_mask_white.jpg");
-    mask-image: url("/images/about/abouthero_mask_white.jpg");
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-position: center;
-    mask-position: center;
+  .variant-cyan {
+    @apply hover:bg-[var(--cyan-tertiary)] hover:border-[var(--cyan-primary)]
+  }
 
-    /* Fuerza uso de luminancia */
-    -webkit-mask-mode: luminance;
-    mask-mode: luminance;
+  .variant-pink {
+    @apply hover:bg-[var(--pink-tertiary)] hover:border-[var(--pink-primary)]
+  }
 
-    /* Invierte los valores de luminancia (negro <-> blanco) */
-    -webkit-mask-composite: source-out;
-    mask-composite: exclude;
+  .variant-blue {
+    @apply hover:bg-[var(--blue-tertiary)] hover:border-[var(--blue-primary)]
+  }
 
-    /* Safari/Chrome: a veces requiere mezclar con el fondo */
-    mix-blend-mode: normal;
+  .variant-green {
+    @apply hover:bg-[var(--green-tertiary)] hover:border-[var(--green-primary)]
+  }
+
+  .variant-purple {
+    @apply hover:bg-[var(--purple-tertiary)] hover:border-[var(--purple-primary)]
+  }
+
+  .variant-yellow {
+    @apply hover:bg-[var(--yellow-tertiary)] hover:border-[var(--yellow-primary)]
+  }
+
+  .grid-full {
+    grid-area: 1/-1;
   }
 }

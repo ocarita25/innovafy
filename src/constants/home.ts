@@ -1,3 +1,5 @@
+import { media } from "./images"
+
 export const ourService = {
     description: 'Diseñamos, construimos y entregamos productos de clase mundial para marcas con visión al futuro.',
     // description: 'We design, build and ship world-class digital products for forward-thinking brands.',
@@ -22,6 +24,12 @@ export const logoClients = [
     '/images/clients/satterley.webp',
     '/images/clients/sussex.webp',
 ]
+
+export const homeWorks = () => {
+    const homeMedia = media.filter(m => m.pages?.includes("inicio"))
+    return homeMedia
+}
+
 
 export const stats = [
     {

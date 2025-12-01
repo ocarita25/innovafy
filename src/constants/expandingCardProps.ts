@@ -18,11 +18,9 @@ export const MainCardWrapper: ExpandingCardProps = {
 
     sTrigger: {
         start: "bottom bottom",
-        end: "bottom 40%",
+        end: "+=500",
         markers: true
     },
-    cardClass: "origin-bottom relative z-0 col-1 row-1 pt-20 bg-theme-background",
-
     // className: "relative z-0 col-1 row-1",
 }
 
@@ -46,6 +44,28 @@ export const HomeVideoWrapper: ExpandingCardProps = {
         markers: true
     },
     cardClass: "sticky top-0 min-[992px]:h-dvh bg-red-100 grid z-1 overflow-hidden"
+    // className="relative aspect-square md:aspect-auto h-[200dvh] w-full !overflow-visible"
+}
+
+export const ContactWrapper: ExpandingCardProps = {
+    original: {
+        scaleX: 1,
+        scaleY: 1,
+        borderRadius: "0rem",
+        ease: "none"
+    },
+
+    target: {
+        scaleX: 1,
+        scaleY: 1,
+        borderRadius: "0rem",
+        ease: "none"
+    },
+    sTrigger: {
+        start: "top 10%",
+        end: "bottom 80%",
+        markers: true
+    },
     // className="relative aspect-square md:aspect-auto h-[200dvh] w-full !overflow-visible"
 }
 

@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 
+gsap.registerPlugin(ScrollTrigger)
+
 //Funcion para dividir el contenido en grupos de columnas
 const chunkArray = (arr: string[], size: number) => {
     if (size <= 0) return [arr];
@@ -13,34 +15,19 @@ const chunkArray = (arr: string[], size: number) => {
 
 type PannedProps = {
     content: string[];
-    holdMs?: number;
     columns?: number;
     minColumns?: number;
     minSize?: string;
-    from: gsap.TweenVars;
-    to: gsap.TweenVars;
     loop?: boolean;
     type?: 'text' | 'image';
     contentClass?: string;
     imgClass?: string;
-}
+} & React.HTMLAttributes<HTMLDivElement>
 
-const VerticalRoulette = ({
-    content,
-    holdMs = 2000,
-    columns = 1,
-    minColumns = columns,
-    minSize = "0px",
-    from,
-    to,
-    loop = true,
-    type = "text",
-    contentClass,
-    imgClass }: PannedProps) => {
+const VerticalRoulette = ({ content, columns = 1, minColumns = columns, minSize = "0px", loop = true, type = "text", contentClass, imgClass, ...props }: PannedProps) => {
 
     const [cols, setCols] = useState<number>(columns);
     const containerRef = useRef<HTMLDivElement>(null);
-    gsap.registerPlugin(ScrollTrigger)
 
     //Hook para actualizar el numero de columnas segun el tamaño de la ventana
     useEffect(() => {
@@ -73,22 +60,31 @@ const VerticalRoulette = ({
             });
 
             tl.from(items, {
-                ...from,
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.08,
+                ease: "bounce.out",
             }).to(items, {
-                ...to
+                delay: 2,
+                y: -40,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.08,
+                ease: "expo.in",
             });
 
         }, containerRef)
         return () => { ctx.revert(); }
-    }, [index, chunks.length, holdMs])
+    }, [index, chunks.length])
 
     //Verificamos cols para generar la clase en tailwind
     const gridColsClass = `grid-cols-${cols}`
 
     return (
-        <div ref={containerRef} className={cn(`grid ${gridColsClass} gap-[clamp(1dvw,1.5dvw,4dvw)] w-full max-w-[80dvw]`)}>
+        <span ref={containerRef} className={cn(`grid ${gridColsClass} gap-[clamp(1dvw,1.5dvw,4dvw)]`, props.className)}>
             {chunks[index]?.map((content, i) => (
-                <div key={i} className={cn('item will-change-transform', contentClass)}>
+                <span key={i} className={cn('item will-change-transform', contentClass)}>
                     <span>
                         {type === "text" ?
                             content
@@ -96,9 +92,9 @@ const VerticalRoulette = ({
                             <img src={content} alt={`logo-${i}`} className={imgClass} />
                         }
                     </span>
-                </div>
+                </span>
             ))}
-        </div>
+        </span>
     )
 }
 

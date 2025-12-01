@@ -1,22 +1,32 @@
+import ArticleModal from "@/components/common/ArticleModal"
 import ExpandingCard from "@/components/common/ExpandingCard"
 import Footer from "@/components/layouts/Footer"
 import Header from "@/components/navigation/Header"
 import { MainCardWrapper } from "@/constants/expandingCardProps"
+import { MainRefProvider } from "@/context/MainRefContext"
+import { ModalProvider } from "@/context/ModalContext"
 import { Outlet } from "react-router-dom"
 
-function Layout() {
+function LayoutContent() {
 
     return (
-        // <PageWrapper>
-        <div className='grid z-1 items-start w-full bg-white'>
+        <div className='grid z-1 items-start w-full bg-[#343c46]'>
             <Header />
-            <ExpandingCard settings={MainCardWrapper} id="main" className="relative z-10 col-1 row-1">
+            <ExpandingCard settings={MainCardWrapper} className="relative col-1 row-1 z-10 bg-theme-background">
                 <Outlet />
             </ExpandingCard>
             <Footer />
+            <ArticleModal />
         </div>
-        // </PageWrapper>
     )
 }
 
-export default Layout
+export default function Layout() {
+    return (
+        <ModalProvider>
+            <MainRefProvider>
+                <LayoutContent />
+            </MainRefProvider>
+        </ModalProvider>
+    )
+}

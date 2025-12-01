@@ -22,7 +22,7 @@ const Counter = ({ from = 0, to, duration = 2, suffix = "" }: CounterProps) => {
         gsap.to(obj, {
             val: to,
             duration,
-            ease: "expo.out",
+            ease: "none",
             scrollTrigger: {
                 trigger: counterRef.current,
                 start: "top 90%",
@@ -37,7 +37,7 @@ const Counter = ({ from = 0, to, duration = 2, suffix = "" }: CounterProps) => {
     }, [from, to, duration, suffix]);
 
     return (
-        <div ref={counterRef} className='font-semibold text-4xl lg:text-[clamp(3rem,5vw,6rem)]'>
+        <div ref={counterRef} className='text-4xl lg:text-[clamp(3rem,5vw,6rem)]'>
             {from + suffix}
         </div>
     )

@@ -1,24 +1,35 @@
 import { cn } from '@/lib/utils'
-import React, { useState } from 'react'
+import React from 'react'
 
 type ButtonProps = {
   children: React.ReactNode,
   isActive?: boolean,
+  href?: string,
 } & React.HTMLAttributes<HTMLDivElement>
 
-const Button = ({ children, isActive, ...props }: ButtonProps) => {
+export const ButtonBlack = ({ children, isActive, href, ...props }: ButtonProps) => {
+  return (
+    <a href={href} className={cn('button bg-black hover:bg-theme-primary text-white hover:text-primary transition-colors duration-120 ease-in', props.className)}>
+      {children}
+    </a>
+  )
+}
 
-  const buttonClass = isActive ? "bg-theme-secondary text-theme-primary" : "bg-white text-black"
+export const ButtonWhite = ({ children, isActive, ...props }: ButtonProps) => {
+  const buttonClass = isActive
+    ? "bg-[#343c46] text-white"
+    : "bg-[#eee] text-black"
 
   return (
-    <div {...props} className={cn(
-      `w-fit  hover:bg-theme-primary text-white hover:text-black flex items-center rounded-[2.5rem] px-4 py-2.5 outline-hidden hover:cursor-pointer`,
-      buttonClass,
-      props.className
-    )}>
+    <div
+      {...props}
+      className={cn(
+        "button hover:bg-[#c8e8f8] hover:text-black",
+        buttonClass,
+        props.className
+      )}
+    >
       {children}
     </div>
   )
 }
-
-export default Button

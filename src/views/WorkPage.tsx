@@ -1,38 +1,19 @@
-import Button from '@/components/common/Button'
-import { Card, ImageCard, VideoCard } from '@/components/common/Card'
-import ExpandingCard from '@/components/common/ExpandingCard'
+import { ButtonWhite } from '@/components/common/Button'
 import PannedText from '@/components/common/PannedText'
-import VerticalPanned from '@/components/common/VerticalPanned'
+import PreviewCard from '@/components/common/PreviewCard'
 import Main from '@/components/layouts/Main'
-import { media } from '@/constants/images'
-import { workFilters } from '@/constants/workPage'
+import { workFilters, workImages } from '@/constants/workPage'
 import type { MediaTypes } from '@/types/MediaTypes.types'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Panned from '@/components/common/Panned'
 
-const pannedFrom = {
-    y: 150,
-    opacity: -1,
-    ease: "power3.out",
-    duration: 2,
-}
+const content = workImages()
 
 const WorkPage = () => {
 
-    const bgOriginal = "var(--default-tertiary)"
-
-    useEffect(() => {
-        const mainEl = document.getElementById('main')
-        if (!mainEl) return;
-        mainEl.style.setProperty("--theme-background", `${bgOriginal}`)
-    }, [])
-
-    const content = media.filter(m => m.pages?.includes("trabajo"))
     const [idFilterActive, setIdFilterActive] = useState<number>(1);
-    const [mediaContent, setMediaContent] = useState<MediaTypes[]>();
-
-    useEffect(() => {
-        setMediaContent(content)
-    }, [])
+    const [mediaContent, setMediaContent] = useState<MediaTypes[]>(content);
 
     const filterContent = (id: number, categorie: string) => {
         setIdFilterActive(id)
@@ -42,50 +23,32 @@ const WorkPage = () => {
         setMediaContent(filteredContent)
     }
 
+    useEffect(() => {
+        ScrollTrigger.refresh()
+    }, [mediaContent])
+
     return (
-        <Main className="-mt-20 grid pb-17">
+        <Main className="mt-5 grid pb-17">
             <div className="flex flex-col text-[var(--color-theme-secondary)] px-[var(--container-gutter)] w-full py-25 tracking-normal font-medium text-[clamp(3rem,8dvw,9dvw)] lg:text-[clamp(5rem,7dvw,12dvw)]">
                 <PannedText className='overflow-hidden'>
-                    <span>World-class digital</span>
-                </PannedText>
-                <PannedText className='overflow-hidden -translate-y-3 z-10'>
-                    <span>products, idea to execution.</span>
+                    Productos digitales de clase mundial, de la idea a la ejecución.
                 </PannedText>
             </div>
             <div className='flex flex-wrap gap-2 px-[var(--container-gutter)] pb-20'>
                 {workFilters.map(filter => (
-                    <Button key={filter.id} isActive={filter.id === idFilterActive} onClick={() => filterContent(filter.id, filter.category)}>{filter.label}</Button>
+                    <ButtonWhite key={filter.id} isActive={filter.id === idFilterActive} onClick={() => filterContent(filter.id, filter.category)}>{filter.label}</ButtonWhite>
                 ))}
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-2 px-[var(--container-gutter)] gap-10'>
-                {mediaContent && mediaContent.map((m, i) => {
-
-                    const colSpan = i === 0 || i % 3 === 0 ? "col-span-1 lg:col-span-2" : "col-span-1"
-
-                    return (
-                        <VerticalPanned key={m.id} from={pannedFrom} triggerClass={`${colSpan} w-full`}>
-                            <Card title={m.name} className="relative h-full w-full lg:h-[95dvh] flex items-center justify-center">
-                                {
-                                    m.mediaType === "image" ?
-                                        <ImageCard src={m.src} className="w-full h-full object-cover" />
-                                        :
-                                        <VideoCard src={m.src} className="w-full h-full object-cover" />
-                                }
-                                {
-                                    m.childSrc &&
-                                    <Card className="flex justify-center absolute rounded-3xl overflow-hidden">
-                                        {
-                                            m.childType === "video" ?
-                                                <VideoCard src={m.childSrc} className="h-fit max-h-3/4 max-w-3/4 rounded-3xl object-contain" />
-                                                :
-                                                <ImageCard src={m.childSrc} className="max-h-3/4 rounded-3xl object-contain" />
-                                        }
-                                    </Card>
-                                }
-                            </Card>
-                        </VerticalPanned>
-                    )
-                })}
+            <div className='grid grid-cols-1 lg:grid-cols-2 px-[var(--container-gutter)] gap-10 '>
+                {mediaContent.map((m, i) => (
+                    <Panned
+                        key={m.id}
+                        variant='vertical'
+                        triggerClass={'aspect-[710/890] nth-[3n-2]:aspect-[1452/890] min-[992px]:nth-[3n-2]:col-span-2 overflow-visible'}
+                        className='h-full w-full'>
+                        <PreviewCard key={i} data={m} />
+                    </Panned>
+                ))}
             </div>
         </Main>
     )

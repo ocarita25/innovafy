@@ -1,5 +1,5 @@
 import ExpandingCard from '@/components/common/ExpandingCard'
-import VerticalPanned from '@/components/common/VerticalPanned'
+import VerticalPanned from '@/components/common/Panned'
 import Article from '@/components/thinking/article'
 import React from 'react'
 

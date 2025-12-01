@@ -1,8 +1,8 @@
 import { VideoCard } from '@/components/common/Card'
+import Headings from '@/components/common/Headings'
 import PannedText from '@/components/common/PannedText'
 import { FooterContacts, FooterSocialMedia } from '@/components/layouts/Footer'
-import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const ContactPage = () => {
 
@@ -28,11 +28,13 @@ const ContactPage = () => {
             {/* Mobile */}
             <div className="grid grid-full pt-[var(--header-height)] z-1 w-full px-[var(--container-gutter)] items-center grid-rows-[auto_auto] gap-[clamp(2.25rem,2.38vw,2.99rem)]">
                 <div className='py-[8vw] px-0'>
-                    <h1 className='text-white leading-[1] m-[0_0_0.3em] max-[991px]:max-w-[clamp(31.25rem,65.10vw,41.56rem)] max-w-[clamp(38.9375rem,41.20vw,51.78rem)] max-[991px]:text-[clamp(3.75rem,7.8125vw,4.9875rem)] text-[clamp(6.25rem,6.6137566138vw,8.3125rem)]'>
+                    {/* <h1 className='text-white leading-[1] m-[0_0_0.3em] max-[991px]:max-w-[clamp(31.25rem,65.10vw,41.56rem)] max-w-[clamp(38.9375rem,41.20vw,51.78rem)] max-[991px]:text-[clamp(3.75rem,7.8125vw,4.9875rem)] text-[clamp(6.25rem,6.6137566138vw,8.3125rem)]'> */}
+                    <Headings className='text-white leading-[1] m-[0_0_0.3em] max-[991px]:max-w-[clamp(31.25rem,65.10vw,41.56rem)] max-w-[clamp(38.9375rem,41.20vw,51.78rem)] max-[991px]:text-[clamp(3rem,7.8vw,4.9rem)] text-[clamp(6.25rem,6.6137566138vw,8.3125rem)]'>
                         <PannedText>
-                            <span className='overflow-hidden'>We've got a great feeling about this</span>
+                            <span className='overflow-hidden'>Tenemos un muy buen presentimiento</span>
                         </PannedText>
-                    </h1>
+                    </Headings>
+                    {/* </h1> */}
                     <div className="contact-bg-mobile mx-[calc(var(--container-gutter)*-1)] my-[-10%] relative -z-1">
                         <picture className='w-full h-full grid-full'>
                             <img
@@ -45,7 +47,7 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <footer className='grid px-[var(--container-gutter)] py-25 md:pb-[3.875rem] min-[992px]:px-[clamp(5rem,5.29vw,6.65rem)] min-[992px]:pb-[clamp(3.875rem,4.1vw,5.15rem)]'>
+            <footer className='grid px-[var(--container-gutter)] py-25 pb-27 md:pb-[3.75rem] min-[992px]:px-[clamp(5rem,5.29vw,6.65rem)] min-[992px]:pb-[clamp(3.875rem,4.1vw,5.15rem)]'>
                 <FooterContacts />
                 <FooterSocialMedia />
                 <div className='flex place-content-center md:hidden py-5'>

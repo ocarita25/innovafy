@@ -21,13 +21,11 @@ const Scrollable = ({ children, yOriginal, yTarget, xOriginal, xTarget, start, e
 
     useEffect(() => {
         if (!triggerRef.current || !targetRef) return;
-        // gsap.set(targetRef.current, { y: -250 });
         gsap.set(targetRef.current, { yPercent: yOriginal });
 
         const tween = gsap.to(targetRef.current, {
-            // y: 0,
             yPercent: yTarget,
-            ease: "power1.inOut",
+            ease: "power1.out",
             scrollTrigger: {
                 trigger: triggerRef.current,
                 start,

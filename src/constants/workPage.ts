@@ -1,3 +1,5 @@
+import { media } from "./images"
+
 export const workFilters = [
     { id: 1, label: "Featured", category: "" },
     { id: 2, label: "Comercial", category: "comercial" },
@@ -7,3 +9,8 @@ export const workFilters = [
     { id: 6, label: "Innovation", category: "digital" },
     { id: 7, label: "UI & UX", category: "ux" },
 ]
+
+export const workImages = () => {
+    const workMedia = media.filter(m => m.pages?.includes("trabajo"))
+    return workMedia
+}

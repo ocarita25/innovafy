@@ -59,7 +59,7 @@ const TiltCard = ({ img }: TiltCardProps) => {
     // <div ref={containerRef} className="relative flex w-full h-full items-center justify-center">
     <div ref={containerRef}>
       <div ref={cardRef} style={{ transformStyle: "preserve-3d", transformOrigin: "center" }}>
-        <div className="flex items-center justify-center bg-[#ffffff4d] aspect-square overflow-hidden rounded-4xl">
+        <div className="flex items-center justify-center bg-[#ffffff4d] aspect-square overflow-hidden rounded-2xl">
           <img src={img} className="w-3/4 aspect-square rounded-none object-contain" />
         </div>
       </div>

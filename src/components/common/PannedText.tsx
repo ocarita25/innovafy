@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
-import React, { useEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 
 gsap.registerPlugin(SplitText);
 
@@ -17,47 +17,100 @@ const PannedText = ({ children, paddingBottom, translateY, spanClass, ...props }
     if (!children) return;
 
     const titleRef = useRef<HTMLDivElement>(null);
+    const splitRef = useRef<any>(null);
+    const ctxRef = useRef<any>(null)
+    const animRef = useRef<gsap.core.Tween | gsap.core.Timeline | null>(null);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
 
         if (!titleRef.current) return;
 
-        // Crear SplitText usando solo el ref local
-        const split = new SplitText(titleRef.current, {
-            type: "words,chars",
-            charsClass: "char",
-        });
+        ctxRef.current = gsap.context(() => {
 
-        gsap.set(split.words, {
-            // overflowY: "hidden",
-            // paddingBottom,
-            // translateY,
-            // display: "inline-block",
-            // whiteSpace: "pre"
-        })
+            // Version 3
+            const split = new SplitText(titleRef.current, {
+                type: "lines,words",
+                linesClass: "line",
+                wordsClass: "word",
+            });
 
-        // Animar cada línea
-        gsap.from(split.chars, {
-            yPercent: 100, // sube desde fuera del contenedor
-            opacity: 0,
-            duration: 1,
-            ease: "expo.out",
-            stagger: 0.005,
-            scrollTrigger: {
-                trigger: titleRef.current,
-                start: "top 90%",
-                toggleActions: "play none none none",
-            },
-        });
+            splitRef.current = split;
 
-        // Limpiar al desmontar
-        return () => split.revert();
+            gsap.from(split.words, {
+                yPercent: 100,
+                opacity: 0,
+                duration: 1,
+                ease: "expo.inOut",
+                stagger: 0.015,
+                scrollTrigger: {
+                    trigger: titleRef.current,
+                    start: "top 90%",
+                    toggleActions: "play none none none",
+                },
+            })
+        }, titleRef)
+
+        // Version 3
+        return () => {
+            try {
+                ctxRef.current?.revert();
+                splitRef.current?.revert();
+            } catch (e) {
+                ScrollTrigger.refresh()
+            }
+        }
+        // //Version #2
+        // const split = SplitText.create(titleRef.current, {
+        //     type: "lines,words",
+        //     linesClass: "line",
+        //     wordsClass: "word",
+        //     autoSplit: true,
+        //     mask: "words",
+        //     onSplit: (self: any) => {
+        //         splitRef.current = self;
+        //         animRef.current = gsap.from(self.words, {
+        //             yPercent: 100,
+        //             opacity: 0,
+        //             duration: 1,
+        //             ease: "expo.inOut",
+        //             stagger: 0.015,
+        //             scrollTrigger: {
+        //                 trigger: titleRef.current,
+        //                 start: "top 90%",
+        //                 toggleActions: "play none none none",
+        //             },
+        //         });
+        //         return animRef.current;
+        //     }
+        // })
+
+
+
+        // // Si SplitText.create devolviera algo (por seguridad)
+        // if (!splitRef.current) splitRef.current = split;
+
+        // // Version 2
+        // return () => {
+        //     // limpiamos la animación y revertimos los wrappers creados por SplitText.create
+        //     try {
+        //         if (animRef.current) {
+        //             animRef.current.kill();
+        //             animRef.current = null;
+        //         }
+        //         if (splitRef.current && typeof splitRef.current.revert === "function") {
+        //             splitRef.current.revert(); // quita wrappers y deja el DOM como antes
+        //         }
+        //     } catch (e) {
+        //         // fallback silencioso
+        //         console.warn("Error cleaning SplitText:", e);
+        //     }
+        // };
     }, [])
 
+
+
     return (
-        // <span {...props} className={cn('flex flex-wrap', props.className)}>
-        // <span ref={titleRef} className={cn("char leading-none will-change-transform mr-3", spanClass)}>
-        <span ref={titleRef} {...props}>
+        <span ref={titleRef} className={cn("leading-[1.08] inline-block", props.className)}>
             {children}
         </span>
 

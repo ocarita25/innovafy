@@ -12,7 +12,8 @@ function Menubar({
     <MenubarPrimitive.Root
       data-slot="menubar"
       className={cn(
-        "bg-nav flex h-9 items-center lg:gap-1 p-2 py-6 shadow-xs",
+        // "bg-nav flex h-9 items-center lg:gap-1 p-2 py-6 shadow-xs",
+        "bg-[#dddcdc80] grid grid-cols-[repeat(6,auto)] items-center lg:gap-1 shadow-xs",
         className
       )}
       {...props}
@@ -54,7 +55,7 @@ function MenubarTrigger({
     <MenubarPrimitive.Trigger
       data-slot="menubar-trigger"
       className={cn(
-        "flex items-center rounded-[2.5rem] px-2 lg:px-2.5 py-1 text-[0.75rem] md:text-[0.85rem] lg:text-[0.9rem] font-medium outline-hidden select-none hover:cursor-pointer",
+        "flex items-center rounded-[2.5rem] px-2 lg:px-2.5 py-2 text-[0.75rem] md:text-[0.85rem] lg:text-[0.9rem] font-medium outline-hidden select-none hover:cursor-pointer",
         className
       )}
       {...props}
@@ -86,28 +87,41 @@ function MenubarContent({
   )
 }
 
-function MenubarItem({
-  className,
-  inset,
-  variant = "default",
-  ...props
-}: React.ComponentProps<typeof MenubarPrimitive.Item> & {
-  inset?: boolean
-  variant?: "default" | "destructive"
-}) {
+function MenubarItem({ className, ...props }: React.ComponentProps<typeof MenubarPrimitive.Item>) {
   return (
     <MenubarPrimitive.Item
-      data-slot="menubar-item"
-      data-inset={inset}
-      data-variant={variant}
       className={cn(
-        "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "opacity-60 py-4 px-4 border-transparent border rounded-sm transition-colors duration-200",
         className
       )}
       {...props}
     />
   )
 }
+
+// #Version 1
+// function MenubarItem({
+//   className,
+//   inset,
+//   variant = "default",
+//   ...props
+// }: React.ComponentProps<typeof MenubarPrimitive.Item> & {
+//   inset?: boolean
+//   variant?: "default" | "destructive"
+// }) {
+//   return (
+//     <MenubarPrimitive.Item
+//       data-slot="menubar-item"
+//       data-inset={inset}
+//       data-variant={variant}
+//       className={cn(
+//         "focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+//         className
+//       )}
+//       {...props}
+//     />
+//   )
+// }
 
 function MenubarCheckboxItem({
   className,

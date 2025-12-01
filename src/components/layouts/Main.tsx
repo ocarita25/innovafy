@@ -7,7 +7,7 @@ type MainProps = {
 
 const Main = ({ children, ...props }: MainProps) => {
     return (
-        <main className={cn("m-0 h-full w-full max-w-dvw pt-20 min-h-dvh", props.className)}>
+        <main className={cn("m-0 h-full w-full max-w-dvw min-h-dvh", props.className)}>
             {children}
         </main>
     )

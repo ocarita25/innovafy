@@ -116,7 +116,7 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
                             className="bg-emerald-950 text-white px-4 py-2 rounded-full font-medium flex items-center gap-2 hover:bg-emerald-500 hover:text-black transition-colors cursor-pointer w-auto self-start"
                         >
                             Read Article
-                            
+
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"

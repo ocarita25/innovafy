@@ -4,16 +4,18 @@ export const media: MediaTypes[] = [
     //Comercial
     {
         id: 1,
+        slug: "pique",
         name: "PIQUE",
         src: "/images/pique.webp",
         mediaType: "image",
         childSrc: "/videos/pique.mp4",
         childType: "video",
         categories: ["comercial"],
-        pages: ["inicio,trabajo"],
+        pages: ["inicio", "trabajo"],
     },
     {
         id: 2,
+        slug: "fair-go-finance",
         name: "Fair Go Finance",
         src: "/images/work/commercial-2.webp",
         mediaType: "image",
@@ -23,14 +25,28 @@ export const media: MediaTypes[] = [
         pages: ["trabajo"],
     },
     {
-        id: 3,
+        id: 27,
+        slug: "sussex-taps",
         name: "Sussex Taps",
         src: "/videos/sussex.mp4",
         mediaType: "video",
         childSrc: "",
         childType: "",
         categories: ["comercial"],
-        pages: ["inicio,trabajo"],
+        pages: ["inicio", "trabajo"],
+        childRatio: "aspect-[47/29]"
+    },
+    {
+        id: 3,
+        slug: "chaleit",
+        name: "Chaleit",
+        src: "/images/chaleit1.webp",
+        mediaType: "image",
+        childSrc: "/images/chaleit2.webp",
+        childType: "image",
+        categories: ["comercial"],
+        pages: ["inicio", "trabajo"],
+        childRatio: "aspect-[23/47]"
     },
     //Not for profit
     {
@@ -117,13 +133,14 @@ export const media: MediaTypes[] = [
     },
     {
         id: 12,
+        slug: "surveillance-watch",
         name: "Surveillance Watch",
         src: "/videos/surveillance-watch.mp4",
         mediaType: "video",
         childSrc: "/images/surveillance.webp",
         childType: "image",
         categories: ["comunidad"],
-        pages: ["inicio,trabajo"],
+        pages: ["inicio", "trabajo"],
     },
     //Innovation
     {
@@ -269,5 +286,4 @@ export const media: MediaTypes[] = [
         categories: ["clients"],
         pages: ["acerca"],
     },
-
 ]

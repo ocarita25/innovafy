@@ -1,57 +1,54 @@
+import { useMainRef } from '@/context/MainRefContext'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import React, { useEffect, useRef, type HTMLAttributes } from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 
 type ThemeTriggerProps = {
     children: React.ReactNode,
     startDesktop: string,
     endDesktop: string,
-    bgColor?: string,
-    bgOriginal?: string,
+    bgColor: string,
+    bgOriginal: string,
     startMobile?: string,
     endMobile?: string,
     contentRef?: React.RefObject<HTMLDivElement | null>,
-} & React.HtmlHTMLAttributes<HTMLDivElement>
+} & React.HTMLAttributes<HTMLDivElement>
+
+gsap.registerPlugin(ScrollTrigger)
 
 const ThemeTrigger = ({ children, startDesktop, endDesktop, bgColor, bgOriginal, startMobile = startDesktop, endMobile = endDesktop, ...props }: ThemeTriggerProps) => {
 
-    gsap.registerPlugin(ScrollTrigger)
     const triggerRef = useRef<HTMLDivElement>(null)
+    const { changeTheme } = useMainRef();
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (!triggerRef.current) return;
 
-        const mainEl = document.getElementById('main');
-        if (!mainEl) return;
-
-
         const mm = gsap.matchMedia();
-        mm.add("(min-width:500px)", () => {
+        mm.add("(min-width:768px)", () => {
             ScrollTrigger.create({
                 trigger: triggerRef.current,
                 start: startDesktop,
                 end: endDesktop,
-                onEnter: () => mainEl.style.setProperty("--theme-background", `${bgColor}`),
-                onLeave: () => mainEl.style.setProperty("--theme-background", `${bgOriginal}`),
-                onEnterBack: () => mainEl.style.setProperty("--theme-background", `${bgColor}`),
-                onLeaveBack: () => mainEl.style.setProperty("--theme-background", `${bgOriginal}`),
                 // markers: true,
+                onEnter: () => changeTheme(bgColor),
+                onLeave: () => changeTheme(bgOriginal),
+                onEnterBack: () => changeTheme(bgColor),
+                onLeaveBack: () => changeTheme(bgOriginal),
             });
-        }
-        )
-        mm.add("(max-width:500px)", () => {
+        })
+        mm.add("(max-width:768px)", () => {
             ScrollTrigger.create({
                 trigger: triggerRef.current,
                 start: startMobile,
                 end: endMobile,
-                onEnter: () => mainEl.style.setProperty("--theme-background", `var(${bgColor})`),
-                onLeave: () => mainEl.style.setProperty("--theme-background", `var(${bgOriginal})`),
-                onEnterBack: () => mainEl.style.setProperty("--theme-background", `var(${bgColor})`),
-                onLeaveBack: () => mainEl.style.setProperty("--theme-background", `var(${bgOriginal})`),
                 // markers: true,
+                onEnter: () => changeTheme(bgColor),
+                onLeave: () => changeTheme(bgOriginal),
+                onEnterBack: () => changeTheme(bgColor),
+                onLeaveBack: () => changeTheme(bgOriginal),
             });
-        }
-        )
+        })
 
         return () => {
             mm.revert();
@@ -59,7 +56,7 @@ const ThemeTrigger = ({ children, startDesktop, endDesktop, bgColor, bgOriginal,
     }, [])
 
     return (
-        <div ref={triggerRef} {...props}>
+        <div id={"ThemeTrigger"} ref={triggerRef} {...props}>
             {children}
         </div>
     )
