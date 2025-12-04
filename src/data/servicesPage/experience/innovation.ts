@@ -1,3 +1,4 @@
+import { Checked, Hand, HandShake, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/innovation-startups"
@@ -16,22 +17,22 @@ export const innovationPage: ServicePageType =
         subtitle: "Trabajamos con innovadores, emprendedores y equipos progresistas para acelerar las oportunidades y crear conciencia a través de experiencias digitales impactantes.",
         capabilities: [
             {
-                icon: "",
+                icon: Checked(),
                 title: "Enfoque en soluciones",
                 text: "Desde sitios web hasta aplicaciones móviles y plataformas digitales a medida, hemos ayudado a startups a captar capital, impulsar la participación, aumentar la conversión y acelerar el crecimiento.",
             },
             {
-                icon: "",
+                icon: World(),
                 title: "Diseño y UX de primera clase",
                 text: "Aplicamos nuestra galardonada metodología de UX y diseño para fundamentar el pensamiento conceptual, creando ideas, conceptos y prototipos que impulsen el crecimiento de su marca.",
             },
             {
-                icon: "",
+                icon: Hand(),
                 title: "Una mano amiga",
                 text: "Las startups aprovechan nuestro equipo de expertos digitales y tecnólogos para obtener información valiosa, ampliar sus capacidades y ejecutar su hoja de ruta.",
             },
             {
-                icon: "",
+                icon: HandShake(),
                 title: "Socios digitales",
                 text: "Creemos en relaciones, servicio y soporte al cliente excepcionales. Nuestro compromiso es a largo plazo para mantener su ventaja competitiva y garantizar su éxito continuo.",
             },

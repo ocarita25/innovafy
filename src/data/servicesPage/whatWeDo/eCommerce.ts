@@ -1,3 +1,4 @@
+import { Cart, People, Shield, ShopBag } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/ecommerce"
@@ -16,22 +17,22 @@ export const eCommercePage: ServicePageType =
         subtitle: "Sitios web de comercio electrónico galardonados que convierten a los visitantes en clientes.",
         capabilities: [
             {
-                icon: "",
+                icon: ShopBag(),
                 title: "Venta minorista en línea sin interrupciones",
                 text: "Administración y automatización simplificadas, experiencias de cliente de alto rendimiento y optimización continua para minoristas exclusivamente online y omnicanal.",
             },
             {
-                icon: "",
+                icon: Cart(),
                 title: "Cajas sin complicaciones",
                 text: "Aplicamos nuestro enfoque de UX y diseño, galardonado con múltiples premios, junto con datos analíticos y principios de UX de mejores prácticas para convertir el gasto en ingresos y minimizar el abandono.",
             },
             {
-                icon: "",
+                icon: Shield(),
                 title: "Integración segura",
                 text: "Podemos conectar y configurar sus sistemas empresariales y soluciones de pago para garantizar la integridad de los datos en toda su infraestructura.",
             },
             {
-                icon: "",
+                icon: People(),
                 title: "Socios de comercio electrónico",
                 text: "Estamos comprometidos a largo plazo. Trabajaremos en estrecha colaboración con usted para garantizar resultados extraordinarios y su éxito continuo a lo largo del tiempo.",
             },

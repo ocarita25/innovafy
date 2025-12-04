@@ -1,3 +1,4 @@
+import { Bubbles, DotDiagram, Sparks, Wand } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/user-research"
@@ -16,22 +17,22 @@ export const userReasearchPage: ServicePageType =
         subtitle: "Parte fundamental de nuestro enfoque es una fase exhaustiva de investigación de usuarios, que consiste en descubrir las necesidades de la audiencia, tanto generales como específicas, a través de investigación cuantitativa y cualitativa.",
         capabilities: [
             {
-                icon: "",
+                icon: DotDiagram(),
                 title: "Qué, por qué y cómo",
                 text: "Obtenga información clara sobre los objetivos y puntos débiles de la audiencia objetivo, determinando los desafíos y necesidades clave para desarrollar un mejor producto.",
             },
             {
-                icon: "",
+                icon: Bubbles(),
                 title: "Pruebas A/B",
                 text: "Basándonos en años de experiencia en la creación de productos para personas, podemos diseñar pruebas que exploren específicamente qué es lo que más atrae a sus clientes.",
             },
             {
-                icon: "",
+                icon: Wand(),
                 title: "Entrevistas con usuarios",
                 text: "Nuestro enfoque incluye entrevistas con usuarios más personalizadas y grupos de discusión para profundizar en los patrones generales descubiertos en las etapas iniciales de las pruebas de usuario.",
             },
             {
-                icon: "",
+                icon: Sparks(),
                 title: "Informe completo",
                 text: "Cada actividad de investigación proporciona información para un conjunto completo de recomendaciones y especificaciones, adecuadas para las partes interesadas del proyecto en todos los niveles organizativos.",
             },

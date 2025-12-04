@@ -1,5 +1,4 @@
 import Arrow from '@/assets/Arrow';
-import { Thunder } from '@/assets/icons/Thunder';
 import Headings from '@/components/common/Headings';
 import Panned from '@/components/common/Panned';
 import PannedText from '@/components/common/PannedText';
@@ -88,7 +87,7 @@ const ServicesPage = () => {
                     {description.capabilities.map((cap, i) => (
                         <Panned variant='horizontal' xOffset={-50 * i} durationOffset={0.15 * i} opacityOffset={-1 * i} className='max-[992px]:mt-10 mt-5'>
                             <div key={i} className='flex flex-col gap-5 min-[992px]:gap-10'>
-                                <div><Thunder /></div>
+                                {cap.icon}
                                 <hr />
                                 <div>
                                     <h3 className='text-[clamp(1.13rem,1.2vw,1.5rem)] mb-8'>{cap.title}</h3>
@@ -168,7 +167,9 @@ const ServicesPage = () => {
                 </div>
                 <div className='grid grid-cols-3 min-[992px]:grid-cols-5 gap-1 min-[992px]:gap-2'>
                     {clientes.map(ci => (
-                        <TiltCard key={ci.id} img={ci.src} />
+                        <TiltCard key={ci.id}>
+                            <img src={ci.src} className="w-3/4 aspect-square rounded-none object-contain" />
+                        </TiltCard>
                     ))}
                 </div>
                 <div className='my-10 cursor-pointer' onClick={() => { openModal("awards", "awards") }}>
@@ -212,8 +213,8 @@ const ServicesPage = () => {
                         {briefSubmit}
                     </Headings>
                     <div>
-                        <div className='flex w-fit gap-4 py-5 px-7 min-[992px]:py-9 min-[992px]:px-12 bg-white rounded-full text-2xl min-[992px]:text-[clamp(1.475rem,15vw,1.65rem)] cursor-pointer '>
-                            <span>Submit a brief</span>
+                        <div className='flex w-fit gap-4 py-5 px-7 min-[992px]:py-9 min-[992px]:px-10 bg-white rounded-full text-2xl min-[992px]:text-[clamp(1.475rem,15vw,1.45rem)] cursor-pointer ' onClick={() => openModal("brief", "brief")}>
+                            <span>Envia una solicitud</span>
                             <Arrow width='w-5' />
                         </div>
                     </div>

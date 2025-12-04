@@ -1,3 +1,4 @@
+import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/commercial"
@@ -16,22 +17,22 @@ export const commercialPage: ServicePageType =
         subtitle: "Creamos experiencias digitales galardonadas para empresas líderes, desbloqueando su potencial de negocio y resolviendo desafíos del mundo real.",
         capabilities: [
             {
-                icon: "",
+                icon: World(),
                 title: "Diseño y UX de primera clase",
                 text: "Aplicamos nuestra galardonada metodología de UX y diseño para fundamentar el pensamiento conceptual; creando ideas, conceptos y prototipos que ayuden a impulsar su marca.",
             },
             {
-                icon: "",
+                icon: People(),
                 title: "Líderes en el ámbito digital",
                 text: "Ampliamos los límites del diseño, la tecnología y lo digital para alcanzar nuevos niveles en experiencias online potentes, prácticas y significativas.",
             },
             {
-                icon: "",
+                icon: Sparks(),
                 title: "Todo es posible",
                 text: "Somos un equipo multidisciplinario de especialistas y generalistas que creamos productos digitales integrales para cualquier propósito. Todo lo que puedas imaginar, lo podemos hacer realidad.",
             },
             {
-                icon: "",
+                icon: Rings(),
                 title: "Impulsar el retorno de la inversión",
                 text: "Los resultados importan. Ya sean clientes potenciales, ventas o reconocimiento de marca, nos aseguramos de que nuestro trabajo no solo ofrezca experiencias excelentes, sino que también genere un impacto medible.",
             },

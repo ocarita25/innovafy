@@ -1,3 +1,4 @@
+import { Crossrows, Face, Loop, Tech } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/mobile-apps"
@@ -16,22 +17,22 @@ export const mobileAppsPage: ServicePageType =
         subtitle: "Desarrollo de aplicaciones a medida para iOS y Android - realizado íntegramente internamente.",
         capabilities: [
             {
-                icon: "",
+                icon: Tech(),
                 title: "La tecnología adecuada",
                 text: "Promovemos un conjunto de tecnologías robustas, seleccionadas por su máxima flexibilidad y utilidad en cualquier situación. Nuestro stack preferido incluye Swift, Java y React Native.",
             },
             {
-                icon: "",
+                icon: Crossrows(),
                 title: "Experiencias prácticas",
                 text: "Diseñamos experiencias móviles atractivas e inmersivas que deleitan a los usuarios a la vez que resuelven problemas empresariales y mantienen su marca en primera línea.",
             },
             {
-                icon: "",
+                icon: Face(),
                 title: "No solo una cara bonita",
                 text: "Como en cualquier producto digital, el rendimiento, la accesibilidad y la usabilidad son fundamentales. Nos esforzamos al máximo para garantizar que todas las aplicaciones tengan un aspecto y un funcionamiento óptimos para todos.",
             },
             {
-                icon: "",
+                icon: Loop(),
                 title: "Integrado",
                 text: "Una aplicación móvil es solo una parte de su ecosistema digital. Incorporamos integraciones de API seguras para garantizar un funcionamiento impecable en toda su empresa.",
             },

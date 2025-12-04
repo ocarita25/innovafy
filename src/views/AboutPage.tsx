@@ -41,7 +41,9 @@ function AboutPage() {
 
                 <div className="grid grid-cols-3 min-[992px]:grid-cols-5 gap-1 min-[992px]:gap-2 mb-20">
                     {clientes.map(ci => (
-                        <TiltCard key={ci.id} img={ci.src} />
+                        <TiltCard key={ci.id}>
+                            <img src={ci.src} className="w-3/4 aspect-square rounded-none object-contain" />
+                        </TiltCard>
                     ))}
                 </div>
             </div>
@@ -136,7 +138,9 @@ function AboutPage() {
 
                     <div className="grid grid-cols-3 lg:grid-cols-[repeat(5,minmax(auto,1fr))] gap-3">
                         {clientes.map(ci => (
-                            <TiltCard key={ci.id} img={ci.src} />
+                            <TiltCard key={ci.id}>
+                                <img src={ci.src} className="w-3/4 aspect-square rounded-none object-contain" />
+                            </TiltCard>
                         ))}
                     </div>
                 </div>

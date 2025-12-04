@@ -1,3 +1,4 @@
+import { HandShake, Loop, Thunder, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/payload-cms"
@@ -16,22 +17,22 @@ export const payloadPage: ServicePageType =
         subtitle: "Optimizado para la web moderna, Payload es el CMS headless de código abierto de más rápido crecimiento y proporciona un enfoque avanzado y escalable para la gestión de contenidos.",
         capabilities: [
             {
-                icon: "",
+                icon: Thunder(),
                 title: "Gestión de contenido de próxima generación",
                 text: "Garantice el máximo rendimiento sin sobrecargar el sistema. Altamente flexible, escalable e intuitivo, ofrece una experiencia de gestión de contenido excepcional, inigualable por los sistemas tradicionales.",
             },
             {
-                icon: "",
+                icon: World(),
                 title: "100% Open source",
                 text: "Payload, un software totalmente de código abierto, ofrece la plena propiedad de su código fuente, lo que permite la personalización y evita la dependencia de un proveedor. Una comunidad de desarrolladores activa garantiza el soporte y el crecimiento continuos.",
             },
             {
-                icon: "",
+                icon: Loop(),
                 title: "Extensibilidad sin precedentes",
                 text: "Gracias a su arquitectura modular, Payload permite una profunda personalización, lo que permite a los desarrolladores ampliar la funcionalidad, crear flujos de trabajo personalizados y adaptar la plataforma a las necesidades específicas de cada proyecto.",
             },
             {
-                icon: "",
+                icon: HandShake(),
                 title: "Socios oficiales",
                 text: "Somos socios y especialistas en el desarrollo de Payload CMS, y estamos orgullosos de ello. Trabajamos en estrecha colaboración con el equipo de Payload para potenciar los productos digitales de nuestros clientes con un alto nivel de experiencia compartida.",
             },

@@ -10,7 +10,7 @@ export type ServicePageType = {
         title: string;
         subtitle: string;
         capabilities: {
-            icon: string;
+            icon: React.ReactNode;
             title: string;
             text: string;
         }[];

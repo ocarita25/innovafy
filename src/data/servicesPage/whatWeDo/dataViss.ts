@@ -1,3 +1,4 @@
+import { Diagram, Digital, Eye, Sparks } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/data-viss"
@@ -16,22 +17,22 @@ export const dataVissPage: ServicePageType =
         subtitle: "Unique interfaces, narratives and experiences powered by your data.",
         capabilities: [
             {
-                icon: "",
+                icon: Eye(),
                 title: "Experiencias cautivadoras",
                 text: "Creamos visualizaciones interactivas y experiencias creativas cautivadoras para atraer a su público y conectarlo con sus datos.",
             },
             {
-                icon: "",
+                icon: Sparks(),
                 title: "Visualizar la complejidad",
                 text: "Aprovecha las mejores prácticas de UX y el pensamiento de diseño centrado en el usuario para crear experiencias sencillas e intuitivas para datos y escenarios complejos.",
             },
             {
-                icon: "",
+                icon: Digital(),
                 title: "Paneles de control y plataformas internas",
                 text: "Build better data platforms, from single-page applications through to highly bespoke online systems, bringing data management and visualisation together.",
             },
             {
-                icon: "",
+                icon: Diagram(),
                 title: "Herramienas poderosas",
                 text: "Proporcionamos potentes herramientas digitales, adaptadas a las complejidades e idiosincrasias de los datos, procesos y sistemas de su organización.",
             },

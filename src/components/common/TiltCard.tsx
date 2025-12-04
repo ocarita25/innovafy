@@ -1,12 +1,15 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { cn } from "@/lib/utils";
 
 type TiltCardProps = {
-  img: string
-}
+  img?: string,
+  intensity?: number
+  children: React.ReactNode,
+} & React.HTMLAttributes<HTMLDivElement>
 
-const TiltCard = ({ img }: TiltCardProps) => {
+const TiltCard = ({ img, intensity = 1, children, ...props }: TiltCardProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -25,8 +28,8 @@ const TiltCard = ({ img }: TiltCardProps) => {
       const deltaY = e.clientY - centerY;
 
       // Intensidad del efecto
-      const rotationY = (deltaX / rect.width) * 30;
-      const rotationX = -(deltaY / rect.height) * 30;
+      const rotationY = (deltaX / rect.width) * 15 * intensity;
+      const rotationX = -(deltaY / rect.height) * 15 * intensity;
 
       gsap.set(card, {
         rotateX: rotationX,
@@ -56,11 +59,10 @@ const TiltCard = ({ img }: TiltCardProps) => {
   }, []);
 
   return (
-    // <div ref={containerRef} className="relative flex w-full h-full items-center justify-center">
     <div ref={containerRef}>
       <div ref={cardRef} style={{ transformStyle: "preserve-3d", transformOrigin: "center" }}>
-        <div className="flex items-center justify-center bg-[#ffffff4d] aspect-square overflow-hidden rounded-2xl">
-          <img src={img} className="w-3/4 aspect-square rounded-none object-contain" />
+        <div className={cn("flex items-center justify-center bg-[#ffffff4d] aspect-square overflow-hidden rounded-2xl", props.className)}>
+          {children}
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ export const MainCardWrapper: ExpandingCardProps = {
     sTrigger: {
         start: "bottom bottom",
         end: "+=500",
-        markers: true
+        // markers: true
     },
     // className: "relative z-0 col-1 row-1",
 }

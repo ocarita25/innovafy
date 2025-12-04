@@ -1,3 +1,4 @@
+import { Badges, Graduate, Group, SquarePen } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/education"
@@ -16,22 +17,22 @@ export const educationPage: ServicePageType =
         subtitle: "Desde la educación infantil hasta la universidad, trabajamos en todo el espectro educativo para impulsar las matriculaciones, aumentar la concienciación y ofrecer experiencias estudiantiles excepcionales.",
         capabilities: [
             {
-                icon: "",
+                icon: SquarePen(),
                 title: "Inscripción atractiva",
                 text: "Aplicamos nuestra galardonada metodología de diseño y experiencia de usuario para captar la atención del público y crear vías claras que aumenten el interés e impulsen las inscripciones.",
             },
             {
-                icon: "",
+                icon: Graduate(),
                 title: "Experiencia del estudiante",
                 text: "Desde la educación interactiva hasta la selección de cursos y la planificación de estudios, hemos ayudado a numerosas instituciones a mejorar la experiencia digital de sus estudiantes.",
             },
             {
-                icon: "",
+                icon: Badges(),
                 title: "Conocimiento de la marca",
                 text: "Nuestras experiencias digitales inmersivas ofrecen formas sencillas y atractivas de alcanzar los objetivos de sus grupos de interés. Conviértase en la marca que acierta.",
             },
             {
-                icon: "",
+                icon: Group(),
                 title: "Socios educativos",
                 text: "Creemos en relaciones, servicio y soporte excepcionales para nuestros clientes. Estamos con usted a largo plazo para mantener su ventaja competitiva y garantizar su éxito continuo.",
             },

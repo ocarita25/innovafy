@@ -1,3 +1,4 @@
+import { Badges, People, Shield, Sparks } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/design-systems"
@@ -16,22 +17,22 @@ export const designSystemPage: ServicePageType =
         subtitle: "Creamos sistemas de diseño integrales que ayudan a los equipos de producto a trabajar más rápido. Crea tu propia biblioteca de componentes y patrones reutilizables para mantener una imagen coherente en toda tu presencia digital.",
         capabilities: [
             {
-                icon: "",
+                icon: People(),
                 title: "Bases cubiertas",
                 text: "Nuestras bibliotecas de componentes a medida combinan estética, usabilidad, accesibilidad y el estilo único de tu marca en todos tus sitios web y dispositivos.",
             },
             {
-                icon: "",
+                icon: Sparks(),
                 title: "Un enfoque personalizado",
                 text: "Reconocemos que cada producto y proyecto es diferente. Trabajaremos con usted para determinar el mejor enfoque que se ajuste a su hoja de ruta de producto.",
             },
             {
-                icon: "",
+                icon: Badges(),
                 title: "Integral y consistente",
                 text: "Nuestro equipo le proporcionará documentación detallada y comentada, que abarca el uso adecuado de sus tokens y patrones de diseño según las mejores prácticas actuales.",
             },
             {
-                icon: "",
+                icon: Shield(),
                 title: "Diseño galardonado",
                 text: "Aproveche nuestro enfoque de diseño galardonado para ofrecer una imagen y una experiencia de usuario de primera clase en toda la presencia en línea o el producto digital de su organización.",
             },

@@ -1,3 +1,4 @@
+import { Aim, FingerPrint, Hand, Target } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/react-js"
@@ -16,22 +17,22 @@ export const reactPage: ServicePageType =
         subtitle: "Colabora con nuestro equipo experto de desarrolladores React para hacer realidad tu proyecto. Hemos creado sitios web, aplicaciones y mucho más para clientes de diversos sectores.",
         capabilities: [
             {
-                icon: "",
+                icon: Target(),
                 title: "Aplicaciones Single Page",
                 text: "Reúna todo lo que sus visitantes necesitan en una única interfaz de alta interacción, reduciendo los tiempos de carga de recursos hasta en un 50%.",
             },
             {
-                icon: "",
+                icon: Aim(),
                 title: "Flexibildad Headless",
                 text: "La arquitectura sin interfaz gráfica promueve la flexibilidad, la seguridad y la escalabilidad, ofreciendo un rendimiento excepcional con aplicaciones ilimitadas.",
             },
             {
-                icon: "",
+                icon: FingerPrint(),
                 title: "Interfaces fluidas",
                 text: "Carga rápida e interactividad fluida, ya sea un sitio web (React.js) o una aplicación móvil nativa para iOS/Android (React Native).",
             },
             {
-                icon: "",
+                icon: Hand(),
                 title: "Experiencia Full-Stack",
                 text: "Nuestros desarrolladores especializados en React cuentan con el apoyo de un equipo integral en UX, Diseño y Desarrollo.",
             },

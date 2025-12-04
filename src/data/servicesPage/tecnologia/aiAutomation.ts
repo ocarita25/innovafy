@@ -1,3 +1,4 @@
+import { Crossrows, DotDiagram, Loop, Sparks } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/ai-automation"
@@ -15,22 +16,22 @@ export const aiAtuomationPage: ServicePageType = {
         subtitle: "Desde flujos de trabajo de contenido inteligentes hasta análisis predictivos e integraciones personalizadas, ayudamos a las organizaciones a aprovechar la IA de forma responsable para mejorar el rendimiento, reducir el esfuerzo manual y crear experiencias digitales más inteligentes.",
         capabilities: [
             {
-                icon: "",
+                icon: Crossrows(),
                 title: "Flujos de trabajo inteligentes",
                 text: "Automatice tareas repetitivas como el etiquetado de contenido, la entrada de datos, el procesamiento de medios y los flujos de trabajo manuales para optimizar las operaciones y ahorrar tiempo.",
             },
             {
-                icon: "",
+                icon: Sparks(),
                 title: "Experiencias mejoradas",
                 text: "Utilice la IA para ofrecer recomendaciones personalizadas, búsquedas más inteligentes e interfaces conversacionales que involucren a los usuarios de manera significativa.",
             },
             {
-                icon: "",
+                icon: DotDiagram(),
                 title: "Perspectivas basadas en datos",
                 text: "Aproveche el aprendizaje automático para visualizar datos, descubrir tendencias, tomar mejores decisiones y predecir las necesidades de los clientes antes de que surjan.",
             },
             {
-                icon: "",
+                icon: Loop(),
                 title: "Prototipado rápido",
                 text: "Utiliza herramientas de IA para probar hipótesis, validar nuevas ideas y explorar nuevos horizontes con tu audiencia. De cero a MVP en tan solo 4 semanas.",
             },

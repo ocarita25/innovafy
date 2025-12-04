@@ -1,3 +1,4 @@
+import { Aim, FingerPrint, Hand, Target } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/prototyping"
@@ -16,22 +17,22 @@ export const prototypingPage: ServicePageType =
         subtitle: "Valida tus ideas antes de crear tu MVP. Nuestro equipo cuenta con más de 15 años de experiencia en prototipado digital como parte de un proceso integral de desarrollo y diseño de productos.",
         capabilities: [
             {
-                icon: "",
+                icon: Aim(),
                 title: "Alta fidelidad",
                 text: "Convertiremos tus bocetos en servilletas en wireframes complejos y de alta fidelidad, tanto si buscas conceptos detallados como un prototipo interactivo funcional.",
             },
             {
-                icon: "",
+                icon: FingerPrint(),
                 title: "Validación de la audiencia",
                 text: "Crea rápidamente un producto de prueba con lo mínimo indispensable. Obtén respuestas directamente de tu público objetivo para poder desarrollar un MVP mejorado.",
             },
             {
-                icon: "",
+                icon: Target(),
                 title: "Confidencialidad garantizada",
                 text: "Nuestros procesos respetuosos con la privacidad y nuestros sistemas seguros ayudan a proteger su propiedad intelectual, junto con cualquier información confidencial que comparta con nosotros sobre su proyecto.",
             },
             {
-                icon: "",
+                icon: Hand(),
                 title: "Tu socio de diseño",
                 text: "Colaboraremos contigo para ofrecerte prototipos digitales de alta calidad que te servirán de base para el desarrollo de tu producto. Nuestro equipo de expertos te acompañará en todo el proceso.",
             },

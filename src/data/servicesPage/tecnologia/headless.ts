@@ -1,3 +1,4 @@
+import { HandShake, Loop, Monitor, Target } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/headless"
@@ -16,22 +17,22 @@ export const headlessPage: ServicePageType =
         subtitle: "Aprovecha la arquitectura headless para optimizar tu sitio web y ofrecer a los visitantes una experiencia inigualable.",
         capabilities: [
             {
-                icon: "",
+                icon: Target(),
                 title: "Priorizar el rendimiento",
                 text: "Ofrecer interfaces de usuario dinámicas y enriquecidas que prioricen la velocidad sin estar limitadas por la arquitectura del backend.",
             },
             {
-                icon: "",
+                icon: Monitor(),
                 title: "Gestión moderna de contenidos",
                 text: "Utilice sistemas de gestión de contenido modernos y vanguardistas como Payload CMS, Storyblok y Sanity.",
             },
             {
-                icon: "",
+                icon: Loop(),
                 title: "Preparado para el futuro",
                 text: "La arquitectura headless facilita la mejora continua del sitio web independientemente del backend, garantizando su longevidad y adaptabilidad.",
             },
             {
-                icon: "",
+                icon: HandShake(),
                 title: "Fuente única de la verdad",
                 text: "Mantén tu contenido en un solo lugar y reutilízalo en una variedad de proyectos y plataformas diferentes.",
             },

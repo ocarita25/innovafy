@@ -1,3 +1,4 @@
+import { Badges, Hand, Monitor, Wand } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/ui-design"
@@ -16,22 +17,22 @@ export const uiDesignPage: ServicePageType =
         subtitle: "Combinando la estética humana con el diseño funcional, adoptamos un enfoque sistematizado para diseñar interfaces de usuario prácticas e intuitivas.",
         capabilities: [
             {
-                icon: "",
+                icon: Badges(),
                 title: "Diseño de interfaz de usuario probado",
                 text: "Nuestro enfoque de diseño de interfaz de usuario, galardonado con múltiples premios, guía cada concepto, solución de interfaz, decisión clave y prototipo para ayudarle a lograr lo que necesita.",
             },
             {
-                icon: "",
+                icon: Monitor(),
                 title: "Digital Dashboards",
                 text: "Aproveche las mejores prácticas de diseño de interfaces y el pensamiento de diseño centrado en el usuario para crear experiencias sencillas e intuitivas para datos y escenarios complejos.",
             },
             {
-                icon: "",
+                icon: Wand(),
                 title: "Sistema de diseño",
                 text: "Nuestro equipo puede proporcionar un sistema de diseño integral y una guía de estilo, capacitando a sus equipos internos para ofrecer una coherencia de interfaz de usuario a largo plazo y a gran escala.",
             },
             {
-                icon: "",
+                icon: Hand(),
                 title: "Tu socio de diseño",
                 text: "Creemos en relaciones, servicio y soporte excepcionales para nuestros clientes. Colaboraremos con usted para garantizar resultados de primer nivel y un éxito continuo.",
             },

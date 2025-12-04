@@ -1,3 +1,4 @@
+import { Aim, FingerPrint, Hand, Target } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/laravel"
@@ -16,22 +17,22 @@ export const laravelPage: ServicePageType =
         subtitle: "Creamos sitios web, aplicaciones web y software a medida, utilizando el framework Laravel PHP para una escalabilidad y flexibilidad sin complicaciones.",
         capabilities: [
             {
-                icon: "",
+                icon: Target(),
                 title: "Desarrollo web a medida",
                 text: "Combinamos conocimientos, datos y nuestra experiencia tecnológica para alinearnos con su visión, creando una plataforma Laravel totalmente personalizada que se adapte a las necesidades de su negocio.",
             },
             {
-                icon: "",
+                icon: Aim(),
                 title: "Escalar. Adaptarse. Ejecutar.",
                 text: "Nuestros sitios web y aplicaciones buscan la máxima flexibilidad, seguridad y rendimiento, garantizando que su presencia digital pueda adaptarse a sus necesidades a medida que evolucionan.",
             },
             {
-                icon: "",
+                icon: FingerPrint(),
                 title: "Experiencias fascinantes",
                 text: "Creamos experiencias personalizadas, atractivas e inmersivas, respaldadas por tecnologías digitales robustas, probadas y contrastadas.",
             },
             {
-                icon: "",
+                icon: Hand(),
                 title: "Resultados premiados",
                 text: "Nuestro enfoque de diseño y UX, galardonado con múltiples premios, guía cada concepto, decisión creativa y solución de mejores prácticas para impulsar su marca.",
             },

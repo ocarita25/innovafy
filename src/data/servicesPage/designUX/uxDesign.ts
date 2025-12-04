@@ -1,3 +1,4 @@
+import { Eye, Monitor, Puzzle, RateDiagram } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/ux-design"
@@ -16,22 +17,22 @@ export const uxDesignPage: ServicePageType =
         subtitle: "El diseño de experiencia de usuario es fundamental en nuestro enfoque. Cada decisión que tomamos en materia de estrategia, arquitectura de la información y flujos de trabajo subyacentes tiene como objetivo ayudar a cada usuario a alcanzar su objetivo de la forma más fácil y satisfactoria posible.",
         capabilities: [
             {
-                icon: "",
+                icon: Eye(),
                 title: "Especialista en UX",
                 text: "Nuestro enfoque de diseño UX, galardonado con múltiples premios, guía cada concepto, prototipo, decisión clave y solución creativa para impulsar su marca.",
             },
             {
-                icon: "",
+                icon: RateDiagram(),
                 title: "Servicio de catering para todos",
                 text: "Como en cualquier producto digital, el rendimiento, la accesibilidad y la usabilidad son fundamentales. Nos esforzamos al máximo para ofrecer experiencias que satisfagan las necesidades de cada público.",
             },
             {
-                icon: "",
+                icon: Puzzle(),
                 title: "Basado en la evidencia",
                 text: "Nuestro proceso incluye un conjunto de investigaciones y validaciones para garantizar que cada decisión y recomendación de diseño de UX esté basada en datos.",
             },
             {
-                icon: "",
+                icon: Monitor(),
                 title: "Líderes en el ámbito digital",
                 text: "Ampliamos los límites del diseño y la tecnología para alcanzar nuevos niveles en experiencias online prácticas, atractivas y significativas.",
             },

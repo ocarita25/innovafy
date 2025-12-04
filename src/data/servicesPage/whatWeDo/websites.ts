@@ -1,3 +1,4 @@
+import { Code, Diagram, Monitor, Thunder } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/websites"
@@ -16,22 +17,22 @@ export const websitesPage: ServicePageType =
         subtitle: "Aprovechamos nuestras fortalezas: Durante más de 14 años hemos ideado, creado y lanzado productos maravillosos en Internet.",
         capabilities: [
             {
-                icon: "",
+                icon: Thunder(),
                 title: "De la idea a la ejecución",
                 text: "Desarrollamos el producto íntegramente internamente, desde la estrategia inicial hasta el resultado final. Esto significa que todo lo que hacemos cumple su función y se produce con la máxima calidad.",
             },
             {
-                icon: "",
+                icon: Code(),
                 title: "Full Stack",
                 text: "Somos un espacio que reúne tanto a generalistas como a especialistas, abarcando bajo un mismo techo el desarrollo de interfaces de usuario, el diseño de interacción, la configuración de CMS y el desarrollo técnico.",
             },
             {
-                icon: "",
+                icon: Monitor(),
                 title: "Neutralidad tecnológica",
                 text: "La mejor tecnología es la que funciona. Escuchamos y observamos constantemente para poder recomendarle la solución óptima para su problema empresarial.",
             },
             {
-                icon: "",
+                icon: Diagram(),
                 title: "Integrado",
                 text: "Colocamos su sitio web en el centro de su ecosistema digital, proporcionando integraciones API seguras y soluciones automatizadas en todos sus sistemas empresariales.",
             },

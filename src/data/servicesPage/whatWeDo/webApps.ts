@@ -1,3 +1,4 @@
+import { Aim, Digital, Shield, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/web-applications"
@@ -16,22 +17,22 @@ export const webAppsPage: ServicePageType =
         subtitle: "Diseñamos y desarrollamos aplicaciones web a medida para satisfacer las necesidades de las operaciones comerciales.",
         capabilities: [
             {
-                icon: "",
+                icon: Aim(),
                 title: "Hecho a medida",
                 text: "Combinamos conocimientos, datos y nuestra profunda experiencia para alinearnos con su visión, creando una plataforma totalmente personalizada que se adapte a las necesidades de su negocio y su público.",
             },
             {
-                icon: "",
+                icon: World(),
                 title: "Diseño y experiencia de usuario de primera clase",
                 text: "Nuestro enfoque de diseño y UX, galardonado con múltiples premios, guía cada concepto, solución creativa, decisión clave y prototipo para impulsar su marca.",
             },
             {
-                icon: "",
+                icon: Shield(),
                 title: "Robusto, Seguro, Flexible",
                 text: "Nuestro conjunto principal de tecnologías preferidas busca la máxima flexibilidad, seguridad y rendimiento, garantizando que los resultados finales sigan satisfaciendo sus necesidades a largo plazo.",
             },
             {
-                icon: "",
+                icon: Digital(),
                 title: "Socios Digitales",
                 text: "Creemos en relaciones, servicio y soporte excepcionales para nuestros clientes. Nuestro compromiso es a largo plazo para mantener su ventaja competitiva y garantizar su éxito continuo.",
             },

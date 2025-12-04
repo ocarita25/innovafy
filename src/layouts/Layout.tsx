@@ -10,9 +10,9 @@ import { Outlet } from "react-router-dom"
 function LayoutContent() {
 
     return (
-        <div className='grid z-1 items-start w-full bg-[#343c46]'>
+        <div id="app-scroll-container" className='grid z-1 items-start w-full max-w-dvw bg-[#343c46]'>
             <Header />
-            <ExpandingCard settings={MainCardWrapper} className="relative col-1 row-1 z-10 bg-theme-background">
+            <ExpandingCard settings={MainCardWrapper} className="relative col-1 row-1 z-10 bg-theme-background w-full">
                 <Outlet />
             </ExpandingCard>
             <Footer />

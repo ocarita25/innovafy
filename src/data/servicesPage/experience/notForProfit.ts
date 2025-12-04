@@ -1,3 +1,4 @@
+import { DotDiagram, Rings, Shield, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/not-for-profit"
@@ -16,22 +17,22 @@ export const notForProfitPage: ServicePageType =
         subtitle: "Nuestra amplia experiencia con organizaciones sin fines de lucro en los ámbitos de la salud, la beneficencia y el gobierno garantiza que nuestros productos digitales satisfagan las necesidades de nuestros clientes y ayuden a quienes más lo necesitan.",
         capabilities: [
             {
-                icon: "",
+                icon: Rings(),
                 title: "Apoyo a la recaudación de fondos",
                 text: "Acelere la recaudación de fondos con experiencias de donación intuitivas que se integran perfectamente con su CRM, impulsando las conversiones y simplificando la administración.",
             },
             {
-                icon: "",
+                icon: World(),
                 title: "Amplificar el impacto",
                 text: "Crea impacto y genera confianza a través de un diseño y una narrativa bien pensados, animando a un público comprometido a apoyar la misión de tu organización.",
             },
             {
-                icon: "",
+                icon: DotDiagram(),
                 title: "Actuación",
                 text: "Centraliza todos los requisitos e integraciones en una plataforma fácil de usar que te permita operar de manera eficiente, escalar con la demanda e impulsar el retorno de la inversión en marketing.",
             },
             {
-                icon: "",
+                icon: Shield(),
                 title: "Privado y seguro",
                 text: "Le brindamos tranquilidad. La privacidad y la seguridad son nuestra máxima prioridad, manteniendo a salvo los datos de su organización y de sus clientes.",
             },

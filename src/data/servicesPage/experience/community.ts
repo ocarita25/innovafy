@@ -1,3 +1,4 @@
+import { Eye, Group, Target, Thunder } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
 
 const path = "services/comunidad"
@@ -16,22 +17,22 @@ export const communityPage: ServicePageType =
         subtitle: "Combinando una experiencia de usuario galardonada, un diseño atractivo y mensajes significativos, nuestros productos digitales de primera clase siguen sirviendo a la comunidad.",
         capabilities: [
             {
-                icon: "",
+                icon: Target(),
                 title: "Alto impacto",
                 text: "Crea impacto y genera confianza a través de un diseño y una narrativa bien pensados, alentando a la comunidad en general a apoyar la misión de tu organización.",
             },
             {
-                icon: "",
+                icon: Group(),
                 title: "Conciencia del conductor",
                 text: "Difundir conocimientos vitales y mensajes que cambien el mundo a través de interacciones digitales innovadoras e inmersivas, diseñadas para educar e inspirar a la acción.",
             },
             {
-                icon: "",
+                icon: Eye(),
                 title: "Experiencias reales",
                 text: "Desde senderos naturales hasta galerías de arte, podemos transformar fascinantes aventuras del mundo real en atractivas experiencias digitales que conecten con tu público.",
             },
             {
-                icon: "",
+                icon: Thunder(),
                 title: "Flexible y confiable",
                 text: "Cada sitio web y aplicación que desarrollamos busca la máxima flexibilidad, seguridad y rendimiento, asegurando que pueda escalar con la demanda y satisfacer sus necesidades a medida que evolucionan.",
             },
