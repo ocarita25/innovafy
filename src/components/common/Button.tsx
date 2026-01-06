@@ -17,14 +17,14 @@ export const ButtonBlack = ({ children, isActive, href, ...props }: ButtonProps)
 
 export const ButtonWhite = ({ children, isActive, ...props }: ButtonProps) => {
   const buttonClass = isActive
-    ? "bg-[#343c46] text-white"
-    : "bg-[#eee] text-black"
+    ? "bg-[var(--text-color-primary)] text-[var(--theme-accent)]"
+    : "bg-[#b7c1c9] text-black"
 
   return (
     <div
       {...props}
       className={cn(
-        "button hover:bg-[#c8e8f8] hover:text-black",
+        "button hover:bg-[#94c4e7] hover:text-black",
         buttonClass,
         props.className
       )}

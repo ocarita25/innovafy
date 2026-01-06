@@ -51,6 +51,7 @@ export const media: MediaTypes[] = [
     //Not for profit
     {
         id: 4,
+        slug: "",
         name: "Breakthrough T1D",
         src: "/images/work/breakthrough.webp",
         mediaType: "image",
@@ -61,6 +62,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 5,
+        slug: "",
         name: "National Breast Cancer Foundation",
         src: "/images/work/nationalbreast.webp",
         mediaType: "image",
@@ -71,6 +73,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 6,
+        slug: "",
         name: "The Hospital Reasearch Foundation Group",
         src: "/images/work/hospital-foundation.jpeg",
         mediaType: "image",
@@ -82,6 +85,7 @@ export const media: MediaTypes[] = [
     //Education
     {
         id: 7,
+        slug: "",
         name: "Scotch College Melbourne",
         src: "/images/work/scotch-college.webp",
         mediaType: "image",
@@ -92,6 +96,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 8,
+        slug: "",
         name: "My Mind Check",
         src: "/images/work/mind-check.webp",
         mediaType: "image",
@@ -102,6 +107,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 9,
+        slug: "",
         name: "Fintona Girl's School",
         src: "/videos/girls-school.mp4",
         mediaType: "video",
@@ -113,6 +119,7 @@ export const media: MediaTypes[] = [
     //Community
     {
         id: 10,
+        slug: "",
         name: "Talk N Walk",
         src: "/images/work/talk-n-walk.webp",
         mediaType: "image",
@@ -123,6 +130,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 11,
+        slug: "",
         name: "TrailsWA",
         src: "/images/work/community-2.webp",
         mediaType: "image",
@@ -145,6 +153,7 @@ export const media: MediaTypes[] = [
     //Innovation
     {
         id: 13,
+        slug: "",
         name: "growAg",
         src: "/videos/growag.mp4",
         mediaType: "video",
@@ -155,6 +164,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 14,
+        slug: "",
         name: "Ferox",
         src: "/videos/digital-2.mp4",
         mediaType: "video",
@@ -165,6 +175,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 15,
+        slug: "",
         name: "LawMe",
         src: "/images/work/digital-3.webp",
         mediaType: "image",
@@ -176,6 +187,7 @@ export const media: MediaTypes[] = [
     //UX
     {
         id: 16,
+        slug: "",
         name: "Fluidity",
         src: "/videos/fluidity.mp4",
         mediaType: "video",
@@ -186,6 +198,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 17,
+        slug: "",
         name: "Rychiger",
         src: "/images/work/rychiger.webp",
         mediaType: "image",
@@ -196,6 +209,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 18,
+        slug: "",
         name: "Pentanet",
         src: "/images/work/pentanet.webp",
         mediaType: "image",
@@ -207,6 +221,7 @@ export const media: MediaTypes[] = [
     //About Page
     {
         id: 19,
+        slug: "",
         name: "",
         src: "/images/about/about1.webp",
         mediaType: "image",
@@ -217,6 +232,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 20,
+        slug: "",
         name: "",
         src: "/images/about/about2.webp",
         mediaType: "image",
@@ -227,6 +243,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 21,
+        slug: "",
         name: "",
         src: "/images/about/about4.webp",
         mediaType: "image",
@@ -237,6 +254,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 22,
+        slug: "",
         name: "",
         src: "/images/about/about5.webp",
         mediaType: "image",
@@ -247,6 +265,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 23,
+        slug: "",
         name: "",
         src: "/images/about/about6.webp",
         mediaType: "image",
@@ -258,6 +277,7 @@ export const media: MediaTypes[] = [
     //Clientes
     {
         id: 24,
+        slug: "",
         name: "satterley",
         src: "/images/clients/satterley.webp",
         mediaType: "image",
@@ -268,6 +288,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 25,
+        slug: "",
         name: "sussex",
         src: "/images/clients/sussex.webp",
         mediaType: "image",
@@ -278,6 +299,7 @@ export const media: MediaTypes[] = [
     },
     {
         id: 26,
+        slug: "",
         name: "techcrunch",
         src: "/images/clients/techcrunch.webp",
         mediaType: "image",

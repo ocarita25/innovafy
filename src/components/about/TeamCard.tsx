@@ -1,4 +1,3 @@
-import React from 'react'
 import style from './styles/TeamCard.module.css'
 
 const TeamCard = ({ isMobile }: { isMobile?: Boolean }) => {

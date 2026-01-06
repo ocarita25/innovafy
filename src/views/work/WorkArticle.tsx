@@ -1,7 +1,8 @@
 import Arrow from '@/assets/Arrow'
 import { ButtonBlack } from '@/components/common/Button'
-import { workArticles } from '@/data/workArticles'
+import { getWorkArticleBySlug } from '@/data/work';
 import { cn } from '@/lib/utils'
+import SmileyFaceIcon from '@/assets/icons/smiley-face.svg?react'
 
 interface WorkArticleProps {
     slug: string,
@@ -12,7 +13,6 @@ const ArticleBody = ({ body }: { body: any[] }) => {
     return (
         body.map((content, i) => {
             return (
-                // <Panned variant='vertical'>{
                 content.type === "text" ?
                     <div key={i} className='min-[992px]:col-span-2 flex flex-col gap-10 py-15'>
                         <blockquote className='text-4xl'>
@@ -29,14 +29,16 @@ const ArticleBody = ({ body }: { body: any[] }) => {
                         </video>
                         :
                         <img key={i} src={content.src} alt={content.alt} className={cn('h-full w-full rounded-4xl', content.style)} />
-                // }</Panned>
             )
         }))
 }
 
-const WorkArticle: React.FC<WorkArticleProps> = ({ slug, onNext }) => {
+const WorkArticle: React.FC<WorkArticleProps> = ({ slug }) => {
 
-    const article = workArticles.find(a => a.slug === slug)
+    console.log("Slug:", slug)
+    const article = getWorkArticleBySlug(slug)
+
+    console.log("Article:", article)
 
     if (!article) return null
 
@@ -66,12 +68,12 @@ const WorkArticle: React.FC<WorkArticleProps> = ({ slug, onNext }) => {
                                 <div className='my-10 flex flex-col gap-3'>
                                     {article.features.map((fe, i) => (
                                         <div key={i} className='flex gap-3'>
-                                            <img src={fe.icon} className='h-6 w-6 aspect-square' />
+                                            {fe.icon ? <img src={fe.icon} className='h-6 w-6 aspect-square' /> : <SmileyFaceIcon width={13} />}
                                             <span>{fe.label}</span>
                                         </div>
                                     ))}
                                 </div>
-                                <div className='flex flex-col'>
+                                {/* <div className='flex flex-col'>
                                     <span className='mb-5'>Awards</span>
                                     {article.awards.map((aw, i) => (
                                         <div key={i} className='grid grid-cols-[1fr_2fr_auto] gap-5 py-4 border-t-1 last:border-b-1'>
@@ -80,7 +82,7 @@ const WorkArticle: React.FC<WorkArticleProps> = ({ slug, onNext }) => {
                                             <div><span>{aw.year}</span></div>
                                         </div>
                                     ))}
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -89,7 +91,7 @@ const WorkArticle: React.FC<WorkArticleProps> = ({ slug, onNext }) => {
                     <ArticleBody body={article.body} />
                 </div>
             </div>
-            <div className='mt-15'>
+            {/* <div className='mt-15'>
                 <div className='text-4xl font-medium mb-5'>
                     <span>SIGUIENTE</span>
                 </div>
@@ -101,7 +103,7 @@ const WorkArticle: React.FC<WorkArticleProps> = ({ slug, onNext }) => {
                         </video>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </article >
     )
 }

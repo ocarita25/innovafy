@@ -37,6 +37,15 @@ export interface ThinkingArticleContentType {
 }
 
 export type ThinkingArticleType = {
-    slug: string;
-    content: ThinkingArticleContentType;
+    slug: string,
+    title: string,
+    tags: string[],
+    duration: number,
+    description: string,
+    thumbnail: {
+        type: 'image' | 'video',
+        src: string,
+        alt: string,
+    }
+    content: ThinkingArticleContentType,
 }

@@ -1,6 +1,6 @@
 export type MediaTypes = {
     id: number,
-    slug?: string,
+    slug: string,
     name: string,
     src: string,
     mediaType: "image" | "video",

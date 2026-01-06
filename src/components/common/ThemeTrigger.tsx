@@ -1,7 +1,7 @@
-import { useMainRef } from '@/context/MainRefContext'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React, { useLayoutEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { useMainRef } from '@/context/MainRefContext'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 type ThemeTriggerProps = {
     children: React.ReactNode,
@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger)
 const ThemeTrigger = ({ children, startDesktop, endDesktop, bgColor, bgOriginal, startMobile = startDesktop, endMobile = endDesktop, ...props }: ThemeTriggerProps) => {
 
     const triggerRef = useRef<HTMLDivElement>(null)
-    const { changeTheme } = useMainRef();
+    const { changeBackground } = useMainRef();
 
     useLayoutEffect(() => {
         if (!triggerRef.current) return;
@@ -31,10 +31,10 @@ const ThemeTrigger = ({ children, startDesktop, endDesktop, bgColor, bgOriginal,
                 start: startDesktop,
                 end: endDesktop,
                 // markers: true,
-                onEnter: () => changeTheme(bgColor),
-                onLeave: () => changeTheme(bgOriginal),
-                onEnterBack: () => changeTheme(bgColor),
-                onLeaveBack: () => changeTheme(bgOriginal),
+                onEnter: () => changeBackground(bgColor),
+                onLeave: () => changeBackground(bgOriginal),
+                onEnterBack: () => changeBackground(bgColor),
+                onLeaveBack: () => changeBackground(bgOriginal),
             });
         })
         mm.add("(max-width:768px)", () => {
@@ -43,14 +43,15 @@ const ThemeTrigger = ({ children, startDesktop, endDesktop, bgColor, bgOriginal,
                 start: startMobile,
                 end: endMobile,
                 // markers: true,
-                onEnter: () => changeTheme(bgColor),
-                onLeave: () => changeTheme(bgOriginal),
-                onEnterBack: () => changeTheme(bgColor),
-                onLeaveBack: () => changeTheme(bgOriginal),
+                onEnter: () => changeBackground(bgColor),
+                onLeave: () => changeBackground(bgOriginal),
+                onEnterBack: () => changeBackground(bgColor),
+                onLeaveBack: () => changeBackground(bgOriginal),
             });
         })
 
         return () => {
+            changeBackground(bgOriginal);
             mm.revert();
         }
     }, [])

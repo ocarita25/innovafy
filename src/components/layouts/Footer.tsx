@@ -3,13 +3,18 @@ import { Link, useLocation } from 'react-router-dom'
 import VerticalRoulette from '../common/VerticalRoulette'
 import { footerWords } from '@/constants/footer'
 import Scrollable from '../common/Scrollable'
+import { useModal } from '@/context/ModalContext'
 
 export const FooterContacts = () => {
+    const { openModal } = useModal()
+
     return (
         <div className='grid grid-cols-2 min-[1200px]:grid-cols-3 min-[1400px]:grid-cols-4 min-[992px]:gap-10 sm:grid-cols-2 xl:grid-cols-5 xl:gap-0 mb-10 text-[1rem]'>
             <div className='flex flex-col col-span-2 xl:col-span-1 gap-1 max-[991px]:mb-10'>
                 <span>We Work globally</span>
-                <span className='flex gap-2 items-center'>Submit a brief <Arrow width='w-3' height='w-3' /></span>
+                <span className='flex gap-2 items-center cursor-pointer' onClick={() => openModal("brief", "brief")}>
+                    Submit a brief <Arrow width='w-3' height='w-3' />
+                </span>
                 <span>contact@innovafy.com</span>
             </div>
             <div className='flex flex-col gap-1 max-[991px]:text-[clamp(0.75rem,3.95vw,1.2rem)]'>
@@ -59,7 +64,7 @@ const Footer = () => {
 
     if (isExcludedPage) return;
     return (
-        <footer className={'min-[992px]:max-h-[100svh] text-white max-[992px]:pb-30'}>
+        <footer className={'text-white max-[992px]:pb-30'}>
             <Scrollable yOriginal={-60} yTarget={0} start='top bottom' end='+=500'>
                 <div className={`relative mx-auto p-fluid max-w-[30rem] grid grid-rows-auto h-full
                 md:pt-21 md:pb-15 min-[768px]:max-w-[37rem]
@@ -71,19 +76,17 @@ const Footer = () => {
                             text-[clamp(2.15rem,10vw,2.5rem)] min-[992px]:text-[clamp(4.375rem,4.63vw,5.82rem)] 
                             leading-none 
                             `}>
-                        <p>
-                            <a className='flex flex-col' href='/contacto'>
-                                <span className='flex gap-4'>
-                                    <span>Hagamos</span>
-                                    <Arrow width='w-6 min-[992px]:w-[clamp(3rem,3dvw,4rem)]' stroke='2' />
-                                </span>
-                                <span className='flex flex-wrap'>
-                                    <span className='pr-3 min-[992px]:pr-5'>algo </span>
-                                    <VerticalRoulette content={footerWords} columns={1} minSize='768px' />
-                                </span>
-                            </a>
+                        <a className={`group flex flex-col w-fit hover:text-[var(--theme-accent)]`} href='/contacto'>
+                            <span className='flex gap-4'>
+                                <span>Hagamos</span>
+                                <Arrow width='w-6 min-[992px]:w-[clamp(3rem,3dvw,4rem)]' stroke='2' className='group-hover:translate-x-5 transition' color={"var(--theme-accent)"} />
+                            </span>
+                            <span className='flex flex-wrap'>
+                                <span className='pr-3 min-[992px]:pr-5'>algo </span>
+                                <VerticalRoulette elements={footerWords} columns={1} minSize='768px' />
+                            </span>
+                        </a>
 
-                        </p>
                     </div>
                     <FooterContacts />
                     <FooterSocialMedia />

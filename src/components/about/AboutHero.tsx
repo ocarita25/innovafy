@@ -1,6 +1,8 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLayoutEffect, useRef } from 'react'
+import PannedText from '../common/PannedText'
+import Panned from '../common/Panned'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -13,9 +15,6 @@ const AboutHero = () => {
 
     useLayoutEffect(() => {
         if (!fadedRef.current || !containerRef.current || !backgroundRef.current || !frontRef.current) return;
-        // if (!fadedRef.current || !containerRef.current) return;
-
-
 
         const mm = gsap.matchMedia()
 
@@ -50,7 +49,7 @@ const AboutHero = () => {
                 scrollTrigger: {
                     trigger: frontRef.current,
                     start: "top top",
-                    end: "+=1800",
+                    end: "+=800",
                     scrub: true,
                 }
             })
@@ -63,16 +62,21 @@ const AboutHero = () => {
     }, [])
 
     return (
-        // <div className="grid z-10 bg-[#97c2bb]">
         <div className="grid z-10 bg-[#97c2bb] [mask-image:linear-gradient(to_top,transparent,black_10%)] min-[992px]:pb-[clamp(4rem,7vw,15rem)]">
             <h1 ref={containerRef} className="about-hero-heading">
-                <div aria-label="Digital Products.">
-                    <span className="panned-text">Productos</span>
-                    <span className="panned-text">Digitales.</span>
+                <div aria-label="Digital Products." className='pb-10'>
+                    <PannedText className='-my-10'>
+                        <span className="panned-text">Productos</span>
+                    </PannedText>
+                    <PannedText className='-my-20'>
+                        <span className="panned-text">Digitales.</span>
+                    </PannedText>
                 </div>
-                <div ref={fadedRef} aria-label="Human Experiences.">
-                    <span className="panned-text">Experiencias</span>
-                    <span className="panned-text">Humanas</span>
+                <div ref={fadedRef} aria-label="Experiencias Innovadoras.">
+                    <Panned variant='vertical' className='-translate-y-10'>
+                        <span className="panned-text">Experiencias</span>
+                        <span className="panned-text">Innovadoras</span>
+                    </Panned>
                 </div>
             </h1>
             <picture ref={backgroundRef} className="grid-full mt-[max(13.22vw,30vh)] [mask-image:linear-gradient(to_bottom,transparent,black_10%)]">

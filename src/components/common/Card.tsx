@@ -1,6 +1,5 @@
 import React from 'react'
 import { cn } from '../../lib/utils'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 type CardProps = {
     title?: string,
@@ -39,7 +38,7 @@ type ImageCardProps = {
 } & React.HTMLAttributes<HTMLDivElement>
 
 const ImageCard = ({ src, alt, ...props }: ImageCardProps) => {
-    return <img src={src} alt={alt} className={cn('w-full h-full object-cover rounded-4xl', props.className)} onLoad={() => ScrollTrigger.refresh()} />
+    return <img src={src} alt={alt} className={cn('w-full h-full object-cover rounded-4xl', props.className)} />
 }
 
 export {

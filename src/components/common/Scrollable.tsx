@@ -10,10 +10,12 @@ type ScrollableProps = {
     xTarget?: number,
     start?: string,
     end?: string,
+    initScale?: number,
+    scale?: number,
     markers?: boolean
 }
 
-const Scrollable = ({ children, yOriginal, yTarget, xOriginal, xTarget, start, end, markers = false }: ScrollableProps) => {
+const Scrollable = ({ children, yOriginal, yTarget, start, end, initScale = 1, scale, markers = false }: ScrollableProps) => {
 
     gsap.registerPlugin(ScrollTrigger)
     const triggerRef = useRef<HTMLDivElement>(null)
@@ -21,10 +23,11 @@ const Scrollable = ({ children, yOriginal, yTarget, xOriginal, xTarget, start, e
 
     useEffect(() => {
         if (!triggerRef.current || !targetRef) return;
-        gsap.set(targetRef.current, { yPercent: yOriginal });
+        gsap.set(targetRef.current, { yPercent: yOriginal, scale: initScale });
 
         const tween = gsap.to(targetRef.current, {
             yPercent: yTarget,
+            scale,
             ease: "power1.out",
             scrollTrigger: {
                 trigger: triggerRef.current,

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export function Thunder() {
     return (
         <svg
@@ -74,15 +72,15 @@ export const Diagram = () => {
         >
             <path d="M19.8793 14.43C19.8793 19.0233 16.1526 22.75 11.5593 22.75C6.96595 22.75 3.23926 19.0233 3.23926 14.43C3.23926 9.83666 6.96595 6.10999 11.5593 6.10999"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path d="M21.7642 11.0066H15.9684C15.4267 11.0066 14.9934 10.5733 14.9934 10.0316V4.23579C14.9934 3.63995 15.5242 3.17411 16.1092 3.26078C19.5434 3.74828 22.2517 6.46745 22.7501 9.90161C22.8367 10.4866 22.3709 11.0174 21.7751 11.0174L21.7642 11.0066Z"
                 stroke="#7cd"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -99,15 +97,15 @@ export const Aim = () => {
             style={{ width: "26", height: 26 }}
         >
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M12.4445 0.0365884C12.8132 -0.0121963 13.1868 -0.0121962 13.5555 0.0365889C15.3397 0.27265 16.6729 1.79393 16.6729 3.59365V4.76081C18.7017 5.6664 20.3336 7.2983 21.2392 9.32707H22.4063C24.2061 9.32707 25.7273 10.6603 25.9634 12.4445C26.0122 12.8132 26.0122 13.1868 25.9634 13.5555C25.7273 15.3397 24.2061 16.6729 22.4063 16.6729H21.2392C20.3336 18.7017 18.7017 20.3336 16.6729 21.2392V22.4064C16.6729 24.2061 15.3397 25.7274 13.5555 25.9634C13.1868 26.0122 12.8132 26.0122 12.4445 25.9634C10.6603 25.7274 9.32707 24.2061 9.32707 22.4063V21.2392C7.2983 20.3336 5.6664 18.7017 4.76081 16.6729H3.59364C1.79393 16.6729 0.272649 15.3397 0.0365886 13.5555L1.02732 13.4244L0.0365884 13.5555C-0.0121962 13.1868 -0.012196 12.8132 0.0365882 12.4445L1.02795 12.5757L0.0365884 12.4445C0.272649 10.6603 1.79394 9.32707 3.59366 9.32707H4.76081C5.6664 7.2983 7.2983 5.6664 9.32707 4.76081V3.59367C9.32707 1.79394 10.6603 0.272648 12.4445 0.0365884ZM13.2932 2.01931C13.0986 1.99356 12.9014 1.99356 12.7068 2.01931C11.9172 2.12379 11.3271 2.79711 11.3271 3.59367V5.43749C11.3271 5.86131 11.0599 6.23909 10.6603 6.38033C8.66672 7.08496 7.08496 8.66672 6.38033 10.6603C6.23909 11.0599 5.86131 11.3271 5.43749 11.3271H3.59366C2.79711 11.3271 2.12379 11.9172 2.01931 12.7068C1.99356 12.9014 1.99356 13.0986 2.01931 13.2932C2.12379 14.0828 2.7971 14.6729 3.59364 14.6729H5.43749C5.86131 14.6729 6.23909 14.9401 6.38033 15.3397C7.08496 17.3333 8.66672 18.915 10.6603 19.6197C11.0599 19.7609 11.3271 20.1387 11.3271 20.5625V22.4063C11.3271 23.2029 11.9172 23.8762 12.7068 23.9807C12.9014 24.0064 13.0986 24.0064 13.2932 23.9807C14.0828 23.8762 14.6729 23.2029 14.6729 22.4064V20.5625C14.6729 20.1387 14.9401 19.7609 15.3397 19.6197C17.3333 18.915 18.915 17.3333 19.6197 15.3397C19.7609 14.9401 20.1387 14.6729 20.5625 14.6729H22.4063C23.2029 14.6729 23.8762 14.0828 23.9807 13.2932C24.0064 13.0986 24.0064 12.9014 23.9807 12.7068C23.8762 11.9172 23.2029 11.3271 22.4063 11.3271H20.5625C20.1387 11.3271 19.7609 11.0599 19.6197 10.6603C18.915 8.66672 17.3333 7.08496 15.3397 6.38033C14.9401 6.23909 14.6729 5.86131 14.6729 5.43749V3.59365C14.6729 2.7971 14.0828 2.12379 13.2932 2.01931Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M8.6665 13C8.6665 10.6067 10.6066 8.66663 12.9998 8.66663C15.3931 8.66663 17.3332 10.6067 17.3332 13C17.3332 15.3932 15.3931 17.3333 12.9998 17.3333C10.6066 17.3333 8.6665 15.3932 8.6665 13ZM12.9998 10.6666C11.7112 10.6666 10.6665 11.7113 10.6665 13C10.6665 14.2886 11.7112 15.3333 12.9998 15.3333C14.2885 15.3333 15.3332 14.2886 15.3332 13C15.3332 11.7113 14.2885 10.6666 12.9998 10.6666Z"
                 fill="var(--theme-primary)"
             >
@@ -129,20 +127,20 @@ export const World = () => {
             <path
                 d="M3.25 12.545C9.69583 13.7367 16.3042 13.7367 22.75 12.545"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-miterlimit="10">
+                strokeWidth="1.5"
+                strokeMiterlimit="10">
             </path>
             <path
                 d="M13 22.75C15.3942 22.75 17.3334 18.3842 17.3334 13C17.3334 7.61583 15.3942 3.25 13 3.25C10.6059 3.25 8.66669 7.61583 8.66669 13C8.66669 18.3842 10.6059 22.75 13 22.75Z"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-miterlimit="10">
+                strokeWidth="1.5"
+                strokeMiterlimit="10">
             </path>
             <path
                 d="M13 22.75C18.3842 22.75 22.75 18.3842 22.75 13C22.75 7.61583 18.3842 3.25 13 3.25C7.61583 3.25 3.25 7.61583 3.25 13C3.25 18.3842 7.61583 22.75 13 22.75Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-miterlimit="10">
+                strokeWidth="1.5"
+                strokeMiterlimit="10">
             </path>
         </svg>
     )
@@ -159,15 +157,15 @@ export const Shield = () => {
             style={{ width: "24", height: 26 }}
         >
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M16.1416 10.6343C16.5321 11.0248 16.5321 11.658 16.1416 12.0485L11.6492 16.5409C11.26 16.93 10.6296 16.9316 10.2385 16.5445L8.73094 15.0521C8.33844 14.6636 8.33523 14.0304 8.72376 13.6379C9.1123 13.2454 9.74546 13.2422 10.138 13.6307L10.9385 14.4231L14.7273 10.6343C15.1179 10.2438 15.751 10.2438 16.1416 10.6343Z"
                 fill="var(--theme-primary)"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M10.3098 0.594436C11.1516 -0.19932 12.4609 -0.198144 13.3012 0.597966C13.3298 0.625079 13.3566 0.653609 13.3814 0.68337C14.9696 2.15065 18.4337 5.09121 22.2183 6.70201M11.8829 2.01935C11.8176 1.98574 11.7385 1.99591 11.6816 2.04987L11.6752 2.05594L11.6752 2.05591C10.0958 3.52596 6.35655 6.75643 2.14732 8.54267C2.05869 8.58034 1.99572 8.66946 1.99916 8.78397C2.1078 10.5948 2.55027 14.5342 4.33498 17.162L4.33703 17.165C6.47174 20.333 10.2065 22.9633 11.7165 23.97C11.7532 23.9944 11.7827 24 11.8037 24C11.8247 24 11.8542 23.9944 11.8908 23.97L11.9031 23.9619C13.4109 22.9884 17.0763 20.4043 19.1869 17.284C20.9904 14.6116 21.4655 10.5861 21.5851 8.76838L21.5853 8.76601C21.5909 8.6836 21.543 8.58815 21.436 8.54267L21.4355 8.54248C17.2386 6.75629 13.4995 3.52587 11.9202 2.05591C11.9074 2.044 11.8949 2.03181 11.8829 2.01935ZM10.3098 0.594436C8.76866 2.02862 5.23984 5.05781 1.36556 6.70179L1.36504 6.70201C0.495108 7.07173 -0.0412858 7.94046 0.00139524 8.87944L0.00129582 8.87944L0.0021353 8.89353C0.110388 10.7098 0.557131 15.1579 2.67939 18.284C5.05567 21.8097 9.09411 24.6254 10.6071 25.6341C11.3366 26.1204 12.2626 26.122 12.9934 25.6387C14.5365 24.6418 18.4944 21.8778 20.8439 18.404L20.8445 18.4032C22.9754 15.2458 23.4602 10.7309 23.5807 8.90087C23.6465 7.92821 23.0709 7.0646 22.2187 6.70221"
                 fill="currentColor"
             >
@@ -189,30 +187,30 @@ export const Digital = () => {
             <path
                 d="M11.9 22.9483H6.65001C4.91168 22.9483 3.5 21.56 3.5 19.845V18.8066C3.5 18.235 3.97833 17.7683 4.54999 17.7683H8.31834C8.59834 17.7683 8.86665 17.885 9.06499 18.0716L10.5467 19.53C10.745 19.7283 11.0133 19.8333 11.2933 19.8333H11.9"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M5.0752 17.5583V6.31167C5.0752 4.76 6.53353 3.5 8.31853 3.5H19.1452C20.9419 3.5 22.3885 4.76 22.3885 6.31167V10.01"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M22.1665 10.01H17.3831C16.0945 10.01 15.0498 11.0547 15.0498 12.3433V22.1667C15.0498 23.4554 16.0945 24.5 17.3831 24.5H22.1665C23.4551 24.5 24.4998 23.4554 24.4998 22.1667V12.3433C24.4998 11.0547 23.4551 10.01 22.1665 10.01Z"
                 stroke="var(--theme-primary)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M19.25 21.3967H20.3"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -231,16 +229,16 @@ export const Tech = () => {
             <path
                 d="M4.2251 17.3658H7.72427C7.98427 17.3658 8.23342 17.4742 8.41759 17.6475L9.79344 19.0125C9.97761 19.1967 10.2268 19.2942 10.4868 19.2942H15.3293C15.6976 19.2942 16.0443 19.0884 16.1959 18.7634L16.6293 17.8967C16.7918 17.5717 17.1384 17.3658 17.4959 17.3658H21.7643C22.2951 17.3658 22.7393 17.7992 22.7393 18.33V19.2942C22.7393 20.9083 21.4284 22.1975 19.8143 22.1975H6.16427C4.5501 22.1975 3.23926 20.8975 3.23926 19.2942V18.33C3.23926 17.7992 3.68345 17.3658 4.21428 17.3658H4.2251Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M4.7124 17.3658V6.5108C4.7124 5.0158 6.09906 3.79163 7.82156 3.79163H18.1782C19.8899 3.79163 21.2874 5.00497 21.2874 6.5108V17.3658"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -259,37 +257,37 @@ export const Crossrows = () => {
             <path
                 d="M10.3599 14.84L11.0399 15.99C11.3399 16.49 11.7599 16.9 12.2699 17.19C12.7799 17.48 13.3499 17.63 13.9299 17.63H20.9899"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round">
             </path>
             <path
                 d="M3 6.37H3.35999C3.93999 6.37 4.50999 6.52 5.01999 6.81C5.52999 7.1 5.95 7.51001 6.25 8.01001L6.92001 9.13"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round">
             </path>
             <path
                 d="M3 17.63H3.35999C3.93999 17.63 4.50999 17.48 5.01999 17.19C5.52999 16.9 5.95 16.49 6.25 15.99L10.98 8.01001C11.28 7.51001 11.7 7.1 12.21 6.81C12.72 6.52 13.29 6.37 13.87 6.37H20.93"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round">
             </path>
             <path
                 d="M17.6099 14.25L20.9799 17.62L17.6099 20.99"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M17.6099 3L20.9799 6.38L17.6099 9.75"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -308,58 +306,58 @@ export const Face = () => {
             <path
                 d="M18.1416 3.5H20.2999C22.6099 3.5 24.4999 5.39001 24.4999 7.70001V9.695"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M3.5 9.74167V7.70001C3.5 5.39001 5.39001 3.5 7.70001 3.5H9.70668"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M9.74167 24.5H7.70001C5.39001 24.5 3.5 22.61 3.5 20.3V18.2117"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M24.4998 18.2117V20.3C24.4998 22.61 22.6098 24.5 20.2998 24.5H18.2231"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M9.7998 8.8783V10.9783"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M18.1997 8.8783V10.9783"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M13.9997 10.4532V14.1399C13.9997 14.4666 13.848 14.7699 13.5914 14.9682L12.9497 15.4699"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M16.9048 18.69C16.2398 19.5416 15.2015 20.09 14.0465 20.09C12.8915 20.09 11.7598 19.495 11.1064 18.585"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -378,9 +376,9 @@ export const Loop = () => {
             <path
                 d="M11.6252 3.36759C10.3692 2.57359 8.85336 1 6.90445 1C3.64181 1 1 3.58412 1 6.77457C1 9.96501 3.65625 12.5491 6.90445 12.5491C9.09878 12.5491 11.1344 11.4231 12.2748 9.57524L14.0072 6.77457L15.7252 3.9739C16.8512 2.14047 18.8867 1 21.0955 1C24.3581 1 27 3.58412 27 6.77457C27 9.96501 24.3437 12.5491 21.0955 12.5491C19.1466 12.5491 18.0782 11.1921 16.3747 10.1815"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -399,23 +397,23 @@ export const ShopBag = () => {
             <path
                 d="M9.46167 10.1617L9.89334 6.60334C10.1267 4.67834 11.9467 3.30166 13.965 3.52333C15.9833 3.74499 17.43 5.48333 17.1967 7.40833L16.835 10.43"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M19.7399 8.75L18.7132 24.5L5.03991 23.0883C4.40991 23.0183 3.97824 22.435 4.11824 21.8167L6.98824 8.75H19.7399V8.75Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M23.45 21.2917L18.7017 24.5L19.7283 8.75L22.9017 9.765L23.905 20.3233C23.94 20.7083 23.765 21.07 23.45 21.2917Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -458,30 +456,30 @@ export const People = () => {
             <path
                 d="M10.3731 9.4001C12.7894 9.4001 14.7482 7.51968 14.7482 5.20005C14.7482 2.88043 12.7894 1 10.3731 1C7.95683 1 5.99805 2.88043 5.99805 5.20005C5.99805 7.51968 7.95683 9.4001 10.3731 9.4001Z"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M18.8789 1.59998C20.1494 2.33492 20.9992 3.67221 20.9992 5.20002C20.9992 6.72783 20.1494 8.06512 18.8789 8.80006"
                 stroke="var(--theme-primary)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M11.3501 14.2002H9.40011C9.02861 14.2002 8.84286 14.2002 8.68584 14.2064C4.51427 14.3703 1.17012 17.7145 1.00617 21.886C1 22.0431 1 22.2288 1 22.6003H19.7502C19.7502 22.2288 19.7502 22.0431 19.7441 21.886C19.5801 17.7145 16.236 14.3703 12.0644 14.2064C11.9074 14.2002 11.7216 14.2002 11.3501 14.2002Z"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M25.9996 22.6002V21.8802C25.9996 19.1919 25.9996 17.8478 25.4546 16.821C24.9753 15.9178 24.2104 15.1835 23.2695 14.7233"
                 stroke="var(--theme-primary)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -500,38 +498,38 @@ export const Eye = () => {
             <path
                 d="M3.66172 16.6508V16.6292H3.65088C8.38505 8.60168 17.355 8.49334 22.1867 16.4125"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M13 6.87916V3.23917"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M5.6875 9.31666L3.25 5.66583"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M20.3125 9.31666L22.75 5.66583"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M13.0001 22.7392C15.0223 22.7392 16.6617 21.1046 16.6617 19.0883C16.6617 17.072 15.0223 15.4375 13.0001 15.4375C10.9778 15.4375 9.33838 17.072 9.33838 19.0883C9.33838 21.1046 10.9778 22.7392 13.0001 22.7392Z"
                 fill="var(--theme-primary)"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
             >
             </path>
         </svg>
@@ -551,25 +549,25 @@ export const Sparks = () => {
             <path
                 d="M9.95999 5.49005L12.03 6.32006C12.57 6.54006 12.57 6.89004 12.03 7.11004L9.95999 7.94006L9.12999 10.02C8.90999 10.54 8.55999 10.54 8.33999 10.02L7.50999 7.94006L5.43999 7.11004C4.91999 6.89004 4.91999 6.54006 5.43999 6.32006L7.50999 5.49005L8.33999 3.41006C8.55999 2.86006 8.90999 2.86006 9.12999 3.41006L9.95999 5.49005Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M17.52 11.8401L19.59 12.6702C20.13 12.8902 20.13 13.2401 19.59 13.4601L17.52 14.2902L16.69 16.3701C16.47 16.8901 16.12 16.8901 15.9 16.3701L15.07 14.2902L13 13.4601C12.48 13.2401 12.48 12.8902 13 12.6702L15.07 11.8401L15.9 9.76016C16.12 9.21016 16.47 9.21016 16.69 9.76016L17.52 11.8401Z"
                 fill="var(--theme-primary)"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
             >
             </path>
             <path
                 d="M8.21 16.78L9.99 17.49C10.46 17.68 10.46 17.98 9.99 18.17L8.21 18.88L7.5 20.66C7.31 21.11 7.01 21.11 6.82 20.66L6.11 18.88L4.33 18.17C3.89 17.98 3.89 17.68 4.33 17.49L6.11 16.78L6.82 15C7.01 14.53 7.31 14.53 7.5 15L8.21 16.78Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -588,44 +586,44 @@ export const DotDiagram = () => {
             <path
                 d="M14.6575 14.7117L11.2775 11.2883"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M22.75 9.72827L17.875 14.6033"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M3.25 16.2609L8.25499 11.2559"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M18.4167 3.25H7.58333C5.1901 3.25 3.25 5.1901 3.25 7.58333V18.4167C3.25 20.8099 5.1901 22.75 7.58333 22.75H18.4167C20.8099 22.75 22.75 20.8099 22.75 18.4167V7.58333C22.75 5.1901 20.8099 3.25 18.4167 3.25Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M11.5375 10.075C11.5375 10.4867 11.3859 10.8767 11.1367 11.1583C10.8334 11.5483 10.3675 11.7867 9.82584 11.7867C9.23001 11.7867 8.72085 11.4942 8.41752 11.0392C8.22252 10.7683 8.125 10.4325 8.125 10.0858C8.125 9.14333 8.88335 8.38501 9.83669 8.38501C10.79 8.38501 11.5375 9.14333 11.5375 10.0858V10.075Z"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M17.875 15.9249C17.875 16.8674 17.1166 17.6258 16.1633 17.6258C15.21 17.6258 14.4625 16.8674 14.4625 15.9249C14.4625 15.5458 14.5925 15.1991 14.8091 14.9175C15.1125 14.495 15.6 14.2241 16.1741 14.2241C16.7483 14.2241 17.2791 14.5166 17.5825 14.9716C17.7775 15.2425 17.875 15.5783 17.875 15.9249V15.9249Z"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -652,15 +650,15 @@ export const Bubbles = () => {
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M17.8013 7.25C19.9376 7.25 21.75 8.88285 21.75 11C21.75 13.1171 19.9376 14.75 17.8013 14.75C15.6649 14.75 13.8525 13.1171 13.8525 11C13.8525 8.88284 15.6649 7.25 17.8013 7.25ZM20.25 11C20.25 9.80047 19.2013 8.75 17.8013 8.75C16.4012 8.75 15.3525 9.80048 15.3525 11C15.3525 12.1995 16.4012 13.25 17.8013 13.25C19.2013 13.25 20.25 12.1995 20.25 11Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M4.19875 7.4928C6.33511 7.4928 8.14755 9.12565 8.14755 11.2428C8.14755 13.36 6.33511 14.9928 4.19875 14.9928C2.06237 14.9928 0.250001 13.3599 0.250001 11.2428C0.250001 9.12567 2.06237 7.4928 4.19875 7.4928ZM6.64755 11.2428C6.64755 10.0433 5.5988 8.9928 4.19875 8.9928C2.79871 8.9928 1.75 10.0433 1.75 11.2428C1.75 12.4423 2.79871 13.4928 4.19875 13.4928C5.59881 13.4928 6.64755 12.4423 6.64755 11.2428Z"
                 fill="currentColor"
             >
@@ -682,44 +680,44 @@ export const Wand = () => {
             <path
                 d="M14.0616 6.14248V3.25"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M19.8575 11.9166H22.75"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M20.2042 18.0483L18.1567 16.0009"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M9.97751 7.82164L7.92999 5.78503"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M18.1567 7.81082L20.2042 5.76331"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M14.0942 14.9824C14.9392 14.1374 14.9392 12.7616 14.0942 11.9166C13.2383 11.0716 11.8733 11.0716 11.0175 11.9166L3.88919 19.0558C3.03336 19.9008 3.03336 21.2766 3.88919 22.1216C4.73419 22.9666 6.10998 22.9666 6.95498 22.1216L14.0942 14.9824Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round">
             </path>
         </svg>
     )
@@ -738,14 +736,14 @@ export const RateDiagram = () => {
             <path
                 d="M23.0265 5.84127V18.1587C23.0265 20.8471 20.8471 23.0265 18.1587 23.0265H5.84127C3.1529 23.0265 0.973545 20.8471 0.973545 18.1587V5.84127C0.973545 3.1529 3.1529 0.973545 5.84127 0.973545H7.24138H17.3793H18.1587C20.8471 0.973545 23.0265 3.1529 23.0265 5.84127Z"
                 stroke="currentColor"
-                stroke-width="1.94709"
-                stroke-linecap="round">
+                strokeWidth="1.94709"
+                strokeLinecap="round">
             </path>
             <path
                 d="M4.44466 12.2222H7.37795C7.49089 12.2222 7.59827 12.1732 7.67223 12.0879L10.104 9.28193C10.2742 9.08555 10.5854 9.1078 10.7259 9.32639L14.1456 14.6459C14.2913 14.8726 14.6176 14.8863 14.7818 14.6728L16.55 12.3742C16.6237 12.2784 16.7377 12.2222 16.8586 12.2222H19.1113"
                 stroke="var(--theme-primary)"
-                stroke-width="1.94709"
-                stroke-linecap="round">
+                strokeWidth="1.94709"
+                strokeLinecap="round">
             </path>
         </svg>
     )
@@ -764,8 +762,8 @@ export const Puzzle = () => {
             <path
                 d="M1 13V5.8H6.34276V4.6C6.34276 2.61177 7.93744 1 9.90459 1C11.8717 1 13.4664 2.61177 13.4664 4.6V5.8H18.8092V13H21.1837C23.1509 13 24.7456 14.6118 24.7456 16.6C24.7456 18.5882 23.1509 20.2 21.1837 20.2H18.8092V25H1V20.2H3.37456C5.34171 20.2 6.9364 18.5882 6.9364 16.6C6.9364 14.6118 5.34171 13 3.37456 13H1Z"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -784,9 +782,9 @@ export const Badges = () => {
             <path
                 d="M7.58333 24.5H23.8824C24.2235 24.5 24.5003 24.2236 24.5003 23.8825L24.5 16.9508M9.31055 24.1165L24.0825 17.2283C24.3916 17.0841 24.5253 16.7165 24.3811 16.4074L21.4517 10.1257C21.3076 9.81657 20.94 9.68233 20.6309 9.82649L14.0353 12.9023M11.5288 21.4722C10.9451 23.6506 8.70607 24.9433 6.52775 24.3596C4.34943 23.7759 3.05645 21.5371 3.64013 19.3588L7.85862 3.61507C7.94691 3.28558 8.28529 3.08997 8.61478 3.17826L15.3102 4.97199C15.6397 5.06028 15.8353 5.39886 15.747 5.72836L11.5288 21.4722ZM7.58333 20.5334H7.58567L7.58561 20.5358L7.58333 20.5357V20.5334Z"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -803,22 +801,22 @@ export const Hand = () => {
             style={{ width: "26", height: 26 }}
         >
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M15.0312 4.0625C14.708 4.0625 14.398 4.1909 14.1695 4.41946C13.9409 4.64802 13.8125 4.95802 13.8125 5.28125C13.8125 5.72998 13.4487 6.09375 13 6.09375C12.5513 6.09375 12.1875 5.72998 12.1875 5.28125C12.1875 4.52704 12.4871 3.80372 13.0204 3.27042C13.5537 2.73711 14.277 2.4375 15.0312 2.4375C15.7855 2.4375 16.5088 2.73711 17.0421 3.27042C17.5754 3.80372 17.875 4.52704 17.875 5.28125V11.375C17.875 11.8237 17.5112 12.1875 17.0625 12.1875C16.6138 12.1875 16.25 11.8237 16.25 11.375V5.28125C16.25 4.95802 16.1216 4.64802 15.893 4.41946C15.6645 4.1909 15.3545 4.0625 15.0312 4.0625Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M10.9688 2.4375C10.6455 2.4375 10.3355 2.5659 10.107 2.79446C9.8784 3.02302 9.75 3.33302 9.75 3.65625V6.90625C9.75 7.35498 9.38623 7.71875 8.9375 7.71875C8.48877 7.71875 8.125 7.35498 8.125 6.90625V3.65625C8.125 2.90204 8.42461 2.17872 8.95792 1.64542C9.49122 1.11211 10.2145 0.8125 10.9688 0.8125C11.723 0.8125 12.4463 1.11211 12.9796 1.64542C13.5129 2.17872 13.8125 2.90204 13.8125 3.65625V10.5625C13.8125 11.0112 13.4487 11.375 13 11.375C12.5513 11.375 12.1875 11.0112 12.1875 10.5625V3.65625C12.1875 3.33302 12.0591 3.02302 11.8305 2.79446C11.602 2.5659 11.292 2.4375 10.9688 2.4375Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M6.90625 5.6875C6.58302 5.6875 6.27302 5.8159 6.04446 6.04446C5.8159 6.27302 5.6875 6.58302 5.6875 6.90625V15.4375C5.6875 17.3769 6.45792 19.2369 7.82928 20.6082C9.20064 21.9796 11.0606 22.75 13 22.75C14.9394 22.75 16.7994 21.9796 18.1707 20.6082C19.5421 19.2369 20.3125 17.3769 20.3125 15.4375V11.375C20.3125 11.0518 20.1841 10.7418 19.9555 10.5132C19.727 10.2847 19.417 10.1562 19.0938 10.1562C18.7705 10.1562 18.4605 10.2847 18.232 10.5132C18.0034 10.7418 17.875 11.0518 17.875 11.375V13.4062C17.875 13.855 17.5112 14.2188 17.0625 14.2188C16.2005 14.2188 15.3739 14.5612 14.7644 15.1707C14.1549 15.7801 13.8125 16.6068 13.8125 17.4688C13.8125 17.9175 13.4487 18.2812 13 18.2812C12.5513 18.2812 12.1875 17.9175 12.1875 17.4688C12.1875 16.1758 12.7011 14.9358 13.6154 14.0216C14.3358 13.3012 15.2585 12.8295 16.25 12.6619V11.375C16.25 10.6208 16.5496 9.89747 17.0829 9.36417C17.6162 8.83086 18.3395 8.53125 19.0938 8.53125C19.848 8.53125 20.5713 8.83086 21.1046 9.36417C21.6379 9.89747 21.9375 10.6208 21.9375 11.375V15.4375C21.9375 17.8079 20.9959 20.0812 19.3198 21.7573C17.6437 23.4334 15.3704 24.375 13 24.375C10.6296 24.375 8.35634 23.4334 6.68023 21.7573C5.00413 20.0812 4.0625 17.8079 4.0625 15.4375V6.90625C4.0625 6.15204 4.36211 5.42872 4.89542 4.89542C5.42872 4.36211 6.15204 4.0625 6.90625 4.0625C7.66046 4.0625 8.38378 4.36211 8.91708 4.89542C9.45039 5.42872 9.75 6.15204 9.75 6.90625V11.375C9.75 11.8237 9.38623 12.1875 8.9375 12.1875C8.48877 12.1875 8.125 11.8237 8.125 11.375V6.90625C8.125 6.58302 7.9966 6.27302 7.76804 6.04446C7.53948 5.8159 7.22948 5.6875 6.90625 5.6875Z"
                 fill="currentColor"
             >
@@ -840,20 +838,20 @@ export const FingerPrint = () => {
             <path
                 d="M12.01 14.96C11.1 14.96 10.36 14.2 10.36 13.26V10.72C10.36 9.78002 11.1 9.02002 12.01 9.02002C12.92 9.02002 13.66 9.78002 13.66 10.72V13.26C13.66 14.2 12.92 14.96 12.01 14.96Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeLinecap="round">
             </path>
             <path
                 d="M16.99 13.51C16.79 16.16 14.63 18.24 12.01 18.24C9.25001 18.24 7.01001 15.94 7.01001 13.1V10.9C7.01001 8.06001 9.25001 5.76001 12.01 5.76001C14.6 5.76001 16.73 7.79002 16.98 10.38"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeLinecap="round">
             </path>
             <path
                 d="M5.32001 7.22C6.56001 4.72 9.1 3 12 3C16.12 3 19.5 6.47001 19.5 10.71V13.28C19.5 17.52 16.13 20.99 12 20.99C7.88 20.99 4.5 17.52 4.5 13.28V10.71"
                 stroke="var(--theme-primary)"
-                stroke-width="1.5"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeLinecap="round">
             </path>
         </svg>
     )
@@ -870,29 +868,29 @@ export const Target = () => {
             style={{ width: "22", height: 22 }}
         >
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M4.43842 12.0687C4.43842 9.06363 6.87216 6.6123 9.88371 6.6123C12.8953 6.6123 15.329 9.06363 15.329 12.0687C15.329 15.0737 12.8953 17.5251 9.88371 17.5251C6.87215 17.5251 4.43842 15.0737 4.43842 12.0687ZM9.88371 8.6123C7.98321 8.6123 6.43842 10.1617 6.43842 12.0687C6.43842 13.9757 7.98322 15.5251 9.88371 15.5251C11.7842 15.5251 13.329 13.9757 13.329 12.0687C13.329 10.1617 11.7842 8.6123 9.88371 8.6123Z"
                 fill="var(--theme-primary)"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M12.7921 4.44457C11.0554 3.77427 9.13297 3.73272 7.36119 4.31313C5.59143 4.89288 4.06469 6.07346 3.05764 7.63999L3.05578 7.64288L3.05578 7.64287C2.04035 9.20663 1.60123 11.0785 1.79448 12.9448C1.99849 14.7965 2.83358 16.5385 4.14727 17.8628C5.4705 19.1856 7.1997 20.009 9.05035 20.2022L9.0544 20.2027C10.9004 20.4055 12.7616 19.9496 14.3318 18.93C15.8989 17.9124 17.0684 16.3865 17.6377 14.6073L17.6389 14.6036C18.219 12.8228 18.1683 10.8992 17.4962 9.14788C17.3478 8.76116 17.541 8.32736 17.9278 8.17897C18.3145 8.03058 18.7483 8.22378 18.8967 8.6105C19.6914 10.6815 19.752 12.9581 19.0658 15.0664C18.3902 17.176 17.0039 18.9834 15.1487 20.1881C13.2967 21.3907 11.0912 21.935 8.89275 21.6939C6.69936 21.4645 4.65119 20.4881 3.08555 18.9225L3.08351 18.9204C1.53108 17.3559 0.544109 15.2985 0.303214 13.1064L0.302723 13.1019L0.302737 13.1019C0.0743352 10.902 0.590655 8.68561 1.7968 6.82741C2.99018 4.97177 4.79711 3.57465 6.89422 2.88767C8.98985 2.20117 11.2682 2.24854 13.3322 3.04518C13.7186 3.19433 13.911 3.6285 13.7618 4.01493C13.6127 4.40136 13.1785 4.59372 12.7921 4.44457Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M18.1589 3.7803C18.4524 4.07256 18.4534 4.54743 18.1611 4.84095L10.4264 12.6091C10.1341 12.9026 9.65923 12.9036 9.36571 12.6114C9.07219 12.3191 9.07116 11.8442 9.36343 11.5507L17.0982 3.78258C17.3905 3.48906 17.8653 3.48804 18.1589 3.7803Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M17.663 0.25C18.0772 0.25 18.413 0.585786 18.413 1V3.58397H20.9969C21.4111 3.58397 21.7469 3.91976 21.7469 4.33397C21.7469 4.74819 21.4111 5.08397 20.9969 5.08397H16.913V1C16.913 0.585786 17.2488 0.25 17.663 0.25Z"
                 fill="currentColor"
             >
@@ -912,43 +910,43 @@ export const HandShake = () => {
             style={{ width: "28", height: 28 }}
         >
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M23.2471 7.39067L25.9338 12.5348L25.9338 12.5348L25.936 12.5389L24.0029 13.5015L21.3133 8.35758L23.2471 7.39067ZM26.3263 13.3213L26.7166 14.1051L24.015 15.4504C23.5885 15.6628 23.0704 15.4949 22.8496 15.0726L19.3496 8.37886C19.2408 8.17078 19.2202 7.92769 19.2924 7.70426C19.3647 7.48083 19.5237 7.29581 19.7337 7.1908L22.4656 5.82487C22.8737 5.61798 23.3471 5.58029 23.7829 5.7201C24.2196 5.86017 24.5833 6.16706 24.7948 6.57394C24.795 6.57434 24.7952 6.57473 24.7954 6.57513L27.4828 11.7205C27.4832 11.7213 27.4836 11.7221 27.4841 11.7229C27.5924 11.9285 27.6588 12.1536 27.6792 12.3851C27.6997 12.6176 27.6735 12.8517 27.6022 13.0739C27.5308 13.2961 27.4158 13.5017 27.2638 13.6788C27.1118 13.8558 26.926 14.0007 26.7172 14.1048L26.3263 13.3213Z"
                 fill="var(--theme-primary)"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M4.75727 7.27263L2.06839 12.4209L3.9977 13.3894L6.68709 8.23754L4.75727 7.27263ZM4.2086 5.61083C4.64171 5.46782 5.11353 5.49956 5.52358 5.69927L5.53177 5.70326L8.26613 7.07049C8.47606 7.17546 8.63502 7.36037 8.7073 7.58368C8.77957 7.80698 8.7591 8.04997 8.65049 8.25804L5.15049 14.9627C4.92936 15.3863 4.40929 15.5542 3.98224 15.3398L1.28382 13.9851C1.07623 13.8827 0.891169 13.7398 0.739503 13.5648C0.586778 13.3887 0.471036 13.1836 0.399158 12.9618C0.327281 12.74 0.300735 12.506 0.3211 12.2738C0.341361 12.0427 0.407643 11.818 0.516031 11.613L3.20483 6.4649C3.20498 6.46462 3.20513 6.46433 3.20527 6.46405C3.41584 6.05985 3.7758 5.75373 4.2086 5.61083Z"
                 fill="var(--theme-primary)"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M3.68531 14.0194C3.98267 13.6385 4.53253 13.5707 4.91346 13.8681L10.8963 18.5384L10.9094 18.5488L17.2089 20.1237C17.2159 20.1245 17.2229 20.124 17.2296 20.1221C17.2363 20.1203 17.2425 20.1172 17.248 20.113L21.2315 16.1296L22.9587 14.1001C23.2719 13.7321 23.8241 13.6876 24.1921 14.0008C24.5602 14.314 24.6046 14.8663 24.2914 15.2343L22.5414 17.2905C22.5262 17.3084 22.5103 17.3256 22.4938 17.3422L18.4688 21.3672C18.465 21.3709 18.4612 21.3747 18.4573 21.3784C18.4541 21.3814 18.4509 21.3845 18.4477 21.3875C18.2347 21.5867 17.9767 21.7312 17.6957 21.8089C17.4147 21.8865 17.1191 21.8949 16.8341 21.8334C16.8249 21.8314 16.8157 21.8293 16.8066 21.827L10.4628 20.2411C10.4552 20.2392 10.4476 20.2372 10.4401 20.2351C10.2116 20.1714 9.99854 20.0619 9.81372 19.9134L3.83662 15.2475C3.45569 14.9502 3.38795 14.4003 3.68531 14.0194Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M15.6748 8.84842L11.3992 13.113C11.3986 13.1139 11.398 13.1149 11.3976 13.116C11.3971 13.1174 11.3969 13.119 11.397 13.1205C11.3971 13.1221 11.3976 13.1236 11.3983 13.1249C11.399 13.1263 11.4001 13.1275 11.4013 13.1284L11.9884 13.5742C12.4433 13.9128 12.9952 14.0957 13.5624 14.0957C14.1302 14.0957 14.6829 13.9123 15.1381 13.5728C15.1384 13.5726 15.1387 13.5724 15.139 13.5722L16.5374 12.5234C16.8447 12.2929 17.2663 12.2898 17.577 12.5158L22.3895 16.0158C22.7803 16.3 22.8667 16.8473 22.5825 17.2381C22.2983 17.6289 21.751 17.7153 21.3602 17.4311L17.0704 14.3112L16.1857 14.9746C15.428 15.5402 14.5078 15.8457 13.5624 15.8457C12.6169 15.8457 11.6967 15.5402 10.939 14.9746L10.9332 14.9703L10.3426 14.5219C10.1441 14.371 9.97945 14.1792 9.86044 13.9601C9.74143 13.741 9.67032 13.499 9.65182 13.2503C9.63333 13.0017 9.66786 12.7519 9.75314 12.5175C9.83842 12.2832 9.9725 12.0696 10.1465 11.891L10.1554 11.882L14.4436 7.60474C14.6057 7.44344 14.798 7.31569 15.0096 7.22881C15.2205 7.14216 15.4465 7.09786 15.6746 7.09842C15.6752 7.09843 15.6758 7.09843 15.6764 7.09843L15.6733 7.97342V7.09842H15.6746H20.1249C20.6081 7.09842 20.9999 7.49018 20.9999 7.97342C20.9999 8.45667 20.6081 8.84842 20.1249 8.84842H15.6748Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M13.7928 7.0536L17.576 8.77024C18.016 8.96992 18.5347 8.77505 18.7343 8.33499C18.934 7.89492 18.7392 7.3763 18.2991 7.17662L14.5147 5.45943L14.5135 5.45889C14.1355 5.28806 13.7091 5.25705 13.3104 5.37139L7.69509 7.01328C7.23126 7.1489 6.9652 7.63485 7.10082 8.09868C7.23644 8.56251 7.7224 8.82857 8.18622 8.69295L13.7928 7.0536Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M5.46398 19.5517C5.7806 19.1866 6.33322 19.1474 6.6983 19.464L9.16715 21.6051C9.16878 21.6055 9.17041 21.6059 9.17203 21.6063L12.4642 22.4376C12.9328 22.5559 13.2167 23.0316 13.0984 23.5002C12.9801 23.9687 12.5044 24.2526 12.0358 24.1343L8.75236 23.3053C8.4805 23.2417 8.22869 23.1115 8.0196 22.9263L5.55173 20.786C5.18665 20.4694 5.14736 19.9168 5.46398 19.5517Z"
                 fill="var(--theme-primary)"
             >
@@ -970,23 +968,23 @@ export const Rings = () => {
             <path
                 d="M21.8184 16.1092C22.1 16.3692 22.3275 16.6833 22.49 17.0408C22.6525 17.3875 22.7392 17.7775 22.75 18.1567C22.75 20.6917 18.6441 22.75 13.5091 22.75C8.37414 22.75 4.26834 20.7025 4.26834 18.1567C4.26834 16.9758 5.15666 15.9033 6.61916 15.0908"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round">
             </path>
             <path
                 d="M4.57163 11.4942C4.40913 12.7075 5.22165 13.9858 6.61915 15.0475C8.46081 16.3258 10.5625 17.1708 12.7725 17.5175C16.6291 18.1892 20.1283 17.5717 21.7425 16.12C22.2083 15.73 22.5225 15.1883 22.6417 14.5925C22.9017 13.0433 21.6017 11.4075 19.37 10.1833"
                 stroke="var(--theme-primary)"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round">
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round">
             </path>
             <path
                 d="M13.1517 12.5775C18.1567 11.7 21.8617 8.95915 21.4175 6.45665C20.9734 3.95415 16.5533 2.64332 11.5483 3.52082C6.54331 4.39832 2.83837 7.13915 3.28254 9.64165C3.72671 12.1441 8.13586 13.455 13.1517 12.5775Z"
                 stroke="currentColor"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round">
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round">
             </path>
         </svg>
     )
@@ -1005,16 +1003,16 @@ export const Checked = () => {
             <path
                 d="M23.8332 12.0033V13C23.8318 15.3361 23.0754 17.6092 21.6766 19.4803C20.2779 21.3514 18.3117 22.7202 16.0715 23.3826C13.8312 24.0449 11.4369 23.9654 9.24551 23.1558C7.05416 22.3462 5.18321 20.8499 3.91171 18.8902C2.64021 16.9304 2.03628 14.6121 2.18999 12.281C2.3437 9.94994 3.24681 7.73102 4.76464 5.95516C6.28247 4.1793 8.33369 2.94166 10.6124 2.42682C12.8911 1.91198 15.2751 2.14753 17.409 3.09833"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M23.8333 4.33334L13 15.1775L9.75 11.9275"
                 stroke="var(--theme-primary)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -1033,21 +1031,21 @@ export const SquarePen = () => {
             <path
                 d="M24.5 14V20.3C24.5 22.61 22.61 24.5 20.3 24.5H7.69997C5.38997 24.5 3.5 22.61 3.5 20.3V7.70001C3.5 5.39001 5.38997 3.5 7.69997 3.5H14"
                 stroke="var(--theme-primary)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M21.5831 10.6983L16.7998 15.4817C16.5898 15.6917 16.3448 15.8083 16.0531 15.8317L13.1948 16.1C12.4481 16.17 11.8181 15.5283 11.8881 14.7817L12.1448 12.005C12.1681 11.7133 12.2848 11.4567 12.4948 11.2583L17.3248 6.42834L21.5831 10.6983V10.6983Z"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinejoin="round">
             </path>
             <path
                 d="M24.1497 8.14336L21.5831 10.6984L17.3247 6.42836L19.8797 3.87336C20.3464 3.40669 21.1164 3.40669 21.5831 3.87336L24.1497 6.42836C24.6047 6.89503 24.6047 7.6767 24.1497 8.14336V8.14336Z"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linejoin="round">
+                strokeWidth="2"
+                strokeLinejoin="round">
             </path>
         </svg>
     )
@@ -1064,22 +1062,22 @@ export const Graduate = () => {
             style={{ width: "26", height: 26 }}
         >
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M12.6176 2.53309C12.8566 2.40564 13.1434 2.40564 13.3824 2.53309L25.5699 9.03309C25.8346 9.1743 26 9.44993 26 9.75C26 10.0501 25.8346 10.3257 25.5699 10.4669L13.3824 16.9669C13.1434 17.0944 12.8566 17.0944 12.6176 16.9669L0.430147 10.4669C0.165383 10.3257 0 10.0501 0 9.75C0 9.44993 0.165383 9.1743 0.430147 9.03309L12.6176 2.53309ZM2.53906 9.75L13 15.3292L23.4609 9.75L13 4.17083L2.53906 9.75Z"
                 fill="currentColor"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M12.2832 9.36765C12.4944 8.97171 12.9866 8.82192 13.3825 9.03309L19.4763 12.2831C19.741 12.4243 19.9064 12.6999 19.9064 13V24.375C19.9064 24.8237 19.5426 25.1875 19.0939 25.1875C18.6452 25.1875 18.2814 24.8237 18.2814 24.375V13.4875L12.6178 10.4669C12.2219 10.2557 12.0721 9.76359 12.2832 9.36765Z"
                 fill="var(--theme-primary)"
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M3.65626 10.4508C4.10499 10.4508 4.46876 10.8146 4.46876 11.2633V16.7984L4.47054 16.8007L4.47049 16.8008C5.07305 17.6102 7.74475 20.7188 13 20.7188C18.2553 20.7188 20.927 17.6102 21.5295 16.8008L21.5313 16.7984V11.2633C21.5313 10.8146 21.895 10.4508 22.3438 10.4508C22.7925 10.4508 23.1563 10.8146 23.1563 11.2633V16.8086L23.1562 16.812C23.1548 17.1597 23.0404 17.4975 22.8304 17.7745C22.0677 18.7978 18.9709 22.3438 13 22.3438C7.02907 22.3438 3.93227 18.7977 3.16955 17.7745C2.95959 17.4975 2.84523 17.1597 2.84376 16.812L2.84375 16.8086H2.84376V11.2633C2.84376 10.8146 3.20753 10.4508 3.65626 10.4508Z"
                 fill="currentColor"
             >
@@ -1104,8 +1102,8 @@ export const Group = () => {
             >
             </path>
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M8.22222 2C6.38127 2 4.88889 3.49238 4.88889 5.33333C4.88889 6.32046 5.31671 7.20634 6.00025 7.81813C6.41177 8.18646 6.44679 8.81865 6.07847 9.23018C5.71014 9.64171 5.07795 9.67673 4.66642 9.3084C3.57691 8.33326 2.88889 6.91298 2.88889 5.33333C2.88889 2.38781 5.2767 0 8.22222 0C9.58755 0 10.8351 0.514346 11.778 1.35827C12.1896 1.72659 12.2246 2.35879 11.8562 2.77032C11.4879 3.18184 10.8557 3.21686 10.4442 2.84854C9.8538 2.32012 9.07659 2 8.22222 2ZM16.222 1.35827C17.1649 0.514345 18.4125 0 19.7778 0C22.7233 0 25.1111 2.38781 25.1111 5.33333C25.1111 6.91298 24.4231 8.33326 23.3336 9.3084C22.9221 9.67673 22.2899 9.64171 21.9215 9.23018C21.5532 8.81865 21.5882 8.18646 21.9998 7.81813C22.6833 7.20634 23.1111 6.32046 23.1111 5.33333C23.1111 3.49238 21.6187 2 19.7778 2C18.9234 2 18.1462 2.32012 17.5558 2.84854C17.1443 3.21686 16.5121 3.18184 16.1438 2.77032C15.7754 2.35879 15.8104 1.72659 16.222 1.35827ZM14 6.33333C12.159 6.33333 10.6667 7.82572 10.6667 9.66667C10.6667 11.5076 12.159 13 14 13C15.8409 13 17.3333 11.5076 17.3333 9.66667C17.3333 7.82572 15.8409 6.33333 14 6.33333ZM8.66667 9.66667C8.66667 6.72115 11.0545 4.33333 14 4.33333C16.9455 4.33333 19.3333 6.72115 19.3333 9.66667C19.3333 12.6122 16.9455 15 14 15C11.0545 15 8.66667 12.6122 8.66667 9.66667ZM6.30065 14.1075C6.4407 14.6418 6.12115 15.1884 5.58692 15.3284C4.42702 15.6325 3.49817 16.1185 2.8788 16.6755C2.26215 17.23 2 17.804 2 18.3339C2 18.8862 1.55228 19.3339 1 19.3339C0.447715 19.3339 0 18.8862 0 18.3339C0 17.0868 0.62914 16.0088 1.54147 15.1883C2.45108 14.3703 3.6889 13.7584 5.07975 13.3938C5.61398 13.2537 6.1606 13.5733 6.30065 14.1075ZM21.6994 14.1075C21.8394 13.5733 22.386 13.2537 22.9202 13.3938C24.3111 13.7584 25.5489 14.3703 26.4585 15.1883C27.3709 16.0088 28 17.0868 28 18.3339C28 18.8862 27.5523 19.3339 27 19.3339C26.4477 19.3339 26 18.8862 26 18.3339C26 17.804 25.7378 17.23 25.1212 16.6755C24.5018 16.1185 23.573 15.6325 22.4131 15.3284C21.8789 15.1884 21.5593 14.6418 21.6994 14.1075ZM8.37862 18.745C9.86571 17.8528 11.8556 17.3333 14 17.3333C16.1444 17.3333 18.1343 17.8528 19.6214 18.745C21.0886 19.6254 22.2222 20.9808 22.2222 22.6667C22.2222 23.219 21.7745 23.6667 21.2222 23.6667C20.6699 23.6667 20.2222 23.219 20.2222 22.6667C20.2222 21.9593 19.7391 21.1481 18.5924 20.46C17.4655 19.7839 15.8443 19.3333 14 19.3333C12.1557 19.3333 10.5345 19.7839 9.40761 20.46C8.26087 21.1481 7.77778 21.9593 7.77778 22.6667C7.77778 23.219 7.33006 23.6667 6.77778 23.6667C6.22549 23.6667 5.77778 23.219 5.77778 22.6667C5.77778 20.9808 6.91144 19.6254 8.37862 18.745Z"
                 fill="currentColor"
             >

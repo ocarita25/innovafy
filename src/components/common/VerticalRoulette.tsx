@@ -14,7 +14,7 @@ const chunkArray = (arr: string[], size: number) => {
 }
 
 type PannedProps = {
-    content: string[];
+    elements: string[];
     columns?: number;
     minColumns?: number;
     minSize?: string;
@@ -24,7 +24,7 @@ type PannedProps = {
     imgClass?: string;
 } & React.HTMLAttributes<HTMLDivElement>
 
-const VerticalRoulette = ({ content, columns = 1, minColumns = columns, minSize = "0px", loop = true, type = "text", contentClass, imgClass, ...props }: PannedProps) => {
+const VerticalRoulette = ({ elements, columns = 1, minColumns = columns, minSize = "0px", loop = true, type = "text", contentClass, imgClass, ...props }: PannedProps) => {
 
     const [cols, setCols] = useState<number>(columns);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -36,11 +36,11 @@ const VerticalRoulette = ({ content, columns = 1, minColumns = columns, minSize 
         mm.add(`(max-width: ${minSize})`, () => setCols(minColumns))
     }, [])
 
-    const chunks = useMemo(() => chunkArray(content, cols), [content, cols])
+    const chunks = useMemo(() => chunkArray(elements, cols), [elements, cols])
     const [index, setIndex] = useState<number>(0);
 
     //Reiniciamos el index en caso de actualizar el contenido o las columnas
-    useEffect(() => { setIndex(0); }, [cols, content])
+    useEffect(() => { setIndex(0); }, [cols, elements])
 
     useEffect(() => {
         if (!containerRef.current) return;

@@ -1,47 +1,124 @@
-export const backgroundThemes = [
+import type { ThemeColorsType } from "@/types/ThemeColors.types";
+
+export const backgroundThemes: ThemeColorsType[] = [
     {
         id: 1,
-        pages: ["/", "/trabajo", "/thinking"],
-        color: "#FFF"
+        pages: ["/"],
+        bgColor: "#eff9fb",
+        accent: "var(--default-accent)",
+        textPrimary: "var(--text-default-primary)",
+    },
+    {
+        id: 100,
+        pages: ["/trabajo/*", "/thinking/*"],
+        bgColor: "#eff9fb",
+        accent: "var(--default-accent)",
+        textPrimary: "var(--text-default-primary)",
     },
     {
         id: 2,
         pages: ["/acerca-de"],
-        color: "#D8E7EE"
+        bgColor: "#D8E7EE",
+        accent: "var(--blue-primary)",
+        textPrimary: "var(--blue-secondary)",
     },
     {
         id: 3,
         pages: ["/contacto"],
-        color: "#D1CDD8"
+        bgColor: "#D1CDD8",
+        accent: "var(--purple-primary)",
+        textPrimary: "var(--purple-secondary)",
+        textSecondary: "#fff",
     },
     {
         id: 4,
-        pages: ["/servicios/sitios-web", "/servicios/diseno-experiencia-usuario", "/servicios/comunidad"],
-        color: "#DCF5F2"
+        pages: [
+            "/servicios/sitios-web",
+            "/servicios/diseno-experiencia-usuario",
+            "/servicios/comunidad",
+            "/servicios/paid-media-y-performance-advertising",
+            "/servicios/produccion-contenido-profesional",
+            "/servicios/multi-formato-y-produccion-de-contenido-global",
+            "/servicios/ingenieria-de-interfaz-y-experiencia-de-usuario",
+            "/servicios/produccion-audiovisual-de-alta-calidad"
+        ],
+        bgColor: "#DCF5F2",
+        accent: 'var(--cyan-primary)',
+        textPrimary: "var(--cyan-secondary)",
     },
     {
         id: 5,
-        pages: ["/servicios/aplicaciones-web", "/servicios/diseno-interfaz-usuario", "/servicios/larvel", "/servicios/sin-fines-de-lucro"],
-        color: "#FFEDF5"
+        pages: [
+            "/servicios/aplicaciones-web",
+            "/servicios/diseno-interfaz-usuario",
+            "/servicios/sin-fines-de-lucro",
+            "/servicios/fidelidad-cliente-y-programas-retencion",
+            "/servicios/estrategia-narrativa-y-brand-storytelling",
+            "/servicios/material-de-marca-y-diseno-de-merchandising",
+            "/servicios/advertising-creative-y-campaing-assets",
+        ],
+        bgColor: "#FFEDF5",
+        accent: "var(--pink-primary)",
+        textPrimary: "var(--pink-secondary)",
     },
     {
         id: 6,
-        pages: ["/servicios/aplicaciones-moviles", "/servicios/prototipado", "/servicios/comercial"],
-        color: "#EBF8FF"
+        pages: [
+            "/servicios/aplicaciones-moviles",
+            "/servicios/comercial",
+            "/servicios/sistemas-de-ventas-digitales",
+            "/servicios/sistemas-visuales-digitales-y-corporativos",
+            "/servicios/data-intelligence",
+            "/servicios/digital-asset-y-biblioteca-de-medios",
+            "/servicios/react-js",
+            "/servicios/arquitectura-de-automatizacion-de-marketing",
+            "/servicios/comercial"
+        ],
+        bgColor: "#EBF8FF",
+        accent: "var(--blue-primary)",
+        textPrimary: "var(--blue-secondary)",
     },
     {
         id: 7,
-        pages: ["/servicios/ecommerce", "/servicios/sistemas-diseno"],
-        color: "#E9FFE8"
+        pages: [
+            "/servicios/crecimiento-y-expansion",
+            "/servicios/sistemas-diseno",
+            "/servicios/crecimiento-y-expansion",
+            "/servicios/estrategia-de-crecimiento-organico-de-contenido",
+            "/servicios/ingenieria-de-embudos-de-ventas-automatizados",
+        ],
+        bgColor: "#E9FFE8",
+        accent: "var(--green-primary)",
+        textPrimary: "var(--green-secondary)",
+        textSecondary: "var(--green-secondary)"
     },
     {
         id: 8,
-        pages: ["/servicios/visualizacion-datos", "/servicios/investigacion-usuarios", "/servicios/headless", "/servicios/react-js", "/servicios/payload-cms", "/servicios/ia-automatizacion"],
-        color: "#EFE3FF"
+        pages: [
+            "/servicios/visualizacion-datos",
+            "/servicios/headless",
+            "/servicios/ia-automatizacion",
+            "/servicios/innovacion-startups",
+            "/servicios/posicionamiento-y-autoridad",
+            "/servicios/conversion-copy-y-persuasive-writing",
+            "/servicios/payload-cms",
+            "/servicios/arquitectura-de-identidad-de-marca",
+            "/servicios/post-produccion-y-motion-design",
+        ],
+        bgColor: "#EFE3FF",
+        accent: "var(--purple-primary)",
+        textPrimary: "var(--purple-secondary)",
     },
     {
         id: 9,
-        pages: ["/servicios/educacion"],
-        color: "#FFF8E4"
+        pages: [
+            "/servicios/educacion",
+            "/servicios/crecimiento-avanzado-y-abm-intelligence",
+            "/servicios/sistemas-conversacionales-con-ia",
+            "/servicios/inteligencia-artificial-aplicada-negocios",
+        ],
+        bgColor: "#FFF8E4",
+        accent: "var(--yellow-primary)",
+        textPrimary: "var(--yellow-secondary)",
     },
 ]

@@ -1,9 +1,6 @@
-import { Link, useLocation } from "react-router-dom"
-import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarTrigger } from "../ui/menubar"
 import { useState } from "react";
 
 function NavMenuPill() {
-    const location = useLocation();
 
     const [pillCol, setPillCol] = useState<string>("col-1");
 

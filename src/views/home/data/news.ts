@@ -1,0 +1,60 @@
+import type { NewsType } from "./types";
+
+export const news: NewsType[] = [
+    {
+        img: "/images/news/news-1.webp",
+        imgTitle: "Site Launch",
+        date: '28.08.24',
+        title: "Surveillance Watch",
+        description: "An interactive data visualisation highilighting global surveillance connections",
+        link: "#",
+    },
+    {
+        img: "/images/news/news-2.webp",
+        imgTitle: "Site Launch",
+        date: '28.08.24',
+        title: "Surveillance Watch",
+        description: "An interactive data visualisation highilighting global surveillance connections",
+        link: "#",
+    },
+    {
+        img: "/images/news/news-3.webp",
+        imgTitle: "Site Launch",
+        date: '28.08.24',
+        title: "Surveillance Watch",
+        description: "An interactive data visualisation highilighting global surveillance connections",
+        link: "#",
+    },
+    {
+        img: "/images/news/news-4.webp",
+        imgTitle: "Site Launch",
+        date: '28.08.24',
+        title: "Surveillance Watch",
+        description: "An interactive data visualisation highilighting global surveillance connections",
+        link: "#",
+    },
+    {
+        img: "/images/news/news-5.webp",
+        imgTitle: "Site Launch",
+        date: '28.08.24',
+        title: "Surveillance Watch",
+        description: "An interactive data visualisation highilighting global surveillance connections",
+        link: "#",
+    },
+    {
+        img: "/images/news/news-6.webp",
+        imgTitle: "Site Launch",
+        date: '28.08.24',
+        title: "Surveillance Watch",
+        description: "An interactive data visualisation highilighting global surveillance connections",
+        link: "#",
+    },
+    {
+        img: "/images/news/news-7.webp",
+        imgTitle: "Site Launch",
+        date: '28.08.24',
+        title: "Surveillance Watch",
+        description: "An interactive data visualisation highilighting global surveillance connections",
+        link: "#",
+    },
+]

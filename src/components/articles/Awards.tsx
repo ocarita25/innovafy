@@ -1,4 +1,3 @@
-import React from 'react'
 import Headings from '../common/Headings'
 import { recognition } from '@/data/awards'
 

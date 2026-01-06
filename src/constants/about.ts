@@ -1,36 +1,38 @@
 import { media } from "./images"
 
 export const whatWeDo = [
-    "Digital de clase mundial",
-    "Espera creatividad",
-    "Celebrar el éxito",
-    "Obsesionarse con los detalles",
-    "Almuerzos de viernes en el pub",
-    "Aceptar el cambio",
-    "Desbloquear el potencial",
-    "Choca esos cinco",
-    "Servicio excepcional",
-    "Valorar las relaciones",
-    "Superar las expectativas",
-    "Celebrar",
+    "Diseñamos el Futuro Digital",
+    "Resultados que Redefinen el Juego",
+    "Obsesionados con la Calidad",
+    "Abrazamos el Cambio Constante",
+    "Desbloqueamos Tu Potencial",
+    "Relaciones Sólidas y de Valor",
+    "Servicio Excepcional, Sin Pero",
+    "Resultados Excepcionales Siempre",
+    "Celebramos Tu Éxito	",
+    "¡Chocamos Esos Cinco!",
+    "Viernes de Ideas y Pizza",
+    "Pasión y Mucha Energía",
+
 ]
 
 export const whatWeDont = [
-    "Trabajar los fines de semana",
-    "Subcontratar",
-    "Resistirse al pastel",
-    "Perder en Mario Kart",
-    "Que resalte",
-    "Propuestas gratuitas",
-    "Sacrificar la calidad por las ganancias",
-    "Egos",
-    "Prometer de más",
-    "Tomar atajos",
+
+    "Trabajar los Fines de Semana",
+    "Subcontratar (Todo es 100% Interno)",
+    "Metodologías Rígidas y Obsoletas,			",
+    "Falta de Pasión en el Proceso",
+    "Soluciones de Corto Plazo,",
+    "Opacidad en la Comunicación (Total Transparencia)",
+    "Sacrificar la calidad por las ganancias,		",
+    "Trabajar con Egos",
+    "Promesas excesivas",
+    "Entregables sin Estrategia",
     "Aceptar la mediocridad",
-    "Descafeinado"
+    "Descafeinado",
 ]
 
-export const capabalities = [
+export const capabilities = [
     {
         title: "Estrategia y UX",
         capabilities: [

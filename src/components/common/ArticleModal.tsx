@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLayoutEffect, useRef } from 'react';
 import { ArticleRenderer } from '@/components/articles/ArticleRenderer';
-import Close from '@/assets/icons/close';
+import Close from '@/assets/icons/Close';
 
 gsap.registerPlugin(ScrollTrigger);
 

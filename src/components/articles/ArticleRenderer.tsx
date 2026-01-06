@@ -13,12 +13,14 @@ export function ArticleRenderer({ type, slug, onNext, }: ArticleRendererProps) {
     if (!type || !slug) return null;
 
     const map = {
-        work: <WorkArticle slug={slug} onNext={onNext} />,
-        awards: <AwardsArticle />,
-        ideas: <ThinkingArticle slug={slug} onNext={onNext} />,
-        brief: <Brief />
+        work: WorkArticle,
+        awards: AwardsArticle,
+        ideas: ThinkingArticle,
+        brief: Brief,
     };
 
-    return map[type] ?? null
+    const Component = map[type]
+
+    return Component ? <Component slug={slug} onNext={onNext} /> : null;
 
 }

@@ -2,13 +2,22 @@ import React, { useLayoutEffect, useRef } from 'react'
 import { cn } from '@/lib/utils'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 type NavItemsProps = {
     children: React.ReactNode,
 } & React.HTMLAttributes<HTMLLinkElement>
 
 interface NavLinkProps extends NavItemsProps {
-    url: string
+    icon?: React.ElementType;
+    url: string;
+}
+
+interface NavSubLinkProps extends NavLinkProps {
+    variant: string;
+    closeMenu: () => void
 }
 
 interface NavGroupProps extends NavItemsProps {
@@ -21,7 +30,8 @@ interface NavTriggerProps extends NavItemsProps {
 }
 
 interface NavSubMenuProps extends NavItemsProps {
-    triggered: boolean
+    triggered: boolean;
+    release: () => void;
 }
 
 export const NavLink = ({ children, url, ...props }: NavLinkProps) => {
@@ -43,15 +53,14 @@ export const NavLink = ({ children, url, ...props }: NavLinkProps) => {
 export const NavTrigger = ({ children, label, click, ...props }: NavTriggerProps) => {
     return (
         <li className={cn(
-            'flex items-center text-[0.75rem] rounded-full md:text-[0.85rem] lg:text-[0.9rem] font-medium outline-hidden hover:cursor-pointer',
-            props.className)}>
-            <button onClick={click} className='p-2 rounded-full cursor-pointer'>{label}</button>
+            'flex items-center text-[0.75rem] rounded-full md:text-[0.85rem] lg:text-[0.9rem] font-medium outline-hidden hover:cursor-pointer',)}>
+            <button onClick={click} className={cn('p-2 rounded-full cursor-pointer', props.className)}>{label}</button>
             {children}
         </li>
     )
 }
 
-export const NavSubMenu = ({ children, triggered }: NavSubMenuProps) => {
+export const NavSubMenu = ({ children, triggered, release }: NavSubMenuProps) => {
 
     const targetRef = useRef<HTMLUListElement>(null)
 
@@ -62,78 +71,115 @@ export const NavSubMenu = ({ children, triggered }: NavSubMenuProps) => {
 
         const mm = gsap.matchMedia()
 
-        mm.add("(max-width: 767px)", () => {
-            const fullWidth = el.scrollWidth
-            const fullHeigth = el.scrollHeight
+        const measure = ({ width, height }: { width?: string, height?: string }) => {
+
+
+            gsap.set(el, {
+                clearProps: "all",
+                opacity: 1,
+                width: "auto",
+                height: "auto",
+                maxWidth: "none",
+                maxHeight: "none",
+                xPercent: 0
+            })
+
+            const fullWidth = el.scrollWidth;
+            const fullHeight = el.scrollHeight;
+
+            el.dataset.fullWidth = width ?? `${String(fullWidth)}px`
+            el.dataset.fullHeight = height ?? `${String(fullHeight)}px`
+        }
+
+        mm.add("(max-width: 767px) ", () => {
+            release()
+            measure({ height: "75vh" });
+
             gsap.set(el, {
                 xPercent: -50,
                 maxWidth: "100%",
-                maxHeight: "100%",
-                width: "100%",
+                minWidth: "100%",
                 opacity: 0,
                 transformOrigin: "bottom"
             })
-
-            el.dataset.fullWidth = String(fullWidth)
-            el.dataset.fullHeight = String(fullHeigth * 2.1)
         })
 
-        mm.add("(min-width: 768px)", () => {
-            const fullWidth = el.scrollWidth
-            const fullHeigth = el.scrollHeight
+        mm.add("(min-width: 768px) and (max-width: 1199px)", () => {
+            release()
+            measure({});
+
             gsap.set(el, {
                 xPercent: -50,
                 maxWidth: "100%",
                 maxHeight: "100%",
-                width: "100%",
                 opacity: 0,
                 transformOrigin: "top"
             })
-
-            el.dataset.fullWidth = String(fullWidth * 1.35)
-            el.dataset.fullHeight = String(fullHeigth * 2)
         })
-        return () => mm.kill()
+
+        mm.add("(min-width: 1200px)", () => {
+            release()
+            measure({});
+
+            gsap.set(el, {
+                xPercent: -50,
+                maxWidth: "100%",
+                maxHeight: "100%",
+                opacity: 0,
+                transformOrigin: "top"
+            })
+        })
+
+        ScrollTrigger.refresh();
+
+        return () => mm.revert()
     }, [])
 
     useLayoutEffect(() => {
         const el = targetRef.current
         if (!el) return;
 
-        const fullWidth = Number(el.dataset.fullWidth)
-        const fullHeight = Number(el.dataset.fullHeight)
+        const fullWidth = el.dataset.fullWidth
+        const fullHeight = el.dataset.fullHeight
 
         gsap.to(el, {
             maxWidth: triggered ? fullWidth : "100%",
             maxHeight: triggered ? fullHeight : "100%",
-            width: triggered ? fullWidth : "100%",
             duration: 0.35,
             onStart: () => {
                 if (triggered)
-                    gsap.to(el, { opacity: 1 })
+                    gsap.to(el, { opacity: 1, display: "grid" })
             },
             onComplete: () => {
                 if (!triggered)
-                    gsap.to(el, { opacity: 0 })
+                    gsap.to(el, { opacity: 0, display: "none" })
             }
         })
 
     }, [triggered])
 
     return (
-        <ul ref={targetRef} className={`overflow-hidden absolute bg-[#fff] -z-1 rounded-3xl min-[768px]:rounded-4xl max-[767px]:bottom-0 min-[768px]:top-0 left-1/2 cursor-default shadow-[0px_0px_10px_5px_#2a2a2a55] min-[992px]:shadow-2xl`}>
-            <li className='grid grid-cols-2 min-[768px]:grid-cols-[repeat(4,1fr)] justify-center gap-2 min-[768px]:gap-4 px-4 py-8 min-[768px]:p-8 max-[767px]:pb-20 min-[768px]:pt-20'>
+        <ul
+            ref={targetRef}
+            onClick={(e) => e.stopPropagation()}
+            className={`overflow-hidden justify-center absolute -z-1 cursor-default px-4 pt-4 rounded-3xl min-[768px]:rounded-4xl max-[767px]:bottom-0 min-[768px]:top-0 left-1/2 bg-[#fff] shadow-[0px_0px_10px_5px_#2a2a2a55] min-[992px]:shadow-2xl grid max-[767px]:grid-rows-[1fr_50px] grid-flow-col min-[1200px]:pb-7`}
+        >
+            <li className={`pt-5 min-[768px]:pt-10 min-[1200px]:pt-12
+                max-[767px]:overflow-y-scroll max-[767px]:row-1 
+                grid grid-cols-2 min-[768px]:grid-cols-[repeat(3,1fr)] min-[1200px]:grid-cols-[repeat(6,1fr)] 
+                [scrollbar-width:none]`}>
                 {children}
             </li>
+            <li className='row-2 bg-white min-[768px]:hidden'></li>
         </ul>
     )
 }
 
 export const NavGroup = ({ group, children, ...props }: NavGroupProps) => {
     return (
-        <ul className={cn("w-max max-[767px]:w-full nth-[1]:max-[767px]:mb-5 nth-[2]:max-[767px]:mb-5", props.className)}>
+        <ul className={cn("min-w-max max-[767px]:w-full max-[1199px]:mb-5", props.className)}>
             <li>
-                <h3 className='text-[1rem] mb-3 cursor-text px-2 min-[768px]:px-4'>{group}</h3>
+                <h3 className='min-[768px]:text-[0.85rem] min-[1200px]:text-[1rem] mb-3 cursor-text px-2 min-[768px]:px-4'>{group}</h3>
                 <ul>
                     {children}
                 </ul>
@@ -142,14 +188,22 @@ export const NavGroup = ({ group, children, ...props }: NavGroupProps) => {
     )
 }
 
-export const NavSubLink = ({ children, url, ...props }: NavLinkProps) => {
+export const NavSubLink = ({ children, variant, url, icon: Icon, closeMenu, ...props }: NavSubLinkProps) => {
+
     return (
         <li>
             <Link
                 to={url}
-                className={cn(
-                    "flex items-center rounded-sm py-3 px-2 min-[768px]:p-4 text-[0.85rem] min-[768px]:text-[0.9rem] opacity-80 font-medium hover:cursor-pointer border border-transparent max-[767px]:whitespace-break-spaces",
-                    props.className)}>
+                className={cn(`flex gap-2 items-center rounded-[0.7rem] opacity-60 font-medium hover:cursor-pointer border border-transparent w-full 
+                    py-3 px-2 min-[768px]:py-2.5 min-[768px]:px-4 min-[1200px]:p-3 
+                    text-[0.75rem] min-[768px]:text-[0.85rem] min-[1200px]:text-[0.9rem] 
+                    max-[767px]:whitespace-break-spaces`,
+                    props.className)}
+                onClick={closeMenu}
+            >
+                <div className={`${variant}`}>
+                    {Icon && <Icon />}
+                </div>
                 {children}
             </Link>
         </li>

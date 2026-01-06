@@ -1,10 +1,14 @@
+import Arrow from '@/assets/Arrow'
 import { VideoCard } from '@/components/common/Card'
 import Headings from '@/components/common/Headings'
 import PannedText from '@/components/common/PannedText'
 import { FooterContacts, FooterSocialMedia } from '@/components/layouts/Footer'
 import Main from '@/components/layouts/Main'
+import { useModal } from '@/context/ModalContext'
 
 const ContactPage = () => {
+
+    const { openModal } = useModal()
 
     return (
         // <main className="min-h-dvh -mt-20 grid relative overflow-hidden z-10">
@@ -24,12 +28,17 @@ const ContactPage = () => {
             {/* Mobile */}
             <div className="grid grid-full pt-[var(--header-height)] z-1 w-full px-[var(--container-gutter)] items-center grid-rows-[auto_auto] gap-[clamp(2.25rem,2.38vw,2.99rem)]">
                 <div className='py-[8vw] px-0'>
-                    <Headings className='text-white leading-[1] m-[0_0_0.3em] max-[991px]:max-w-[clamp(31.25rem,65.10vw,41.56rem)] max-w-[clamp(38.9375rem,41.20vw,51.78rem)] max-[991px]:text-[clamp(3rem,7.8vw,4.9rem)] text-[clamp(6.25rem,6.6137566138vw,8.3125rem)]'>
-                        <PannedText>
-                            <span className='overflow-hidden'>Tenemos un muy buen presentimiento</span>
-                        </PannedText>
-                    </Headings>
-                    {/* </h1> */}
+                    <div className=''>
+                        <Headings className='!m-0 text-white leading-[1] max-[991px]:max-w-[clamp(31.25rem,65.10vw,41.56rem)] max-w-[clamp(38.9375rem,41.20vw,51.78rem)] max-[991px]:text-[clamp(3rem,7.8vw,4.9rem)] text-[clamp(6.25rem,6.6137566138vw,8.3125rem)]'>
+                            <PannedText className='overflow-hidden'>
+                                Tenemos un muy buen presentimiento
+                            </PannedText>
+                        </Headings>
+                        <div className='group flex gap-3 w-fit rounded-full px-6 py-4 bg-[var(--text-color-primary)] hover:bg-[var(--theme-accent)] text-[var(--text-color-secondary)] hover:text-black cursor-pointer' onClick={() => openModal("brief", "brief")}>
+                            <span className='text-lg'>Envia una solicitud</span>
+                            <Arrow width='w-5' className='text-[var(--theme-accent)] group-hover:text-black' />
+                        </div>
+                    </div>
                     <div className="contact-bg-mobile mx-[calc(var(--container-gutter)*-1)] my-[-10%] relative -z-1">
                         <picture className='w-full h-full grid-full'>
                             <img

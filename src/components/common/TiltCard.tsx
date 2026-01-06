@@ -61,7 +61,7 @@ const TiltCard = ({ img, intensity = 1, children, ...props }: TiltCardProps) => 
   return (
     <div ref={containerRef}>
       <div ref={cardRef} style={{ transformStyle: "preserve-3d", transformOrigin: "center" }}>
-        <div className={cn("flex items-center justify-center bg-[#ffffff4d] aspect-square overflow-hidden rounded-2xl", props.className)}>
+        <div className={cn("flex items-center justify-center bg-[#ffffffcc] aspect-square overflow-hidden rounded-2xl", props.className)}>
           {children}
         </div>
       </div>
