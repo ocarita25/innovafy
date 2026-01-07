@@ -1,0 +1,36 @@
+import { chaleitArticle } from "@/data/work/articles/chaleit";
+import { colegioEscocesMelbourneArticle } from "@/data/work/articles/colegio-escoces-melbourne";
+import { consejoCancerWAArticle } from "@/data/work/articles/consejo-cancer-wa";
+import { fairGoFinanceArticle } from "@/data/work/articles/fair-go-finance";
+import { feroxArticle } from "@/data/work/articles/ferox";
+import { fluidityArticle } from "@/data/work/articles/fluidity";
+import { fundacionNacionalCancerMamaArticle } from "@/data/work/articles/fundacion-nacional-cancer-mama";
+import { growArticle } from "@/data/work/articles/grow";
+import { hablarCaminarArticle } from "@/data/work/articles/hablar-caminar";
+import { loamArticle } from "@/data/work/articles/loam";
+import { pentanetArticle } from "@/data/work/articles/pentanet";
+import { piqueArticle } from "@/data/work/articles/pique";
+import { satterleyArticle } from "@/data/work/articles/satterley";
+import { surveillanceWatchArticle } from "@/data/work/articles/surveillance-watch";
+import { sussexTapsArticle } from "@/data/work/articles/sussex-taps";
+import { trailsWaArticle } from "@/data/work/articles/trails-wa";
+import type { CategorizedWorkArticles } from "@/data/work/types";
+
+export const featuredArticles: CategorizedWorkArticles[] = [
+    { article: sussexTapsArticle, column: 2 },
+    { article: fundacionNacionalCancerMamaArticle, column: 1 },
+    { article: hablarCaminarArticle, column: 1 },
+    { article: surveillanceWatchArticle, column: 2 },
+    { article: fairGoFinanceArticle, column: 1 },
+    { article: chaleitArticle, column: 1 },
+    { article: piqueArticle, column: 2 },
+    { article: satterleyArticle, column: 1 },
+    { article: consejoCancerWAArticle, column: 1 },
+    { article: colegioEscocesMelbourneArticle, column: 2 },
+    { article: growArticle, column: 1 },
+    { article: loamArticle, column: 1 },
+    { article: feroxArticle, column: 2 },
+    { article: pentanetArticle, column: 1 },
+    { article: trailsWaArticle, column: 1 },
+    { article: fluidityArticle, column: 2 }
+]

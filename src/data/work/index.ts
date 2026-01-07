@@ -14,7 +14,7 @@ import { chaleitArticle } from "./articles/chaleit";
 import { surveillanceWatchArticle } from "./articles/surveillance-watch";
 import { sussexTapsArticle } from "./articles/sussex-taps";
 
-import type { WorkArticleType, WorkCardDataType, WorkCategory } from "./types";
+import type { CategorizedWorkArticles, WorkArticleType, WorkCardDataType, WorkCategory } from "./types";
 import { consejoCancerWAArticle } from "./articles/consejo-cancer-wa";
 import { unheartedSolutionsArticle } from "./articles/unhearted-solutions";
 import { georgiouGroupArticle } from "./articles/grupo-georgiou";
@@ -50,6 +50,13 @@ import { spaceDraftArticle } from "./articles/space-draft";
 import { locimoArticle } from "./articles/locimo";
 import { uniosLxConfiguratorArticle } from "./articles/unios-lx-configurator";
 import { calixArticle } from "./articles/calix";
+import { featuredArticles } from "@/views/work/data/featured";
+import { comercialArticles } from "@/views/work/data/comercial";
+import { sinLucroArticles } from "@/views/work/data/sin-lucro";
+import { educacionArticles } from "@/views/work/data/educacion";
+import { comunidadPropositoArticles } from "@/views/work/data/comunidad-proposito";
+import { innovacionArticles } from "@/views/work/data/innovacion";
+import { uiUxArticles } from "@/views/work/data/ui-ux";
 
 const articles: WorkArticleType[] = [
     blackvueArticle,
@@ -104,6 +111,16 @@ const articles: WorkArticleType[] = [
     calixArticle
 ];
 
+const categories: Record<WorkCategory, CategorizedWorkArticles[]> = {
+    featured: featuredArticles,
+    comercial: comercialArticles,
+    "sin-fines-de-lucro": sinLucroArticles,
+    educacion: educacionArticles,
+    "comunidad-y-proposito": comunidadPropositoArticles,
+    innovacion: innovacionArticles,
+    "ui-ux": uiUxArticles,
+}
+
 const articlesBySlug = new Map(
     articles.map(article => [article.slug, article])
 );
@@ -117,7 +134,15 @@ export function getFeaturedWorkCards() {
 }
 
 export function getWorkCardsByCategory(category: WorkCategory) {
-    return getWorkCards().filter(article => article.categories.includes(category))
+    return categories[category].map(article => ({
+        isFeatured: article.article.isFeatured,
+        slug: article.article.slug,
+        title: article.article.title,
+        thumbnail: article.article.thumbnail,
+        categories: article.article.category,
+        columns: article.column
+    }))
+
 }
 
 export function getWorkCards(): WorkCardDataType[] {

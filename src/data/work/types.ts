@@ -53,6 +53,11 @@ export interface WorkArticleType {
     body: WorkBodyBlock[]
 }
 
+export interface CategorizedWorkArticles {
+    article: WorkArticleType,
+    column: 1 | 2
+}
+
 export interface WorkCardDataType {
     isFeatured?: boolean
     slug: string,
