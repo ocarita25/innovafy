@@ -1,5 +1,5 @@
 import { Route, BrowserRouter as Router, Routes, useParams } from "react-router-dom"
-import AboutPage from "./views/AboutPage"
+// import AboutPage from "./views/AboutPage"
 import NotFoundPage from "./views/NotFoundPage"
 import Layout from "./layouts/Layout"
 import ContactPage from "./views/ContactPage"
@@ -9,6 +9,7 @@ import HomePage from "./views/home/Home.page"
 import WorkLayout from "./views/work/Work.layout"
 import WorkWrapper from "./views/work/Work.wrapper"
 import ThinkingPage from "./views/thinking/Thinking.page"
+import AboutPage from "./views/about/About.page"
 
 const ServicesWrapper = () => {
     const { slug } = useParams();

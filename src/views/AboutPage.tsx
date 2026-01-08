@@ -1,4 +1,3 @@
-import { HeaderFace } from "@/assets"
 import AboutHero from "@/components/about/AboutHero"
 import AboutTeam from "@/components/about/AboutTeam"
 import AutoSlider from "@/components/about/Autoslider"

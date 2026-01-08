@@ -59,6 +59,8 @@ import { innovacionArticles } from "@/views/work/data/innovacion";
 import { uiUxArticles } from "@/views/work/data/ui-ux";
 
 const articles: WorkArticleType[] = [
+    piqueArticle,
+    sussexTapsArticle,
     blackvueArticle,
     breakthroughArticle,
     chaleitArticle,
@@ -83,14 +85,12 @@ const articles: WorkArticleType[] = [
     myMindCheckArticle,
     payToArticle,
     pentanetArticle,
-    piqueArticle,
     rychigerArticle,
     satterleyArticle,
     schroleArticle,
     scitechArticle,
     smartfixArticle,
     surveillanceWatchArticle,
-    sussexTapsArticle,
     telethonArticle,
     theHospitalResearchFoundationGroupArticle,
     theUniversityOfNotreDameArticle,
