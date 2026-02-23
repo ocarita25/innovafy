@@ -23,6 +23,7 @@ const PannedText = ({ children, paddingBottom, translateY, spanClass, ...props }
     const ctxRef = useRef<any>(null)
 
     useLayoutEffect(() => {
+
         if (!titleRef.current) return;
 
         ctxRef.current = gsap.context(() => {

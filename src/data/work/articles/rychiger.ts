@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const rychigerArticle: WorkArticleType = {
     slug: slug,
     title: "Rychiger",
+    industry: "Fabricación",
     category: ['comercial', 'ui-ux'],
-    link: "/",
+    link: "https://www.rychiger.com/",
     intro: "Rychiger AG es un fabricante global de maquinaria de envasado de primera calidad con especialidades en los sectores de alimentos y bebidas, atención médica y venta minorista de alimentos.",
     thumbnail: {
         background: {

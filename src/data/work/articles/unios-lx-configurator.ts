@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const uniosLxConfiguratorArticle: WorkArticleType = {
     slug: slug,
     title: "Unios LX Configurator",
+    industry: "Iluminación",
     category: ['innovacion'],
-    link: "/",
+    link: "https://lxconfigurator.unios.com/",
     intro: "Unios fabrica soluciones de diseño de iluminación de alta gama para clientes de todo el mundo. ",
     thumbnail: {
         background: {
@@ -27,7 +28,7 @@ export const uniosLxConfiguratorArticle: WorkArticleType = {
         { icon: "", label: "Generación de PDF de productos" },
     ],
     body: [
-        { type: "video", src: `${imgPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-1.webp`, alt: `${slug}-2` },
         { type: "image", src: `${imgPath}/${slug}-2.webp`, alt: `${slug}-3` },
         { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-4`, style: "min-[992px]:col-span-2" },

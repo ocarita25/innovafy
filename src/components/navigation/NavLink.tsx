@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { cn } from '@/lib/utils'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
@@ -63,6 +63,25 @@ export const NavTrigger = ({ children, label, click, ...props }: NavTriggerProps
 export const NavSubMenu = ({ children, triggered, release }: NavSubMenuProps) => {
 
     const targetRef = useRef<HTMLUListElement>(null)
+    const [isDesktop, setIsDesktop] = useState(
+        window.matchMedia("(min-width: 768px)").matches
+    )
+
+    useEffect(() => {
+        const mq = window.matchMedia("(min-width:768px)")
+        const handler = () => setIsDesktop(mq.matches)
+
+        mq.addEventListener("change", handler)
+        return () => mq.removeEventListener("change", handler)
+    }, [])
+
+    // useEffect(() => {
+    //     gsap.set(targetRef.current, {
+    //         maxHeight: 0,
+    //         maxWidth: 0,
+    //         overflow: 'hidden'
+    //     })
+    // }, [])
 
     useLayoutEffect(() => {
         const el = targetRef.current
@@ -73,10 +92,9 @@ export const NavSubMenu = ({ children, triggered, release }: NavSubMenuProps) =>
 
         const measure = ({ width, height }: { width?: string, height?: string }) => {
 
-
             gsap.set(el, {
                 clearProps: "all",
-                opacity: 1,
+                opacity: 0,
                 width: "auto",
                 height: "auto",
                 maxWidth: "none",
@@ -92,6 +110,7 @@ export const NavSubMenu = ({ children, triggered, release }: NavSubMenuProps) =>
         }
 
         mm.add("(max-width: 767px) ", () => {
+
             release()
             measure({ height: "75vh" });
 
@@ -135,9 +154,16 @@ export const NavSubMenu = ({ children, triggered, release }: NavSubMenuProps) =>
         return () => mm.revert()
     }, [])
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const el = targetRef.current
         if (!el) return;
+
+        if (!triggered) {
+            gsap.set(el, {
+                display: "none",
+                opacity: 0
+            })
+        }
 
         const fullWidth = el.dataset.fullWidth
         const fullHeight = el.dataset.fullHeight
@@ -155,8 +181,7 @@ export const NavSubMenu = ({ children, triggered, release }: NavSubMenuProps) =>
                     gsap.to(el, { opacity: 0, display: "none" })
             }
         })
-
-    }, [triggered])
+    }, [triggered, isDesktop])
 
     return (
         <ul

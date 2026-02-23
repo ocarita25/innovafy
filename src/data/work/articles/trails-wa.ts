@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const trailsWaArticle: WorkArticleType = {
     slug: slug,
     title: "Trails WA",
+    industry: "Turismo",
     category: ['featured', "comunidad-y-proposito"],
-    link: "/",
+    link: "https://trailswa.com.au/",
     thumbnail: {
         background: {
             type: 'image',

@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { cn } from "@/lib/utils";
 
@@ -13,12 +13,16 @@ const TiltCard = ({ img, intensity = 1, children, ...props }: TiltCardProps) => 
   const containerRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const container = containerRef.current;
     const card = cardRef.current;
     if (!container || !card) return;
 
+    const mm = gsap.matchMedia();
+
     const handleMouseMove = (e: MouseEvent) => {
+
+
       // Usamos el contenedor como referencia
       const rect = container.getBoundingClientRect();
       const centerX = rect.left + rect.width / 2;
@@ -49,19 +53,21 @@ const TiltCard = ({ img, intensity = 1, children, ...props }: TiltCardProps) => 
       });
     };
 
-    container.addEventListener("mousemove", handleMouseMove);
-    container.addEventListener("mouseleave", handleMouseLeave);
+    mm.add("(min-width: 1200px)", () => {
+      container.addEventListener("mousemove", handleMouseMove);
+      container.addEventListener("mouseleave", handleMouseLeave);
 
-    return () => {
-      container.removeEventListener("mousemove", handleMouseMove);
-      container.removeEventListener("mouseleave", handleMouseLeave);
-    };
+      return () => {
+        container.removeEventListener("mousemove", handleMouseMove);
+        container.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    })
   }, []);
 
   return (
     <div ref={containerRef}>
-      <div ref={cardRef} style={{ transformStyle: "preserve-3d", transformOrigin: "center" }}>
-        <div className={cn("flex items-center justify-center bg-[#ffffffcc] aspect-square overflow-hidden rounded-2xl", props.className)}>
+      <div ref={cardRef} className="h-full" style={{ transformStyle: "preserve-3d", transformOrigin: "center" }}>
+        <div className={cn("grid items-center justify-center bg-[#ffffffcc] aspect-square rounded-2xl", props.className)}>
           {children}
         </div>
       </div>

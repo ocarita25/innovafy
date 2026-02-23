@@ -1,6 +1,5 @@
 import PannedText from '@/components/common/PannedText'
 import { capabilities } from '@/constants/about'
-import React from 'react'
 
 const Capabilities = () => {
     return (

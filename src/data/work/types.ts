@@ -40,6 +40,7 @@ export type WorkBodyBlock =
 export interface WorkArticleType {
     slug: string,
     title: string,
+    industry: string,
     isFeatured?: boolean
     category: WorkCategory[],
     link: string,
@@ -62,6 +63,7 @@ export interface WorkCardDataType {
     isFeatured?: boolean
     slug: string,
     title: string,
+    columns: number,
     categories: WorkCategory[],
     thumbnail: WorkThumbnail,
 }

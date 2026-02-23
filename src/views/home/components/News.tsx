@@ -12,7 +12,8 @@ const News = () => {
                 <div className="mx-[calc(-1*var(--feed-overflow,0))] mt-[clamp(5rem,5.3vw,6.65rem)] mb-20">
                     <Headings as="h2" variant="section" className="mb-5 justify-start px-[var(--feed-overflow)] text-color-primary">
                         <PannedText>
-                            Novedades
+                            Nuestros Servicios
+                            {/* Novedades */}
                         </PannedText>
                     </Headings>
 

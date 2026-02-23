@@ -89,7 +89,7 @@ export const ourServices: OurServicesType[] = [
         id: "digital-asset-y-biblioteca-de-medios",
         title: "Digital Asset & Media Library",
         text: "Organización profesional del contenido digital de la marca.",
-        img: `${path}/contenido-digital`,
+        img: `${path}/digital-assets.webp`,
         url: "/servicios/digital-asset-y-biblioteca-de-medios",
     },
     {
@@ -221,21 +221,21 @@ export const ourServices: OurServicesType[] = [
         id: "ingenieria-de-embudos-de-ventas-automatizados",
         title: "Ingenieria de embudos de ventas automatizadas",
         text: "Construimos sistemas de venta totalmente automatizados que generan ingresos constantes sin depender de la atención manual del equipo.",
-        img: `${path}/`,
+        img: `${path}/funnel-automation.webp`,
         url: "/servicios/ingenieria-de-embudos-de-ventas-automatizados",
     },
     {
         id: "sistemas-conversacionales-con-ia",
         title: "Sistemas Conversacionales con Inteligencia Artificial",
         text: "Desarrollamos asistentes virtuales y chatbots con IA para ventas, soporte y automatización de atención en todos los canales digitales.",
-        img: `${path}/`,
+        img: `${path}/sistema-conversacional.webp`,
         url: "/servicios/sistemas-conversacionales-con-ia",
     },
     {
         id: "inteligencia-artificial-aplicada-negocios",
         title: "Inteligencia Artificial Aplicada a los Negocios",
         text: "Aplicamos IA en los procesos internos para optimizar tiempo, recursos y resultados, transformando la operación en un sistema más eficiente y escalable.",
-        img: `${path}/`,
+        img: `${path}/ia-negocios.webp`,
         url: "/servicios/inteligencia-artificial-aplicada-negocios",
     },
     // #endregion
@@ -272,8 +272,8 @@ export const ourServices: OurServicesType[] = [
     {
         id: "comunidad",
         title: "Comunidad",
-        text: "",
-        img: ``,
+        text: "Creamos plataformas que inspiran confianza, difunden conocimiento relevante y transforman experiencias del mundo real en conexiones digitales memorables. Cada solución está pensada para ser flexible, segura y escalable, acompañando el crecimiento y la evolución de tu organización.",
+        img: `${path}/comunidad.webp`,
         url: "/servicios/comunidad",
     },
     // #endregion

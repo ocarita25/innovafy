@@ -3,6 +3,7 @@ import { ButtonBlack } from '@/components/common/Button'
 import { getWorkArticleBySlug } from '@/data/work';
 import { cn } from '@/lib/utils'
 import SmileyFaceIcon from '@/assets/icons/smiley-face.svg?react'
+import { Link } from 'react-router-dom';
 
 interface WorkArticleProps {
     slug: string,
@@ -33,12 +34,10 @@ const ArticleBody = ({ body }: { body: any[] }) => {
         }))
 }
 
-const WorkArticle: React.FC<WorkArticleProps> = ({ slug }) => {
+// const WorkArticle: React.FC<WorkArticleProps> = ({ slug }) => {
+const WorkArticle = ({ slug }: WorkArticleProps) => {
 
-    console.log("Slug:", slug)
     const article = getWorkArticleBySlug(slug)
-
-    console.log("Article:", article)
 
     if (!article) return null
 
@@ -51,11 +50,13 @@ const WorkArticle: React.FC<WorkArticleProps> = ({ slug }) => {
                             <header>
                                 <h1 className='text-[clamp(2.5rem,2.65vw,3.325rem)]'>{article.title}</h1>
                                 <div className='pt-10 flex items-center gap-3'>
-                                    <ButtonBlack>
-                                        Visit Website
-                                        <Arrow height="h-3.5" stroke="1" color="#0f0" />
-                                    </ButtonBlack>
-                                    <span>Building & Construction</span>
+                                    <Link to={article.link} target='_blank'>
+                                        <ButtonBlack>
+                                            Visit Website
+                                            <Arrow height="h-3.5" stroke="1" color="#0f0" />
+                                        </ButtonBlack>
+                                    </Link>
+                                    <span>{article.industry}</span>
                                 </div>
                                 <h2 className='text-[clamp(1.25rem,1.33vw,1.66rem)] leading-8'>{article.intro}</h2>
                             </header>

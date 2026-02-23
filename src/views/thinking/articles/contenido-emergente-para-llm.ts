@@ -1,7 +1,7 @@
 import type { ThinkingArticleType } from "../thinking.types"
 
 const slug = "contenido-emergente-para-llm"
-const path = "/images/thinking/articles"
+const path = `/images/thinking/${slug}`
 
 export const ContenidoEmergenteParaLLM: ThinkingArticleType = {
 
@@ -32,7 +32,7 @@ export const ContenidoEmergenteParaLLM: ThinkingArticleType = {
             {
                 variant: "multimedia",
                 subVariant: "image",
-                image: "image.webp",
+                image: `${path}/figure-1.webp`,
                 imageDescription: "Las visitas a la página humaan.com a través de ChatGPT como referente experimentaron un fuerte aumento a mediados de año."
             },
         ],
@@ -52,7 +52,7 @@ export const ContenidoEmergenteParaLLM: ThinkingArticleType = {
                     {
                         variant: "multimedia",
                         subVariant: "image",
-                        image: "img.webp",
+                        image: `${path}/figure-2.webp`,
                         imageDescription: "Las fuentes de búsqueda impulsadas por IA obtienen información de toda la web y la procesan para ofrecer una respuesta personalizada para el usuario."
                     },
                 ]

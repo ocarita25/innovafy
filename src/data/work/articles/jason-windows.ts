@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const jasonWindowsArticle: WorkArticleType = {
     slug: slug,
     title: "Jason Windows",
+    industry: "Comercial",
     category: ['comercial'],
-    link: "/",
+    link: "https://jasonwindows.com.au/",
     intro: "Jason Windows es el proveedor elegido por la industria de la construcción y la edificación para ventanas, puertas y mallas de seguridad de alta calidad.",
     thumbnail: {
         background: {

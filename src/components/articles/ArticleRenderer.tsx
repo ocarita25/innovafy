@@ -1,10 +1,11 @@
 import AwardsArticle from "@/components/articles/Awards";
-import Brief from "@/views/Brief";
+// import Brief from "@/views/Brief";
+import HomePlansArticle from "@/views/home/HomePlansArticle";
 import ThinkingArticle from "@/views/thinking/ThinkingArticle";
 import WorkArticle from "@/views/work/WorkArticle";
 
 interface ArticleRendererProps {
-    type: "work" | "awards" | "ideas" | "brief" | null;
+    type: "work" | "awards" | "ideas" | "plans" | null;
     slug: string | null;
     onNext: () => void;
 }
@@ -16,7 +17,9 @@ export function ArticleRenderer({ type, slug, onNext, }: ArticleRendererProps) {
         work: WorkArticle,
         awards: AwardsArticle,
         ideas: ThinkingArticle,
-        brief: Brief,
+        plans: HomePlansArticle,
+        // brief: Brief,
+        // alert: null
     };
 
     const Component = map[type]

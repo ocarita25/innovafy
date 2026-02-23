@@ -1,15 +1,15 @@
 import { Route, BrowserRouter as Router, Routes, useParams } from "react-router-dom"
-// import AboutPage from "./views/AboutPage"
 import NotFoundPage from "./views/NotFoundPage"
 import Layout from "./layouts/Layout"
 import ContactPage from "./views/ContactPage"
-import ServicesPage from "./views/ServicesPage"
 import AwardsArticle from "./components/articles/Awards"
 import HomePage from "./views/home/Home.page"
 import WorkLayout from "./views/work/Work.layout"
 import WorkWrapper from "./views/work/Work.wrapper"
 import ThinkingPage from "./views/thinking/Thinking.page"
 import AboutPage from "./views/about/About.page"
+import ServicesPage from "./views/services/Services.page"
+import ScrollManager from "./components/navigation/ScrollManager"
 
 const ServicesWrapper = () => {
     const { slug } = useParams();
@@ -19,6 +19,7 @@ const ServicesWrapper = () => {
 function AppRouter() {
     return (
         <Router>
+            <ScrollManager />
             <Routes>
                 <Route element={<Layout />}>
                     <Route path="/" index element={<HomePage />} />
@@ -32,8 +33,6 @@ function AppRouter() {
                     <Route path="*" element={<NotFoundPage />} />
                     <Route path="/thinking" element={<ThinkingPage />}></Route>
                     <Route path="/awards" element={<AwardsArticle />}></Route>
-                    {/* <Route path="/work/:slug" element={<WorkDetailPage />} /> */}
-                    {/* <Route path="/post/:id" element={<DetailsPost />} /> */}
                 </Route>
             </Routes>
         </Router>

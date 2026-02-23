@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const scitechArticle: WorkArticleType = {
     slug: slug,
     title: "Scitech",
+    industry: "Educacion",
     category: ['educacion', "comunidad-y-proposito"],
-    link: "/",
+    link: "https://www.scitech.org.au/",
     intro: "Scitech es un centro educativo STEM sin fines de lucro con sede en Perth, Australia Occidental. Contactaron con Humaan para crear una presencia en línea duradera que respaldara sus objetivos estratégicos desde el primer día.",
     thumbnail: {
         background: {
@@ -35,7 +36,7 @@ export const scitechArticle: WorkArticleType = {
     body: [
         { type: "image", src: `${imgPath}/${slug}-1.webp`, alt: `${slug}-1`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-2.webp`, alt: `${slug}-2` },
-        { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-3`, style: "min-[992px]:col-span-2" },
+        { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-3` },
         { type: "image", src: `${imgPath}/${slug}-4.webp`, alt: `${slug}-4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-5.webp`, alt: `${slug}-5` },
         { type: "image", src: `${imgPath}/${slug}-6.webp`, alt: `${slug}-6` },

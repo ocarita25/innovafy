@@ -1,5 +1,5 @@
 import type { ThemeColorsType } from "@/types/ThemeColors.types";
-import { setThemeBackground, setThemeColors } from "@/utils/theme";
+import { setThemeColors, setThemeBackground } from "@/utils/theme";
 import React, { createContext, useContext, useRef } from "react";
 
 type MainRefContextType = {
@@ -14,7 +14,7 @@ export const MainRefProvider = ({ children }: { children: React.ReactNode }) => 
 
     const mainRef = useRef<HTMLDivElement>(null)
 
-    const changeBackground = (color: string) => setThemeBackground(color, mainRef)
+    const changeBackground = (color: string) => setThemeBackground(color)
     const changeThemeColors = (theme: ThemeColorsType) => setThemeColors(theme)
 
     return (

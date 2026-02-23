@@ -6,7 +6,7 @@ function NavMenu() {
     const location = useLocation();
 
     const isActive = (path: string) =>
-        location.pathname === path ? "text-white py-2 bg-black" : "hover:bg-gray-200 ";
+        location.pathname === path ? "text-white py-2 bg-black" : "hover:bg-[#FD34F4] ";
 
     return (
         // <Menubar className="border-none fixed backdrop-blur-sm bottom-[1rem] lg:top-[1rem] -translate-x-1/2 left-1/2">

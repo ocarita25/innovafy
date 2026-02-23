@@ -7,9 +7,10 @@ const videoPath = `/videos/work/articles/${slug}`
 export const piqueArticle: WorkArticleType = {
     slug: slug,
     title: "PIQUE",
+    industry: "Construcción y Edificación",
     isFeatured: true,
     category: ["featured", 'comercial'],
-    link: "/",
+    link: "https://piquemod.com.au/",
     intro: "PIQUE es un fabricante líder de casas modulares prefabricadas de alta gama, diseñadas para personas que viven en zonas remotas y difíciles.",
     thumbnail: {
         background: {

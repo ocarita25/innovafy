@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const locimoArticle: WorkArticleType = {
     slug: slug,
     title: "Locimo",
+    industry: "Empleos",
     category: ['innovacion'],
-    link: "/",
+    link: "https://locimo.com/",
     intro: "Locimo es una startup que conecta a los mejores trabajadores del sector minorista y hotelero con empleadores locales.",
     thumbnail: {
         background: {
@@ -39,8 +40,5 @@ export const locimoArticle: WorkArticleType = {
         { type: "image", src: `${imgPath}/${slug}-5.webp`, alt: `${slug}-5` },
         { type: "image", src: `${imgPath}/${slug}-6.webp`, alt: `${slug}-6` },
         { type: "image", src: `${imgPath}/${slug}-7.webp`, alt: `${slug}-7`, style: "min-[992px]:col-span-2" },
-        { type: "image", src: `${imgPath}/${slug}-8.webp`, alt: `${slug}-8` },
-        { type: "image", src: `${imgPath}/${slug}-9.webp`, alt: `${slug}-9` },
-        { type: "image", src: `${imgPath}/${slug}-10.webp`, alt: `${slug}-10`, style: "min-[992px]:col-span-2" },
     ],
 }

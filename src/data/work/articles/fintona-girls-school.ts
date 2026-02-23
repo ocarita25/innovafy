@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const fintonaGirlsSchoolArticle: WorkArticleType = {
     slug: slug,
     title: "Fintona Girls School",
+    industry: "Educación",
     category: ['educacion'],
-    link: "/",
+    link: "https://www.fintona.vic.edu.au/",
     intro: "Fintona es una escuela privada para niñas con sede en Victoria con reputación de excelencia en educación desde 1896.",
     thumbnail: {
         background: {

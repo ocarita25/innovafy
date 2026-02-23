@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const loamArticle: WorkArticleType = {
     slug: slug,
     title: "Loam",
+    industry: "Innovación agrícola",
     category: ['featured', 'innovacion'],
-    link: "/",
+    link: "https://www.loambio.com/",
     intro: "Loam es pionero en la tecnología de semillas microbianas que reduce los niveles de CO2 atmosférico y mejora el enriquecimiento del suelo para promover la productividad agrícola.",
     thumbnail: {
         background: {

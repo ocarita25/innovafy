@@ -1,7 +1,7 @@
 import type { ThinkingArticleType } from "../thinking.types"
 
 const slug = "que-tan-profundo-investigamos"
-const path = "/images/thinking/articles"
+const path = `/images/thinking/${slug}`
 
 export const QueTanProfundoInvestigamos: ThinkingArticleType = {
 
@@ -54,7 +54,7 @@ export const QueTanProfundoInvestigamos: ThinkingArticleType = {
             {
                 variant: "multimedia",
                 subVariant: "image",
-                image: "img.webp",
+                image: `${path}/figure-1.webp`,
                 imageDescription: "Incluso las grandes organizaciones pueden prescindir de una investigación de usuarios exhaustiva. Cuando el propósito del producto es claro, la investigación eficiente indica cómo conectar mejor con la audiencia para alcanzar sus objetivos y los suyos."
             },
             {

@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const workpacArticle: WorkArticleType = {
     slug: slug,
     title: "WorkPac",
+    industry: "Reclutamiento",
     category: ['comercial'],
-    link: "",
+    link: "https://www.workpac.com/",
     intro: "WorkPac es una empresa líder en selección de personal, especializada en gestión de personal, gestión de proyectos, capacitación y soluciones tecnológicas para los sectores de recursos, construcción, industria, salud y asistencia social.",
     thumbnail: {
         background: {
@@ -42,6 +43,5 @@ export const workpacArticle: WorkArticleType = {
         { type: "image", src: `${imgPath}/${slug}-5.webp`, alt: `${slug}-5` },
         { type: "image", src: `${imgPath}/${slug}-6.webp`, alt: `${slug}-6` },
         { type: "image", src: `${imgPath}/${slug}-7.webp`, alt: `${slug}-7`, style: "min-[992px]:col-span-2" },
-        { type: "image", src: `${imgPath}/${slug}-8.webp`, alt: `${slug}-8`, style: "min-[992px]:col-span-2" },
     ],
 }

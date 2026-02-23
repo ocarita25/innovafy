@@ -1,5 +1,7 @@
 import ArticleModal from "@/components/common/ArticleModal"
 import ExpandingCard from "@/components/common/ExpandingCard"
+import PlanGratis from "@/components/common/PlanGratis"
+import WhatsappButton from "@/components/common/WhatsappButton"
 import Footer from "@/components/layouts/Footer"
 import Header from "@/components/navigation/Header"
 import { MainRefProvider } from "@/context/MainRefContext"
@@ -16,6 +18,8 @@ function LayoutContent() {
             </ExpandingCard>
             <Footer />
             <ArticleModal />
+            <WhatsappButton />
+            <PlanGratis />
         </div>
     )
 }

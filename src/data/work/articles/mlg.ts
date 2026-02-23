@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const mlgArticle: WorkArticleType = {
     slug: slug,
     title: "MLG",
+    industry: "Minería y Recursos",
     category: ['comercial'],
-    link: "/",
+    link: "https://www.mlgoz.com.au/",
     intro: "MLG es un proveedor líder de servicios de minería en Australia Occidental y el Territorio del Norte, y presta servicios con orgullo a las empresas de recursos más grandes de Australia.",
     thumbnail: {
         background: {

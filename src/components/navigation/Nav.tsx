@@ -36,17 +36,21 @@ const Nav = () => {
 
 
     const isActive = (path: string) =>
-        pathname === path ? "text-[var(--theme-accent)] py-2 bg-[var(--text-color-primary)]" : "hover:bg-gray-200 ";
+        // pathname === path ? "text-(--theme-accent) py-2 bg-[var(--text-color-primary)]" : "hover:bg-[#c6b0ff] ";
+        pathname === path ? "text-white py-2 bg-[#5700ff]" : "hover:bg-[#c6b0ff] ";
+    // pathname === path ? "text-[var(--theme-accent)] py-2 bg-[var(--text-color-primary)]" : "hover:bg-[#FD34F4] ";
 
+    const isServiceSelected = (path: string) =>
+        pathname === path ? "text-[var(--theme-accent)] py-2 bg-[#5700ff]" : "hover:bg-[#c6b0ff] ";
 
     const handleCloseMenu = () => { setTriggered(false) }
 
     return (
         <ul ref={navRef} className='relative bg-[#fff8] backdrop-blur-sm grid grid-cols-[repeat(6,auto)] items-center p-2 rounded-full lg:gap-1' >
-            <NavLink url='/' className={`${isActive("/")}`}>Inicio</NavLink>
-            <NavLink url={"/acerca-de"} className={`${isActive("/acerca-de")}`}>Acerca</NavLink>
-            <NavLink url={"/trabajo"} className={`${isActive("/trabajo")}`}>Trabajo</NavLink>
-            <NavTrigger label='Servicios' className={`${isActive("/servicios")}`} click={() => { setTriggered(!triggered) }}>
+            <NavLink url='/' className={`${isActive("/")} duration-150`}>Inicio</NavLink>
+            <NavLink url={"/acerca-de"} className={`${isActive("/acerca-de")} duration-150`}>Acerca</NavLink>
+            <NavLink url={"/trabajo"} className={`${isActive("/trabajo")} duration-150`}>Trabajo</NavLink>
+            <NavTrigger label='Servicios' className={`${isServiceSelected("/servicios")} duration-150`} click={() => { setTriggered(!triggered) }}>
                 <NavSubMenu triggered={triggered} release={handleCloseMenu}>
                     {navItems.map((nv, i) => (
                         <NavGroup key={i} group={nv.group} className={`${triggered ? "opacity-100" : "opacity-0"}`}>
@@ -57,8 +61,8 @@ const Nav = () => {
                     ))}
                 </NavSubMenu>
             </NavTrigger>
-            <NavLink url={"/thinking"} className={`${isActive("/thinking")}`}>Ideas</NavLink>
-            <NavLink url={"/contacto"} className={`${isActive("/contacto")}`}>Contacto</NavLink>
+            <NavLink url={"/thinking"} className={`${isActive("/thinking")} duration-150`}>Ideas</NavLink>
+            <NavLink url={"/contacto"} className={`${isActive("/contacto")} duration-150`}>Contacto</NavLink>
         </ul >
     )
 }

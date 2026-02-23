@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const hablarCaminarArticle: WorkArticleType = {
     slug: slug,
     title: "Hablar y Caminar",
+    industry: "Educación",
     category: ['featured', "comunidad-y-proposito"],
-    link: "/",
+    link: "https://apps.apple.com/au/app/talk-n-walk/id1615889482",
     intro: "Talk N Walk es una aplicación móvil única que apoya y fomenta la actividad física en niñas en edad escolar.",
     thumbnail: {
         background: {
@@ -33,15 +34,13 @@ export const hablarCaminarArticle: WorkArticleType = {
         { icon: "", label: "Aplicación para iOS y Android" },
     ],
     body: [
-        { type: "image", src: `${imgPath}/pique-1.webp`, alt: "pique-1", style: "min-[992px]:col-span-2" },
-        { type: "image", src: `${imgPath}/pique-2.webp`, alt: "pique-2" },
-        { type: "image", src: `${imgPath}/pique-3.webp`, alt: "pique-3" },
-        { type: "image", src: `${imgPath}/pique-1.webp`, alt: "pique-4", style: "min-[992px]:col-span-2" },
-        { type: "image", src: `${imgPath}/pique-2.webp`, alt: "pique-5" },
-        { type: "image", src: `${imgPath}/pique-3.webp`, alt: "pique-6" },
-        { type: "image", src: `${imgPath}/pique-1.webp`, alt: "pique-7", style: "min-[992px]:col-span-2" },
-        { type: "image", src: `${imgPath}/pique-2.webp`, alt: "pique-8" },
-        { type: "image", src: `${imgPath}/pique-3.webp`, alt: "pique-9" },
-        { type: "image", src: `${imgPath}/pique-1.webp`, alt: "pique-10", style: "min-[992px]:col-span-2" },
+        { type: "image", src: `${imgPath}/${slug}-1.webp`, alt: `${slug}-1`, style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
+        { type: "image", src: `${imgPath}/${slug}-2.webp`, alt: `${slug}-3`, style: "min-[992px]:col-span-2" },
+        { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-4` },
+        { type: "image", src: `${imgPath}/${slug}-4.webp`, alt: `${slug}-5` },
+        { type: "image", src: `${imgPath}/${slug}-5.webp`, alt: `${slug}-6`, style: "min-[992px]:col-span-2" },
+        { type: "image", src: `${imgPath}/${slug}-6.webp`, alt: `${slug}-7`, style: "min-[992px]:col-span-2" },
+        { type: "image", src: `${imgPath}/${slug}-7.webp`, alt: `${slug}-8`, style: "min-[992px]:col-span-2" },
     ],
 }

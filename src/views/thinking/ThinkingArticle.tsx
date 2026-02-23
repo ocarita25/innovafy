@@ -4,7 +4,7 @@ import { getThinkingArticleBySlug } from './articles';
 
 interface ThinkingArticleProps {
     slug: string,
-    onNext: () => void;
+    onNext?: () => void;
 }
 
 type ArticleParagraphType = {
@@ -16,6 +16,7 @@ type ArticleParagraphType = {
 type ArticleMultimediaType = {
     source: string | undefined,
     subVariant: "text" | "list" | "title" | "image"
+    figureLegend?: string
 } & React.HTMLAttributes<HTMLDivElement>
 
 const ArticleParagraph = ({ as: Tag = "p", text, subVariant = "text" }: ArticleParagraphType) => {
@@ -47,23 +48,27 @@ const ArticleList = ({ text }: { text: string | string[] | undefined }) => {
     )
 }
 
-const ArticleImage = ({ source, subVariant }: ArticleMultimediaType) => {
+const ArticleImage = ({ source, subVariant, figureLegend }: ArticleMultimediaType) => {
     if (!source) return
     return (
-        <div>
+        <div className='mb-10'>
             {
                 subVariant === "image" ?
-                    <img src={source} />
+                    <img src={source} className='rounded-xl' />
                     :
                     <video>
                         <source src={source} />
                     </video>
             }
+            <div className='flex w-full items-center justify-center py-3'>
+                <p className='text-center opacity-65 px-10 text-[0.85rem]'>{figureLegend}</p>
+            </div>
         </div>
     )
 }
 
-const ThinkingArticle: React.FC<ThinkingArticleProps> = ({ slug, onNext }) => {
+// const ThinkingArticle: React.FC<ThinkingArticleProps> = ({ slug, onNext }) => {
+const ThinkingArticle = ({ slug, onNext }: ThinkingArticleProps) => {
 
     const article = getThinkingArticleBySlug(slug)
     // const info = articlesCard.find(a => a.slug === slug)
@@ -121,18 +126,6 @@ const ThinkingArticle: React.FC<ThinkingArticleProps> = ({ slug, onNext }) => {
                         return (
                             <div key={i}>
                                 <ArticleParagraph as='h2' subVariant='title' text={s.title} />
-                                {s.subSection ?
-                                    s.subSection.map((ss, i) => {
-                                        return (
-                                            <div key={i}>
-                                                <ArticleParagraph as='h3' subVariant='subTitle' text={ss.title} />
-                                                {ss.content.map((c, i) => (
-                                                    <ArticleParagraph key={i} as={c.tag || "p"} text={c.text} subVariant={c.subVariant || "text"} />
-                                                ))}
-                                            </div>
-                                        )
-                                    }) : null
-                                }
                                 {s.description ?
                                     s.description.map((description, i) => {
                                         return (
@@ -146,13 +139,29 @@ const ThinkingArticle: React.FC<ThinkingArticleProps> = ({ slug, onNext }) => {
                                         )
                                     }) : null
                                 }
+                                {s.subSection ?
+                                    s.subSection.map((ss, i) => {
+                                        return (
+                                            <div key={i}>
+                                                <ArticleParagraph as='h3' subVariant='subTitle' text={ss.title} />
+                                                {ss.content.map((c, i) => (
+                                                    c.variant === "multimedia" ?
+                                                        <ArticleImage key={i} source={c.image} figureLegend={c.imageDescription} subVariant={c.subVariant || "image"} />
+                                                        :
+                                                        <ArticleParagraph key={i} as={c.tag || "p"} text={c.text} subVariant={c.subVariant || "text"} />
+                                                ))}
+                                            </div>
+                                        )
+                                    }) : null
+                                }
+
                             </div>
                         )
                     })}
                 </div>
             </section>
             <section onClick={onNext}>
-                Siguiente Articulo
+
             </section>
         </div>
     )

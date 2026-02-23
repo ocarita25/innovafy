@@ -30,10 +30,8 @@ const ExpandingCard = ({ children, settings = MAIN_CARD_CONFIG, ...props }: Prop
 
         if (!mainRef.current || targetRef.current) return;
 
-
         //Reinicio inicial
         gsap.set(targetRef.current, { ...original })
-
 
         //Dejar limpio en la pagina /contacto
         if (urlPath === "/contacto") {
@@ -45,7 +43,6 @@ const ExpandingCard = ({ children, settings = MAIN_CARD_CONFIG, ...props }: Prop
             ScrollTrigger.refresh();
             return;
         }
-
 
         const mm = gsap.matchMedia();
 

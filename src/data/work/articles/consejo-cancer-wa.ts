@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const consejoCancerWAArticle: WorkArticleType = {
     slug: slug,
     title: "Consejo del Cáncer de WA",
+    industry: "Sin fines de lucro",
     category: ['featured', 'sin-fines-de-lucro'],
-    link: "/",
+    link: "https://cancerwa.asn.au/",
     intro: "Cancer Council WA trabaja con la comunidad para reducir la incidencia y el impacto del cáncer y tiene como objetivo lograr un futuro libre de cáncer en todo el estado.",
     thumbnail: {
         background: {

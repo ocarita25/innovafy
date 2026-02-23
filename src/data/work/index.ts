@@ -14,7 +14,7 @@ import { chaleitArticle } from "./articles/chaleit";
 import { surveillanceWatchArticle } from "./articles/surveillance-watch";
 import { sussexTapsArticle } from "./articles/sussex-taps";
 
-import type { CategorizedWorkArticles, WorkArticleType, WorkCardDataType, WorkCategory } from "./types";
+import type { CategorizedWorkArticles, WorkArticleType, WorkCategory } from "./types";
 import { consejoCancerWAArticle } from "./articles/consejo-cancer-wa";
 import { unheartedSolutionsArticle } from "./articles/unhearted-solutions";
 import { georgiouGroupArticle } from "./articles/grupo-georgiou";
@@ -111,13 +111,20 @@ const articles: WorkArticleType[] = [
     calixArticle
 ];
 
+export const homeFeaturedArticles: CategorizedWorkArticles[] = [
+    { article: piqueArticle, column: 2, },
+    { article: sussexTapsArticle, column: 1, },
+    { article: chaleitArticle, column: 1, },
+    { article: surveillanceWatchArticle, column: 2, },
+]
+
 const categories: Record<WorkCategory, CategorizedWorkArticles[]> = {
-    featured: featuredArticles,
-    comercial: comercialArticles,
+    "featured": featuredArticles,
+    "comercial": comercialArticles,
     "sin-fines-de-lucro": sinLucroArticles,
-    educacion: educacionArticles,
+    "educacion": educacionArticles,
     "comunidad-y-proposito": comunidadPropositoArticles,
-    innovacion: innovacionArticles,
+    "innovacion": innovacionArticles,
     "ui-ux": uiUxArticles,
 }
 
@@ -127,10 +134,6 @@ const articlesBySlug = new Map(
 
 export function getWorkArticleBySlug(slug: string): WorkArticleType | undefined {
     return articlesBySlug.get(slug)
-}
-
-export function getFeaturedWorkCards() {
-    return getWorkCards().filter(article => article.isFeatured === true)
 }
 
 export function getWorkCardsByCategory(category: WorkCategory) {
@@ -143,18 +146,4 @@ export function getWorkCardsByCategory(category: WorkCategory) {
         columns: article.column
     }))
 
-}
-
-export function getWorkCards(): WorkCardDataType[] {
-    return getAllWorkArticles().map(article => ({
-        isFeatured: article.isFeatured,
-        slug: article.slug,
-        title: article.title,
-        thumbnail: article.thumbnail,
-        categories: article.category
-    }))
-}
-
-export function getAllWorkArticles(): WorkArticleType[] {
-    return articles
 }

@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const telethonArticle: WorkArticleType = {
     slug: slug,
     title: "Telethon",
+    industry: "Caridad",
     category: ['sin-fines-de-lucro'],
-    link: "/",
+    link: "https://www.telethon7.com/",
     intro: "Una de las organizaciones benéficas más emblemáticas de Australia Occidental, nos enorgulleció asociarnos con Teletón para crear un nuevo sitio web que mejore sus esfuerzos de recaudación de fondos para los niños necesitados. Con un enfoque en la participación de la audiencia durante el fin de semana de alto tráfico del Teletón, el sitio fue diseñado para ser intuitivo, receptivo y accesible desde cualquier dispositivo",
     thumbnail: {
         background: {

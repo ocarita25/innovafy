@@ -1,7 +1,7 @@
 import type { ThinkingArticleType } from "../thinking.types"
 
 const slug = "transformando-el-conocimiento-en-impacto"
-const path = "/images/thinking/articles"
+const path = `/images/thinking/${slug}`
 
 export const TransformandoElConocimientoEnImpacto: ThinkingArticleType = {
 
@@ -64,7 +64,7 @@ export const TransformandoElConocimientoEnImpacto: ThinkingArticleType = {
                             {
                                 variant: "multimedia",
                                 subVariant: "image",
-                                image: "img.webp",
+                                image: `${path}/figure-1.webp`,
                                 imageDescription: "Surveillance Watch conectó un conjunto sustancial de datos con una base de usuarios global, impulsando la concienciación y la acción mediante una exploración inmersiva de la vigilancia mundial. Incluso los usuarios más motivados tendrían dificultades para perseverar con una hoja de cálculo pesada. El impacto de esta aplicación web reside en una visualización de datos intuitiva y un diseño de interacción atractivo."
                             },
                         ]
@@ -89,7 +89,7 @@ export const TransformandoElConocimientoEnImpacto: ThinkingArticleType = {
                     {
                         variant: "multimedia",
                         subVariant: "image",
-                        image: "img.webp",
+                        image: `${path}/figure-2.webp`,
                         imageDescription: 'El nuevo sitio web de Chaleit representa un cambio significativo respecto a su estética original de "leet hacker". Nuestra comprensión del diseño, la tecnología y la percepción del público nos llevó a un reposicionamiento informativo y modernizado de la empresa como una marca cercana, accesible y centrada en el ser humano en el ámbito de la ciberseguridad.'
                     },
                 ]

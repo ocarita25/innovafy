@@ -7,9 +7,10 @@ const videoPath = `/videos/work/articles/${slug}`
 export const surveillanceWatchArticle: WorkArticleType = {
     slug: slug,
     title: "Surveillance Watch",
+    industry: "Visualización de Datos",
     isFeatured: true,
     category: ["featured", "comunidad-y-proposito", 'innovacion'],
-    link: "/",
+    link: "https://www.surveillancewatch.io/",
     intro: "Surveillance Watch es un mapa interactivo que revela las intrincadas conexiones entre las empresas de vigilancia, sus fuentes de financiación y afiliaciones.",
     thumbnail: {
         background: {

@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const migrantRightsArticle: WorkArticleType = {
     slug: slug,
     title: "Derechos de los migrantes",
+    industry: "Sin fines de lucro",
     category: ['sin-fines-de-lucro'],
-    link: "/",
+    link: "https://www.mrrors.org/",
     intro: "Promover los derechos de los trabajadores migrantes.",
     thumbnail: {
         background: {

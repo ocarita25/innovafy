@@ -4,13 +4,16 @@ import TiltCard from "@/components/common/TiltCard";
 import Main from "@/components/layouts/Main";
 import { useModal } from "@/context/ModalContext";
 import { getThinkingCards } from "./articles";
+import ThinkingArticle from "./ThinkingArticle";
 
 const ThinkingPage = () => {
 
     const { openModal } = useModal()
 
     const handleModal = (slug: string) => {
-        openModal("ideas", slug)
+        openModal(
+            <ThinkingArticle slug={slug} onNext={() => { }} />
+        )
     }
 
     const thinkingCards = getThinkingCards();
@@ -33,7 +36,7 @@ const ThinkingPage = () => {
             <section className="grid md:mt-56 lg:mt-40 mb-30 space-y-12 md:justify-center p-fluid">
                 {thinkingCards.map((card, i) => (
 
-                    <Panned key={i} variant="vertical" triggerClass="border-b last:border-b-0">
+                    <Panned key={i} variant="vertical" triggerClass="border-b border-[#5700ff] last:border-b-0">
                         <article className="pb-20 ">
                             <TiltCard intensity={0.35} className="bg-transparent aspect-auto">
                                 <ArticleCard

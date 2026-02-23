@@ -25,7 +25,7 @@ const ThemeTrigger = ({ children, startDesktop, endDesktop, bgColor, bgOriginal,
         if (!triggerRef.current) return;
 
         const mm = gsap.matchMedia();
-        mm.add("(min-width:768px)", () => {
+        mm.add("(min-width:992px)", () => {
             ScrollTrigger.create({
                 trigger: triggerRef.current,
                 start: startDesktop,
@@ -37,7 +37,7 @@ const ThemeTrigger = ({ children, startDesktop, endDesktop, bgColor, bgOriginal,
                 onLeaveBack: () => changeBackground(bgOriginal),
             });
         })
-        mm.add("(max-width:768px)", () => {
+        mm.add("(max-width:991px)", () => {
             ScrollTrigger.create({
                 trigger: triggerRef.current,
                 start: startMobile,

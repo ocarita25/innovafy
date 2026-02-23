@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const payToArticle: WorkArticleType = {
     slug: slug,
     title: "PayTo",
+    industry: "Finanzas",
     category: ['comercial'],
-    link: "/",
+    link: "https://www.auspayplus.com.au/solutions/payto",
     intro: "PayTo es un servicio de pago digital con preautorización que admite transacciones bancarias tanto para comerciantes como para consumidores.",
     thumbnail: {
         background: {

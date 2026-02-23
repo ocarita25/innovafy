@@ -1,6 +1,7 @@
 import Main from '@/components/layouts/Main'
 import { Clients, Description, FeaturedWorks, Hero, News } from './components'
 import VideoExpanding from './components/VideoExpanding'
+import Plans from './components/Plans'
 
 const HomePage = () => {
     return (
@@ -9,6 +10,7 @@ const HomePage = () => {
             <VideoExpanding />
             <Clients />
             <FeaturedWorks />
+            <Plans />
             <Description />
             <News />
         </Main>

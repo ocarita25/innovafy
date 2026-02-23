@@ -6,8 +6,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const breakthroughArticle: WorkArticleType = {
     slug: slug,
     title: "Breakthrough T1D",
+    industry: "Sin fines de lucro",
     category: ['sin-fines-de-lucro'],
-    link: "/",
+    link: "https://breakthrought1d.org.au/",
     intro: "Breakthrough T1D Australia es una organización líder dedicada a apoyar a las personas que viven con diabetes tipo 1 (DT1), junto con sus familias, cuidadores, investigadores y profesionales de la salud",
     thumbnail: {
         background: {

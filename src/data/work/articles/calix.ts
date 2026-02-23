@@ -6,8 +6,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const calixArticle: WorkArticleType = {
     slug: slug,
     title: "Calix",
+    industry: "Tecnología ambiental",
     category: ['ui-ux'],
-    link: "/",
+    link: "https://calix.global/",
     intro: "Calix is solving global challenges in industrial decarbonisation and sustainability",
     thumbnail: {
         background: {

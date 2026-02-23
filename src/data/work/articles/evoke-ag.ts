@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const evokeAgArticle: WorkArticleType = {
     slug: slug,
     title: "evokeAg",
+    industry: "Innovación agrícola",
     category: ['comunidad-y-proposito'],
-    link: "/",
+    link: "https://www.evokeag.com/",
     intro: "Conéctese con el mundo de la innovación agroalimentaria.",
     thumbnail: {
         background: {

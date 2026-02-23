@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const georgiouGroupArticle: WorkArticleType = {
     slug: slug,
     title: "Grupo Georgiou",
+    industry: "Construcción",
     category: ['comercial'],
-    link: "/",
+    link: "https://www.georgiou.com.au/",
     intro: "Georgiou Group es una empresa líder en construcción civil y de edificación que ofrece una amplia gama de servicios de ingeniería y proyectos de infraestructura en toda Australia.",
     thumbnail: {
         background: {

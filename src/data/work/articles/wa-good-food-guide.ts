@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const waGoodFoodGuideArticle: WorkArticleType = {
     slug: slug,
     title: "WA Good Food Guide",
+    industry: "Hotelería y Turismo",
     category: ['comercial'],
-    link: "/",
+    link: "https://wagoodfoodguide.com/",
     intro: "Humaan se asoció con la Guía de Buena Comida de Australia Occidental para transformar su prestigiosa publicación impresa en una experiencia digital gourmet, celebrando los 50 mejores restaurantes de Australia Occidental. El nuevo sitio web fue diseñado para atraer a los usuarios con una estética elegante y minimalista, permitiendo que la vibrante comida y las imágenes del lugar sean el centro de atención.",
     thumbnail: {
         background: {

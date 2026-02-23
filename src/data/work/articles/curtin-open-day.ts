@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const curtinOpenDayArticle: WorkArticleType = {
     slug: slug,
     title: "Curtin Open Day",
+    industry: "Educación",
     category: ['educacion'],
-    link: "/",
+    link: "https://www.curtin.edu.au/open-day/",
     intro: "La Universidad Curtin es una de las instituciones de investigación públicas más grandes de Australia y ofrece educación líder en la industria para más de 55.000 estudiantes.",
     thumbnail: {
         background: {
@@ -34,7 +35,7 @@ export const curtinOpenDayArticle: WorkArticleType = {
         { icon: "", label: 'Funcionalidad "Crea mi plan"' },
     ],
     body: [
-        { type: "video", src: `${imgPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-1.webp`, alt: `${slug}-2` },
         { type: "image", src: `${imgPath}/${slug}-2.webp`, alt: `${slug}-3` },
         { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-4`, style: "min-[992px]:col-span-2" },

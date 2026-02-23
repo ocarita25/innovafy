@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const greenLeavesArticle: WorkArticleType = {
     slug: slug,
     title: "Green Leaves",
+    industry: "Educación",
     category: ['educacion'],
-    link: "/",
+    link: "https://greenleaveselc.com.au/",
     intro: "Green Leaves Early Learning se acercó a Humaan para crear una plataforma digital unificada que consolidaría sus centros bajo una marca maestra.",
     thumbnail: {
         background: {

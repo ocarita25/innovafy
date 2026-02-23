@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const blackvueArticle: WorkArticleType = {
     slug: slug,
     title: "BlackVue",
+    industry: "Consumidor",
     category: ['comercial'],
-    link: "/",
+    link: "#",
     intro: "Como la cámara para salpicadero más vendida en Australia, BlackVue buscó la ayuda de Humaan para reimaginar el sitio web de BlackVue específicamente para el mercado australiano",
     thumbnail: {
         background: {
@@ -36,7 +37,7 @@ export const blackvueArticle: WorkArticleType = {
         { type: "image", src: `${imgPath}/${slug}-1.webp`, alt: `${slug}-1`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-2.webp`, alt: `${slug}-2` },
         { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-3` },
-        { type: "video", src: `${imgPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-4.webp`, alt: `${slug}-5` },
         { type: "image", src: `${imgPath}/${slug}-5.webp`, alt: `${slug}-6` },
         { type: "image", src: `${imgPath}/${slug}-6.webp`, alt: `${slug}-7`, style: "min-[992px]:col-span-2" },

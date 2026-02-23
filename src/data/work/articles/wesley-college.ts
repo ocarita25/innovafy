@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const wesleyCollegeArticle: WorkArticleType = {
     slug: slug,
     title: "Wesley College",
+    industry: "Educación",
     category: ['educacion'],
-    link: "/",
+    link: "https://www.wesley.wa.edu.au/",
     intro: "Atreviéndonos y haciendo",
     thumbnail: {
         background: {
@@ -33,7 +34,7 @@ export const wesleyCollegeArticle: WorkArticleType = {
         { icon: "", label: "Campañas digitales" },
     ],
     body: [
-        { type: "video", src: `${imgPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-1.webp`, alt: `${slug}-2` },
         { type: "image", src: `${imgPath}/${slug}-2.webp`, alt: `${slug}-3` },
         { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-4`, style: "min-[992px]:col-span-2" },

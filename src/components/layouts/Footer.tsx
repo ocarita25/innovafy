@@ -4,15 +4,21 @@ import VerticalRoulette from '../common/VerticalRoulette'
 import { footerWords } from '@/constants/footer'
 import Scrollable from '../common/Scrollable'
 import { useModal } from '@/context/ModalContext'
+import Brief from '@/views/Brief'
 
 export const FooterContacts = () => {
+
     const { openModal } = useModal()
+
+    function handleOpenBrief() {
+        openModal(<Brief plan='personalizado' />)
+    }
 
     return (
         <div className='grid grid-cols-2 min-[1200px]:grid-cols-3 min-[1400px]:grid-cols-4 min-[992px]:gap-10 sm:grid-cols-2 xl:grid-cols-5 xl:gap-0 mb-10 text-[1rem]'>
             <div className='flex flex-col col-span-2 xl:col-span-1 gap-1 max-[991px]:mb-10'>
                 <span>We Work globally</span>
-                <span className='flex gap-2 items-center cursor-pointer' onClick={() => openModal("brief", "brief")}>
+                <span className='flex gap-2 items-center cursor-pointer' onClick={handleOpenBrief}>
                     Submit a brief <Arrow width='w-3' height='w-3' />
                 </span>
                 <span>contact@innovafy.com</span>
@@ -33,7 +39,7 @@ export const FooterContacts = () => {
 
 export const FooterSocialMedia = () => {
     return (
-        <section className='flex flex-col lg:flex-row lg:justify-between items-center gap-7 border-t-1 pt-8 text-sm'>
+        <section className='flex flex-col lg:flex-row lg:justify-between items-center gap-7 border-t-1 pt-8 text-sm mb-15'>
             <div className='flex gap-5'>
                 <span>INNOVAFY</span>
                 <span>© 2025 <Link to={"#"} className='opacity-60'>Privacy</Link></span>
@@ -52,7 +58,8 @@ export const FooterSocialMedia = () => {
 export const FooterLogo = () => {
     return (
         <div className='flex place-content-center md:hidden py-5'>
-            <img src={"/images/isocal.svg"} alt='LogoIsocal' width={128} height={128} />
+            {/* <img src={"/images/isocal.svg"} alt='LogoIsocal' width={128} height={128} /> */}
+            <img src={"/isotipo.svg"} alt='LogoIsocal' width={128} height={128} />
         </div>
     )
 }

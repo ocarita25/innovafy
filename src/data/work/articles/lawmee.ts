@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const lawmeeArticle: WorkArticleType = {
     slug: slug,
     title: "Lawmee",
+    industry: "Reclutamiento Legal",
     category: ['innovacion', 'ui-ux'],
-    link: "/",
+    link: "https://lawmee.com/",
     intro: "Una nueva plataforma de mercado para conectar equipos legales con abogados y asistentes legales, desde la idea hasta el lanzamiento.",
     thumbnail: {
         background: {

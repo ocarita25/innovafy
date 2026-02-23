@@ -3,6 +3,7 @@ import Headings from "./Headings";
 import Arrow from "@/assets/Arrow";
 import { cn } from "@/lib/utils";
 import type { ThinkingCardType } from "@/views/thinking/thinking.types";
+import { ButtonBlack } from "./Button";
 
 const ArticleCard = ({ title, tags, duration, description, author, authorAvatar, date, thumbnail, onClick, ...props }: ThinkingCardType) => {
     return (
@@ -23,10 +24,12 @@ const ArticleCard = ({ title, tags, duration, description, author, authorAvatar,
                     <span className="leading-[1.75]">{description}</span>
                 </div>
                 <div className="flex flex-row min-[768px]:flex-col-reverse min-[1150px]:flex-row min-md:gap-7 justify-between">
-                    <div className="button bg-black text-white">
+                    <ButtonBlack>
                         <span>Leer artículo</span>
                         <Arrow width="w-4" />
-                    </div>
+                    </ButtonBlack>
+                    {/* <div className="button bg-black text-white">
+                    </div> */}
                     <div className="flex items-center gap-3 text-sm text-gray-500">
                         <img src={authorAvatar} alt="Autor" className="w-8 h-8 rounded-full" />
                         <span>{author}</span>

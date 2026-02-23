@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const growArticle: WorkArticleType = {
     slug: slug,
     title: "growAg",
+    industry: "Innovación Agrícola",
     category: ['featured', 'innovacion'],
-    link: "/",
+    link: "https://www.growag.com/",
     intro: "growAg es un mercado en línea que conecta las capacidades agroalimentarias y de innovación de Australia con el mundo.",
     thumbnail: {
         background: {
@@ -34,7 +35,7 @@ export const growArticle: WorkArticleType = {
         { icon: "", label: "Integraciones de socios" },
     ],
     body: [
-        { type: "video", src: `${imgPath}/grow-ag-1.mp4`, style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/grow-ag-1.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/grow-ag-1.webp`, alt: "grow-ag-2" },
         { type: "image", src: `${imgPath}/grow-ag-2.webp`, alt: "grow-ag-3" },
         { type: "image", src: `${imgPath}/grow-ag-3.webp`, alt: "grow-ag-4", style: "min-[992px]:col-span-2" },

@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const schroleArticle: WorkArticleType = {
     slug: slug,
     title: "Schrole",
+    industry: "Educación",
     category: ['educacion'],
-    link: "/",
+    link: "https://www.schrole.com/",
     intro: "Schrole es el proveedor líder del mercado de soluciones de software de RRHH diseñadas para la comunidad educativa internacional.",
     thumbnail: {
         background: {

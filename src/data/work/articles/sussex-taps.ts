@@ -7,9 +7,10 @@ const videoPath = `/videos/work/articles/${slug}`
 export const sussexTapsArticle: WorkArticleType = {
     slug: slug,
     title: "Sussex Taps",
+    industry: "Fabricación",
     isFeatured: true,
     category: ["featured", 'comercial'],
-    link: "/",
+    link: "https://sussextaps.com.au/",
     intro: "Sussex Taps es un fabricante de grifería de alta gama con una profunda tradición en la manufactura australiana.",
     thumbnail: {
         background: {

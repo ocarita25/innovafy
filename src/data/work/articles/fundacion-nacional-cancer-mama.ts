@@ -6,8 +6,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const fundacionNacionalCancerMamaArticle: WorkArticleType = {
     slug: slug,
     title: "Fundación Nacional del Cáncer de Mama",
+    industry: "Sin fines de lucro",
     category: ['featured', "sin-fines-de-lucro"],
-    link: "/",
+    link: "https://nbcf.org.au/",
     intro: "La Fundación Nacional del Cáncer de Mama (NBCF) es la organización sin fines de lucro líder de Australia que financia investigaciones de primer nivel sobre el cáncer de mama.",
     thumbnail: {
         background: {

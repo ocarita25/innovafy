@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const theUniversityOfNotreDameArticle: WorkArticleType = {
     slug: slug,
     title: "Universidad de Notre Dame",
+    industry: "Educación",
     category: ['educacion', 'ui-ux'],
-    link: "/",
+    link: "https://www.notredame.edu.au/",
     intro: "La Universidad de Notre Dame Australia es una universidad católica nacional con campus en Australia Occidental y Nueva Gales del Sur.",
     thumbnail: {
         background: {

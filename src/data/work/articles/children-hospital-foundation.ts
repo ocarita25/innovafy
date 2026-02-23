@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const childrensHospitalFoundationArticle: WorkArticleType = {
     slug: slug,
     title: "Fundación del Hospital Infantil",
+    industry: "Sin fines de lucro",
     category: ['sin-fines-de-lucro'],
-    link: "/",
+    link: "https://childrens.org.au/",
     intro: "La Fundación del Hospital Infantil (CHF) trabaja en conjunto con el Hospital Infantil de Queensland y el Departamento de Salud Infantil de Queensland para recaudar fondos en beneficio de los niños enfermos",
     thumbnail: {
         background: {

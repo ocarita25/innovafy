@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const cocosKeelingIslandsArticle: WorkArticleType = {
     slug: slug,
     title: "Cocos Keeling Islands",
-    category: ['comunidad'],
-    link: "/",
+    industry: "Turismo",
+    category: ['comunidad-y-proposito'],
+    link: "https://cocoskeelingislands.com.au/",
     intro: "Las Islas Cocos Keeling son el último paraíso virgen de Australia, un idílico oasis tropical con palmeras cocoteras, playas de arena blanca y aguas azules",
     thumbnail: {
         background: {
@@ -33,7 +34,7 @@ export const cocosKeelingIslandsArticle: WorkArticleType = {
         { icon: "", label: "Integración de reservas" },
     ],
     body: [
-        { type: "video", src: `${imgPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-1.webp`, alt: `${slug}-2` },
         { type: "image", src: `${imgPath}/${slug}-2.webp`, alt: `${slug}-3` },
         { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-4`, style: "min-[992px]:col-span-2" },

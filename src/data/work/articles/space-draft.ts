@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const spaceDraftArticle: WorkArticleType = {
     slug: slug,
     title: "SpaceDraft",
+    industry: "Start-up",
     category: ['innovacion'],
-    link: "/",
+    link: "https://spacedraft.com/",
     intro: "Planifica cualquier cosa y compártela en todas partes.",
     thumbnail: {
         background: {

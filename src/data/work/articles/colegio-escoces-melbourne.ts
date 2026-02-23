@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const colegioEscocesMelbourneArticle: WorkArticleType = {
     slug: slug,
     title: "Colegio Escocés de Melbourne",
+    industry: "Educacion",
     category: ['featured', 'educacion'],
-    link: "/",
+    link: "https://www.scotch.vic.edu.au/",
     intro: "Una presencia digital inspirada para una de las escuelas independientes para niños más antiguas y prestigiosas de Australia.",
     thumbnail: {
         background: {

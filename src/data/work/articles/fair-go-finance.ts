@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const fairGoFinanceArticle: WorkArticleType = {
     slug: slug,
     title: "Fair Go Finance",
+    industry: "Finanzas",
     category: ['featured', 'comercial'],
-    link: "/",
+    link: "https://www.fairgofinance.com.au/",
     intro: "Fair Go Finance es un proveedor líder de préstamos al consumidor en el mercado de crédito cercano a la primera categoría, comprometido a mejorar la salud financiera de sus clientes.",
     thumbnail: {
         background: {

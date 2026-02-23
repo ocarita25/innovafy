@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const unheartedSolutionsArticle: WorkArticleType = {
     slug: slug,
     title: "Unearthed Solutions",
+    industry: "Innovación",
     category: ['comercial', 'innovacion'],
-    link: "/",
+    link: "https://unearthed.solutions/",
     intro: "Unearthed Solutions es líder en la creación de ecosistemas y el fomento de la innovación para resolver problemas en la industria de los recursos.",
     thumbnail: {
         background: {

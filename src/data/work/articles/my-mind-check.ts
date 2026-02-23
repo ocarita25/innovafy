@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const myMindCheckArticle: WorkArticleType = {
     slug: slug,
     title: "My Mind Check",
+    industry: "Educación",
     category: ['educacion', "comunidad-y-proposito"],
-    link: "/",
+    link: "https://mymindcheck.org.au/",
     intro: "Con el apoyo del Departamento Federal de Educación y en colaboración con escuelas australianas, la Universidad Macquarie ha desarrollado My Mind Check, una herramienta digital gratuita, voluntaria y basada en evidencia para el control de la salud mental y el bienestar de las escuelas australianas",
     thumbnail: {
         background: {

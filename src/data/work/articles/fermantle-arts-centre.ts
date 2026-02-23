@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const fermantleArtsCentreArticle: WorkArticleType = {
     slug: slug,
     title: "Fremantle Arts Centre",
+    industry: "Artes",
     category: ['comunidad-y-proposito'],
-    link: "/",
+    link: "https://wfac.org.au/",
     intro: "El Fremantle Arts Centre (FAC) es una importante institución artística de Australia Occidental que ofrece un rico programa de exposiciones, residencias, cursos de arte, música y eventos.",
     thumbnail: {
         background: {

@@ -7,9 +7,10 @@ const imgPath = `/images/work/articles/${slug}`
 export const chaleitArticle: WorkArticleType = {
     slug: slug,
     title: "Chaleit",
+    industry: "Cyberseguridad",
     isFeatured: true,
     category: ['featured', 'comercial'],
-    link: "/",
+    link: "https://chaleit.com/",
     intro: "Chaleit, empresa líder en ciberseguridad, haciendo una allianza comercial con Inova logro una renovación integral de su marca y la transformación de su sitio web, con el fin de conectar de forma más eficaz su presencia online con su experiencia y capacidades en constante evolución.",
     thumbnail: {
         background: {

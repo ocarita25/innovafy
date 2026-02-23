@@ -6,8 +6,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const goldenPipelineArticle: WorkArticleType = {
     slug: slug,
     title: "Golden Pipeline",
+    industry: "Comercio",
     category: ['comunidad-y-proposito'],
-    link: "",
+    link: "https://www.goldenpipeline.com.au/",
     intro: "Viaje a través de la historia de Australia Occidental.",
     thumbnail: {
         background: {

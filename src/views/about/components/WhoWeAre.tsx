@@ -2,7 +2,7 @@ import Headings from '@/components/common/Headings'
 import PannedText from '@/components/common/PannedText'
 import Scrollable from '@/components/common/Scrollable'
 import ThemeTrigger from '@/components/common/ThemeTrigger'
-import React from 'react'
+import Customers from './Customers'
 
 const WhoWeAre = () => {
 
@@ -18,7 +18,8 @@ const WhoWeAre = () => {
             bgOriginal={bgOriginal}
             className={"about-humans"}
         >
-            <div className="about-humans-team aspect-[5/4]">
+            <Customers />
+            <div className="about-humans-team aspect-[5/4] max-w-dvw">
                 <h2 className="about-humans-team-heading">
                     <div className="absolute whitespace-nowrap z-[1] top-[23%] left-[49.61%] -translate-x-1/2">
                         <Scrollable yOriginal={0} yTarget={-35} initScale={0.85} scale={1.05} start="top+=200 bottom" end="bottom 50%">

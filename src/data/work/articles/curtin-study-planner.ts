@@ -2,13 +2,15 @@ import type { WorkArticleType } from "../types"
 
 const slug = "curtin-study-planner"
 const imgPath = `/images/work/articles/${slug}`
+const videoPath = `/videos/work/articles/${slug}`
 
 
 export const curtinStudyPlannerArticle: WorkArticleType = {
     slug: slug,
     title: "Curtin Study Planner",
+    industry: "Educación",
     category: ['educacion', 'ui-ux'],
-    link: "/",
+    link: "https://www.curtin.edu.au/students/essentials/managing-your-course/study-planner/",
     intro: "Como socio de la universidad desde hace mucho tiempo, la Facultad de Negocios y Derecho nos contactó para que repensamos el planificador de estudios de los estudiantes con un enfoque digital y centrado en la experiencia del usuario.",
     thumbnail: {
         background: {
@@ -34,7 +36,7 @@ export const curtinStudyPlannerArticle: WorkArticleType = {
         { icon: "", label: "Integración de API " },
     ],
     body: [
-        { type: "video", src: `${imgPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/${slug}-1.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/${slug}-1.webp`, alt: `${slug}-2` },
         { type: "image", src: `${imgPath}/${slug}-2.webp`, alt: `${slug}-3` },
         { type: "image", src: `${imgPath}/${slug}-3.webp`, alt: `${slug}-4`, style: "min-[992px]:col-span-2" },

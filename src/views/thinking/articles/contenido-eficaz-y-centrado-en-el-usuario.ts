@@ -1,7 +1,7 @@
 import type { ThinkingArticleType } from "../thinking.types"
 
 const slug = "contenido-eficaz-y-centrado-en-el-usuario"
-const path = "/images/thinking/articles"
+const path = `/images/thinking/${slug}/`
 
 export const ContenidoEficazYCentradoEnElUsuario: ThinkingArticleType = {
 
@@ -35,7 +35,7 @@ export const ContenidoEficazYCentradoEnElUsuario: ThinkingArticleType = {
             {
                 variant: "multimedia",
                 subVariant: "image",
-                image: "img.webp",
+                image: `${path}/figure-1.webp`,
                 imageDescription: "Diseño orientado a la simplicidad y la legibilidad. Ambos ejemplos (arriba) se tomaron de páginas de inicio, pero el de la derecha tiene más probabilidades de captar la atención del usuario."
             },
         ],
@@ -97,7 +97,7 @@ export const ContenidoEficazYCentradoEnElUsuario: ThinkingArticleType = {
                     {
                         variant: "multimedia",
                         subVariant: "image",
-                        image: "img.webp",
+                        image: `${path}/figure-2.webp`,
                         imageDescription: "¿Tu contenido se ajusta a su propósito y respeta a su audiencia? Escribir textos que conecten con la audiencia también implica estar al tanto de la actualidad, valorar la impresión que transmites y reflexionar sobre los valores que expresas entre líneas. Fuente: “Presupuesto 2018 para Millennials”, William Buck."
                     },
                 ]
@@ -139,7 +139,7 @@ export const ContenidoEficazYCentradoEnElUsuario: ThinkingArticleType = {
                     {
                         variant: "multimedia",
                         subVariant: "image",
-                        image: "img.webp",
+                        image: `${path}/figure-3.webp`,
                         imageDescription: "Flower Bros combina dirección de arte y contenido para una página de inicio colorida y de gran impacto."
                     },
                     {
@@ -162,7 +162,7 @@ export const ContenidoEficazYCentradoEnElUsuario: ThinkingArticleType = {
                     {
                         variant: "multimedia",
                         subVariant: "image",
-                        image: "img.webp",
+                        image: `${path}/figure-4.webp`,
                         imageDescription: "Puede que tu escritura no cubra todas las situaciones, pero un esfuerzo razonable ampliará el alcance y la utilidad de tu trabajo. Fuente: “Inclusivo 101”, Microsoft Design."
                     },
                     {

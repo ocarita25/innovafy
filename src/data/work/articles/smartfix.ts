@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const smartfixArticle: WorkArticleType = {
     slug: slug,
     title: "SmartFix",
+    industry: "Servicios Comerciales",
     category: ['comercial'],
-    link: "/",
+    link: "https://teamsmartfix.com.au/",
     intro: "Smartfix, un proveedor líder de servicios de electricidad, aire acondicionado y plomería en Perth, necesitaba un sitio web que satisficiera las necesidades de su negocio en rápido crecimiento",
     thumbnail: {
         background: {

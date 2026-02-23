@@ -2,14 +2,16 @@ import { useModal } from '@/context/ModalContext';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLayoutEffect, useRef } from 'react';
-import { ArticleRenderer } from '@/components/articles/ArticleRenderer';
+// import { ArticleRenderer } from '@/components/articles/ArticleRenderer';
 import Close from '@/assets/icons/Close';
+// import Brief from '@/views/Brief';
+// import AlertModal from './AlertModal';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ArticleModal = () => {
 
-    const { modalSlug, modalType, closeModal, isModalOpen } = useModal();
+    const { closeModal, isModalOpen, modalContent, modalOverlay } = useModal();
 
     const triggerRef = useRef<HTMLDivElement>(null)
     const containerRef = useRef<HTMLDivElement>(null)
@@ -18,13 +20,22 @@ const ArticleModal = () => {
     // const article: React.ReactNode = modalSlug ? <ArticleRenderer type={modalType} slug={modalSlug} onNext={() => { }} /> : null
 
     useLayoutEffect(() => {
+
+        if (!isModalOpen) return;
+
         const container = containerRef.current;
         const trigger = triggerRef.current;
 
-        if (!container || !trigger || !modalSlug) return;
+        if (!container || !trigger) return;
 
         // Reset initial state
-        gsap.set(trigger, { borderRadius: "2rem", y: 550, left: "calc(var(--container-gutter))", right: "calc(var(--container-gutter))" });
+        gsap.set(trigger, {
+            borderRadius: "2rem",
+            y: 550,
+            left: "calc(var(--container-gutter))",
+            right: "calc(var(--container-gutter))"
+        });
+
         gsap.set(container, { backgroundColor: "#00000000" })
 
         gsap.to(container, {
@@ -67,12 +78,14 @@ const ArticleModal = () => {
             stRef.current?.kill();
             stRef.current = null
         }
-    }, [modalSlug]);
+    }, [isModalOpen]);
 
     const handleClose = () => {
+
         const container = containerRef.current;
         const trigger = triggerRef.current;
         if (!container || !trigger) return;
+        console.log('closing');
 
         // Animación de salida
         const tl = gsap.timeline({
@@ -95,19 +108,27 @@ const ArticleModal = () => {
 
     return (
         isModalOpen && (
-            <section ref={containerRef} className='h-dvh fixed top-0 w-full max-w-dvw z-50 overflow-y-scroll transition-transform bg-[#000000be]'>
-                <div ref={triggerRef} className='py-10 grid absolute top-0 bg-[var(--color-theme-background)] rounded-4xl object-center'>
-                    <div className='px-5 w-full flex -mb-10 sticky -top-40 left-20 z-10 justify-end'>
-                        <button onClick={handleClose} className='text-white flex items-center justify-center bg-gray-600 opacity-35 rounded-full w-11 h-11'>
-                            <Close />
-                        </button>
+            <>
+                <section ref={containerRef} className='h-dvh fixed top-0 w-full max-w-dvw z-50 overflow-y-scroll transition-transform bg-[#000000be]'>
+                    <div ref={triggerRef} className='py-10 grid object-center absolute top-0 bg-(--color-theme-background) rounded-4xl'>
+                        <div className='w-fit sticky -top-40 mx-10 left-3/2 z-10'>
+                            <button id='article-modal-close-button' onClick={handleClose} className='text-white flex items-center justify-center bg-gray-600 opacity-35 rounded-full w-11 h-11'>
+                                <Close />
+                            </button>
+                        </div>
+                        <div className='max-w-[85vw] mx-auto content-center relative text-[var(--color-theme-secondary)]'>
+                            {modalContent}
+                        </div>
                     </div>
-                    <div className='max-w-[85vw] mx-auto content-center relative text-[var(--color-theme-secondary)]'>
-                        <ArticleRenderer type={modalType} slug={modalSlug} onNext={() => { }} />
-                    </div>
-                </div>
-            </section >
-
+                </section>
+                {
+                    modalOverlay && (
+                        <div className='absolute inset-0 z-333 items-center justify-center bg-black/60 backdrop-blur-sm'>
+                            {modalOverlay}
+                        </div>
+                    )
+                }
+            </>
         )
     )
 }

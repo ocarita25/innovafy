@@ -1,57 +1,119 @@
+import AlertModal from '@/components/common/AlertModal';
+import { ButtonBlack } from '@/components/common/Button';
 import Headings from '@/components/common/Headings'
-import React from 'react'
+import Input from '@/components/ui/Input';
+import Select from '@/components/ui/Select';
+import TextArea from '@/components/ui/TextArea';
+import { useModal } from '@/context/ModalContext';
+import React, { useEffect, useRef, useState } from 'react'
 
+const Brief = ({ plan, text }: { plan?: string, text?: string }) => {
 
-const Brief: React.FC = () => {
+    const { showOverlay } = useModal();
+
+    const fileRef = useRef<HTMLInputElement>(null)
+    const planRef = useRef<HTMLSelectElement>(null)
+    const textRef = useRef<HTMLTextAreaElement>(null)
+    const [isSending, setIsSending] = useState<boolean>(false);
+    const [fileName, setFileName] = useState<string>("")
+
+    useEffect(() => {
+        if (!planRef.current || !plan) return;
+        planRef.current.value = plan
+
+    }, [plan])
+
+    useEffect(() => {
+        if (!textRef.current || !text) return
+        textRef.current.value = text
+    }, [text])
+    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault()
+
+        setIsSending(true)
+
+        showOverlay(<AlertModal status='loading' />)
+
+        const formData = new FormData(e.currentTarget);
+
+        formData.forEach(entries => {
+            console.log(entries);
+        });
+
+        const res = await fetch('http://127.0.0.1:8000/api/send-email', {
+            method: 'POST',
+            body: formData,
+        }).finally(() => {
+            setIsSending(false)
+        })
+
+        const data = await res.json();
+
+        if (!res.ok) {
+            showOverlay(<AlertModal status='error' />)
+            throw new Error(data.error || "volver a enviar")
+        }
+
+        showOverlay(<AlertModal status='finished' />)
+        console.log(data)
+    }
+
+    function handleInputFileButton() {
+        if (!fileRef.current) return;
+        fileRef.current.click()
+    }
+
+    function handleChangeFile(e: React.ChangeEvent<HTMLInputElement>) {
+        if (!e.target.files?.length) return
+        setFileName(e.target.files[0].name)
+    }
+
+    const planes = [
+        {
+            label: "Esencial - S/. 949.90",
+            value: "esencial"
+        },
+        {
+            label: "Avanzado - S/. 1559.90",
+            value: "avanzado"
+        },
+        {
+            label: "Premium - S/. 1999.90",
+            value: "premium"
+        },
+        {
+            label: "Personalizado",
+            value: "personalizado"
+        },
+    ]
+
     return (
         <section className='flex flex-col gap-10 min-[992px]:w-[clamp(55rem,65vw,65rem)]'>
-            <Headings variant='title' className='text-purple-400 !mb-0'>Empecemos</Headings>
-            <div className='flex flex-col'>
+            <Headings variant='title' className='text-[#574b8e] !mb-0'>Empecemos</Headings>
+            <div className='flex flex-col text-[clamp(1.15rem,1.75vw,1.45rem)]'>
                 <span>Complete los espacios en blanco y le responderemos en un día hábil.</span>
                 <span className='opacity-40 py-3'>¿Solo quieres charlar? Llámanos o escríbenos; somos un grupo muy agradable.</span>
             </div>
-            <form className='grid min-[992px]:grid-cols-2 gap-10 text-[1rem]'>
-                <div className='flex flex-col'>
-                    <label htmlFor='nombre' className='pb-4'>¿Cómo te llamas?</label>
-                    <input id='nombre' type='text' placeholder='Tu nombre aqui' required className='py-4 border-b border-gray-300 outline-0' />
-                </div>
-                <div className='flex flex-col'>
-                    <label htmlFor='empresa' className='pb-4'>¿Nombre de tu empresa?</label>
-                    <input id='empresa' type='text' placeholder='Innovafy S.A.C' required className='py-4 border-b border-gray-300 outline-0' />
-                </div>
-                <div className='flex flex-col'>
-                    <label htmlFor='telefono' className='pb-4'>¿Cómo podemos contactarte?</label>
-                    <input id='telefono' type='text' placeholder='Número de teléfono' required className='py-4 border-b border-gray-300 outline-0' />
-                </div>
-                <div className='flex flex-col'>
-                    <label htmlFor='email' className='pb-4'>E-mail</label>
-                    <input id='email' type='email' placeholder='Dirección de correo electrónico' required className='py-4 border-b border-gray-300 outline-0' />
-                </div>
-                <div className='flex flex-col'>
-                    <label htmlFor='presupuesto' className='pb-4'>Expectativa presupuestaria</label>
-                    <span className='opacity-40'>Un presupuesto transparente nos ayudará a garantizar que se cumplan las expectativas.</span>
-                    <input id='presupuesto' type='text' required className='py-4 border-b border-gray-300 outline-0' />
-                </div>
-                <div className='flex flex-col'>
-                    <label htmlFor='cronologia' className='pb-4'>Cronología</label>
-                    <span className='opacity-40'>Si tienes un cronograma o fecha límite ideal, háznoslo saber.</span>
-                    <input id='cronologia' type='text' required className='py-4 border-b border-gray-300 outline-0' />
-                </div>
+            <form className='grid min-[992px]:grid-cols-2 gap-10 text-[1rem]' onSubmit={handleSubmit}>
+                <Input label='¿Cómo te llamas?' name='nombre' placeholder='Tu nombre aquí' required />
+                <Input label='¿Nombre de tu empresa?' name='empresa' placeholder='Inovafy S.A.C' />
+                <Input label='¿Cómo podemos contactarte?' name='telefono' placeholder='Teléfono' required />
+                <Input label='E-mail' name='email' placeholder='empresa@example.com' required />
+                {/* <Input label='Expectativa presupuestaria' name='presupuesto' hint='Un presupuesto transparente nos ayudará a garantizar que se cumplan las expectativas.' /> */}
+                <Select ref={planRef} label='Planes' hint="Elige un plan acorde a tus necesidades" name='presupuesto' options={planes} />
+                <Input label='Cronograma' name='cronograma' hint='Si tienes un cronograma o fecha límite ideal, háznoslo saber.' />
+                <TextArea ref={textRef} label='Cuéntanos del proyecto' name='message' hint='¿Necesitas un nuevo sitio web? ¿Una app? Dinos cómo podemos ayudarte.' cols={2} rows={7} required />
                 <div className='flex flex-col col-span-2'>
-                    <label htmlFor='acerca' className='pb-4'>Cuéntanos del proyecto</label>
-                    <span className='opacity-40 pb-4'>¿Necesitas un nuevo sitio web? ¿Una app? Dinos cómo podemos ayudarte.</span>
-                    <textarea id='acerca' className='border rounded-lg border-gray-300 p-5' rows={7} />
-                </div>
-                <div className='flex flex-col col-span-2'>
-                    <label htmlFor='archivo' className='pb-4'>Adjunte cualquier documento pertinente</label>
+                    <label htmlFor='file' className='pb-4'>Adjunte cualquier documento pertinente</label>
                     <span className='opacity-40'>Máximo 10 archivos de 25 MB cada uno. Máximo 100 MB en total.</span>
-                    <input type='file' className='py-4 border-b border-gray-300 outline-0' />
+                    <div className='flex items-center gap-5 py-4 border-b border-gray-300 outline-0'>
+                        <ButtonBlack onClick={handleInputFileButton}>Seleccionar Archivo</ButtonBlack>
+                        <span>{fileName}</span>
+                    </div>
+                    <input ref={fileRef} type='file' id='file' name='file' accept='.pdf' className='py-4 border-b border-gray-300 outline-0 hidden' onChange={handleChangeFile} />
                 </div>
-                <div className='flex flex-col col-span-2'>
-                    <label htmlFor='nosotros' className='pb-4'>¿Cómo se entero de nosotros?</label>
-                    <input id="nosotros" type='text' placeholder='¿De un amigo? ¿De google ?' className='py-4 border-b border-gray-300 outline-0' />
-                </div>
-                <button type='submit' className='bg-purple-400 opacity-80 w-full col-span-2 py-5 rounded-full'>Entregar</button>
+                <Input label='¿Cómo se entero de nosotros?' name='nosotros' placeholder='¿De un amigo? ¿De google ?' />
+                <button type='submit' className='bg-[#574b8e] not-disabled:hover:bg-[#836fe1] text-white w-full col-span-2 py-5 rounded-full' disabled={isSending}>Entregar</button>
             </form>
         </section>
     )

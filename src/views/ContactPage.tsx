@@ -5,10 +5,15 @@ import PannedText from '@/components/common/PannedText'
 import { FooterContacts, FooterSocialMedia } from '@/components/layouts/Footer'
 import Main from '@/components/layouts/Main'
 import { useModal } from '@/context/ModalContext'
+import Brief from './Brief'
 
 const ContactPage = () => {
 
     const { openModal } = useModal()
+
+    function handleOpenBrief() {
+        openModal(<Brief plan='personalizado' />)
+    }
 
     return (
         // <main className="min-h-dvh -mt-20 grid relative overflow-hidden z-10">
@@ -34,7 +39,9 @@ const ContactPage = () => {
                                 Tenemos un muy buen presentimiento
                             </PannedText>
                         </Headings>
-                        <div className='group flex gap-3 w-fit rounded-full px-6 py-4 bg-[var(--text-color-primary)] hover:bg-[var(--theme-accent)] text-[var(--text-color-secondary)] hover:text-black cursor-pointer' onClick={() => openModal("brief", "brief")}>
+                        <div
+                            className='group flex gap-3 w-fit rounded-full px-6 py-4 bg-[var(--text-color-primary)] hover:bg-[var(--theme-accent)] text-[var(--text-color-secondary)] hover:text-black cursor-pointer'
+                            onClick={handleOpenBrief}>
                             <span className='text-lg'>Envia una solicitud</span>
                             <Arrow width='w-5' className='text-[var(--theme-accent)] group-hover:text-black' />
                         </div>
@@ -55,7 +62,7 @@ const ContactPage = () => {
                 <FooterContacts />
                 <FooterSocialMedia />
                 <div className='flex place-content-center md:hidden py-5'>
-                    <img src={"/images/isocal.svg"} alt='LogoIsocal' width={128} height={128} />
+                    <img src={"/isotipo.svg"} alt='LogoIsocal' width={128} height={128} />
                 </div>
             </footer>
 

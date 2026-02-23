@@ -7,8 +7,9 @@ const imgPath = `/images/work/articles/${slug}`
 export const vitalVoicesArticle: WorkArticleType = {
     slug: slug,
     title: "Vital Voices",
+    industry: "Sin fines de lucro",
     category: ['sin-fines-de-lucro'],
-    link: "/",
+    link: "https://www.vitalvoices.org/",
     intro: "Vital Voices Global Partnership invierte en mujeres que están afrontando los mayores desafíos del mundo.",
     thumbnail: {
         background: {

@@ -8,8 +8,8 @@ import Arrow from '@/assets/Arrow'
 
 const Description = () => {
     return (
-        <div className="flex flex-col p-fluid lg:grid grid-cols-[2fr_3fr] grid-rows-[auto_auto_1fr] gap-[clamp(3.125rem,3.30vw,4.15rem)] w-full text-color-primary">
-            <Headings as="h2" className="col-span-2 max-w-[10.5em]">
+        <div className="flex flex-col p-fluid lg:grid grid-cols-[2fr_3fr] grid-rows-[auto_auto_1fr] gap-[clamp(3.125rem,3.30vw,4.15rem)] mt-10 w-full text-color-primary">
+            <Headings as="h2" className="col-span-2 max-w-[10.5em] mb-0!">
                 <Panned variant="vertical">
                     <span>Gran impacto para</span>
                 </Panned>

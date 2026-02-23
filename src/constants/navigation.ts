@@ -26,6 +26,11 @@ import HighEndIcon from '@/assets/icons/navmenu/audiovisual/high-end.svg?react'
 import PostMotionIcon from '@/assets/icons/navmenu/audiovisual/post-motion.svg?react'
 import CreativosIcon from '@/assets/icons/navmenu/audiovisual/creativos.svg?react'
 
+import MarketinAutomatizadoIcon from "@/assets/icons/navmenu/ia-automatizacion/marketing-automatizado.svg?react"
+import FunnelsAutomatizadosIcon from "@/assets/icons/navmenu/ia-automatizacion/funnel-automatizados.svg?react"
+import IaConversacionalIcon from "@/assets/icons/navmenu/ia-automatizacion/ia-conversacional.svg?react"
+import IaBusinessIcon from "@/assets/icons/navmenu/ia-automatizacion/ia-business.svg?react"
+
 export const navItems = [
     {
         group: "Growth & Performance",
@@ -126,6 +131,13 @@ export const navItems = [
                 class: "variant-cyan",
                 variant: VARIANT_ACCEST_CLASS["variant-cyan"]
             },
+            {
+                icon: HighEndIcon,
+                text: "High-End",
+                url: "/servicios/produccion-audiovisual-de-alta-calidad",
+                class: "variant-cyan",
+                variant: VARIANT_ACCEST_CLASS["variant-cyan"]
+            },
         ]
     },
     {
@@ -215,29 +227,62 @@ export const navItems = [
             },
         ]
     },
+    // {
+    //     group: "Audiovisual",
+    //     links: [
+    //         {
+    //             icon: HighEndIcon,
+    //             text: "High-End",
+    //             url: "/servicios/produccion-audiovisual-de-alta-calidad",
+    //             class: "variant-cyan",
+    //             variant: VARIANT_ACCEST_CLASS["variant-cyan"]
+    //         },
+    //         {
+    //             icon: PostMotionIcon,
+    //             text: "Post & Motion",
+    //             url: "/servicios/post-produccion-y-motion-design",
+    //             class: "variant-purple",
+    //             variant: VARIANT_ACCEST_CLASS["variant-purple"]
+    //         },
+    //         {
+    //             icon: CreativosIcon,
+    //             text: "Creativos",
+    //             url: "/servicios/advertising-creative-y-campaing-assets",
+    //             class: "variant-pink",
+    //             variant: VARIANT_ACCEST_CLASS["variant-pink"]
+    //         },
+    //     ]
+    // },
     {
-        group: "Audiovisual",
+        group: "Automatizacion",
         links: [
             {
-                icon: HighEndIcon,
-                text: "High-End",
-                url: "/servicios/produccion-audiovisual-de-alta-calidad",
+                icon: MarketinAutomatizadoIcon,
+                text: "Marketing Automatizado",
+                url: "/servicios/arquitectura-de-automatizacion-de-marketing",
                 class: "variant-cyan",
                 variant: VARIANT_ACCEST_CLASS["variant-cyan"]
             },
             {
-                icon: PostMotionIcon,
-                text: "Post & Motion",
-                url: "/servicios/post-produccion-y-motion-design",
+                icon: FunnelsAutomatizadosIcon,
+                text: "Funnel Automatizados",
+                url: "/servicios/ingenieria-de-embudos-de-ventas-automatizados",
                 class: "variant-purple",
                 variant: VARIANT_ACCEST_CLASS["variant-purple"]
             },
             {
-                icon: CreativosIcon,
-                text: "Creativos",
-                url: "/servicios/advertising-creative-y-campaing-assets",
-                class: "variant-pink",
-                variant: VARIANT_ACCEST_CLASS["variant-pink"]
+                icon: IaConversacionalIcon,
+                text: "IA Conversacional",
+                url: "/servicios/sistemas-conversacionales-con-ia",
+                class: "variant-yellow",
+                variant: VARIANT_ACCEST_CLASS["variant-yellow"]
+            },
+            {
+                icon: IaBusinessIcon,
+                text: "IA Business",
+                url: "/servicios/inteligencia-artificial-aplicada-a-los-negocios",
+                class: "variant-blue",
+                variant: VARIANT_ACCEST_CLASS["variant-blue"]
             },
         ]
     },
@@ -278,6 +323,20 @@ export const navItems = [
                 url: "/servicios/comunidad",
                 class: "variant-cyan",
                 variant: VARIANT_ACCEST_CLASS["variant-cyan"]
+            },
+            {
+                icon: PostMotionIcon,
+                text: "Post-Producción",
+                url: "/servicios/post-produccion-y-motion-design",
+                class: "variant-purple",
+                variant: VARIANT_ACCEST_CLASS["variant-purple"]
+            },
+            {
+                icon: CreativosIcon,
+                text: "Advertising",
+                url: "/servicios/advertising-creative-y-campaing-assets",
+                class: "variant-pink",
+                variant: VARIANT_ACCEST_CLASS["variant-pink"]
             },
         ]
     },

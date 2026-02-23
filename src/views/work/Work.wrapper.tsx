@@ -6,13 +6,16 @@ import { useModal } from "@/context/ModalContext";
 import { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { getWorkCardsByCategory } from "@/data/work";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ArticleRenderer } from "@/components/articles/ArticleRenderer";
 
 const WorkWrapper = ({ category }: { category?: WorkCategory }) => {
     const params = useParams<{ category?: string }>();
     const { openModal } = useModal();
 
-    function handleOpenModal(type: "work" | "awards" | "ideas" | "brief", slug: string) {
-        openModal(type, slug)
+    function handleOpenModal(type: "work" | "awards" | "ideas", slug: string) {
+        openModal(
+            <ArticleRenderer type={type} slug={slug} onNext={() => { }} />
+        )
     }
 
     const resolvedCategory: WorkCategory = category ?? (isWorkCategory(params.category) ? params.category : "featured")

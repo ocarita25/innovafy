@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const satterleyArticle: WorkArticleType = {
     slug: slug,
     title: "Satterley",
+    industry: "Desarrollo inmobiliario",
     category: ['featured', 'comercial'],
-    link: "/",
+    link: "https://satterley.com.au/",
     intro: "Satterley es la empresa de desarrollo de tierras independiente más grande de Australia, con ubicaciones comunitarias en WA, QLD y VIC.",
     thumbnail: {
         background: {
@@ -34,13 +35,13 @@ export const satterleyArticle: WorkArticleType = {
         { icon: "", label: "CMS WordPress de acceso múltiple" },
     ],
     body: [
-        { type: "image", src: `${imgPath}/satterley-1.webp`, alt: "satterley-1", style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/satterley-1.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/satterley-2.webp`, alt: "satterley-2" },
         { type: "image", src: `${imgPath}/satterley-3.webp`, alt: "satterley-3" },
         { type: "image", src: `${imgPath}/satterley-4.webp`, alt: "satterley-4", style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/satterley-5.webp`, alt: "satterley-5" },
         { type: "image", src: `${imgPath}/satterley-6.webp`, alt: "satterley-6" },
-        { type: "image", src: `${imgPath}/satterley-7.webp`, alt: "satterley-7", style: "min-[992px]:col-span-2" },
+        { type: "video", src: `${videoPath}/satterley-7.mp4`, style: "min-[992px]:col-span-2" },
         { type: "image", src: `${imgPath}/satterley-8.webp`, alt: "satterley-8" },
         { type: "image", src: `${imgPath}/satterley-9.webp`, alt: "satterley-9" },
         { type: "image", src: `${imgPath}/satterley-10.webp`, alt: "satterley-10", style: "min-[992px]:col-span-2" },

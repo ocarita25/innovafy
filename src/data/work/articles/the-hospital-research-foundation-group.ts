@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const theHospitalResearchFoundationGroupArticle: WorkArticleType = {
     slug: slug,
     title: "The Hospital Research Foundation Group",
+    industry: "Sin fines de lucro",
     category: ['sin-fines-de-lucro'],
-    link: "/",
+    link: "https://hospitalresearch.org.au/",
     intro: "El Hospital Research Foundation Group es la principal organización benéfica y de defensa de derechos del sur de Australia, con la simple misión de mejorar la salud y el bienestar de toda su comunidad.",
     thumbnail: {
         background: {

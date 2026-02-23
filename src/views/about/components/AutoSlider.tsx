@@ -75,7 +75,7 @@ const AutoSlider = ({ images, speed = 30 }: AutoSliderProps) => {
     }, [speed])
 
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             <div ref={wrapperRef} className='flex gap-2 min-[992px]:gap-10 touch-pan-y items-center'>
                 {repeatedSlides.map((child, i) => (
                     <picture key={i} className='shrink-0 rounded-sm min-[992px]:rounded-3xl overflow-hidden w-[30dvw]'>

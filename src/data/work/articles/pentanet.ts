@@ -7,8 +7,9 @@ const videoPath = `/videos/work/articles/${slug}`
 export const pentanetArticle: WorkArticleType = {
     slug: slug,
     title: "Pentanet",
+    industry: "Tecnología",
     category: ['featured', 'comercial', 'ui-ux'],
-    link: "/",
+    link: "https://pentanet.com.au/",
     intro: "Pentanet es un proveedor líder de soluciones de Internet inalámbrica fija, NBN y de fibra óptica para clientes residenciales y comerciales en toda Australia Occidental.",
     thumbnail: {
         background: {
