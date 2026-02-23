@@ -24,10 +24,15 @@ export const pentanetArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "Para una marca que se enorgullece de su innovación, tecnología y experiencia, su sitio web debía reflejar este posicionamiento. Pentanet buscaba una experiencia cautivadora que invitara al público a conectar profundamente con ellos, tanto a nivel de marca como de producto. Pentanet contrató a Humaan para diseñar la estrategia y la nueva presencia online de la empresa, mientras que el desarrollo se realizaría internamente.",
-        "Entendiendo las necesidades comerciales de Pentanet, la estructura del sitio se diseñó pensando tanto en los clientes potenciales como en los existentes. La información del producto, como precios, velocidad y capacidad, ocupó un lugar central en el sitio, y se complementó con un diseño de interfaz de usuario sofisticado que evocaba las credenciales tecnológicas de la marca.",
-        "Pentanet continúa ampliando los límites de lo posible con sus capacidades y enfoque, siendo el sitio web la base de su estrategia de CX."
+        "Para marcas centradas en innovación, tecnología y experiencia, la presencia digital debe reflejar y reforzar este posicionamiento, ofreciendo experiencias atractivas que conecten con el público a nivel de marca y producto.",
+        "La arquitectura del sitio y la presentación de información clave —como características de producto, capacidades y diferenciadores— se diseñan para satisfacer tanto a clientes potenciales como existentes, complementadas con interfaces sofisticadas que transmiten credenciales tecnológicas de manera clara y accesible.",
+        "Cuando la estrategia digital y la experiencia de usuario se alinean correctamente, la plataforma se convierte en un pilar central de la estrategia de experiencia del cliente (CX), respaldando la expansión de capacidades y la consolidación de la marca."
     ],
+    // paragraphs: [
+    //     "Para una marca que se enorgullece de su innovación, tecnología y experiencia, su sitio web debía reflejar este posicionamiento. Pentanet buscaba una experiencia cautivadora que invitara al público a conectar profundamente con ellos, tanto a nivel de marca como de producto. Pentanet contrató a Humaan para diseñar la estrategia y la nueva presencia online de la empresa, mientras que el desarrollo se realizaría internamente.",
+    //     "Entendiendo las necesidades comerciales de Pentanet, la estructura del sitio se diseñó pensando tanto en los clientes potenciales como en los existentes. La información del producto, como precios, velocidad y capacidad, ocupó un lugar central en el sitio, y se complementó con un diseño de interfaz de usuario sofisticado que evocaba las credenciales tecnológicas de la marca.",
+    //     "Pentanet continúa ampliando los límites de lo posible con sus capacidades y enfoque, siendo el sitio web la base de su estrategia de CX."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño UX" },

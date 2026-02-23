@@ -23,10 +23,15 @@ export const payToArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "Concebido para aumentar la confianza y mejorar la seguridad en torno a las transacciones de débito directo, el sitio web tuvo que combinar contenido informativo con comunicación educativa para crear una experiencia fácil de usar con la que los consumidores y las pequeñas empresas pudieran interactuar.",
-        "La respuesta fue un diseño minimalista con iconografía visual intuitiva que comunicaba el proceso de interacción entre bancos, comercios y consumidores. El sitio web funcionó como una biblioteca de recursos para el público y contaba con numerosos casos de uso, materiales de marketing y preguntas frecuentes para facilitar una consulta más profunda según fuera necesario.",
-        "El galardonado sitio web PayTo continúa desempeñando un papel importante en la transformación digital de la industria bancaria y establece el estándar para la comunicación eficaz de productos dentro de los servicios financieros."
+        "En contextos de servicios financieros, las plataformas digitales orientadas a pagos y transacciones deben combinar contenido informativo con comunicación educativa, ofreciendo experiencias intuitivas que generen confianza y faciliten la interacción de consumidores y pequeñas empresas.",
+        "Diseños minimalistas con iconografía clara permiten comunicar procesos complejos de forma comprensible, mientras que la inclusión de recursos complementarios —como casos de uso, materiales de referencia y preguntas frecuentes— fortalece la comprensión y profundiza la interacción según las necesidades del usuario.",
+        "Cuando la estrategia digital integra claridad, accesibilidad y contenidos estructurados, la plataforma puede convertirse en un referente dentro del sector, estableciendo estándares en la comunicación efectiva de productos y servicios financieros."
     ],
+    // paragraphs: [
+    //     "Concebido para aumentar la confianza y mejorar la seguridad en torno a las transacciones de débito directo, el sitio web tuvo que combinar contenido informativo con comunicación educativa para crear una experiencia fácil de usar con la que los consumidores y las pequeñas empresas pudieran interactuar.",
+    //     "La respuesta fue un diseño minimalista con iconografía visual intuitiva que comunicaba el proceso de interacción entre bancos, comercios y consumidores. El sitio web funcionó como una biblioteca de recursos para el público y contaba con numerosos casos de uso, materiales de marketing y preguntas frecuentes para facilitar una consulta más profunda según fuera necesario.",
+    //     "El galardonado sitio web PayTo continúa desempeñando un papel importante en la transformación digital de la industria bancaria y establece el estándar para la comunicación eficaz de productos dentro de los servicios financieros."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño responsivo" },

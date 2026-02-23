@@ -24,8 +24,12 @@ export const theUniversityOfNotreDameArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "Con un sitio web anticuado y una serie de experiencias de usuario poco intuitivas, la Universidad solicitó la ayuda de Humaan para redefinir su interfaz de usuario (IU) y experiencia de usuario (UX) en la navegación y las páginas clave del sitio web. Trabajando en estrecha colaboración con el equipo, ayudamos a liderar un proyecto de rediseño para transformar la presencia digital en una que satisficiera las necesidades del público clave en todo el sitio web, ofreciendo a la vez una interfaz más moderna.",
+        "Cuando un sitio web presenta una interfaz anticuada y experiencias de usuario poco intuitivas, un rediseño estratégico puede transformar la presencia digital. El enfoque se centra en mejorar la navegación, las páginas clave y la coherencia general de la experiencia, alineando la plataforma con las necesidades del público objetivo.",
+        "La modernización de la interfaz y la optimización de la experiencia de usuario permiten a los visitantes interactuar de manera más efectiva con el contenido, facilitando el acceso a información relevante y reforzando la percepción de la institución o marca.",
     ],
+    // paragraphs: [
+    //     "Con un sitio web anticuado y una serie de experiencias de usuario poco intuitivas, la Universidad solicitó la ayuda de Humaan para redefinir su interfaz de usuario (IU) y experiencia de usuario (UX) en la navegación y las páginas clave del sitio web. Trabajando en estrecha colaboración con el equipo, ayudamos a liderar un proyecto de rediseño para transformar la presencia digital en una que satisficiera las necesidades del público clave en todo el sitio web, ofreciendo a la vez una interfaz más moderna.",
+    // ],
     features: [
         { icon: "", label: "Diseño UX y UI" },
         { icon: "", label: "Arquitectura de la información" },

@@ -23,9 +23,13 @@ export const wesleyCollegeArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "Wesley, una escuela privada líder con más de 1400 estudiantes, se acercó a nosotros para modernizar su presencia digital para representar la calidad, la comunidad y la excelencia de la escuela.",
-        "Con el objetivo de aumentar las inscripciones de estudiantes, imaginamos una interfaz de usuario contemporánea que ofrece una experiencia de usuario muy atractiva y fomenta la exploración.",
+        "Cuando una institución educativa busca modernizar su presencia digital, es fundamental que la plataforma refleje la calidad, la comunidad y la excelencia de la escuela, al tiempo que ofrece una experiencia atractiva para todos los usuarios.",
+        "Un diseño de interfaz contemporáneo y una experiencia de usuario intuitiva fomentan la exploración, mejoran la interacción y respaldan objetivos clave como la captación de nuevos estudiantes.",
     ],
+    // paragraphs: [
+    //     "Wesley, una escuela privada líder con más de 1400 estudiantes, se acercó a nosotros para modernizar su presencia digital para representar la calidad, la comunidad y la excelencia de la escuela.",
+    //     "Con el objetivo de aumentar las inscripciones de estudiantes, imaginamos una interfaz de usuario contemporánea que ofrece una experiencia de usuario muy atractiva y fomenta la exploración.",
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Mejores prácticas educativas" },

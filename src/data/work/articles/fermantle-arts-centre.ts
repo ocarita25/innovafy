@@ -24,10 +24,15 @@ export const fermantleArtsCentreArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "FAC buscaba una experiencia de sitio web que complementara la naturaleza artística y la diversidad de su programa y que le permitiera aprovechar el impactante contenido visual para crear una experiencia trascendente para los visitantes.",
-        "Tras una consulta exhaustiva con el equipo de FAC, quedó claro que todas las funciones empresariales debían estar presentes en el sitio web. La comunicación sobre el programa artístico se complementó con espacios dedicados a cursos educativos, expresiones de interés para artistas y una tienda en línea.",
-        "El sitio web de FAC continúa apoyando una mezcla de artistas emergentes y establecidos, al tiempo que impulsa las visitas a uno de los distritos más vibrantes de la agitada escena artística de Fremantle."
+        "En organizaciones culturales con una programación diversa, la experiencia digital debe reflejar la riqueza artística de la institución y aprovechar el contenido visual como elemento central para construir una interacción memorable con los visitantes.",
+        "En este tipo de proyectos, la definición de requerimientos funcionales resulta clave para integrar todas las áreas operativas en un mismo ecosistema digital. La comunicación del programa artístico puede complementarse con secciones dedicadas a formación educativa, convocatorias para artistas y comercio electrónico, asegurando coherencia y eficiencia en la gestión.",
+        "El resultado es una plataforma que fortalece la visibilidad tanto de artistas emergentes como consolidados y que actúa como catalizador para incrementar la participación cultural y las visitas al entorno creativo en el que se inserta la institución."
     ],
+    // paragraphs: [
+    //     "FAC buscaba una experiencia de sitio web que complementara la naturaleza artística y la diversidad de su programa y que le permitiera aprovechar el impactante contenido visual para crear una experiencia trascendente para los visitantes.",
+    //     "Tras una consulta exhaustiva con el equipo de FAC, quedó claro que todas las funciones empresariales debían estar presentes en el sitio web. La comunicación sobre el programa artístico se complementó con espacios dedicados a cursos educativos, expresiones de interés para artistas y una tienda en línea.",
+    //     "El sitio web de FAC continúa apoyando una mezcla de artistas emergentes y establecidos, al tiempo que impulsa las visitas a uno de los distritos más vibrantes de la agitada escena artística de Fremantle."
+    // ],
     features: [
         { icon: "", label: "Diseño de experiencia de usuario" },
         { icon: "", label: "Diseño responsivo" },

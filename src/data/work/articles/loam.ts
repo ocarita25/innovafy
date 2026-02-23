@@ -24,10 +24,15 @@ export const loamArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "El principal desafío de Loam fue comunicar su compleja tecnología a una amplia gama de partes interesadas, todas ellas con distintos grados de experiencia y que buscaban diferentes características y beneficios al interactuar con la tecnología.",
-        "Humaan adoptó un enfoque centrado en la audiencia para la experiencia de usuario del sitio, dedicando secciones de la navegación global a grupos específicos para que pudieran acceder por sí mismos a la información relevante. A continuación, se aplicó una combinación de diseño de página intuitivo y composición de contenido, aprovechando el contenido visual y desmitificando los mensajes clave para garantizar que la comunicación adecuada llegara al público objetivo.",
-        "Desde su exitoso lanzamiento en Australia, Loam ha visto crecer su presencia en el escenario internacional mientras busca apoyar cuestiones ambientales y de productos alimenticios a nivel mundial."
+        "Uno de los principales retos al comunicar tecnologías complejas consiste en traducir su propuesta de valor para audiencias diversas, con distintos niveles de conocimiento técnico y expectativas específicas en cuanto a funcionalidades y beneficios.",
+        "En este tipo de contextos, un enfoque centrado en la audiencia dentro de la experiencia de usuario permite estructurar la navegación en torno a segmentos claramente definidos, facilitando el acceso autónomo a información relevante. La combinación de diseño intuitivo, jerarquía de contenido clara y recursos visuales estratégicamente integrados contribuye a simplificar mensajes técnicos y garantizar que cada grupo reciba la comunicación adecuada.",
+        "Cuando la estrategia digital logra articular claridad, segmentación y narrativa visual, la plataforma puede respaldar la expansión internacional de la organización y fortalecer su posicionamiento en torno a desafíos ambientales y alimentarios de alcance global."
     ],
+    // paragraphs: [
+    //     "El principal desafío de Loam fue comunicar su compleja tecnología a una amplia gama de partes interesadas, todas ellas con distintos grados de experiencia y que buscaban diferentes características y beneficios al interactuar con la tecnología.",
+    //     "Humaan adoptó un enfoque centrado en la audiencia para la experiencia de usuario del sitio, dedicando secciones de la navegación global a grupos específicos para que pudieran acceder por sí mismos a la información relevante. A continuación, se aplicó una combinación de diseño de página intuitivo y composición de contenido, aprovechando el contenido visual y desmitificando los mensajes clave para garantizar que la comunicación adecuada llegara al público objetivo.",
+    //     "Desde su exitoso lanzamiento en Australia, Loam ha visto crecer su presencia en el escenario internacional mientras busca apoyar cuestiones ambientales y de productos alimenticios a nivel mundial."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UI y UX" },

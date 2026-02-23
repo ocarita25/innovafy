@@ -23,10 +23,15 @@ export const growArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "Financiado por la corporación estatutaria AgriFutures, la ambición de GrowAg era crear una plataforma que permitiera a las organizaciones conectarse con las últimas oportunidades de investigación, innovación y tecnología agrícola dentro de las industrias rurales.",
-        "Se requería una solución técnica escalable y potente para mostrar y gestionar la creciente base de datos de oportunidades que el público podía explorar. Se desarrolló una plataforma y un CMS personalizados para impulsar el sitio web, garantizando una gestión robusta de datos, funciones intuitivas de búsqueda y filtrado, y una función de administración intuitiva y fácil de usar para el equipo de marketing de growAg.",
-        "La plataforma growAg continúa expandiéndose con una hoja de ruta continua de características y mejoras diseñadas para respaldar la posición de liderazgo de Australia en el sector de tecnología agrícola global."
+        "En iniciativas respaldadas por organismos del sector agroindustrial, la ambición suele centrarse en desarrollar plataformas que conecten a organizaciones con oportunidades emergentes de investigación, innovación y tecnología agrícola dentro de las industrias rurales.",
+        "Para responder a una base de datos en constante crecimiento, resulta clave implementar una arquitectura técnica escalable y robusta que permita gestionar y visualizar grandes volúmenes de información. La adopción de plataformas y CMS personalizados facilita una administración eficiente de datos, junto con funcionalidades avanzadas de búsqueda y filtrado que optimizan la experiencia del usuario y la gestión interna.",
+        "Cuando la estrategia tecnológica se articula con una hoja de ruta evolutiva de mejoras y nuevas funcionalidades, la plataforma puede consolidarse como un activo estratégico que refuerza el liderazgo en el ecosistema global de tecnología agrícola."
     ],
+    // paragraphs: [
+    //     "Financiado por la corporación estatutaria AgriFutures, la ambición de GrowAg era crear una plataforma que permitiera a las organizaciones conectarse con las últimas oportunidades de investigación, innovación y tecnología agrícola dentro de las industrias rurales.",
+    //     "Se requería una solución técnica escalable y potente para mostrar y gestionar la creciente base de datos de oportunidades que el público podía explorar. Se desarrolló una plataforma y un CMS personalizados para impulsar el sitio web, garantizando una gestión robusta de datos, funciones intuitivas de búsqueda y filtrado, y una función de administración intuitiva y fácil de usar para el equipo de marketing de growAg.",
+    //     "La plataforma growAg continúa expandiéndose con una hoja de ruta continua de características y mejoras diseñadas para respaldar la posición de liderazgo de Australia en el sector de tecnología agrícola global."
+    // ],
     features: [
         { icon: "", label: "Estrategia y experiencia de usuario" },
         { icon: "", label: "Diseño de interacción" },

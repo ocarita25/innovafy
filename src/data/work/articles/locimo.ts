@@ -24,8 +24,12 @@ export const locimoArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "Desde sus inicios, hemos colaborado estrechamente con el equipo de Locimo para hacer realidad su visión. Desde la marca y la identidad hasta el diseño y la construcción de la compleja plataforma, hemos ayudado a la empresa desde la idea inicial hasta su lanzamiento, y seguimos apoyando su evolución y crecimiento.",
+        "En el desarrollo de plataformas digitales complejas, el acompañamiento estratégico desde la definición de marca e identidad hasta el diseño y la construcción tecnológica resulta clave para materializar una visión de negocio sólida. Este tipo de procesos integrales permiten transformar una idea inicial en un producto digital funcional y escalable.",
+        "Cuando la estrategia de marca, la experiencia de usuario y la arquitectura tecnológica evolucionan de manera coordinada, la plataforma puede consolidarse como un activo central para el crecimiento sostenido y la expansión futura."
     ],
+    // paragraphs: [
+    //     "Desde sus inicios, hemos colaborado estrechamente con el equipo de Locimo para hacer realidad su visión. Desde la marca y la identidad hasta el diseño y la construcción de la compleja plataforma, hemos ayudado a la empresa desde la idea inicial hasta su lanzamiento, y seguimos apoyando su evolución y crecimiento.",
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño UX" },

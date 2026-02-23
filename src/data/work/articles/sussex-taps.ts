@@ -19,10 +19,15 @@ export const sussexTapsArticle: WorkArticleType = {
         },
     },
     paragraphs: [
-        "Tras un reposicionamiento de marca, Sussex Taps encargó a Inovafy el diseño de una experiencia digital inmersiva que comunicara la propuesta principal de la marca: calidad, tradición y artesanía.",
-        "El contenido visual y la gama de productos desempeñaron un papel fundamental en el sitio web, que se complementó con interactividad y animación de vanguardia para ofrecer al público una experiencia digital tangible y táctil.",
-        "El resultado es una experiencia sensorialmente enriquecedora que trasciende los límites del diseño de interfaz de usuario y el desarrollo interactivo, y que ha consolidado la posición de liderazgo de la marca en el mercado."
+        "Tras un reposicionamiento de marca, el caso de Sussex Taps demuestra cómo una experiencia digital inmersiva puede comunicar con precisión los valores fundamentales de una firma: calidad, tradición y artesanía.",
+        "En este tipo de proyectos, el contenido visual y la presentación de la gama de productos desempeñan un papel central, integrándose con interactividad y animación de vanguardia para ofrecer al público una experiencia digital tangible y sensorial.",
+        "El resultado es una plataforma que trasciende el diseño convencional de interfaz y el desarrollo interactivo, fortaleciendo el posicionamiento estratégico y consolidando el liderazgo de marca en su mercado."
     ],
+    // paragraphs: [
+    //     "Tras un reposicionamiento de marca, Sussex Taps encargó a Inovafy el diseño de una experiencia digital inmersiva que comunicara la propuesta principal de la marca: calidad, tradición y artesanía.",
+    //     "El contenido visual y la gama de productos desempeñaron un papel fundamental en el sitio web, que se complementó con interactividad y animación de vanguardia para ofrecer al público una experiencia digital tangible y táctil.",
+    //     "El resultado es una experiencia sensorialmente enriquecedora que trasciende los límites del diseño de interfaz de usuario y el desarrollo interactivo, y que ha consolidado la posición de liderazgo de la marca en el mercado."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de interacción" },

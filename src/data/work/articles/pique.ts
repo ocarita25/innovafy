@@ -24,10 +24,15 @@ export const piqueArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "El sitio web debía desempeñar un papel fundamental en la campaña de lanzamiento de PIQUE, ya que debía evocar las características premium de la marca y, al mismo tiempo, garantizar que la información esencial del producto, sobre las especificaciones y el proceso de construcción, fuera fácilmente accesible.",
-        "La respuesta residía en una experiencia rica en contenido que equilibraba forma y función a partes iguales. Una sofisticada experiencia de navegación con elegantes técnicas de producción de interfaz de usuario reflejaba la calidad y la artesanía de la gama de productos, respaldada por información técnica clara y llamadas a la acción para impulsar la consideración del consumidor y la consulta entrante.",
-        "El resultado fue un sitio web galardonado que superó sus objetivos comerciales y posicionó a la marca como líder en el sector de las casas modulares."
+        "En lanzamientos de productos premium, la plataforma digital debe reflejar la calidad de la marca, al tiempo que asegura que la información esencial sobre especificaciones y procesos sea fácilmente accesible para los usuarios.",
+        "Una experiencia rica en contenido, que equilibre diseño y funcionalidad, facilita la comprensión de la propuesta de valor. Navegación sofisticada, interfaces elegantes y presentación clara de información técnica, junto con llamadas a la acción estratégicas, potencian la consideración del consumidor y fomentan la interacción efectiva.",
+        "Cuando la experiencia digital integra claridad, estética y funcionalidad, la plataforma puede superar objetivos comerciales y consolidar el posicionamiento de la marca dentro de su sector."
     ],
+    // paragraphs: [
+    //     "El sitio web debía desempeñar un papel fundamental en la campaña de lanzamiento de PIQUE, ya que debía evocar las características premium de la marca y, al mismo tiempo, garantizar que la información esencial del producto, sobre las especificaciones y el proceso de construcción, fuera fácilmente accesible.",
+    //     "La respuesta residía en una experiencia rica en contenido que equilibraba forma y función a partes iguales. Una sofisticada experiencia de navegación con elegantes técnicas de producción de interfaz de usuario reflejaba la calidad y la artesanía de la gama de productos, respaldada por información técnica clara y llamadas a la acción para impulsar la consideración del consumidor y la consulta entrante.",
+    //     "El resultado fue un sitio web galardonado que superó sus objetivos comerciales y posicionó a la marca como líder en el sector de las casas modulares."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UX y UI" },

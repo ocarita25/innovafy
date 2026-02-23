@@ -23,10 +23,15 @@ export const breakthroughArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "Luego de un cambio de marca global, el desafío fue diseñar una experiencia digital que pudiera representar la complejidad y amplitud de la diabetes tipo 1 y al mismo tiempo brindar claridad y relevancia para una amplia gama de necesidades de la audiencia.",
-        "Trabajamos estrechamente con Breakthrough T1D y representantes de cada grupo de audiencia para comprender sus desafíos, comportamientos y objetivos únicos. Este conocimiento dio forma a una estructura de contenido intuitiva y una experiencia de descubrimiento que ayuda a los usuarios a encontrar rápidamente la información que más les interesa.",
-        "El resultado es un sitio web que no solo refleja la nueva marca, sino que también ofrece a los usuarios acceso personalizado a información, apoyo e investigación. Proporciona a la organización una plataforma potente y escalable para interactuar significativamente con la comunidad de diabetes tipo 1."
+        "Tras un cambio de marca global, el desafío consistía en diseñar una experiencia digital capaz de representar la complejidad y amplitud de la diabetes tipo 1, al tiempo que ofreciera claridad y relevancia para una audiencia diversa con necesidades específicas.",
+        "En este tipo de iniciativas, la comprensión profunda de los distintos grupos de interés —sus desafíos, comportamientos y objetivos— resulta clave para estructurar una arquitectura de contenido intuitiva y una experiencia de descubrimiento que permita a los usuarios acceder rápidamente a la información más relevante.",
+        "El resultado es una plataforma que no solo traduce coherentemente la nueva identidad de marca al entorno digital, sino que también facilita acceso personalizado a información, apoyo e investigación, consolidándose como un ecosistema escalable para fortalecer la interacción con la comunidad."
     ],
+    // paragraphs: [
+    //     "Luego de un cambio de marca global, el desafío fue diseñar una experiencia digital que pudiera representar la complejidad y amplitud de la diabetes tipo 1 y al mismo tiempo brindar claridad y relevancia para una amplia gama de necesidades de la audiencia.",
+    //     "Trabajamos estrechamente con Breakthrough T1D y representantes de cada grupo de audiencia para comprender sus desafíos, comportamientos y objetivos únicos. Este conocimiento dio forma a una estructura de contenido intuitiva y una experiencia de descubrimiento que ayuda a los usuarios a encontrar rápidamente la información que más les interesa.",
+    //     "El resultado es un sitio web que no solo refleja la nueva marca, sino que también ofrece a los usuarios acceso personalizado a información, apoyo e investigación. Proporciona a la organización una plataforma potente y escalable para interactuar significativamente con la comunidad de diabetes tipo 1."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Investigación de usuarios" },

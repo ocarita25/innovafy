@@ -24,9 +24,13 @@ export const telethonArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "El sitio web cuenta con un creador de páginas modular, lo que permite al equipo de Teletón gestionar el contenido fácilmente y mantener un diseño uniforme. Su infraestructura flexible se adapta a diversas necesidades de marketing durante todo el año. Un diseño atractivo y amigable fomenta la exploración y aumenta las conversiones, ayudando a Teletón a conectar con su audiencia durante todo el año.",
-        "Esta plataforma renovada fortalece la presencia digital de Teletón, garantizando una experiencia de usuario premium que respalda su misión de mejorar la vida de los niños en el futuro.",
+        "Plataformas digitales con creadores de páginas modulares permiten a los equipos gestionar contenido de manera flexible y mantener coherencia en el diseño, adaptándose a diversas necesidades de marketing a lo largo del año.",
+        "Un diseño atractivo y accesible fomenta la exploración, mejora la interacción y potencia la conversión, respaldando la misión de la organización y ofreciendo una experiencia de usuario de alta calidad.",
     ],
+    // paragraphs: [
+    //     "El sitio web cuenta con un creador de páginas modular, lo que permite al equipo de Teletón gestionar el contenido fácilmente y mantener un diseño uniforme. Su infraestructura flexible se adapta a diversas necesidades de marketing durante todo el año. Un diseño atractivo y amigable fomenta la exploración y aumenta las conversiones, ayudando a Teletón a conectar con su audiencia durante todo el año.",
+    //     "Esta plataforma renovada fortalece la presencia digital de Teletón, garantizando una experiencia de usuario premium que respalda su misión de mejorar la vida de los niños en el futuro.",
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UI y UX" },

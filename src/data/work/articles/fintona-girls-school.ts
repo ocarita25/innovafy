@@ -18,10 +18,15 @@ export const fintonaGirlsSchoolArticle: WorkArticleType = {
         },
     },
     paragraphs: [
-        "Un panorama educativo cada vez más competitivo impulsó a la escuela a adoptar un nuevo posicionamiento de marca, fundamentando los requisitos para un nuevo sitio web que estuviera más estrechamente alineado con su oferta integral.",
-        "Se tuvo en cuenta a los principales públicos: estudiantes, padres y docentes, con recorridos de usuario personalizados para cada cohorte, lo que les permitió acceder a contenido apropiado y relevante. Esto se complementó con secciones específicas del sitio web que comunicaban claramente la propuesta de valor de la escuela en cuanto a academia, comunidad y actividades extracurriculares.",
-        "El lanzamiento del sitio web ha proporcionado a la escuela una base creíble para respaldar su actividad de adquisición de estudiantes y ha contribuido a aumentar el perfil en reconocimiento y matriculación."
+        "En un entorno educativo cada vez más competitivo, la evolución del posicionamiento de marca suele exigir una redefinición integral de la presencia digital, asegurando una alineación coherente con la propuesta académica y formativa de la institución.",
+        "En este tipo de transformaciones, resulta fundamental segmentar a los públicos clave —estudiantes, padres y docentes— mediante recorridos de usuario diferenciados que faciliten el acceso a contenido pertinente. Esto puede complementarse con secciones específicas que articulen con claridad la propuesta de valor en términos de excelencia académica, comunidad y actividades extracurriculares.",
+        "Cuando la estrategia digital respalda de manera efectiva el posicionamiento institucional, el lanzamiento de la nueva plataforma contribuye a fortalecer la credibilidad de la marca y a potenciar los indicadores de reconocimiento y matriculación."
     ],
+    // paragraphs: [
+    //     "Un panorama educativo cada vez más competitivo impulsó a la escuela a adoptar un nuevo posicionamiento de marca, fundamentando los requisitos para un nuevo sitio web que estuviera más estrechamente alineado con su oferta integral.",
+    //     "Se tuvo en cuenta a los principales públicos: estudiantes, padres y docentes, con recorridos de usuario personalizados para cada cohorte, lo que les permitió acceder a contenido apropiado y relevante. Esto se complementó con secciones específicas del sitio web que comunicaban claramente la propuesta de valor de la escuela en cuanto a academia, comunidad y actividades extracurriculares.",
+    //     "El lanzamiento del sitio web ha proporcionado a la escuela una base creíble para respaldar su actividad de adquisición de estudiantes y ha contribuido a aumentar el perfil en reconocimiento y matriculación."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Experiencia de usuario" },

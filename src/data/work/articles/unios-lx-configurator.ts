@@ -18,9 +18,13 @@ export const uniosLxConfiguratorArticle: WorkArticleType = {
         },
     },
     paragraphs: [
-        "El Configurador Unios LX Infinity es una aplicación web ligera y de alto rendimiento que permite a los clientes crear su propio producto a partir de miles de configuraciones posibles, sin problemas y en cuestión de segundos. Diseñada como una aplicación web personalizada, esta intuitiva herramienta sustituye un tedioso proceso manual y permite a los clientes de Unios diseñar y pedir fácilmente sus productos según especificaciones detalladas. Tras su intuitiva interfaz de usuario se encuentra una amplia biblioteca de componentes y un motor de código complejo para manipularlos sobre la marcha.",
-        "El resultado es una aplicación web ágil y altamente optimizada que ofrece una experiencia de usuario intuitiva y atractiva. Este innovador producto es solo el último desarrollo que otorga a nuestro cliente con visión de futuro una ventaja competitiva en su mercado.",
+        "Los configuradores web permiten a los clientes crear productos personalizados a partir de múltiples opciones de manera rápida e intuitiva, reemplazando procesos manuales complejos y optimizando la experiencia de compra.",
+        "Diseñadas con interfaces de usuario claras y bibliotecas de componentes robustas, estas aplicaciones ofrecen experiencias fluidas y atractivas, mejorando la interacción, reduciendo fricciones y otorgando ventajas competitivas a las organizaciones que las implementan.",
     ],
+    // paragraphs: [
+    //     "El Configurador Unios LX Infinity es una aplicación web ligera y de alto rendimiento que permite a los clientes crear su propio producto a partir de miles de configuraciones posibles, sin problemas y en cuestión de segundos. Diseñada como una aplicación web personalizada, esta intuitiva herramienta sustituye un tedioso proceso manual y permite a los clientes de Unios diseñar y pedir fácilmente sus productos según especificaciones detalladas. Tras su intuitiva interfaz de usuario se encuentra una amplia biblioteca de componentes y un motor de código complejo para manipularlos sobre la marcha.",
+    //     "El resultado es una aplicación web ágil y altamente optimizada que ofrece una experiencia de usuario intuitiva y atractiva. Este innovador producto es solo el último desarrollo que otorga a nuestro cliente con visión de futuro una ventaja competitiva en su mercado.",
+    // ],
     features: [
         { icon: "", label: "Especificación de producto compleja" },
         { icon: "", label: "Aplicación JavaScript a medida" },

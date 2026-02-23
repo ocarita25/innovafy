@@ -24,9 +24,13 @@ export const evokeAgArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "evokeAg es la plataforma de comunicación principal de AgriFutures, que conecta a la comunidad agrícola y de innovación australiana con la región APAC y más allá.",
-        "El sitio web cumple una función principal: apoyar el evento evokeAg, ofreciendo una experiencia editorial durante todo el año. Esto se traduce en una experiencia de usuario intuitiva con una navegación clara que comunica el programa de eventos, destacando noticias y startups.",
+        "Plataformas como evokeAg funcionan como ejes de comunicación estratégica dentro del ecosistema agrícola y de innovación, conectando comunidades locales con audiencias de la región APAC y mercados internacionales.",
+        "En este tipo de iniciativas, el sitio web cumple un rol dual: apoyar la activación del evento principal y sostener una experiencia editorial continua durante todo el año. Esto requiere una experiencia de usuario intuitiva, con una arquitectura de navegación clara que estructure el programa del evento y otorgue visibilidad a noticias, startups y actores clave del sector."
     ],
+    // paragraphs: [
+    //     "evokeAg es la plataforma de comunicación principal de AgriFutures, que conecta a la comunidad agrícola y de innovación australiana con la región APAC y más allá.",
+    //     "El sitio web cumple una función principal: apoyar el evento evokeAg, ofreciendo una experiencia editorial durante todo el año. Esto se traduce en una experiencia de usuario intuitiva con una navegación clara que comunica el programa de eventos, destacando noticias y startups.",
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de interacción" },

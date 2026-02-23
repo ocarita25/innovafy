@@ -18,10 +18,15 @@ export const schroleArticle: WorkArticleType = {
         },
     },
     paragraphs: [
-        "La claridad en la comunicación era el requisito principal para una marca con una gama envidiable de productos y soluciones. Equilibrar las características y los beneficios de los productos SaaS sería fundamental en la arquitectura del sitio web, con una bolsa de trabajo adjunta diseñada para fomentar la interacción entre los futuros profesores y las escuelas que los reclutan.",
-        "Una fase de descubrimiento exhaustiva allanó el camino para una arquitectura de sitio web atractiva para todos los públicos y que se adaptaba a las variaciones geográficas de la comunidad. La comunicación centrada en los beneficios permitió a las escuelas adaptar sus necesidades de RR. HH. a las soluciones integrales de Schrole, impulsando la consideración y fomentando la conversión a su equipo interno de experiencia del cliente.",
-        "El resultado es una poderosa experiencia global que actúa como ventanilla única para todas las partes interesadas y audiencias dentro de la comunidad escolar internacional."
+        "En marcas con amplias gamas de productos y soluciones, la claridad en la comunicación digital es fundamental. La arquitectura del sitio debe equilibrar la presentación de características y beneficios de manera comprensible, integrando herramientas que fomenten la interacción entre los usuarios y los servicios ofrecidos.",
+        "Una fase de descubrimiento exhaustiva permite diseñar una estructura web atractiva y adaptable a la diversidad geográfica y de perfiles de la audiencia. La comunicación centrada en beneficios facilita que los usuarios alineen sus necesidades con las soluciones disponibles, mejorando la consideración y promoviendo la conversión efectiva.",
+        "Cuando la experiencia digital articula claridad, accesibilidad y personalización, la plataforma se convierte en un punto de referencia integral para todas las partes interesadas dentro de la comunidad educativa global."
     ],
+    // paragraphs: [
+    //     "La claridad en la comunicación era el requisito principal para una marca con una gama envidiable de productos y soluciones. Equilibrar las características y los beneficios de los productos SaaS sería fundamental en la arquitectura del sitio web, con una bolsa de trabajo adjunta diseñada para fomentar la interacción entre los futuros profesores y las escuelas que los reclutan.",
+    //     "Una fase de descubrimiento exhaustiva allanó el camino para una arquitectura de sitio web atractiva para todos los públicos y que se adaptaba a las variaciones geográficas de la comunidad. La comunicación centrada en los beneficios permitió a las escuelas adaptar sus necesidades de RR. HH. a las soluciones integrales de Schrole, impulsando la consideración y fomentando la conversión a su equipo interno de experiencia del cliente.",
+    //     "El resultado es una poderosa experiencia global que actúa como ventanilla única para todas las partes interesadas y audiencias dentro de la comunidad escolar internacional."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UI y UX" },

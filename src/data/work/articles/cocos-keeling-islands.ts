@@ -23,10 +23,15 @@ export const cocosKeelingIslandsArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "La Comisión de Turismo de la Isla Cocos Keeling le planteó a Humaan el doble desafío de aumentar el atractivo turístico de las islas y al mismo tiempo crear un activo que gestionara el inventario de productos de alojamiento, actividades y excursiones de una manera más eficiente.",
-        "El contenido visual enriquecido desempeñaría un papel fundamental en la comunicación de la vida en la isla. Este contenido se distribuyó con elegancia en toda la estructura del sitio web para atraer y captar la atención del público objetivo. Una experiencia de usuario intuitiva permitió que todos los operadores turísticos de la isla aparecieran con llamadas a la acción claras al motor de reservas personalizable para impulsar las ventas y la actividad turística.",
-        "El sitio y el lanzamiento de relaciones públicas que lo respalda han vuelto a poner a Cocos Keeling Island en el mapa y han aumentado su consideración para los turistas que buscan aventuras en todo el mundo."
+        "El desafío consistía en incrementar el atractivo turístico del destino y, al mismo tiempo, desarrollar un activo digital capaz de gestionar de forma más eficiente el inventario de alojamientos, actividades y excursiones.",
+        "En este tipo de iniciativas, el contenido visual enriquecido cumple un papel central en la construcción del imaginario del destino. Integrado estratégicamente en la arquitectura del sitio, permite captar la atención del público objetivo, mientras que una experiencia de usuario intuitiva facilita la visibilidad de los operadores turísticos mediante llamadas a la acción claras y motores de reserva personalizables orientados a impulsar la conversión.",
+        "Una ejecución coherente entre estrategia digital y lanzamiento comunicacional puede reposicionar un destino en el mapa internacional, aumentando su consideración entre viajeros que buscan experiencias diferenciadas a nivel global."
     ],
+    // paragraphs: [
+    //     "La Comisión de Turismo de la Isla Cocos Keeling le planteó a Humaan el doble desafío de aumentar el atractivo turístico de las islas y al mismo tiempo crear un activo que gestionara el inventario de productos de alojamiento, actividades y excursiones de una manera más eficiente.",
+    //     "El contenido visual enriquecido desempeñaría un papel fundamental en la comunicación de la vida en la isla. Este contenido se distribuyó con elegancia en toda la estructura del sitio web para atraer y captar la atención del público objetivo. Una experiencia de usuario intuitiva permitió que todos los operadores turísticos de la isla aparecieran con llamadas a la acción claras al motor de reservas personalizable para impulsar las ventas y la actividad turística.",
+    //     "El sitio y el lanzamiento de relaciones públicas que lo respalda han vuelto a poner a Cocos Keeling Island en el mapa y han aumentado su consideración para los turistas que buscan aventuras en todo el mundo."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UI y UX" },

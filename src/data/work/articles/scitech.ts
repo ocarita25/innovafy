@@ -10,7 +10,8 @@ export const scitechArticle: WorkArticleType = {
     industry: "Educacion",
     category: ['educacion', "comunidad-y-proposito"],
     link: "https://www.scitech.org.au/",
-    intro: "Scitech es un centro educativo STEM sin fines de lucro con sede en Perth, Australia Occidental. Contactaron con Humaan para crear una presencia en línea duradera que respaldara sus objetivos estratégicos desde el primer día.",
+    intro: "Un centro educativo STEM buscaba crear una presencia en línea duradera que respaldara sus objetivos estratégicos y facilitara la participación y el aprendizaje desde el primer día.",
+    // intro: "Scitech es un centro educativo STEM sin fines de lucro con sede en Perth, Australia Occidental. Contactaron con Humaan para crear una presencia en línea duradera que respaldara sus objetivos estratégicos desde el primer día.",
     thumbnail: {
         background: {
             type: 'image',
@@ -24,8 +25,13 @@ export const scitechArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        'La plataforma maximiza la participación mediante un diseño adaptable, navegación intuitiva y accesibilidad web, garantizando una experiencia óptima en todos los dispositivos. Campañas interactivas y páginas de destino personalizadas se dirigen a diversos segmentos de audiencia, incluyendo el micrositio "30 años de Scitech", que celebra la trayectoria del centro inspirando el aprendizaje imaginativo. Esta plataforma digital premium respalda la misión de Scitech de promover la exploración y la participación, posicionando a la marca como líder en la educación STEM.',
+        "Las plataformas digitales en educación STEM pueden maximizar la participación mediante un diseño adaptable, navegación intuitiva y estándares de accesibilidad web, garantizando una experiencia óptima en todos los dispositivos.",
+        "La inclusión de campañas interactivas y páginas de destino personalizadas permite dirigirse a diversos segmentos de audiencia, mientras que micrositios conmemorativos o temáticos pueden inspirar la exploración y el aprendizaje creativo.",
+        "Cuando la experiencia digital integra diseño, funcionalidad y narrativa estratégica, la plataforma respalda la misión educativa de la organización y consolida su posicionamiento como referente en el sector de la educación y la divulgación científica."
     ],
+    // paragraphs: [
+    //     'La plataforma maximiza la participación mediante un diseño adaptable, navegación intuitiva y accesibilidad web, garantizando una experiencia óptima en todos los dispositivos. Campañas interactivas y páginas de destino personalizadas se dirigen a diversos segmentos de audiencia, incluyendo el micrositio "30 años de Scitech", que celebra la trayectoria del centro inspirando el aprendizaje imaginativo. Esta plataforma digital premium respalda la misión de Scitech de promover la exploración y la participación, posicionando a la marca como líder en la educación STEM.',
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UI y UX" },

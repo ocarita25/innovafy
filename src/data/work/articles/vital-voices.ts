@@ -24,10 +24,15 @@ export const vitalVoicesArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "La organización contactó con Humaan para reimaginar su presencia digital y así generar conciencia y destacar su impacto, definiendo claramente su misión, visión y valores. Es fundamental que el sitio web ofrezca una experiencia de usuario atractiva y moderna que incentive la exploración e impulse la monetización mediante donaciones y recaudación de fondos.",
-        "Trabajando en estrecha colaboración con el equipo global, imaginamos una experiencia que conectara inmediatamente con los visitantes, dando vida a la marca a través de una paleta vibrante y una imagen impactante. El sitio web se sustenta en una sólida estructura de contenido y un sistema de gestión de contenido fácil de usar.",
-        "El resultado es un sitio web de OSFL con mejores prácticas que refleja la verdadera naturaleza de la marca y su impacto, y apoya mejor los objetivos de la organización como líder en el apoyo a las mujeres en todo el mundo."
+        "Cuando una organización busca generar conciencia y destacar su impacto, es clave que la presencia digital comunique claramente la misión, visión y valores, ofreciendo una experiencia de usuario moderna y atractiva que fomente la exploración y apoye la recaudación de fondos.",
+        "Un enfoque estratégico integra diseño visual impactante con una arquitectura de contenido sólida y un sistema de gestión intuitivo, garantizando que los visitantes puedan interactuar fácilmente y conectarse con los objetivos de la organización.",
+        "Plataformas bien diseñadas reflejan la esencia de la organización y su impacto, respaldando de manera efectiva sus objetivos y fortaleciendo su posición como líder en su sector de acción social.",
     ],
+    // paragraphs: [
+    //     "La organización contactó con Humaan para reimaginar su presencia digital y así generar conciencia y destacar su impacto, definiendo claramente su misión, visión y valores. Es fundamental que el sitio web ofrezca una experiencia de usuario atractiva y moderna que incentive la exploración e impulse la monetización mediante donaciones y recaudación de fondos.",
+    //     "Trabajando en estrecha colaboración con el equipo global, imaginamos una experiencia que conectara inmediatamente con los visitantes, dando vida a la marca a través de una paleta vibrante y una imagen impactante. El sitio web se sustenta en una sólida estructura de contenido y un sistema de gestión de contenido fácil de usar.",
+    //     "El resultado es un sitio web de OSFL con mejores prácticas que refleja la verdadera naturaleza de la marca y su impacto, y apoya mejor los objetivos de la organización como líder en el apoyo a las mujeres en todo el mundo."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño UX y UI" },

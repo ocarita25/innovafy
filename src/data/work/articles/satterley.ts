@@ -23,10 +23,15 @@ export const satterleyArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "El grupo tenía un problema empresarial fundamental: era fundamental que la marca corporativa y las marcas comunitarias coexistieran en el mismo ecosistema. Los desafíos en torno a la presencia de marca, la infraestructura digital y las estrategias de SEO contradictorias exigían una nueva solución.",
-        "Humaan creó una experiencia integral que satisfizo las necesidades de marketing tanto de las partes interesadas corporativas como de los community managers responsables de las ventas. Cada comunidad contó con un micrositio integrado con imagen de marca, mensajería y acceso administrativo seguro para los community managers. Estos se organizaron en una arquitectura de sitio anidada que permitía a la audiencia filtrar y encontrar información relevante antes de la compra.",
-        "El resultado es una experiencia poderosa que muestra toda la cartera de Satterley y maximiza su actividad de marketing local y nacional."
+        "En organizaciones con múltiples marcas bajo un mismo paraguas corporativo, uno de los retos clave es garantizar que la identidad corporativa y las marcas comunitarias coexistan de manera coherente dentro del ecosistema digital, mientras se optimizan la infraestructura y las estrategias de marketing.",
+        "Una solución efectiva integra micrositios segmentados para cada comunidad, combinando identidad visual, mensajería y gestión administrativa segura, todo dentro de una arquitectura de sitio anidada que facilita la navegación, el filtrado de información y la toma de decisiones por parte de los usuarios.",
+        "Cuando la experiencia digital se articula estratégicamente, la plataforma puede maximizar la visibilidad de la cartera de productos o servicios y potenciar la eficacia de las campañas de marketing a nivel local y nacional."
     ],
+    // paragraphs: [
+    //     "El grupo tenía un problema empresarial fundamental: era fundamental que la marca corporativa y las marcas comunitarias coexistieran en el mismo ecosistema. Los desafíos en torno a la presencia de marca, la infraestructura digital y las estrategias de SEO contradictorias exigían una nueva solución.",
+    //     "Humaan creó una experiencia integral que satisfizo las necesidades de marketing tanto de las partes interesadas corporativas como de los community managers responsables de las ventas. Cada comunidad contó con un micrositio integrado con imagen de marca, mensajería y acceso administrativo seguro para los community managers. Estos se organizaron en una arquitectura de sitio anidada que permitía a la audiencia filtrar y encontrar información relevante antes de la compra.",
+    //     "El resultado es una experiencia poderosa que muestra toda la cartera de Satterley y maximiza su actividad de marketing local y nacional."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño UX" },

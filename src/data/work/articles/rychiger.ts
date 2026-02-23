@@ -24,10 +24,15 @@ export const rychigerArticle: WorkArticleType = {
         }
     },
     paragraphs: [
-        "Tras una búsqueda global, la empresa suiza seleccionó a Humaan para transformar su presencia digital y redefinir las posibilidades dentro de un sector tradicionalmente convencional. Humaan se encargaría de la Estrategia, el Diseño y la Dirección Creativa, mientras que un socio local se encargaría del desarrollo.",
-        "La innovación fue fundamental en la estrategia del sitio web, donde el equipo de UX y diseño de Humaan aprovechó tanto la excelencia técnica del equipo de ingeniería de Rychiger como las avanzadas capacidades de los productos de maquinaria. Esto se basó en una estructura de navegación clara y lógica que permitió al público B2B interactuar con la gama de productos y comprender en profundidad las especificaciones de la maquinaria.",
-        "El lanzamiento del nuevo sitio web ha permitido a Rychiger mantenerse por delante de la competencia y forjar su posición como líder en ingeniería mecánica tanto para los clientes como para los posibles empleados."
+        "En sectores industriales tradicionales, la redefinición de la presencia digital puede servir como catalizador para mostrar innovación y liderazgo, transformando la percepción de la marca frente a audiencias B2B y profesionales del sector.",
+        "La estrategia digital se centra en combinar la excelencia técnica y las capacidades avanzadas de los productos con una arquitectura de navegación clara y lógica, facilitando la comprensión de especificaciones complejas y promoviendo una interacción efectiva con la gama de soluciones disponibles.",
+        "Cuando la experiencia digital integra claridad, funcionalidad y posicionamiento estratégico, la plataforma contribuye a fortalecer la ventaja competitiva de la empresa y consolidar su liderazgo tanto ante clientes como ante potenciales empleados."
     ],
+    // paragraphs: [
+    //     "Tras una búsqueda global, la empresa suiza seleccionó a Humaan para transformar su presencia digital y redefinir las posibilidades dentro de un sector tradicionalmente convencional. Humaan se encargaría de la Estrategia, el Diseño y la Dirección Creativa, mientras que un socio local se encargaría del desarrollo.",
+    //     "La innovación fue fundamental en la estrategia del sitio web, donde el equipo de UX y diseño de Humaan aprovechó tanto la excelencia técnica del equipo de ingeniería de Rychiger como las avanzadas capacidades de los productos de maquinaria. Esto se basó en una estructura de navegación clara y lógica que permitió al público B2B interactuar con la gama de productos y comprender en profundidad las especificaciones de la maquinaria.",
+    //     "El lanzamiento del nuevo sitio web ha permitido a Rychiger mantenerse por delante de la competencia y forjar su posición como líder en ingeniería mecánica tanto para los clientes como para los posibles empleados."
+    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UI y UX" },

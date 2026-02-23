@@ -61,7 +61,7 @@ const WorkArticle = ({ slug }: WorkArticleProps) => {
                                 <h2 className='text-[clamp(1.25rem,1.33vw,1.66rem)] leading-8'>{article.intro}</h2>
                             </header>
                             <div>
-                                <div className='flex flex-col gap-10 leading-6'>
+                                <div className='flex flex-col gap-6 leading-[1.6] font-normal text-[clamp(0.875rem,1.75vw,1.1rem)]'>
                                     {article.paragraphs.map((pa, i) => (
                                         <p key={i}>{pa}</p>
                                     ))}
