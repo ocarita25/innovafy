@@ -1,8 +1,9 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD, vidCLOUD } from "@/constants/resources"
 
 const slug = "hablar-caminar"
-const imgPath = `/images/work/articles/${slug}`
-const videoPath = `/videos/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
+const videoPath = `${vidCLOUD}/work/articles/${slug}`
 
 export const hablarCaminarArticle: WorkArticleType = {
     slug: slug,
@@ -27,11 +28,6 @@ export const hablarCaminarArticle: WorkArticleType = {
         "Soluciones como Talk N Walk integran principios de gamificación y personalización para construir experiencias móviles significativas, facilitando la conversación, fomentando la actividad al aire libre y generando ciclos de retroalimentación que evidencian el impacto de la actividad física en la salud mental.",
         "Tras su lanzamiento, propuestas de esta naturaleza suelen recibir reconocimiento por su carácter innovador y por establecer nuevos estándares en diseño inclusivo, accesibilidad y experiencia centrada en el usuario."
     ],
-    // paragraphs: [
-    //     "Con el objetivo de alentar a las niñas preadolescentes y adolescentes a intercambiar las sesiones de entrenamiento en el sofá con actividades en su área local, trabajamos en estrecha colaboración con el equipo de Nature Play para comprender y diseñar estrategias sobre el potencial de la tecnología para ayudar a cerrar la brecha y facilitar un enfoque positivo hacia un estilo de vida activo.",
-    //     "Talk N Walk incorpora funciones de gamificación y personalización para crear una rica experiencia móvil que permite la conversación y fomenta la actividad al aire libre, rastreando el progreso y brindando ciclos de retroalimentación positivos para demostrar el impacto de la actividad física en la salud mental.",
-    //     "Desde su lanzamiento, la aplicación móvil Talk N Walk ha seguido recibiendo comentarios positivos y reconocimiento de la industria por su solución innovadora y su enfoque definitorio de categoría en diseño y accesibilidad."
-    // ],
     features: [
         { icon: "", label: "Investigación de UX" },
         { icon: "", label: "Estrategia digital" },

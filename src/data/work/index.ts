@@ -57,8 +57,30 @@ import { educacionArticles } from "@/views/work/data/educacion";
 import { comunidadPropositoArticles } from "@/views/work/data/comunidad-proposito";
 import { innovacionArticles } from "@/views/work/data/innovacion";
 import { uiUxArticles } from "@/views/work/data/ui-ux";
+import { artecoArticle } from "./articles/arteco";
+import { cocaColaArticle } from "./articles/cocacola";
+import { arAsociadosArticle } from "./articles/ar-asociados";
+import { puntoColasArticle } from "./articles/punto-colas";
+import { toCuscoArticle } from "./articles/to-cusco";
+import { urbanovaArticle } from "./articles/urbanova";
+import { grupoForceArticle } from "./articles/grupo-force";
+import { clanCerveceroArticle } from "./articles/clan-cervecero";
+import { kitchenCenterArticle } from "./articles/kitchen-center";
+import { sazonPeruanaArticle } from "./articles/sazon-peruana";
+import { grupoGeneraArticle } from "./articles/grupo-genera";
 
 const articles: WorkArticleType[] = [
+    artecoArticle,
+    arAsociadosArticle,
+    cocaColaArticle,
+    puntoColasArticle,
+    toCuscoArticle,
+    urbanovaArticle,
+    grupoForceArticle,
+    clanCerveceroArticle,
+    kitchenCenterArticle,
+    sazonPeruanaArticle,
+    grupoGeneraArticle,
     piqueArticle,
     sussexTapsArticle,
     blackvueArticle,

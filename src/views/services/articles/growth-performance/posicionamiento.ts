@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/growth-performance/posicionamiento-autoridad"
+const slug = "growth-performance/posicionamiento-autoridad"
 
 export const posicionamientoPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const posicionamientoPage: ServicePageType =
     heading: {
         pill: "Posicionamiento de Marca y Presencia en el Mercado",
         title: "Posicionamiento de Marca y Presencia en el Mercado",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const posicionamientoPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Identidad estratégica sólida",
                 text: "Construimos una identidad estratégica clara y diferenciada que posiciona tu marca con coherencia, facilita su reconocimiento y la destaca frente a competidores directos.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Mensajes claros y persuasivos",
                 text: "Desarrollamos una comunicación estructurada y alineada a tu propuesta de valor, fortaleciendo la conexión con tu audiencia y aumentando el interés en todos tus canales digitales.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Posicionamiento memorable",
                 text: "Definimos un posicionamiento estratégico que permite a tu marca destacar en su categoría, incrementando visibilidad, recordación y presencia dentro del ecosistema digital.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Autoridad y confianza",
                 text: "Impulsamos una marca con autoridad y credibilidad, fortaleciendo la confianza del mercado y facilitando decisiones de compra a favor de tu propuesta de valor.",
@@ -66,25 +67,25 @@ export const posicionamientoPage: ServicePageType =
 
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Marcas genéricas",
         //         text: "Muchas empresas carecen de una identidad estratégica sólida, generando confusión en el mercado y dificultando diferenciarse frente a competidores directos.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Mensajes confusos",
         //         text: "La comunicación poco estructurada afecta la claridad del valor de la marca, provocando desconexión con la audiencia y pérdida de interés en los canales digitales.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Falta de reconocimiento",
         //         text: "La ausencia de un posicionamiento definido impide destacar en su categoría, reduciendo visibilidad, recordación y presencia dentro del ecosistema digital.",
         //     },
         //     {
-        //         media: `/images/${path}/value4.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value4.webp`,
         //         mediaType: "image",
         //         title: "Baja confianza del mercado",
         //         text: "Una marca sin autoridad transmite poca credibilidad, afectando decisiones de compra y generando dudas sobre su capacidad profesional o su propuesta de valor.",

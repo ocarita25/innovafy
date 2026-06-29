@@ -1,8 +1,9 @@
+import { imgCLOUD, vidCLOUD } from "@/constants/resources"
 import type { WorkArticleType } from "../types"
 
 const slug = "curtin-open-day"
-const imgPath = `/images/work/articles/${slug}`
-const videoPath = `/videos/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
+const videoPath = `${vidCLOUD}/work/articles/${slug}`
 
 export const curtinOpenDayArticle: WorkArticleType = {
     slug: slug,
@@ -27,11 +28,6 @@ export const curtinOpenDayArticle: WorkArticleType = {
         "Experiencias de esta naturaleza suelen integrar interfaces intuitivas capaces de comunicar de manera clara la programación completa del evento, permitiendo a los estudiantes priorizar, seleccionar y organizar sus actividades. La incorporación de herramientas de mapeo interactivo facilita además la orientación dentro del campus y optimiza la experiencia presencial.",
         "Cuando la estrategia digital se alinea con la logística del evento, el resultado puede traducirse en una respuesta altamente positiva por parte de los grupos de interés, contribuyendo a una mayor asistencia y a un incremento en las inscripciones posteriores."
     ],
-    // paragraphs: [
-    //     "Al igual que en muchas instituciones de educación superior, la activación de las Jornadas de Puertas Abiertas sigue siendo un método esencial para promover la vida en el campus, siendo las plataformas digitales el primer punto de contacto para los futuros estudiantes. Curtin buscaba ofrecer una experiencia en línea atractiva con un diseño innovador que tuviera en cuenta las dificultades geográficas de su campus.",
-    //     "El resultado fue una experiencia repleta de funciones con una interfaz de usuario intuitiva que comunicaba la gran cantidad de actividades que se desarrollaban a lo largo del día. Los estudiantes pudieron priorizar, seleccionar y programar sus preferencias, lo que se complementó con una potente superposición de MazeMap para facilitar la orientación en el campus.",
-    //     "La respuesta al sitio web del Día de Puertas Abiertas fue universalmente positiva por parte de las partes interesadas de la facultad y los futuros estudiantes, y el sitio web contribuyó a una asistencia significativa y a las inscripciones posteriores de estudiantes después del evento."
-    // ],
     features: [
         { icon: "", label: 'Estrategia digital' },
         { icon: "", label: 'Diseño de interacción' },

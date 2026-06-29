@@ -25,9 +25,9 @@ const ArticleParagraph = ({ as: Tag = "p", text, subVariant = "text" }: ArticleP
     const textClass = {
         text: "text-[1.15rem]",
         list: "",
-        title: "font-medium text-[2.5rem]",
+        title: "font-medium text-[2.5rem] playfair",
         image: "",
-        subTitle: "font-medium text-[2.25rem]"
+        subTitle: "font-medium text-[2.25rem] playfair"
     }[subVariant]
 
     return (
@@ -74,7 +74,7 @@ const ThinkingArticle = ({ slug, onNext }: ThinkingArticleProps) => {
     // const info = articlesCard.find(a => a.slug === slug)
 
     if (!article) return;
-    const { title, author, authorAvatar, date, description, tags, duration, thumbnail, content } = article
+    const { title, date, description, tags, duration, thumbnail, content } = article
 
     const { introduction, section } = content
 
@@ -87,7 +87,7 @@ const ThinkingArticle = ({ slug, onNext }: ThinkingArticleProps) => {
                     </div>
                     <div className="flex flex-col gap-7 min-md:ml-[clamp(1.25rem,8.75vw,4.5rem)]">
                         <header>
-                            <Headings as="h2" variant="" className="m-0 mb-3 text-[2rem]">{title}</Headings>
+                            <Headings as="h2" variant="" className="playfair m-0 mb-3 text-[2rem] lg:text-[3rem]">{title}</Headings>
                             <div className="flex max-md:flex-col-reverse gap-2 text-sm">
                                 <h3>{tags.join(", ")}</h3>
                                 <span className="text-[#8B5CF6] max-md:hidden">✦</span>
@@ -99,9 +99,10 @@ const ThinkingArticle = ({ slug, onNext }: ThinkingArticleProps) => {
                         </div>
                         <div className="flex flex-row min-[768px]:flex-col-reverse min-[1150px]:flex-row min-md:gap-7 justify-between">
                             <div className="flex items-center gap-3 text-sm text-gray-500">
-                                <img src={authorAvatar} alt="Autor" className="w-8 h-8 rounded-full" />
-                                <span>{author}</span>
-                                <span className="ml-6">{date}</span>
+                                {/* <img src={authorAvatar} alt="Autor" className="w-8 h-8 rounded-full" /> */}
+                                {/* <span>{author}</span> */}
+                                <span className="ml-0">{date}</span>
+                                {/* <span className="ml-6">{date}</span> */}
                             </div>
                         </div>
                     </div>
@@ -125,7 +126,7 @@ const ThinkingArticle = ({ slug, onNext }: ThinkingArticleProps) => {
                     {section.map((s, i) => {
                         return (
                             <div key={i}>
-                                <ArticleParagraph as='h2' subVariant='title' text={s.title} />
+                                <ArticleParagraph as='h2' subVariant='title' className='playfair' text={s.title} />
                                 {s.description ?
                                     s.description.map((description, i) => {
                                         return (
@@ -143,7 +144,7 @@ const ThinkingArticle = ({ slug, onNext }: ThinkingArticleProps) => {
                                     s.subSection.map((ss, i) => {
                                         return (
                                             <div key={i}>
-                                                <ArticleParagraph as='h3' subVariant='subTitle' text={ss.title} />
+                                                <ArticleParagraph as='h3' subVariant='subTitle' className='playfair' text={ss.title} />
                                                 {ss.content.map((c, i) => (
                                                     c.variant === "multimedia" ?
                                                         <ArticleImage key={i} source={c.image} figureLegend={c.imageDescription} subVariant={c.subVariant || "image"} />

@@ -74,19 +74,18 @@ const ServicesPage = () => {
 
             {/* Submit */}
             <section className='p-fluid mb-50'>
-                <Panned variant='vertical' className='flex justify-between min-[1336px]:items-center max-[1336px]:flex-col max-[1336px]:gap-10'>
-                    <Headings as='h2' variant='section'>
-                        {briefSubmit}
-                    </Headings>
-                    <div>
-                        <ButtonBlack className='flex min-w-max w-fit gap-4 py-5! px-7! min-[992px]:py-9! min-[992px]:px-10! text-2xl min-[992px]:text-[clamp(1.475rem,15vw,1.45rem)]' onClick={handleOpenBrief}>
-                            <span>Envia una solicitud</span>
-                            <Arrow width='w-5' />
-                        </ButtonBlack>
-                        {/* <div className='flex w-fit gap-4 py-5 px-7 min-[992px]:py-9 min-[992px]:px-10 bg-white rounded-full text-2xl min-[992px]:text-[clamp(1.475rem,15vw,1.45rem)] cursor-pointer ' onClick={handleOpenBrief}>
-                            <span>Envia una solicitud</span>
-                            <Arrow width='w-5' />
-                        </div> */}
+                <Panned variant='vertical'>
+                    <div className='flex gap-10 justify-between min-[1336px]:items-center max-[1336px]:flex-col max-[1336px]:gap-10'>
+                        <Headings as='h2' variant='section'>
+                            {briefSubmit}
+                        </Headings>
+                        <div>
+                            <ButtonBlack className='flex min-w-max w-fit gap-4 py-5! px-7! min-[992px]:py-9! min-[992px]:px-10! text-2xl min-[992px]:text-[clamp(1.475rem,15vw,1.45rem)]' onClick={handleOpenBrief}>
+                                <span>Envia una solicitud</span>
+                                <Arrow width='w-5' />
+                            </ButtonBlack>
+                        </div>
+
                     </div>
 
                 </Panned>

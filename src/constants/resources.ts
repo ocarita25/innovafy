@@ -1,0 +1,5 @@
+export const imgCLOUD = "https://res.cloudinary.com/dotsmhakc/image/upload/inovafy/images"
+export const vidCLOUD = "https://res.cloudinary.com/dotsmhakc/video/upload/inovafy/videos"
+export const servicesImgCLOUD = "https://res.cloudinary.com/dotsmhakc/image/upload/inovafy/images/services"
+export const servicesVidCLOUD = "https://res.cloudinary.com/dotsmhakc/video/upload/inovafy/videos/services"
+export const thinkingImgCLOUD = "https://res.cloudinary.com/dotsmhakc/image/upload/inovafy/images/thinking"

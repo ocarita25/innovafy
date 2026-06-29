@@ -1,57 +1,54 @@
 import { cn } from "@/lib/utils";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import React, { useLayoutEffect, useRef } from "react";
 
-gsap.registerPlugin(SplitText);
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(SplitText);
 
 type PannedTextProps = {
     children: React.ReactNode,
-    paddingBottom?: string,
-    translateY?: string,
-    spanClass?: string,
-} & React.HtmlHTMLAttributes<HTMLHeadingElement>;
+} & React.HTMLAttributes<HTMLSpanElement>;
 
-const PannedText = ({ children, paddingBottom, translateY, spanClass, ...props }: PannedTextProps) => {
+const PannedText = ({ children, ...props }: PannedTextProps) => {
+    const spanRef = useRef<HTMLDivElement>(null);
 
-    if (!children) return;
+    // if (!children) return;
 
-    const titleRef = useRef<HTMLDivElement>(null);
-    const splitRef = useRef<any>(null);
-    const ctxRef = useRef<any>(null)
+    // const splitRef = useRef<any>(null);
+    // const ctxRef = useRef<any>(null)
 
     useLayoutEffect(() => {
+        if (!spanRef.current) return;
 
-        if (!titleRef.current) return;
+        let observer: IntersectionObserver | null = null
+        let split: SplitText | null = null
+        let isMounted = true
 
-        ctxRef.current = gsap.context(() => {
-            const el = titleRef.current!;
+        const init = async () => {
+            await document.fonts.ready
+            if (!isMounted || !spanRef.current) return
 
-            const split = new SplitText(el, {
-                type: "lines,words",
-                linesClass: "line",
-                wordsClass: "word",
-                mask: "lines",
-            });
+            const ctx = gsap.context(() => {
+                const el = spanRef.current!;
+                split = new SplitText(el, {
+                    type: "lines,words",
+                    linesClass: "line",
+                    wordsClass: "word",
+                    // mask: "lines",
+                });
+                // Estado inicial (oculto)
+                gsap.set(split.words, {
+                    yPercent: 100,
+                    opacity: 0,
+                });
 
-            splitRef.current = split;
+                let hasAnimated = false;
 
-            // Estado inicial (oculto)
-            gsap.set(split.words, {
-                yPercent: 100,
-                opacity: 0,
-            });
-
-            let hasAnimated = false;
-
-            const observer = new IntersectionObserver(
-                ([entry]) => {
+                observer = new IntersectionObserver(([entry]) => {
                     if (entry.isIntersecting && !hasAnimated) {
                         hasAnimated = true;
 
-                        gsap.to(split.words, {
+                        gsap.to(split!.words, {
                             yPercent: 0,
                             opacity: 1,
                             duration: 0.5,
@@ -59,31 +56,71 @@ const PannedText = ({ children, paddingBottom, translateY, spanClass, ...props }
                             stagger: 0.015,
                         });
 
-                        observer.disconnect(); // ✅ nunca más vuelve a animar
+                        observer?.disconnect(); // ✅ nunca más vuelve a animar
                     }
-                },
-                {
-                    threshold: 0, // 🔧 20% visible para disparar
-                }
-            );
+                })
+                observer.observe(el)
+            }, spanRef)
 
-            observer.observe(el);
+            cleanup = () => {
+                observer?.disconnect()
+                ctx.revert()
+                split?.revert()
+            }
+        }
 
-        }, titleRef);
+
+        // ctxRef.current = gsap.context(() => {
+
+        //     splitRef.current = split;
+
+
+        //     const observer = new IntersectionObserver(
+        //         ([entry]) => {
+        //             if (entry.isIntersecting && !hasAnimated) {
+        //                 hasAnimated = true;
+
+        //                 gsap.to(split.words, {
+        //                     yPercent: 0,
+        //                     opacity: 1,
+        //                     duration: 0.5,
+        //                     ease: "power1.inOut",
+        //                     stagger: 0.015,
+        //                 });
+
+        //                 observer.disconnect(); // ✅ nunca más vuelve a animar
+        //             }
+        //         },
+        //         {
+        //             threshold: 0, // 🔧 20% visible para disparar
+        //         }
+        //     );
+
+        //     observer.observe(el);
+
+        // }, titleRef);
+
+        // return () => {
+        //     try {
+        //         ctxRef.current?.revert();
+        //         splitRef.current?.revert();
+        //     } catch (e) {
+        //         console.log(e);
+        //     }
+        // };
+        let cleanup = () => { }
+        init()
 
         return () => {
-            try {
-                ctxRef.current?.revert();
-                splitRef.current?.revert();
-            } catch (e) {
-                console.log(e);
-            }
-        };
+            isMounted = false
+            cleanup()
+        }
     }, []);
 
+    if (!children) return null;
 
     return (
-        <span ref={titleRef} className={cn("leading-[1.08] inline-block", props.className)}>
+        <span ref={spanRef} className={cn("leading-[1] inline-flex", props.className)} {...props}>
             {children}
         </span>
     )

@@ -1,42 +1,54 @@
+import { imgCLOUD } from "@/constants/resources";
+
 export const staff = [
     {
-        name: "Persona 1",
-        role: "Front-end Developer",
-        image: "/images/staff/persona-1.webp"
+        name: "Adrian",
+        role: "Audiovisual Manager",
+        image: `${imgCLOUD}/staff/adrian-audiovisual-manager.webp`
     },
     {
-        name: "Persona 2",
-        role: "Agency Director",
-        image: "/images/staff/persona-2.webp"
+        name: "Alonso",
+        role: "AI & Automation",
+        image: `${imgCLOUD}/staff/alonso-ai-automation.webp`
     },
     {
-        name: "Persona 3",
-        role: "People & Culture",
-        image: "/images/staff/persona-3.webp"
+        name: "Amely",
+        role: "SEO & Specialist",
+        image: `${imgCLOUD}/staff/amely-seo-specialist.webp`
     },
     {
-        name: "Persona 4",
-        role: "Lead Designer",
-        image: "/images/staff/persona-4.webp"
+        name: "Darwin",
+        role: "CEO & Area Manager",
+        image: `${imgCLOUD}/staff/darwin-ceo-area-manager.webp`
     },
     {
-        name: "Persona 5",
-        role: "Creative Director",
-        image: "/images/staff/persona-5.webp"
+        name: "Flavia",
+        role: "Marketing Manager",
+        image: `${imgCLOUD}/staff/flavia-gestor-marketing.webp`
     },
     {
-        name: "Persona 6",
-        role: "Designer",
-        image: "/images/staff/persona-6.webp"
+        name: "Joaquin",
+        role: "Systems Manager",
+        image: `${imgCLOUD}/staff/joaquin-systems-manager.webp`
     },
     {
-        name: "Persona 7",
-        role: "Production Manager",
-        image: "/images/staff/persona-7.webp"
+        name: "Luciana",
+        role: "Ads Manager",
+        image: `${imgCLOUD}/staff/luciana-ads-manager.webp`
     },
     {
-        name: "Persona 8",
-        role: "Founder & CEO",
-        image: "/images/staff/persona-8.webp"
+        name: "Mauricio",
+        role: "UI/UX Design Manager",
+        image: `${imgCLOUD}/staff/mauricio-ui-ux-design-manager.webp`
+    },
+    {
+        name: "Renzo",
+        role: "Full Stack Developer",
+        image: `${imgCLOUD}/staff/renzo-full-stack-developer.webp`
+    },
+    {
+        name: "Ximena",
+        role: "Manager Designer",
+        image: `${imgCLOUD}/staff/ximena-manager-designer.webp`
     },
 ]

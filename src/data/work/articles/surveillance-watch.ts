@@ -1,8 +1,9 @@
 import type { WorkArticleType } from "../types";
+import { imgCLOUD, vidCLOUD } from "@/constants/resources"
 
 const slug = "surveillance-watch"
-const imgPath = `/images/work/articles/${slug}`
-const videoPath = `/videos/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
+const videoPath = `${vidCLOUD}/work/articles/${slug}`
 
 export const surveillanceWatchArticle: WorkArticleType = {
     slug: slug,
@@ -28,11 +29,6 @@ export const surveillanceWatchArticle: WorkArticleType = {
         "Diseñar una arquitectura lógica y fácil de navegar garantiza que los usuarios puedan explorar los datos de forma intuitiva. Experiencias interactivas y atractivas mantienen la motivación del usuario, mientras que una gestión de contenido eficiente asegura que la información sea clara, accesible y memorable, incluso en arquitecturas headless modernas.",
         "Cuando la visualización de datos combina claridad, interacción y accesibilidad multiplataforma, la plataforma se convierte en una herramienta eficaz para generar conciencia, comunicar información compleja y maximizar el impacto del contenido a nivel global."
     ],
-    // paragraphs: [
-    //     "Partiendo de un conjunto sustancial de datos de investigación sin procesar y con la ambición de presentar una narrativa clara y atractiva, trabajamos estrechamente con nuestro cliente para hacer realidad su visión: una experiencia de visualización de datos interactiva y personalizada que comunica la profundidad de las relaciones y los conocimientos que contiene.",
-    //     "La plataforma se diseñó para ser lógica y fácil de navegar, garantizando que los usuarios pudieran explorar el contenido sin esfuerzo. Nos centramos en crear una experiencia atractiva que invitara a la exploración y mantuviera a los usuarios motivados, a la vez que garantizamos que la información presentada fuera clara y memorable. Desde el punto de vista de la gestión de contenido, PayloadCMS facilita la gestión de datos y funciona a la perfección con la arquitectura headless del sitio.",
-    //     "El resultado es una exploración inmersiva de la vigilancia mundial, a través de una experiencia web interactiva para ordenadores y dispositivos móviles. En tan solo unas semanas desde su lanzamiento, el proyecto ha contribuido a generar conciencia a nivel mundial y está teniendo un impacto directo en la exposición de la actividad de vigilancia en muchos países."
-    // ],
     features: [
         { icon: "", label: "Visualización de datos" },
         { icon: "", label: "Diseño UX y UI" },

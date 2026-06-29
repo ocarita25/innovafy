@@ -13,11 +13,11 @@ const Input = ({ name, id = name, label, hint, cols = 1, ...props }: InputProps)
     const verifiedId = id ?? name
 
     const containerClass = {
-        1: 'col-span-1',
-        2: 'col-span-2',
-        3: 'col-span-3',
-        4: 'col-span-4',
-        5: 'col-span-5',
+        1: 'md:col-span-1',
+        2: 'md:col-span-2',
+        3: 'md:col-span-3',
+        4: 'md:col-span-4',
+        5: 'md:col-span-5',
     }[cols]
 
     return (

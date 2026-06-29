@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/automatizacion-ia/ia-aplicada-negocios"
+const slug = "automatizacion-ia/ia-aplicada-negocios"
 
 export const iaAplicadaNegociosPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const iaAplicadaNegociosPage: ServicePageType =
     heading: {
         pill: "Inteligencia Artificial Aplicada a los Negocios",
         title: "Inteligencia Artificial Aplicada a los Negocios",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const iaAplicadaNegociosPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Procesos ágiles y escalables",
                 text: "Optimizamos tus operaciones mediante automatización inteligente que elimina cuellos de botella y acelera el crecimiento del negocio.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Decisiones basadas en datos",
                 text: "Integramos IA que transforma datos en insights accionables, permitiéndote tomar decisiones estratégicas con mayor precisión y menor riesgo.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Contenido generado con IA",
                 text: "Automatizamos la creación de contenido para aumentar velocidad, consistencia y eficiencia, liberando al equipo para tareas de mayor impacto.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Eficiencia operativa optimizada",
                 text: "Implementamos automatizaciones estratégicas que reducen errores, disminuyen costos y mejoran el rendimiento global de la operación.",

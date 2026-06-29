@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/branding-ui-ux/ux-ui"
+const slug = "branding-ui-ux/ux-ui"
 
 export const uxUiPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const uxUiPage: ServicePageType =
     heading: {
         pill: "Ingeniería de Interfaz y Experiencia de Usuario (UX/UI)",
         title: "Ingeniería de Interfaz y Experiencia de Usuario (UX/UI)",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const uxUiPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Experiencias web intuitivas y fáciles de usar",
                 text: "Diseñamos plataformas con estructuras claras y navegación fluida que reducen la fricción y facilitan que los usuarios completen acciones clave.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Apps claras y ordenadas",
                 text: "Creamos interfaces con jerarquía visual definida que disminuyen errores, aumentan la adopción y mejoran la percepción del producto digital.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Experiencias optimizadas para conversión",
                 text: "Diseñamos recorridos intuitivos que guían al usuario a lo largo del funnel, aumentando la efectividad de las acciones comerciales y el cumplimiento de objetivos.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Navegación clara y eficiente",
                 text: "Estructuramos menús, categorías y rutas de navegación que mejoran la experiencia, reducen la frustración y aumentan la permanencia en la plataforma.",
@@ -65,25 +66,25 @@ export const uxUiPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Webs difíciles de usar",
         //         text: "Muchas plataformas presentan estructuras confusas, lo que genera fricción en la navegación y disminuye la capacidad del usuario para completar acciones clave.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Apps confusas",
         //         text: "Interfaces mal ordenadas y falta de jerarquía visual provocan errores, abandono y baja adopción, afectando el rendimiento y percepción del producto digital.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Baja conversión",
         //         text: "Una experiencia poco intuitiva reduce la efectividad de las acciones comerciales, impidiendo que los usuarios avancen en el funnel y concreten objetivos.",
         //     },
         //     {
-        //         media: `/images/${path}/value4.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value4.webp`,
         //         mediaType: "image",
         //         title: "Mala navegación",
         //         text: "Menús, categorías y rutas mal diseñadas dificultan el recorrido del usuario, aumentando la frustración y reduciendo la permanencia en la plataforma.",

@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/produccion-audiovisual/high-end"
+const slug = "produccion-audiovisual/high-end"
 
 export const highEndPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const highEndPage: ServicePageType =
     heading: {
         pill: "Producción Audiovisual de Alta Calidad",
         title: "Producción Audiovisual de Alta Calidad",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const highEndPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Producción audiovisual profesional y estratégica",
                 text: "Creamos videos con alta calidad técnica y narrativa clara que elevan el impacto, la credibilidad y la competitividad de la marca en entornos digitales.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Fortalecimiento de la percepción de marca",
                 text: "Desarrollamos piezas audiovisuales alineadas a la identidad de la marca que transmiten profesionalismo, refuerzan la confianza y consolidan la autoridad de marca.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Videos que conectan, emocionan y convierten",
                 text: "Diseñamos estructuras audiovisuales estratégicas que generan conexión emocional, recordación y acción, potenciando el valor comercial del contenido.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Publicidad audiovisual de alto rendimiento",
                 text: "Producimos anuncios bien ejecutados que comunican orden, calidad y mensaje claro, mejorando el rendimiento de campañas y el retorno de inversión (ROI).",
@@ -65,25 +66,25 @@ export const highEndPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Contenido visual amateur",
         //         text: "Videos sin calidad técnica ni narrativa reducen impacto, credibilidad y capacidad de competir en un entorno digital saturado.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Baja percepción de marca",
         //         text: "Piezas audiovisuales improvisadas afectan la imagen profesional, debilitando la confianza del público y la autoridad de la marca.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Videos que no conectan ni convierten",
         //         text: "Sin una estructura estratégica, los videos no generan emoción, recordación ni acción, perdiendo potencial comercial.",
         //     },
         //     {
-        //         media: `/images/${path}/value4.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value4.webp`,
         //         mediaType: "image",
         //         title: "Imagen poco profesional en publicidad",
         //         text: "Anuncios mal ejecutados transmiten desorden y baja calidad, afectando el rendimiento de campañas y el retorno de inversión.",

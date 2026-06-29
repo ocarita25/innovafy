@@ -1,8 +1,8 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD } from "@/constants/resources"
 
 const slug = "migrant-rights"
-const imgPath = `/images/work/articles/${slug}`
-
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
 
 export const migrantRightsArticle: WorkArticleType = {
     slug: slug,
@@ -28,11 +28,6 @@ export const migrantRightsArticle: WorkArticleType = {
         "En este tipo de organizaciones, una estrategia web sostenida en el tiempo permite alinear el desarrollo tecnológico y el diseño digital con los objetivos institucionales, asegurando adaptabilidad, personalización y una comunicación efectiva hacia públicos diversos.",
         "La incorporación de campañas interactivas y funcionalidades multilingües transforma el sitio en una herramienta estratégica para amplificar el alcance, fortalecer la incidencia y contribuir de manera significativa a la promoción del cambio social a través de experiencias digitales accesibles y atractivas."
     ],
-    // paragraphs: [
-    //     "Migrant Rights tiene como objetivo crear conciencia sobre la difícil situación de los trabajadores migrantes en el Medio Oriente.",
-    //     "Desde el lanzamiento del sitio en 2013, hemos estado profundamente involucrados en la estrategia web de toda la organización, apoyando sus objetivos a través de un desarrollo altamente personalizado y un diseño digital atractivo.",
-    //     "Completo con campañas interactivas y funciones multilingües, este sitio web es una herramienta única para llegar eficazmente a una amplia audiencia cautiva. Contribuye brillantemente al objetivo de impulsar el cambio social mediante una experiencia digital atractiva."
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño editorial" },

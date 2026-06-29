@@ -1,8 +1,9 @@
+import { imgCLOUD } from "@/constants/resources";
 import type { NewsType } from "./types";
 
 export const news: NewsType[] = [
     {
-        img: "/images/news/gestion-redes.webp",
+        img: `${imgCLOUD}/news/gestion-redes.webp`,
         imgTitle: "Site Launch",
         date: '28.08.24',
         title: "CM y Gestion de Redes Sociales",
@@ -10,7 +11,7 @@ export const news: NewsType[] = [
         link: "#",
     },
     {
-        img: "/images/news/branding.webp",
+        img: `${imgCLOUD}/news/branding.webp`,
         imgTitle: "Site Launch",
         date: '28.08.24',
         title: "Piezas Gráficas y Branding",
@@ -18,7 +19,7 @@ export const news: NewsType[] = [
         link: "#",
     },
     {
-        img: "/images/news/web-apps.webp",
+        img: `${imgCLOUD}/news/web-apps.webp`,
         imgTitle: "Site Launch",
         date: '28.08.24',
         title: "App Webs & Ecommerce",
@@ -26,7 +27,7 @@ export const news: NewsType[] = [
         link: "#",
     },
     {
-        img: "/images/news/ui-ux.webp",
+        img: `${imgCLOUD}/news/ui-ux.webp`,
         imgTitle: "Site Launch",
         date: '28.08.24',
         title: "UX/UI Design",
@@ -34,7 +35,7 @@ export const news: NewsType[] = [
         link: "#",
     },
     {
-        img: "/images/news/contenido-audiovisual.webp",
+        img: `${imgCLOUD}/news/contenido-audiovisual.webp`,
         imgTitle: "Site Launch",
         date: '28.08.24',
         title: "Contenido Audiovisual",
@@ -42,7 +43,7 @@ export const news: NewsType[] = [
         link: "#",
     },
     {
-        img: "/images/news/ia-automatizacion.webp",
+        img: `${imgCLOUD}/news/ia-automatizacion.webp`,
         imgTitle: "Site Launch",
         date: '28.08.24',
         title: "IA & Automatización",

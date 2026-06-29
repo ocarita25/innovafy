@@ -1,27 +1,22 @@
 import Main from '@/components/layouts/Main'
 import Hero from './components/Hero'
 import AboutUs from './components/AboutUs'
-import AutoSlider from './components/AutoSlider'
-import { clientsImages } from '@/constants/about'
-// import Awards from './components/Awards'
 import Staff from './components/Staff'
-// import Customers from './components/Customers'
 import Capabilities from './components/Capabilities'
 import WhoWeAre from './components/WhoWeAre'
 import WhatWeDo from './components/WhatWeDo'
+import Customers from './components/Customers'
+import { customers } from '@/data/customers'
 
 const AboutPage = () => {
-    const { images } = clientsImages()
     return (
         <Main className='-mt-20 pt-0'>
             <Hero />
             <AboutUs />
-            <AutoSlider images={images} />
+            <Customers customers={customers} />
             <Capabilities />
-            {/* <Customers clientes={clientes} /> */}
             <WhoWeAre />
             <Staff />
-            {/* <Awards clientes={clientes} /> */}
             <WhatWeDo />
         </Main>
     )

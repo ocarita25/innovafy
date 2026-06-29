@@ -12,21 +12,16 @@ const PlanGratis = () => {
 
     return (
         <div onClick={handleOpenBrief} className="fixed cursor-pointer z-10
-        bottom-25 min-[768px]:bottom-5 
-        max-[767px]:left-1/2 max-[767px]:-translate-x-1/2 max-[767px]:w-max
-        min-[768px]:left-10 
-        rounded-2xl min-[768px]:rounded-full backdrop-blur-sm 
+        bottom-25 min-[900px]:bottom-5 
+        left-1/2 -translate-x-1/2 
+        w-max min-[900px]:w-auto
+        min-[900px]:left-10 min-[900px]:translate-x-0
+        rounded-2xl min-[900px]:rounded-full backdrop-blur-sm 
         bg-[#5700ff99] 
         duration-150">
-            <div className="px-4 min-[768px]:px-8 py-3 min-[768px]:py-5 text-[1.1rem] min-[768px]:text-xl text-white text-center flex justify-center gap-3">
-                {/* <div className="px-2 min-[768px]:px-8 py-5 min-[768px]:py-5 text-xl text-white 
-            max-[767px]:rotate-180"> */}
-                {/* <span className="hidden min-[768px]:block"> */}
+            <div className="px-4 min-[900px]:px-8 py-3 min-[900px]:py-5 text-[0.85rem] min-[640px]:text-[1.1rem] min-[900px]:text-xl text-white text-center flex justify-center gap-3">
                 <span>Quiero mi plan de crecimiento gratis</span>
                 <SendMessageIcon className="w-4" />
-                {/* <span className="min-[768px]:hidden [writing-mode:vertical-rl]">
-                    Quiero mi plan de crecimiento gratis
-                </span> */}
             </div>
         </div>
     )

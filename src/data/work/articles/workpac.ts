@@ -1,8 +1,8 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD } from "@/constants/resources"
 
 const slug = "workpac"
-const imgPath = `/images/work/articles/${slug}`
-
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
 
 export const workpacArticle: WorkArticleType = {
     slug: slug,
@@ -28,11 +28,6 @@ export const workpacArticle: WorkArticleType = {
         "Un enfoque estratégico de diseño y desarrollo permite crear una plataforma en línea integral y escalable que soporte diversas áreas operativas sin comprometer la coherencia y la usabilidad para los usuarios.",
         "Plataformas bien concebidas reflejan las ambiciones de la marca, combinando alto rendimiento, facilidad de uso y una experiencia atractiva que respalda el crecimiento y la percepción positiva de la organización.",
     ],
-    // paragraphs: [
-    //     "A partir de una marca organizacional exitosa, el equipo quería consolidar un conjunto fragmentado de sitios web de clientes existentes en una experiencia única y cohesiva, para impulsar el crecimiento del cliente y reducir los gastos administrativos..",
-    //     "Después de un extenso período de investigación y planificación, nos propusimos diseñar y construir una experiencia en línea integral y extensible que pudiera albergar de manera capaz las diversas áreas operativas del negocio, sin comprometer la continuidad de la experiencia del usuario en general.",
-    //     "El resultado es una plataforma en línea atractiva que refleja mejor las ambiciones progresistas de la nueva marca de WorkPac y cumple con los altos estándares de rendimiento y facilidad de uso que nosotros y ellos nos propusimos alcanzar."
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Planificación de la arquitectura de la información" },

@@ -1,7 +1,7 @@
-// import { ArticleRenderer } from '@/components/articles/ArticleRenderer';
 import Panned from '@/components/common/Panned'
 import PreviewCard from '@/components/common/PreviewCard'
 import type { WorkCardDataType, WorkCategory } from '@/data/work/types'
+import { cn } from '@/lib/utils';
 
 type WorkByCategoryProps = {
     cards: WorkCardDataType[],
@@ -10,6 +10,7 @@ type WorkByCategoryProps = {
 }
 
 const WorkByCategory = ({ cards, onOpenModal }: WorkByCategoryProps) => {
+
     function handleOpenArticle(slug: string) {
         onOpenModal("work", slug)
     }
@@ -24,8 +25,7 @@ const WorkByCategory = ({ cards, onOpenModal }: WorkByCategoryProps) => {
                     <Panned
                         key={card.slug}
                         variant='vertical'
-                        triggerClass={`${cardClass} overflow-visible`}
-                        className='h-full w-full'>
+                        className={cn('overflow-visible h-full w-full', cardClass)}>
                         <PreviewCard key={i} title={card.title} thumbnail={card.thumbnail} onClick={() => handleOpenArticle(card.slug)} />
                     </Panned>
                 )

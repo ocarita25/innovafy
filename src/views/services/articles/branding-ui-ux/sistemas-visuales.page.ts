@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/branding-ui-ux/sistemas-visuales"
+const slug = "branding-ui-ux/sistemas-visuales"
 
 export const sistemasVisualesPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const sistemasVisualesPage: ServicePageType =
     heading: {
         pill: "Sistemas Visuales Corporativos y Digitales",
         title: "Sistemas Visuales Corporativos y Digitales",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,19 +40,19 @@ export const sistemasVisualesPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Comunicación visual consistente y profesional",
                 text: "Establecemos lineamientos claros de diseño que aseguran coherencia visual, fortalecen la presencia de la marca y elevan su nivel profesional.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Sistema visual unificado",
                 text: "Desarrollamos un sistema de diseño que ordena estilos, colores y estructuras, reforzando la identidad de marca y su reconocimiento en todos los puntos de contacto.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Identidad visual sólida en canales digitales y corporativos",
                 text: "Aplicamos un diseño estandarizado que aporta personalidad, orden y coherencia tanto en redes sociales como en piezas institucionales.",
@@ -59,19 +60,19 @@ export const sistemasVisualesPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Comunicación visual improvisada",
         //         text: "Muchas marcas crean piezas sin lineamientos ni consistencia, lo que genera una presencia poco profesional y mensajes visuales desconectados entre sí.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Inconsistencias de diseño",
         //         text: "La ausencia de un sistema visual unificado provoca variaciones en estilos, colores y estructuras, debilitando la identidad de marca y su reconocimiento.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Falta de identidad en redes y piezas corporativas",
         //         text: "Cuando no existe un diseño estandarizado, las plataformas digitales y materiales institucionales lucen desordenados y sin personalidad propia.",

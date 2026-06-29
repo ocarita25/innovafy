@@ -1,4 +1,7 @@
+import { arAsociadosArticle } from "@/data/work/articles/ar-asociados";
+import { artecoArticle } from "@/data/work/articles/arteco";
 import { chaleitArticle } from "@/data/work/articles/chaleit";
+import { cocaColaArticle } from "@/data/work/articles/cocacola";
 import { colegioEscocesMelbourneArticle } from "@/data/work/articles/colegio-escoces-melbourne";
 import { consejoCancerWAArticle } from "@/data/work/articles/consejo-cancer-wa";
 import { fairGoFinanceArticle } from "@/data/work/articles/fair-go-finance";
@@ -17,6 +20,9 @@ import { trailsWaArticle } from "@/data/work/articles/trails-wa";
 import type { CategorizedWorkArticles } from "@/data/work/types";
 
 export const featuredArticles: CategorizedWorkArticles[] = [
+    { article: artecoArticle, column: 2 },
+    { article: cocaColaArticle, column: 1 },
+    { article: arAsociadosArticle, column: 1 },
     { article: sussexTapsArticle, column: 2 },
     { article: fundacionNacionalCancerMamaArticle, column: 1 },
     { article: hablarCaminarArticle, column: 1 },

@@ -1,7 +1,8 @@
 import { Eye, Group, Target, Thunder } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD, servicesVidCLOUD } from "@/constants/resources";
 
-const path = "services/experiencia/comunidad"
+const slug = "experiencia/comunidad"
 
 export const comunidadPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const comunidadPage: ServicePageType =
     heading: {
         pill: "Comunidad",
         title: "Experiencias interactivas y con propósito",
-        heroImage: `/videos/${path}/heroVideo.mp4`,
+        heroImage: `${servicesVidCLOUD}/${slug}/heroVideo.mp4`,
         mediaType: "video"
     },
     description: {
@@ -39,25 +40,25 @@ export const comunidadPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Aprovechar lo digital para un cambio positivo",
                 text: "Crea una conexión emocional con tu público mediante un diseño reflexivo y de gran impacto. Transforma investigaciones complejas e historias fascinantes en experiencias digitales intuitivas y atractivas, con el objetivo de concienciar e impulsar la acción.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Productos personalizados para experiencias únicas",
                 text: "Cada producto que creamos es totalmente personalizado, tan único como la historia que quieres contar. Combinamos diseño y experiencia de usuario galardonados, tecnología de vanguardia y contenido estratégico para ofrecer a tu público un producto digital excepcional, visualmente atractivo y con gran capacidad de conexión.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Una verdadera colaboración, de principio a fin",
                 text: "Con un equipo interno de estrategas, diseñadores, desarrolladores y gestores de proyectos, podemos ofrecer resultados finales impecables y una colaboración genuina con nuestros clientes, independientemente de la comunidad a la que presten sus servicios.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Innovar más allá del folleto",
                 text: "Ya sea que busques generar visitas o compartir mensajes impactantes basados ​​en datos, podemos crear experiencias interactivas integrales que incorporen narración de datos, experiencias móviles, funcionalidades de comercio electrónico, integraciones de back-office y más, todo ello diseñado específicamente para tu proyecto único.",

@@ -31,9 +31,10 @@ const ArticleCard = ({ title, tags, duration, description, author, authorAvatar,
                     {/* <div className="button bg-black text-white">
                     </div> */}
                     <div className="flex items-center gap-3 text-sm text-gray-500">
-                        <img src={authorAvatar} alt="Autor" className="w-8 h-8 rounded-full" />
-                        <span>{author}</span>
-                        <span className="ml-6">{date}</span>
+                        {/* <img src={authorAvatar} alt="Autor" className="w-8 h-8 rounded-full" />
+                        <span>{author}</span> */}
+                        {/* <span className="ml-6">{date}</span> */}
+                        <span className="ml-0">{date}</span>
                     </div>
                 </div>
             </div>

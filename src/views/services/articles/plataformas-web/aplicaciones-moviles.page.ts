@@ -1,7 +1,8 @@
 import { Crossrows, Face, Loop, Tech } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD, servicesVidCLOUD } from "@/constants/resources";
 
-const path = "services/plataformas-web/aplicaciones-moviles"
+const slug = "plataformas-web/aplicaciones-moviles"
 
 export const mobileAppsPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const mobileAppsPage: ServicePageType =
     heading: {
         pill: "Aplicaciones Móviles",
         title: "Diseñamos, desarrollamos y lanzamos aplicaciones móviles increíbles",
-        heroImage: `/videos/${path}/heroVideo.mp4`,
+        heroImage: `${servicesVidCLOUD}/${slug}/heroVideo.mp4`,
         mediaType: "video"
     },
     description: {
@@ -39,19 +40,19 @@ export const mobileAppsPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Desde MVP hasta la versión completa",
                 text: "Tanto si eres una startup que busca revolucionar el mercado como si eres una empresa consolidada que desea expandir su presencia digital, podemos crear una aplicación móvil escalable, robusta y segura que satisfaga y deleite a tus usuarios.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Experiencias de cliente personalizadas",
                 text: "Nuestras aplicaciones se adaptan a las necesidades del público, ofreciendo experiencias atractivas que se ajustan a su comportamiento y uso. Centrados en experiencias de usuario excepcionales, transformamos ideas en herramientas poderosas para la interacción con el cliente y la fidelización a la marca.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "iOS & Android",
                 text: "Combinando un diseño innovador, una funcionalidad robusta y una impecable experiencia de usuario, creamos aplicaciones iOS y Android de primera clase, utilizando tanto tecnologías nativas como marcos de trabajo móviles para adaptarnos a los requisitos únicos de cada producto.",

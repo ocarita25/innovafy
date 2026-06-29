@@ -5,13 +5,14 @@ import Panned from '@/components/common/Panned'
 import Stats from './Stats'
 import { Card, ImageCard } from '@/components/common/Card'
 import Arrow from '@/assets/Arrow'
+import { imgCLOUD } from '@/constants/resources'
 
 const Description = () => {
     return (
         <div className="flex flex-col p-fluid lg:grid grid-cols-[2fr_3fr] grid-rows-[auto_auto_1fr] gap-[clamp(3.125rem,3.30vw,4.15rem)] mt-10 w-full text-color-primary">
-            <Headings as="h2" className="col-span-2 max-w-[10.5em] mb-0!">
+            <Headings as="h2" className="col-span-2 max-w-[10.5em] mb-0! playfair">
                 <Panned variant="vertical">
-                    <span>Gran impacto para</span>
+                    <span>Gran <em className='text-[#4700ff]'>impacto</em> para</span>
                 </Panned>
                 <Panned variant="vertical">
                     <span className="flex flex-wrap items-center gap-2 lg:gap-6 leading-none ">
@@ -29,16 +30,16 @@ const Description = () => {
                         <br />
                         <p>Nuestro espíritu independiente impulsa nuestra energía creativa y nuestro enfoque tecnológico, lo que nos permite garantizar la calidad y ofrecer constantemente resultados excepcionales.</p>
                     </div>
-                    <ButtonBlack className="mt-10" href="/acerca-de">
+                    <ButtonBlack className="group mt-10" href="/acerca-de" sameSite>
                         <span className="text-[clamp(0.94rem,0.99vw,1.24rem)] py-1">Acerca de Nosotros</span>
-                        <Arrow height="h-3.5" stroke="1" color="#0f0" />
+                        <Arrow height="h-3.5" stroke="1" color="#fff" />
                     </ButtonBlack>
                 </Panned>
                 <Stats />
             </div>
             <Panned variant="vertical">
                 <Card>
-                    <ImageCard src="/images/imagen1.webp" />
+                    <ImageCard src={`${imgCLOUD}/nosotros.webp`} />
                 </Card>
             </Panned>
 

@@ -1,7 +1,8 @@
 import { Badges, Hand, Monitor, Wand } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/ui-design"
+const slug = "ui-design"
 
 export const uiDesignPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const uiDesignPage: ServicePageType =
     heading: {
         pill: "Diseño de interfaz de usuario",
         title: "Interfaz de usuario de vanguardia diseñada para tu aplicación.",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const uiDesignPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Informes y paneles de control atractivos",
                 text: "Obtenga información valiosa a partir de datos sin procesar con experiencias interactivas visualmente atractivas y puntos de contacto consolidados. Diseñamos y creamos interfaces de usuario basadas en datos para cualquier objetivo, desde informes inmersivos para el público general hasta herramientas y paneles internos personalizados que apoyan e informan a sus grupos de interés.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Una experiencia de producto intuitiva",
                 text: "Los datos fundamentan cada decisión de diseño de interfaz que tomamos, una estrategia vital al crear herramientas digitales para flujos de trabajo de información complejos. Mediante métodos de investigación cuantitativos y cualitativos, podemos determinar los diseños de interfaz de usuario más claros e intuitivos para su propósito y encontrar la ruta óptima para lograr los objetivos del usuario.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Interfaces humanas",
                 text: "Comprendemos cómo trabajan las personas. Desde procesos de pago en comercio electrónico hasta herramientas de personalización detalladas, nuestro enfoque sistemático de diseño de interfaz de usuario ha generado resultados dinámicos y preparados para el futuro en industrias tradicionales y emergentes. Con más de 15 años de experiencia creando productos digitales para personas, conocemos los detalles que marcan la diferencia.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Tu socio de diseño de interfaz de usuario",
                 text: "Detrás de cada producto de primera categoría hay una colaboración estrecha entre la agencia y el cliente. Todo lo que creamos es totalmente personalizado, tan único como la historia que usted cuenta. Con un equipo interno de estrategas, diseñadores, desarrolladores y gestores de proyectos, podemos ofrecer diversas perspectivas, experiencias de usuario fluidas y un proceso de diseño y entrega verdaderamente colaborativo.",

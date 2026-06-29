@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/growth-performance/paid-media"
+const slug = "growth-performance/paid-media"
 
 export const paidMediaPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const paidMediaPage: ServicePageType =
     heading: {
         pill: "Paid Media & Performance Advertising",
         title: "Paid Media & Performance Advertising",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const paidMediaPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Publicidad orientada a resultados",
                 text: "Diseñamos campañas con estructura clara, objetivos medibles y optimización continua basada en métricas reales, enfocadas en generar ventas e interacción de calidad.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Optimización del costo por lead",
                 text: "Mejoramos la rentabilidad de tus campañas mediante segmentación precisa y anuncios relevantes, reduciendo el costo de adquisición y maximizando el retorno de cada inversión.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Segmentación estratégica de audiencias",
                 text: "Definimos audiencias correctamente alineadas a tu negocio para aumentar la conversión, alcanzar clientes con alto potencial y generar tráfico con valor comercial real.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Control y eficiencia de la inversión publicitaria",
                 text: "Monitoreamos y ajustamos constantemente el presupuesto para asegurar una distribución eficiente de la inversión y un mayor retorno sobre la inversión (ROI).",
@@ -65,25 +66,25 @@ export const paidMediaPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Publicidad sin resultados",
         //         text: "Muchas campañas no generan ventas ni interacción debido a una mala estructura, falta de objetivos claros o ausencia de optimización basada en métricas reales.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Alto costo por lead",
         //         text: "Una segmentación deficiente y anuncios poco relevantes elevan el costo de adquisición, reduciendo la rentabilidad y afectando el rendimiento de las campañas.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Segmentación incorrecta",
         //         text: "Apuntar a audiencias mal definidas limita el alcance efectivo, disminuye la conversión y genera tráfico sin valor que no aporta resultados comerciales.",
         //     },
         //     {
-        //         media: `/images/${path}/value4.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value4.webp`,
         //         mediaType: "image",
         //         title: "Falta de control de inversión",
         //         text: "Sin seguimiento constante, el presupuesto se distribuye de manera ineficiente, provocando desperdicio de recursos y bajo retorno sobre la inversión.",

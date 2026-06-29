@@ -1,7 +1,8 @@
 import { HandShake, Loop, Monitor, Target } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD, servicesVidCLOUD } from "@/constants/resources";
 
-const path = "services/plataformas-web/headless"
+const slug = "plataformas-web/headless"
 
 export const headlessPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const headlessPage: ServicePageType =
     heading: {
         pill: "Headless",
         title: "Más rápido, mejor, más potente: Desarrollo web sin interfaz gráfica",
-        heroImage: `/videos/${path}/heroVideo.mp4`,
+        heroImage: `${servicesVidCLOUD}/${slug}/heroVideo.mp4`,
         mediaType: "video"
     },
     description: {
@@ -39,25 +40,25 @@ export const headlessPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Experiencias atractivas que escalan",
                 text: "Una arquitectura headless ofrece una flexibilidad y escalabilidad sin precedentes, permitiendo interfaces y experiencias enriquecidas que no están limitadas por las restricciones de la plataforma. Esto significa que no es necesario reinventar la rueda para realizar una actualización. Al separar el front-end del back-end, podemos ofrecer cualquier tipo de experiencia digital que se adapta perfectamente a las necesidades de los usuarios y del negocio a lo largo del tiempo.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Diseñado y optimizado para la web moderna",
                 text: "La arquitectura headless está diseñada para la web actual, ofreciendo una versatilidad completa para impulsar desde sitios web hasta plataformas a gran escala. Este enfoque admite cualquier flujo de trabajo personalizado y cuenta con el respaldo de sistemas de gestión de contenido líderes en su clase que van más allá de las ofertas tradicionales, sin sobrecargar el sistema con funcionalidades innecesarias.",
             },
             {
-                media: `/videos/${path}/value3.mp4`,
+                media: `${servicesVidCLOUD}/${slug}/value3.mp4`,
                 mediaType: "video",
                 title: "Cualquier tipo de interfaz, cualquier tipo de datos",
                 text: "Tanto si buscas crear paneles dinámicos, visualizaciones de datos atractivas o sitios web robustos basados ​​en contenido, nuestro enfoque permite la integración perfecta de diversos conjuntos de datos en cualquier tipo de interfaz. También puedes usar tu CMS Headless como fuente única de información y distribuir datos simultáneamente entre todas tus aplicaciones y sitios web.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "En colaboración con los líderes en tecnología Headless",
                 text: "Tenemos amplia experiencia con numerosos sistemas y tecnologías líderes de gestión de contenido headless. Somos desarrolladores de Sanity CMS, desarrolladores de Payload CMS (socio oficial) y desarrolladores de Storyblok (socio oficial), con experiencia en diversas plataformas headless.",

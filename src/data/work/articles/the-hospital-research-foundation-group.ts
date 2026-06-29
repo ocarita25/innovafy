@@ -1,8 +1,9 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD, vidCLOUD } from "@/constants/resources"
 
 const slug = "the-hospital-research-foundation-group"
-const imgPath = `/images/work/articles/${slug}`
-const videoPath = `/videos/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
+const videoPath = `${vidCLOUD}/work/articles/${slug}`
 
 export const theHospitalResearchFoundationGroupArticle: WorkArticleType = {
     slug: slug,
@@ -27,11 +28,6 @@ export const theHospitalResearchFoundationGroupArticle: WorkArticleType = {
         "La infraestructura digital puede optimizarse mediante un desarrollo técnico que facilite la gestión centralizada de contenidos, la administración del sitio y las iniciativas de recaudación, asegurando eficiencia operativa y consistencia en la comunicación.",
         "Una arquitectura escalable y centrada en UX permite que la organización mantenga su estrategia de crecimiento y expansión sin comprometer la coherencia de su misión y sus valores fundamentales.",
     ],
-    // paragraphs: [
-    //     "El rápido crecimiento de las marcas benéficas de la fundación y su cartera de servicios de apoyo requirió una estrategia de sitio web que le diera a cada marca su propia identidad y capacidades de marketing, combinadas con la capacidad de aprovechar el alcance y la relevancia de la marca maestra de la Fundación.",
-    //     "Esta infraestructura de arquitectura de marca se fortaleció mediante un proceso de desarrollo técnico que agilizó la administración del sitio web, la gestión de contenido y la actividad de ingresos por donaciones, permitiendo que todas las marcas recibieran servicio de forma centralizada.",
-    //     "Esta adaptación escalable a futuro de la infraestructura técnica y de UX ha permitido a la Fundación mantener su estrategia de adquisiciones y lograr un mayor crecimiento sin perder fidelidad a su misión y valores fundamentales."
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UI y UX" },

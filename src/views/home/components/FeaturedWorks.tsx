@@ -31,10 +31,12 @@ const FeaturedWorks = () => {
                         <Panned
                             key={article.slug}
                             variant="vertical"
-                            className="w-full h-full"
-                            triggerClass={`${cardClass} overflow-visible`}
+                            className={`${cardClass} overflow-visible`}
                         >
-                            <PreviewCard title={article.title} thumbnail={article.thumbnail} onClick={() => { handleOpenArticle("work", article.slug) }} />
+                            <PreviewCard
+                                title={article.title}
+                                thumbnail={article.thumbnail}
+                                onClick={() => { handleOpenArticle("work", article.slug) }} />
                         </Panned>
                     )
                 })}

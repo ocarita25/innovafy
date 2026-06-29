@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/contenido-marca/contenido-digital"
+const slug = "contenido-marca/contenido-digital"
 
 export const contenidoDigitalPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const contenidoDigitalPage: ServicePageType =
     heading: {
         pill: "Digital Asset & Media Library",
         title: "Digital Asset & Media Library",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,19 +40,19 @@ export const contenidoDigitalPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Organización y gestión eficiente de archivos",
                 text: "Implementamos una estructura clara y centralizada para organizar el contenido, facilitando su acceso, uso eficiente y agilizando los procesos de producción.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Resguardo y disponibilidad del material",
                 text: "Creamos sistemas que aseguran la conservación y localización de piezas audiovisuales y gráficas, garantizando continuidad visual y soporte para campañas y publicaciones.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Planificación y ejecución de contenido estratégica",
                 text: "Ordenamos los recursos creativos para permitir una producción planificada, coherente y de alta calidad, evitando la improvisación y fortaleciendo la estrategia de contenido.",
@@ -59,19 +60,19 @@ export const contenidoDigitalPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Desorden de archivos",
         //         text: "La falta de una estructura clara provoca que el contenido se disperse entre dispositivos y plataformas, dificultando su uso eficiente y ralentizando los procesos de producción.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Pérdida de material",
         //         text: "Cuando no existe un sistema centralizado, las piezas audiovisuales y gráficas se extravían, afectando campañas, publicaciones y la continuidad visual de la marca.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Improvisación de contenido",
         //         text: "La ausencia de recursos organizados obliga a crear piezas de último momento, reduciendo calidad, coherencia y la capacidad de ejecutar estrategias sólidas.",

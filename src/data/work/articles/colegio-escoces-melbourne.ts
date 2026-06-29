@@ -1,8 +1,9 @@
+import { imgCLOUD, vidCLOUD } from "@/constants/resources"
 import type { WorkArticleType } from "../types"
 
 const slug = "colegio-escoces-melbourne"
-const imgPath = `/images/work/articles/${slug}`
-const videoPath = `/videos/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
+const videoPath = `${vidCLOUD}/work/articles/${slug}`
 
 export const colegioEscocesMelbourneArticle: WorkArticleType = {
     slug: slug,
@@ -26,9 +27,6 @@ export const colegioEscocesMelbourneArticle: WorkArticleType = {
         "Como parte de un proceso continuo de renovación de marca, surgió la necesidad de replantear la experiencia digital de la institución. Con más de 170 años de historia, resultaba esencial que la nueva plataforma reflejara tanto su legado como su enfoque contemporáneo orientado a una audiencia digital moderna. El sitio existente, operativo desde 2012, ya no respondía a las expectativas y dinámicas cambiantes de la comunidad educativa.",
         "En contextos de transformación institucional, el rediseño estratégico del ecosistema digital debe equilibrar tradición e innovación, apoyándose en una metodología centrada en la experiencia de usuario (UX). Una solución a medida permite optimizar la navegación, reforzar la identidad renovada y construir una plataforma alineada con las ambiciones de crecimiento y proyección futura de la organización."
     ],
-    // paragraphs: [
-    //     "Como parte de su continua renovación de marca, Scotch College recurrió a Humaan para que le ayudara a reimaginar su sitio web. Con una rica historia de más de 170 años, era crucial que su nueva experiencia en línea reflejara tanto su legado como su enfoque vanguardista para el público digital moderno. El sitio web existente, aunque funcional, llevaba en funcionamiento desde 2012 y ya no satisfacía las necesidades cambiantes de la comunidad escolar. Nuestro equipo diseñó una solución a medida, aprovechando nuestra galardonada metodología de proyecto y experiencia de usuario (UX), para crear un sitio web que mejora la experiencia del usuario, se alinea con la marca renovada y respalda las ambiciones de la universidad de cara al futuro.",
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Mapeo del recorrido del usuario" },

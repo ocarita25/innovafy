@@ -23,8 +23,7 @@ const Featured = ({ cards, onOpenModal }: FeaturedProps) => {
                     <Panned
                         key={card.slug}
                         variant='vertical'
-                        triggerClass={`${cardClass} overflow-visible`}
-                        className='h-full w-full'>
+                        className={`${cardClass} overflow-visible`}>
                         <PreviewCard key={i} title={card.title} thumbnail={card.thumbnail} onClick={() => handleOpenModal(card.slug)} />
                     </Panned>
                 )

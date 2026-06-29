@@ -1,8 +1,9 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD, vidCLOUD } from "@/constants/resources"
 
 const slug = "georgiou-group"
-const imgPath = `/images/work/articles/${slug}`
-const videoPath = `/videos/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
+const videoPath = `${vidCLOUD}/work/articles/${slug}`
 
 export const georgiouGroupArticle: WorkArticleType = {
     slug: slug,
@@ -27,9 +28,6 @@ export const georgiouGroupArticle: WorkArticleType = {
         "En procesos de evolución corporativa, la redefinición del sitio web institucional puede convertirse en un habilitador clave del crecimiento sostenido y del fortalecimiento de capacidades organizacionales. Cuando la estrategia de talento ocupa un lugar central, la plataforma digital debe visibilizar de forma clara las oportunidades profesionales, alineadas con la visión y los valores de la empresa.",
         "El resultado es un ecosistema digital dinámico que proyecta coherentemente la identidad de marca, respalda las iniciativas de atracción de talento y consolida una base sólida para el crecimiento continuo."
     ],
-    // paragraphs: [
-    //     "En estrecha colaboración con el equipo, imaginamos un enfoque moderno para un sitio web corporativo que impulsara su crecimiento continuo y reforzara sus capacidades. Con un enfoque continuo en la contratación, el nuevo sitio web destaca positivamente las carreras y oportunidades en Georgiou, en línea con la visión y los valores de la empresa. El resultado es un sitio web dinámico que refleja la identidad de la marca, fortalece las iniciativas de contratación, demuestra la capacidad y sienta las bases para un crecimiento continuo..",
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Mapeo del recorrido del usuario" },

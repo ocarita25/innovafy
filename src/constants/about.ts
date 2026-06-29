@@ -95,6 +95,7 @@ export const capabilities = [
     },
 ]
 
+
 export const clientsImages = () => {
     const images = media.filter(m => m.pages?.includes("acerca"))
     const clientes = images.filter(i => i.categories?.includes("clients"))

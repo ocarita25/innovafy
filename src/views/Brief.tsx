@@ -20,13 +20,13 @@ const Brief = ({ plan, text }: { plan?: string, text?: string }) => {
     useEffect(() => {
         if (!planRef.current || !plan) return;
         planRef.current.value = plan
-
     }, [plan])
 
     useEffect(() => {
         if (!textRef.current || !text) return
         textRef.current.value = text
     }, [text])
+
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
 
@@ -70,16 +70,40 @@ const Brief = ({ plan, text }: { plan?: string, text?: string }) => {
 
     const planes = [
         {
-            label: "Esencial - S/. 949.90",
-            value: "esencial"
+            label: "Plan Esencial - S/. 949.90",
+            value: "inicial-esencial"
         },
         {
-            label: "Avanzado - S/. 1559.90",
-            value: "avanzado"
+            label: "Plan Avanzado - S/. 1559.90",
+            value: "inicial-avanzado"
         },
         {
-            label: "Premium - S/. 1999.90",
-            value: "premium"
+            label: "Plan Premium - S/. 1999.90",
+            value: "inicial-premium"
+        },
+        {
+            label: "Plan Optimize - S/. 999",
+            value: "crecimiento-starter"
+        },
+        {
+            label: "Plan Scale - S/. 1,759",
+            value: "crecimiento-pro"
+        },
+        {
+            label: "Plan Dominate - S/. 2,799",
+            value: "crecimiento-elite"
+        },
+        {
+            label: "Plan Leader - S/. 2,499",
+            value: "liderazgo-starter"
+        },
+        {
+            label: "Plan AUthority - S/. 3,599",
+            value: "liderazgo-pro"
+        },
+        {
+            label: "Plan Legacy - S/. 4,999",
+            value: "liderazgo-elite"
         },
         {
             label: "Personalizado",
@@ -89,21 +113,20 @@ const Brief = ({ plan, text }: { plan?: string, text?: string }) => {
 
     return (
         <section className='flex flex-col gap-10 min-[992px]:w-[clamp(55rem,65vw,65rem)]'>
-            <Headings variant='title' className='text-[#574b8e] !mb-0'>Empecemos</Headings>
+            <Headings variant='title' className='text-[#574b8e] !mb-0 playfair'>Empecemos</Headings>
             <div className='flex flex-col text-[clamp(1.15rem,1.75vw,1.45rem)]'>
                 <span>Complete los espacios en blanco y le responderemos en un día hábil.</span>
                 <span className='opacity-40 py-3'>¿Solo quieres charlar? Llámanos o escríbenos; somos un grupo muy agradable.</span>
             </div>
-            <form className='grid min-[992px]:grid-cols-2 gap-10 text-[1rem]' onSubmit={handleSubmit}>
+            <form className='grid grid-cols-1 min-[992px]:grid-cols-2 gap-10 text-[1rem]' onSubmit={handleSubmit}>
                 <Input label='¿Cómo te llamas?' name='nombre' placeholder='Tu nombre aquí' required />
                 <Input label='¿Nombre de tu empresa?' name='empresa' placeholder='Inovafy S.A.C' />
                 <Input label='¿Cómo podemos contactarte?' name='telefono' placeholder='Teléfono' required />
                 <Input label='E-mail' name='email' placeholder='empresa@example.com' required />
-                {/* <Input label='Expectativa presupuestaria' name='presupuesto' hint='Un presupuesto transparente nos ayudará a garantizar que se cumplan las expectativas.' /> */}
                 <Select ref={planRef} label='Planes' hint="Elige un plan acorde a tus necesidades" name='presupuesto' options={planes} />
                 <Input label='Cronograma' name='cronograma' hint='Si tienes un cronograma o fecha límite ideal, háznoslo saber.' />
                 <TextArea ref={textRef} label='Cuéntanos del proyecto' name='message' hint='¿Necesitas un nuevo sitio web? ¿Una app? Dinos cómo podemos ayudarte.' cols={2} rows={7} required />
-                <div className='flex flex-col col-span-2'>
+                <div className='flex flex-col md:col-span-2'>
                     <label htmlFor='file' className='pb-4'>Adjunte cualquier documento pertinente</label>
                     <span className='opacity-40'>Máximo 10 archivos de 25 MB cada uno. Máximo 100 MB en total.</span>
                     <div className='flex items-center gap-5 py-4 border-b border-gray-300 outline-0'>
@@ -113,7 +136,7 @@ const Brief = ({ plan, text }: { plan?: string, text?: string }) => {
                     <input ref={fileRef} type='file' id='file' name='file' accept='.pdf' className='py-4 border-b border-gray-300 outline-0 hidden' onChange={handleChangeFile} />
                 </div>
                 <Input label='¿Cómo se entero de nosotros?' name='nosotros' placeholder='¿De un amigo? ¿De google ?' />
-                <button type='submit' className='bg-[#574b8e] not-disabled:hover:bg-[#836fe1] text-white w-full col-span-2 py-5 rounded-full' disabled={isSending}>Entregar</button>
+                <button type='submit' className='bg-[#574b8e] not-disabled:hover:bg-[#836fe1] text-white w-full md:col-span-2 py-5 rounded-full' disabled={isSending}>Entregar</button>
             </form>
         </section>
     )

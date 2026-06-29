@@ -89,7 +89,7 @@ const VerticalRoulette = ({ elements, columns = 1, minColumns = columns, minSize
                         {type === "text" ?
                             content
                             :
-                            <img src={content} alt={`logo-${i}`} className={imgClass} />
+                            <img src={content} alt={`logo-${i}`} className={`${imgClass} max-h-40 text-red-500`} />
                         }
                     </span>
                 </span>

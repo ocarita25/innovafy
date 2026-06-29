@@ -1,8 +1,8 @@
+import { imgCLOUD } from "@/constants/resources"
 import type { WorkArticleType } from "../types"
 
 const slug = "childrens-hospital-foundation"
-const imgPath = `/images/work/articles/${slug}`
-
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
 
 export const childrensHospitalFoundationArticle: WorkArticleType = {
     slug: slug,
@@ -28,11 +28,6 @@ export const childrensHospitalFoundationArticle: WorkArticleType = {
         "En este tipo de transformaciones, la revisión integral de la arquitectura de la información resulta clave para alinearla con los objetivos institucionales y las necesidades de un público diverso. Priorizar una comunicación clara y un diseño intuitivo permite visibilizar el alcance del trabajo de la organización, optimizar la interacción del usuario y facilitar la contribución de los simpatizantes.",
         "El resultado es una plataforma digital sólida para organizaciones sin fines de lucro, que establece bases escalables para el crecimiento futuro y potencia una conexión más significativa con los donantes, impulsando el apoyo sostenido a la misión."
     ],
-    // paragraphs: [
-    //     "Con un sitio web de bajo rendimiento, CHF se asoció con Humaan para crear una experiencia digital que comunicara de manera efectiva el impacto de la fundación, involucrara mejor a su audiencia e inspirara mayores donaciones.",
-    //     "El enfoque de Humaan implicó una renovación completa de la arquitectura del sitio web para alinearla con los objetivos de CHF y las necesidades de su público diverso. Al priorizar una comunicación clara y un diseño intuitivo, el nuevo sitio web no solo resalta el alcance completo del trabajo de CHF, sino que también mejora la interacción del usuario. El diseño se concibió para realzar la presencia de la marca, dar a conocer el impacto positivo de la fundación y facilitar la contribución de los simpatizantes.",
-    //     "El resultado es un sitio web líder sin fines de lucro que ha sentado una base sólida para el crecimiento futuro de CHF, proporcionando una forma más impactante de conectarse con los donantes e impulsar el apoyo a largo plazo para su misión."
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Mapeo del recorrido del usuario" },

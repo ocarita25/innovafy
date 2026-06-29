@@ -1,8 +1,9 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD, vidCLOUD } from "@/constants/resources"
 
 const slug = "fluidity"
-const imgPath = `/images/work/articles/${slug}`
-const videoPath = `/videos/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
+const videoPath = `${vidCLOUD}/work/articles/${slug}`
 
 export const fluidityArticle: WorkArticleType = {
     slug: "fluidity",
@@ -25,9 +26,6 @@ export const fluidityArticle: WorkArticleType = {
     paragraphs: [
         "Con una nueva marca y una visión orientada a la innovación, el lanzamiento de una plataforma financiera requiere una experiencia UI/UX de alto impacto que refuerce la propuesta de valor y genere confianza desde el primer punto de contacto digital.",
     ],
-    // paragraphs: [
-    //     "Con una nueva marca y una visión innovadora, el equipo contrató a Humaan para ofrecer una UI y UX de alto impacto para el lanzamiento del sitio web Fluidity Money y la aplicación para su base de usuarios.",
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Interfaz de usuario y experiencia de usuario" },

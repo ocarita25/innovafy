@@ -1,7 +1,8 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD } from "@/constants/resources"
 
 const slug = "golden-pipeline"
-const imgPath = `/images/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
 
 export const goldenPipelineArticle: WorkArticleType = {
     slug: slug,
@@ -27,11 +28,6 @@ export const goldenPipelineArticle: WorkArticleType = {
         "En iniciativas de esta naturaleza, la incorporación de mapas interactivos personalizados permite estructurar la navegación sobre un amplio contenido histórico, mientras que herramientas como planificadores de viaje ofrecen a los usuarios la posibilidad de diseñar su propio recorrido a lo largo del trayecto.",
         "El resultado es una experiencia digital cuidadosamente diseñada que pone en valor el patrimonio cultural, fomenta la exploración y utiliza funcionalidades interactivas para inspirar y orientar a los viajeros desde el primer contacto."
     ],
-    // paragraphs: [
-    //     "La Ruta Patrimonial del Oleoducto Dorado es un recorrido histórico por el corazón de Australia Occidental. El sitio web es una guía interactiva detallada que invita a los visitantes a conectar directamente con las historias del Plan de Abastecimiento de Agua de Goldfields.",
-    //     "Creamos un mapa interactivo personalizado que funciona como un dispositivo de navegación altamente personalizado con un amplio contenido histórico. Además, creamos un planificador de viajes personalizado que permite a los visitantes elegir su propia aventura a lo largo del sendero.",
-    //     "El sitio web Golden Pipeline es una experiencia digital cuidada de una historia fascinante. Su objetivo es conectar con el usuario desde el principio para inspirar a los viajeros con funciones interactivas y contenido fascinante."
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño UX y UI" },

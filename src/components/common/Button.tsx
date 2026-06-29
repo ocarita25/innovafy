@@ -8,13 +8,15 @@ type ButtonProps = {
 
 type ButtonBlackProps = {
   children: React.ReactNode,
+  sameSite?: boolean
   href?: string,
 } & React.HTMLAttributes<HTMLAnchorElement>
 
-export const ButtonBlack = ({ children, href, ...props }: ButtonBlackProps) => {
+export const ButtonBlack = ({ children, sameSite = false, href, ...props }: ButtonBlackProps) => {
   return (
     <a
       {...props}
+      target={sameSite ? '' : '_blank'}
       href={href}
       className={cn(
         'button bg-black hover:bg-[#5700ff] text-white  transition-colors duration-120 ease-in',
@@ -27,7 +29,7 @@ export const ButtonBlack = ({ children, href, ...props }: ButtonBlackProps) => {
 
 export const ButtonWhite = ({ children, isActive, ...props }: ButtonProps) => {
   const buttonClass = isActive
-    ? "bg-[#5700ff] text-[var(--theme-accent)]"
+    ? "bg-[#4700ff] text-white"
     : "bg-[#b7c1c9] text-black"
 
   return (

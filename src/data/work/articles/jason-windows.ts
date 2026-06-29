@@ -1,8 +1,8 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD } from "@/constants/resources"
 
 const slug = "jason-windows"
-const imgPath = `/images/work/articles/${slug}`
-
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
 
 export const jasonWindowsArticle: WorkArticleType = {
     slug: slug,
@@ -28,11 +28,6 @@ export const jasonWindowsArticle: WorkArticleType = {
         "En este tipo de transformaciones, la visibilidad integral del portafolio de productos, complementada con casos prácticos e inspiración aplicada, facilita la toma de decisiones informada. La incorporación de funcionalidades como listas detalladas de requerimientos y portales dedicados para socios estratégicos permite optimizar la interacción con cuentas clave y reducir la carga administrativa del proceso comercial.",
         "El relanzamiento de una plataforma con estas características puede redefinir las capacidades digitales de la marca, fortalecer su posicionamiento competitivo y consolidar su reputación como proveedor confiable dentro de su mercado."
     ],
-    // paragraphs: [
-    //     "Una combinación de alta demanda de productos y una presencia digital descuidada dieron lugar a la idea de un nuevo sitio web que respaldaría el negocio a través de la selección de productos de autoservicio y un mayor compromiso con los arquitectos y constructores de viviendas.",
-    //     "El público ahora podía evaluar toda la cartera de productos de Jason Windows, inspirándose en los casos prácticos antes de enviar una lista detallada de los requisitos de los productos para su entrega e instalación. Un portal dedicado para constructores facilitó una interacción más estrecha con las cuentas clave y los clientes, y redujo la carga administrativa del proceso de ventas.",
-    //     "El relanzamiento del sitio web de Jason Windows ha transformado las capacidades digitales de la marca y fortalecido su posición como el proveedor más confiable de ventanas, puertas y mallas de seguridad de WA."
-    // ],
     features: [
         { icon: "", label: "Estrategia y experiencia de usuario" },
         { icon: "", label: "Especificaciones técnicas y detalles del producto" },

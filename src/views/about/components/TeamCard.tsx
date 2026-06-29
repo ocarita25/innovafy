@@ -14,7 +14,7 @@ export const TeamCard = ({ isMobile, image, name, role }: TeamCardProps) => {
                 <img src={image} alt='team-member' className='w-full h-auto rounded-[inherit]' />
             </picture>
             <div className={`grid-full ${style.teamPill}`}>
-                <span className={style.teamName}>{name}</span>
+                <span className={`bg-[#5700FF] ${style.teamName}`}>{name}</span>
                 <span className={style.teamRole}>{role}</span>
             </div>
         </div>

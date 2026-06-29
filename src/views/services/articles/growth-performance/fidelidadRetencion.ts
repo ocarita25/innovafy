@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/growth-performance/fidelidad-retencion"
+const slug = "growth-performance/fidelidad-retencion"
 
 export const fidelidadPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const fidelidadPage: ServicePageType =
     heading: {
         pill: "Customer Loyalty & Retention Programs",
         title: "Customer Loyalty & Retention Programs",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const fidelidadPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Programas de referidos estratégicos",
                 text: "Creamos sistemas que incentivan a tus clientes a recomendar la marca, impulsando la adquisición orgánica y ampliando de forma sostenible tu red de potenciales compradores.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Retención y fidelización de clientes",
                 text: "Implementamos estrategias de continuidad que fortalecen la relación con tus clientes después de la primera compra, aumentando la estabilidad comercial y los ingresos recurrentes.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Incremento de recompra y valor del cliente",
                 text: "Desarrollamos acciones de retención y estímulos personalizados que motivan a los clientes a regresar, mejorando la recurrencia y el valor total de cada usuario a lo largo del tiempo.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Relación postventa continua y de valor",
                 text: "Mantenemos una comunicación activa después de la compra para generar confianza, mejorar la experiencia del cliente y abrir nuevas oportunidades comerciales.",
@@ -65,19 +66,19 @@ export const fidelidadPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Pérdida de clientes",
         //         text: "La ausencia de estrategias de continuidad hace que los clientes abandonen la marca después de la primera compra, reduciendo ingresos y estabilidad comercial.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Baja recompra",
         //         text: "Sin acciones de retención ni estímulos personalizados, los clientes no regresan, afectando el ciclo de vida, la recurrencia y el valor total de cada usuario.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Nula relación postventa",
         //         text: "Muchas marcas no mantienen contacto después de la compra, generando una experiencia incompleta que afecta la confianza y limita oportunidades futuras.",

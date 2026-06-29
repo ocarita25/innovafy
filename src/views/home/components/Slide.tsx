@@ -6,7 +6,7 @@ type SlideProps = {
     description: string
 }
 
-const Slide = ({ imgTitle, imgSrc, date, title, description }: SlideProps) => {
+const Slide = ({ imgTitle, imgSrc, title, description }: SlideProps) => {
     return (
         <article>
             <div className='relative rounded-3xl'>

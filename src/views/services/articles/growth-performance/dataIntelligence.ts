@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/growth-performance/data-intelligence"
+const slug = "growth-performance/data-intelligence"
 
 export const dataIntelligencePage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const dataIntelligencePage: ServicePageType =
     heading: {
         pill: "Data Intelligence & Performance Analytics",
         title: "Data Intelligence & Performance Analytics",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,19 +40,19 @@ export const dataIntelligencePage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Decisiones basadas en datos",
                 text: "Implementamos sistemas de análisis que brindan información clara y estructurada para tomar decisiones estratégicas con mayor certeza y mejores resultados comerciales.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Métricas claras y accionables",
                 text: "Definimos indicadores clave que permiten evaluar el desempeño, identificar oportunidades de mejora y comprender el impacto real de cada acción digital.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Resultados medibles y controlados",
                 text: "Integramos procesos y herramientas que aseguran la correcta recopilación de datos, facilitando la medición de conversiones, rendimiento y retorno de inversión (ROI).",
@@ -59,19 +60,19 @@ export const dataIntelligencePage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Decisiones a ciegas",
         //         text: "Sin datos claros y estructurados, las empresas toman decisiones basadas en suposiciones, lo que afecta estrategias, inversiones y resultados comerciales.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Falta de métricas",
         //         text: "La ausencia de indicadores definidos impide evaluar desempeño, detectar oportunidades de mejora y comprender el verdadero impacto de las acciones digitales.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Resultados no medibles",
         //         text: "Cuando los procesos no están integrados y no se recopilan datos correctamente, se vuelve imposible medir conversiones, rendimiento o retorno de inversión.",

@@ -30,8 +30,6 @@
     display: grid;
 }
 
-.about-hero-image {}
-
 @media (width>=992px) {
     .about-hero-image-wrapper {
         margin-top: max(13.23vw, 30vh);
@@ -44,18 +42,14 @@
 
 .about-hero-image-mask {
     mask-size: 100%;
-    mask-image: url("/images/about/abouthero_mask.png");
+    /* mask-image: url("https://res.cloudinary.com/dotsmhakc/image/upload/v1782442379/digital_products_vdehzk.jpg"); */
+    /* mask-image: url("https://res.cloudinary.com/dotsmhakc/image/upload/inovafy/images/about/abouthero_mask.png"); */
+    mask-image: url("https://res.cloudinary.com/dotsmhakc/image/upload/inovafy/images/about/abouthero_mask.png");
     z-index: 1;
 }
 
-/* .about-hero-image-mask img {
-    mask-size: 100%;
-    mask-image: linear-gradient(to top, transparent, black 10%);
-    z-index: 1;
-} */
-
 .about-hero-container {
-    max-width: calc(clamp(89.5rem, 94dvw, 119.035rem));
+    max-width: clamp(89.5rem, 94dvw, 119.035rem);
     padding-left: clamp(2.5rem, 2.6455026455vw, 3.325rem);
     padding-right: clamp(2.5rem, 2.6455026455vw, 3.325rem);
     margin-left: auto;

@@ -10,6 +10,7 @@ import ThinkingPage from "./views/thinking/Thinking.page"
 import AboutPage from "./views/about/About.page"
 import ServicesPage from "./views/services/Services.page"
 import ScrollManager from "./components/navigation/ScrollManager"
+import PlanesPage from "./views/planes/Planes.page"
 
 const ServicesWrapper = () => {
     const { slug } = useParams();
@@ -30,6 +31,7 @@ function AppRouter() {
                     </Route>
                     <Route path="/servicios/:slug" element={<ServicesWrapper />} />
                     <Route path="/contacto" element={<ContactPage />} />
+                    <Route path="/planes" element={<PlanesPage />} />
                     <Route path="*" element={<NotFoundPage />} />
                     <Route path="/thinking" element={<ThinkingPage />}></Route>
                     <Route path="/awards" element={<AwardsArticle />}></Route>

@@ -1,7 +1,8 @@
+import { thinkingImgCLOUD } from "@/constants/resources"
 import type { ThinkingArticleType } from "../thinking.types"
 
 const slug = "contenido-eficaz-y-centrado-en-el-usuario"
-const path = `/images/thinking/${slug}/`
+const path = `${thinkingImgCLOUD}/${slug}`
 
 export const ContenidoEficazYCentradoEnElUsuario: ThinkingArticleType = {
 

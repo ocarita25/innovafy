@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/contenido-marca/formato-adaptable"
+const slug = "contenido-marca/formato-adaptable"
 
 export const formatoAdaptablePage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const formatoAdaptablePage: ServicePageType =
     heading: {
         pill: "Multi Formato & Producción de Contenido Global",
         title: "Multi Formato & Producción de Contenido Global",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,13 +40,13 @@ export const formatoAdaptablePage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Contenido multiplataforma y reutilizable",
                 text: "Desarrollamos piezas versátiles pensadas desde el inicio para adaptarse a distintos canales digitales, ampliando su alcance y maximizando su vida útil.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Adaptación estratégica por canal",
                 text: "Optimizamos formatos, estilos y duraciones según cada plataforma para asegurar mayor rendimiento, visibilidad e impacto comercial en todos los puntos de contacto.",
@@ -53,13 +54,13 @@ export const formatoAdaptablePage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Contenido que solo funciona en una red",
         //         text: "Muchas piezas se diseñan sin versatilidad, lo que limita su alcance y reduce la capacidad de reutilización en distintos canales digitales.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Falta de adaptación por canal",
         //         text: "Cada plataforma exige formatos, estilos y duraciones específicas; cuando el contenido no se ajusta, pierde rendimiento, visibilidad e impacto comercial.",

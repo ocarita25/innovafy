@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/automatizacion-ia/ia-conversacional"
+const slug = "automatizacion-ia/ia-conversacional"
 
 export const sistemasConversacionalesPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const sistemasConversacionalesPage: ServicePageType =
     heading: {
         pill: "Sistemas Conversacionales con IA",
         title: "Sistemas Conversacionales con Inteligencia Artificial",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const sistemasConversacionalesPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Atención inmediata 24/7",
                 text: "Implementamos IA conversacional que responde en segundos, mejora la experiencia del cliente y aumenta la conversión sin depender de horarios.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Equipos más productivos",
                 text: "Automatizamos tareas repetitivas para liberar a tus agentes, permitiéndoles enfocarse en casos estratégicos y elevar la calidad del servicio.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Más oportunidades convertidas",
                 text: "Garantizamos respuestas oportunas a cada lead, reduciendo el abandono y fortaleciendo el proceso de venta desde el primer contacto.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Seguimiento inteligente automatizado",
                 text: "Diseñamos flujos conversacionales que acompañan, reactivan y optimizan cada oportunidad, aumentando cierres y recuperando prospectos de forma estratégica.",

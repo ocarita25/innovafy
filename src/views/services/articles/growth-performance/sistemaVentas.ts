@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/growth-performance/sistemas-ventas"
+const slug = "growth-performance/sistemas-ventas"
 
 export const sistemasVentasPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const sistemasVentasPage: ServicePageType =
     heading: {
         pill: "Sistemas de ventas digitales",
         title: "Sistemas de Ventas Digitales (B2B & B2C)",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const sistemasVentasPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Ventas estructuradas y medibles",
                 text: "Implementamos procesos comerciales claros y optimizados que te permiten gestionar oportunidades con orden, medir resultados con precisión y escalar tu rendimiento de ventas.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Seguimiento inteligente de leads",
                 text: "Creamos sistemas de trazabilidad y control que aseguran un seguimiento constante de cada prospecto, fortaleciendo la conversión y construyendo un pipeline rentable y sostenible.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Automatización eficiente",
                 text: "Optimizamos tus procesos mediante automatizaciones estratégicas que reducen tareas repetitivas, eliminan cuellos de botella y mejoran los tiempos de respuesta del equipo.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Mayor tasa de cierre",
                 text: "Diseñamos embudos comerciales efectivos que potencian la conversión de prospectos en clientes, impulsando ingresos sostenibles y crecimiento constante para tu negocio.",
@@ -66,25 +67,25 @@ export const sistemasVentasPage: ServicePageType =
 
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Ventas desordenadas",
         //         text: "Muchas empresas gestionan sus ventas sin estructura ni procesos definidos, lo que genera pérdida de oportunidades y dificulta medir la efectividad comercial real.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Leads sin seguimiento",
         //         text: "Los prospectos se pierden por falta de control y trazabilidad, afectando la conversión y generando un pipeline inconsistente y poco rentable para el negocio.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Procesos manuales",
         //         text: "Las tareas repetitivas reducen eficiencia y saturan al equipo, provocando cuellos de botella, errores operativos y tiempos de respuesta demasiado lentos.",
         //     },
         //     {
-        //         media: `/images/${path}/value4.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value4.webp`,
         //         mediaType: "image",
         //         title: "Bajo cierre comercial",
         //         text: "La falta de embudos bien diseñados y de automatizaciones estratégicas debilita la capacidad de convertir prospectos en clientes, afectando ingresos y crecimiento.",

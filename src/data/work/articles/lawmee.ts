@@ -1,8 +1,8 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD } from "@/constants/resources"
 
 const slug = "lawmee"
-const imgPath = `/images/work/articles/${slug}`
-
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
 
 export const lawmeeArticle: WorkArticleType = {
     slug: slug,
@@ -29,12 +29,6 @@ export const lawmeeArticle: WorkArticleType = {
         "Las aplicaciones web de una sola página, apoyadas en stacks modernos como React y Laravel, permiten construir experiencias dinámicas sobre arquitecturas seguras y estables. Un enfoque iterativo y ágil facilita la validación continua con usuarios, asegurando que las necesidades reales se integren de manera estructural en la solución.",
         "Cuando la estrategia tecnológica y la experiencia de usuario se alinean correctamente, la plataforma puede generar un impacto tangible en el sector, optimizando la conexión entre organizaciones y profesionales, y estableciendo una base escalable para su crecimiento sostenido."
     ],
-    // paragraphs: [
-    //     "Al adoptar un enfoque innovador en el sector, Lawmee necesitaba una plataforma sofisticada y altamente personalizada que satisficiera las demandas del negocio y las expectativas de sus usuarios. Dada la sensibilidad y las limitaciones de la contratación legal, la plataforma debía gestionar escenarios complejos, promover la automatización siempre que fuera posible y ofrecer una experiencia clara e intuitiva a los usuarios.",
-    //     "Trabajando en estrecha colaboración con el equipo del cliente, Humaan concibió una estrategia, una interfaz y una serie de flujos de usuarios que respaldarían los requisitos del negocio y ofrecerían una experiencia perfecta para todos los tipos de audiencia.",
-    //     "Una aplicación web de una sola página impulsada por React y Laravel, la plataforma ofrece una experiencia de usuario dinámica, respaldada por una arquitectura segura y estable. La plataforma se desarrolló mediante un proceso iterativo y ágil, lo que permitió la exposición y validación del usuario en etapas clave para garantizar que las necesidades de la audiencia fueran parte integral de la solución.",
-    //     "Desde su lanzamiento, Lawmee ha tenido un impacto notable en el sector del empleo legal, conectando organizaciones y profesionales del derecho de forma más eficiente. La plataforma ha recibido una acogida muy positiva y nos enorgullece seguir apoyando su evolución para satisfacer las necesidades de su continuo crecimiento."
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño UX" },

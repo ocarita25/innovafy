@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/contenido-marca/crecimiento-organico"
+const slug = "contenido-marca/crecimiento-organico"
 
 export const crecimientoOrganicoPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const crecimientoOrganicoPage: ServicePageType =
     heading: {
         pill: "Organic Growth Content Strategy",
         title: "Organic Growth Content Strategy",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const crecimientoOrganicoPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Cuentas con crecimiento estratégico",
                 text: "Estructuramos una estrategia clara para impulsar la visibilidad, la interacción y el posicionamiento orgánico de tus canales digitales.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Mayor alcance y visibilidad orgánica",
                 text: "Creamos contenido optimizado que amplía la exposición de la marca y permite llegar a nuevas audiencias de forma constante y sostenible.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Interacción real con la audiencia",
                 text: "Desarrollamos estrategias de contenido que fomentan la conversación, aumentan la relevancia y fortalecen la credibilidad digital de la marca.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Crecimiento constante y comunidad activa",
                 text: "Implementamos un enfoque planificado que genera resultados consistentes, mejora la competitividad y construye una comunidad sólida y comprometida.",
@@ -65,25 +66,25 @@ export const crecimientoOrganicoPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Cuentas estancadas",
         //         text: "Muchas marcas no logran avanzar debido a una falta de estructura estratégica, lo que limita su visibilidad, su interacción y su posicionamiento orgánico.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Bajo alcance",
         //         text: "La ausencia de contenido optimizado genera poca exposición, reduciendo la capacidad de llegar a nuevas audiencias y afectando la presencia de la marca en redes.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Falta de interacción",
         //         text: "Sin una estrategia enfocada en conectar con la audiencia, el contenido no genera conversación, disminuyendo la relevancia y credibilidad digital.",
         //     },
         //     {
-        //         media: `/images/${path}/value4.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value4.webp`,
         //         mediaType: "image",
         //         title: "Crecimiento lento",
         //         text: "Un enfoque no planificado provoca resultados irregulares, restando competitividad y dificultando la construcción de una comunidad sólida y activa.",

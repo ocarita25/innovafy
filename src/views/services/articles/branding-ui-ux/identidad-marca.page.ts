@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/branding-ui-ux/identidad-marca"
+const slug = "branding-ui-ux/identidad-marca"
 
 export const identidadMarcaPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const identidadMarcaPage: ServicePageType =
     heading: {
         pill: "Arquitectura de Identidad de Marca",
         title: "Arquitectura de Identidad de Marca",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const identidadMarcaPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Identidad de marca clara y definida",
                 text: "Construimos una identidad sólida que define la esencia, el propósito y el estilo visual de tu marca, facilitando su presencia y reconocimiento en el mercado.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Imagen profesional y competitiva",
                 text: "Desarrollamos una identidad visual bien ejecutada que eleva la percepción de la marca, fortalece la credibilidad y mejora su capacidad de competir en su industria.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Coherencia visual en todos los canales",
                 text: "Creamos un sistema visual consistente que ordena la comunicación, refuerza la proyección estratégica y transmite profesionalismo en cada punto de contacto.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Mayor reconocimiento y recordación de marca",
                 text: "Diseñamos elementos distintivos y memorables que permiten posicionar la marca en la mente del consumidor y potenciar su crecimiento a largo plazo.",
@@ -65,25 +66,25 @@ export const identidadMarcaPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Marcas sin identidad clara",
         //         text: "Muchas empresas no cuentan con una definición sólida de su esencia, propósito y estilo visual, dificultando su presencia y reconocimiento en el mercado.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Imagen poco profesional",
         //         text: "Una identidad visual débil o mal ejecutada afecta la percepción del público, reduciendo la credibilidad y limitando la capacidad de competir en su industria.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Falta de coherencia visual",
         //         text: "La comunicación se vuelve inconsistente cuando no existe un sistema visual definido, generando confusión y debilitando la proyección estratégica de la marca.",
         //     },
         //     {
-        //         media: `/images/${path}/value4.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value4.webp`,
         //         mediaType: "image",
         //         title: "Bajo reconocimiento de marca",
         //         text: "Sin elementos distintivos y memorables, la marca no logra posicionarse ni permanecer en la mente del consumidor, perdiendo oportunidades de crecimiento.",

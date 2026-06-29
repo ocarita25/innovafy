@@ -1,7 +1,8 @@
 import { Aim, Digital, Shield, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD, servicesVidCLOUD } from "@/constants/resources";
 
-const path = "services/plataformas-web/aplicaciones-web"
+const slug = "plataformas-web/aplicaciones-web"
 
 export const webAppsPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const webAppsPage: ServicePageType =
     heading: {
         pill: "Aplicaciones Web",
         title: "Plataformas digitales personalizadas, desde la idea hasta la ejecución",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,19 +40,19 @@ export const webAppsPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/videos/${path}/value1.mp4`,
+                media: `${servicesVidCLOUD}/${slug}/value1.mp4`,
                 mediaType: "video",
                 title: "Listo para escalar",
                 text: "A medida que su negocio evoluciona, también lo harán sus necesidades tecnológicas. Implementamos una combinación práctica de soluciones probadas y tecnologías de vanguardia para crear aplicaciones que se adaptan y expanden sin esfuerzo. Sea relevante hoy y manténgase relevante en el futuro.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "De startups a enterprise",
                 text: "Trabajamos con clientes de todos los tamaños, desde startups con gran potencial de crecimiento hasta empresas consolidadas que buscan optimizar su infraestructura digital. Nuestras aplicaciones web, diseñadas a medida y desarrolladas específicamente para cada necesidad, impulsan el éxito empresarial en todas sus etapas.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Totalmente hecho a medida",
                 text: "Las empresas únicas requieren soluciones únicas. Desde plataformas de comercio electrónico hasta automatización, trabajamos con cada socio para diseñar, implementar y desarrollar aplicaciones web a medida que se integran con sus sistemas empresariales existentes.",

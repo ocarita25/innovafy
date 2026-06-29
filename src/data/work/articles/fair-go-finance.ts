@@ -1,8 +1,8 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD } from "@/constants/resources"
 
 const slug = "fair-go-finance"
-const imgPath = `/images/work/articles/${slug}`
-
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
 
 export const fairGoFinanceArticle: WorkArticleType = {
     slug: slug,
@@ -28,11 +28,6 @@ export const fairGoFinanceArticle: WorkArticleType = {
         "Un enfoque fundamentado en una fase profunda de descubrimiento permite diseñar una experiencia informada y persuasiva, capaz de elevar la percepción de marca, mejorar los indicadores de conversión y establecer una base tecnológica y estratégica sólida para el crecimiento sostenido de la plataforma.",
         "El resultado es un ecosistema digital competitivo que potencia la participación del usuario y maximiza la conversión dentro de un entorno financiero altamente regulado y orientado al rendimiento."
     ],
-    // paragraphs: [
-    //     "Como parte de una importante evolución del posicionamiento y crecimiento de su marca, Fair Go Finance contrató a Humaan para reimaginar su sitio web orientado al consumidor con el fin de atraer y convertir mejor a las audiencias en solicitudes de préstamos y, en consecuencia, en clientes.",
-    //     "Al trabajar en estrecha colaboración con el equipo interno después de un profundo proceso de descubrimiento, imaginamos una experiencia atractiva e informada para los usuarios, que elevaría la marca, mejoraría las conversiones y establecería una base sólida para el crecimiento futuro de la plataforma.",
-    //     "El resultado es un sitio web líder en la industria que impulsa la participación y convierte a los visitantes en nuevos clientes."
-    // ],
     features: [
         { icon: "", label: "Investigación de UX" },
         { icon: "", label: "Estrategia digital" },

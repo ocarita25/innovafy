@@ -3,7 +3,6 @@ import { ButtonBlack } from '@/components/common/Button'
 import { getWorkArticleBySlug } from '@/data/work';
 import { cn } from '@/lib/utils'
 import SmileyFaceIcon from '@/assets/icons/smiley-face.svg?react'
-import { Link } from 'react-router-dom';
 
 interface WorkArticleProps {
     slug: string,
@@ -48,14 +47,12 @@ const WorkArticle = ({ slug }: WorkArticleProps) => {
                     <div className='relative h-full'>
                         <div className='sticky -top-40 '>
                             <header>
-                                <h1 className='text-[clamp(2.5rem,2.65vw,3.325rem)]'>{article.title}</h1>
+                                <h1 className='text-[clamp(2.5rem,2.65vw,3.325rem)] playfair text-[#4700ff]'>{article.title}</h1>
                                 <div className='pt-10 flex items-center gap-3'>
-                                    <Link to={article.link} target='_blank'>
-                                        <ButtonBlack>
-                                            Visit Website
-                                            <Arrow height="h-3.5" stroke="1" color="#0f0" />
-                                        </ButtonBlack>
-                                    </Link>
+                                    <ButtonBlack href={article.link}>
+                                        Visita la página web
+                                        <Arrow height="h-3.5" stroke="1" color="#0f0" />
+                                    </ButtonBlack>
                                     <span>{article.industry}</span>
                                 </div>
                                 <h2 className='text-[clamp(1.25rem,1.33vw,1.66rem)] leading-8'>{article.intro}</h2>

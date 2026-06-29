@@ -1,8 +1,8 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD } from "@/constants/resources"
 
 const slug = "mlg"
-const imgPath = `/images/work/articles/${slug}`
-
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
 
 export const mlgArticle: WorkArticleType = {
     slug: slug,
@@ -26,9 +26,6 @@ export const mlgArticle: WorkArticleType = {
     paragraphs: [
         "En procesos de consolidación de liderazgo sectorial, la evolución del sitio web corporativo puede desempeñar un papel estratégico al comunicar de forma clara las capacidades organizacionales, los proyectos activos y el historial de experiencia. Paralelamente, integrar contenidos orientados a valores, cultura y reclutamiento permite que la plataforma actúe como motor de crecimiento institucional.",
     ],
-    // paragraphs: [
-    //     "Al trabajar en estrecha colaboración con su equipo de marketing, pudimos ofrecer un nuevo sitio web contemporáneo que consolida aún más su posición como líderes de la industria y comunica sus amplias capacidades en proyectos activos y pasados, al mismo tiempo que fomenta el crecimiento de la organización a través de un enfoque en valores, cultura y reclutamiento."
-    // ],
     features: [
         { icon: "", label: "Estrategia digital" },
         { icon: "", label: "Diseño de UI y UX" },

@@ -6,60 +6,73 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  font-family: 'PP Neue Montreal';
+  font-family: 'Neue Montreal';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/pp-neue-montreal/ppneuemontreal-book.woff');
+  src: url('/fonts/neue-montreal/NeueMontreal-Regular.otf');
 }
 
 @font-face {
-  font-family: 'PP Neue Montreal';
+  font-family: 'Neue Montreal';
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url('/fonts/pp-neue-montreal/ppneuemontreal-thin.woff');
+  src: url('/fonts/neue-montreal/NeueMontreal-Light.otf');
 }
 
 @font-face {
-  font-family: 'PP Neue Montreal';
+  font-family: 'Neue Montreal';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url('/fonts/neue-montreal/NeueMontreal-LightItalic.otf');
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/pp-neue-montreal/ppneuemontreal-italic.woff');
+  src: url('/fonts/neue-montreal/NeueMontreal-Italic.otf');
 }
 
 @font-face {
-  font-family: 'PP Neue Montreal';
+  font-family: 'Neue Montreal';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/pp-neue-montreal/ppneuemontreal-medium.woff');
+  src: url('/fonts/neue-montreal/NeueMontreal-Medium.otf');
 }
 
 @font-face {
-  font-family: 'PP Neue Montreal';
+  font-family: 'Neue Montreal';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/pp-neue-montreal/ppneuemontreal-semibolditalic.woff');
+  src: url('/fonts/neue-montreal/NeueMontreal-BoldItalic.otf');
 }
 
 @font-face {
-  font-family: 'PP Neue Montreal';
+  font-family: 'Neue Montreal';
   font-style: bold;
-  font-weight: 700;
+  font-weight: 600;
   font-display: swap;
-  src: url('/fonts/pp-neue-montreal/ppneuemontreal-bold.woff');
+  src: url('/fonts/neue-montreal/NeueMontreal-Bold.otf');
 }
 
 html {
-  text-rendering: geometricPrecision;
+  /* text-rendering: geometricPrecision; */
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   height: 100%;
-  font-family: "PP Neue Montreal", system-ui, sans-serif;
+  font-family: "DM Sans", sans-serif;
+  /* font-family: "Neue Montreal", system-ui, sans-serif; */
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
 }
 
 @theme inline {

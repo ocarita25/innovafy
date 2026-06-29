@@ -1,7 +1,8 @@
 import { Code, Diagram, Monitor, Thunder } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/plataformas-web/sitios-web"
+const slug = "plataformas-web/sitios-web"
 
 export const websitesPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const websitesPage: ServicePageType =
     heading: {
         pill: "Sitios web",
         title: "Sitios web de primera categoría para marcas innovadoras",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const websitesPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Potencia tu marca",
                 text: "Combinamos diseño innovador, tecnología de vanguardia y contenido estratégico para crear sitios web visualmente atractivos y altamente funcionales. Aproveche el poder de las experiencias digitales altamente atractivas para llevar su marca al siguiente nivel.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Experiencias Humanas",
                 text: "Ofrezca una experiencia de usuario inmersiva que capture la esencia de su marca y conecte con su público objetivo. Desde una navegación intuitiva hasta una narrativa envolvente, cada sitio web está meticulosamente diseñado para captar la atención y dejar una huella imborrable.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Robusto, Seguro, Flexible",
                 text: "Cada sitio web que desarrollamos se apoya en una infraestructura segura y de alto rendimiento, adaptada a las necesidades de la organización. Esto garantiza que su presencia digital pueda crecer con la demanda y ofrecer la flexibilidad necesaria para satisfacer las necesidades de su negocio a lo largo del tiempo.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Asociaciones gratificantes",
                 text: "Detrás de cada sitio web de primera categoría hay una colaboración estrecha entre la agencia y el cliente. Trabajamos codo a codo con usted para garantizar resultados que ofrezcan experiencias extraordinarias y generen beneficios. Los premios son importantes, pero su éxito es mucho más valioso.",

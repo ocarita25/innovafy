@@ -1,22 +1,42 @@
+import { arAsociadosArticle } from "@/data/work/articles/ar-asociados";
+import { artecoArticle } from "@/data/work/articles/arteco";
 import { blackvueArticle } from "@/data/work/articles/black-vue";
 import { chaleitArticle } from "@/data/work/articles/chaleit";
+import { clanCerveceroArticle } from "@/data/work/articles/clan-cervecero";
+import { cocaColaArticle } from "@/data/work/articles/cocacola";
 import { fairGoFinanceArticle } from "@/data/work/articles/fair-go-finance";
+import { grupoForceArticle } from "@/data/work/articles/grupo-force";
+import { grupoGeneraArticle } from "@/data/work/articles/grupo-genera";
 import { georgiouGroupArticle } from "@/data/work/articles/grupo-georgiou";
 import { jasonWindowsArticle } from "@/data/work/articles/jason-windows";
+import { kitchenCenterArticle } from "@/data/work/articles/kitchen-center";
 import { mlgArticle } from "@/data/work/articles/mlg";
 import { payToArticle } from "@/data/work/articles/pay-to";
 import { pentanetArticle } from "@/data/work/articles/pentanet";
 import { piqueArticle } from "@/data/work/articles/pique";
+import { puntoColasArticle } from "@/data/work/articles/punto-colas";
 import { rychigerArticle } from "@/data/work/articles/rychiger";
 import { satterleyArticle } from "@/data/work/articles/satterley";
 import { smartfixArticle } from "@/data/work/articles/smartfix";
 import { sussexTapsArticle } from "@/data/work/articles/sussex-taps";
+import { toCuscoArticle } from "@/data/work/articles/to-cusco";
 import { unheartedSolutionsArticle } from "@/data/work/articles/unhearted-solutions";
+import { urbanovaArticle } from "@/data/work/articles/urbanova";
 import { waGoodFoodGuideArticle } from "@/data/work/articles/wa-good-food-guide";
 import { workpacArticle } from "@/data/work/articles/workpac";
 import type { CategorizedWorkArticles } from "@/data/work/types";
 
 export const comercialArticles: CategorizedWorkArticles[] = [
+    { article: urbanovaArticle, column: 2 },
+    { article: artecoArticle, column: 2 },
+    { article: cocaColaArticle, column: 1 },
+    { article: puntoColasArticle, column: 1 },
+    { article: toCuscoArticle, column: 2 },
+    { article: grupoGeneraArticle, column: 1 },
+    { article: grupoForceArticle, column: 1 },
+    { article: clanCerveceroArticle, column: 2 },
+    { article: arAsociadosArticle, column: 1 },
+    { article: kitchenCenterArticle, column: 1 },
     { article: piqueArticle, column: 2 },
     { article: fairGoFinanceArticle, column: 1 },
     { article: sussexTapsArticle, column: 1 },

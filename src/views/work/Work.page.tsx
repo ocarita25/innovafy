@@ -10,8 +10,8 @@ const WorkPage = () => {
     return (
         <div className='grid gap-15 py-20 '>
             <div className="flex flex-col text-color-primary px-[var(--container-gutter)] w-full tracking-normal font-medium text-[clamp(3rem,8dvw,9dvw)] lg:text-[clamp(5rem,7dvw,12dvw)]">
-                <PannedText className='overflow-hidden'>
-                    Productos digitales de clase mundial, de la idea a la ejecución.
+                <PannedText className='playfair'>
+                    Productos digitales de clase <em className='text-[#4700ff]'>mundial</em>, de la idea a la ejecución.
                 </PannedText>
             </div>
 

@@ -1,8 +1,9 @@
 import type { WorkArticleType } from "../types"
+import { imgCLOUD, vidCLOUD } from "@/constants/resources"
 
 const slug = "curtin-study-planner"
-const imgPath = `/images/work/articles/${slug}`
-const videoPath = `/videos/work/articles/${slug}`
+const imgPath = `${imgCLOUD}/work/articles/${slug}`
+const videoPath = `${vidCLOUD}/work/articles/${slug}`
 
 
 export const curtinStudyPlannerArticle: WorkArticleType = {
@@ -12,7 +13,6 @@ export const curtinStudyPlannerArticle: WorkArticleType = {
     category: ['educacion', 'ui-ux'],
     link: "https://www.curtin.edu.au/students/essentials/managing-your-course/study-planner/",
     intro: "Una facultad universitaria buscaba modernizar su planificador de estudios, transformándolo en una herramienta digital centrada en la experiencia del usuario para facilitar la planificación académica de los estudiantes.",
-    // intro: "Como socio de la universidad desde hace mucho tiempo, la Facultad de Negocios y Derecho nos contactó para que repensamos el planificador de estudios de los estudiantes con un enfoque digital y centrado en la experiencia del usuario.",
     thumbnail: {
         background: {
             type: 'image',
@@ -29,10 +29,6 @@ export const curtinStudyPlannerArticle: WorkArticleType = {
         "Cuando los procesos académicos se gestionan mediante hojas de cálculo complejas y documentos extensos en PDF, la creación del plan de estudios puede convertirse en una experiencia abrumadora y poco eficiente para los estudiantes. En este contexto, un enfoque basado en investigación y experiencia de usuario permite redefinir el recorrido, simplificando la toma de decisiones y automatizando la selección de asignaturas.",
         "El resultado es una aplicación web ligera y de alto rendimiento que funciona como herramienta de autoservicio, facilitando la exploración y descarga de planes de estudio. Tras su implementación, soluciones de este tipo suelen mejorar significativamente la planificación académica, aumentar la confianza de los estudiantes en su trayectoria y reducir de manera considerable la carga operativa del personal administrativo."
     ],
-    // paragraphs: [
-    //     "Con un proceso manual que se gestionaba mediante complejas hojas de cálculo de Excel y PDF de varias páginas, el método existente para que los estudiantes crearan su plan de estudios era abrumador y laborioso. Tras profundizar en las fases de descubrimiento y experiencia de usuario, propusimos una solución que guiaría a los estudiantes durante el proceso, automatizando al mismo tiempo el proceso de selección. El resultado es una aplicación web ligera y de alto rendimiento que ofrece una solución de autoservicio para que los estudiantes exploren y descarguen fácilmente sus planes de estudio.",
-    //     "Desde su lanzamiento, miles de estudiantes se han beneficiado de la herramienta, mejorando la planificación del curso y ayudándolos a sentirse seguros en su trayectoria académica, al tiempo que reduce significativamente la carga de trabajo del personal..",
-    // ],
     features: [
         { icon: "", label: "Estrategia digital " },
         { icon: "", label: "Investigación de experiencia de usuario " },

@@ -35,8 +35,7 @@
 .teamName {
     padding: 0.53em 1.27em;
     border-radius: 100vw;
-    color: var(--blue-primary);
-    background: var(--color-theme-secondary);
+    color: #fff;
 }
 
 .teamRole {

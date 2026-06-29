@@ -1,7 +1,8 @@
 import { HandShake, Loop, Thunder, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/plataformas-web/payload-cms"
+const slug = "plataformas-web/payload-cms"
 
 export const payloadPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const payloadPage: ServicePageType =
     heading: {
         pill: "Payload CMS",
         title: "El CMS sin interfaz gráfica de próxima generación",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const payloadPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Potencia tu sitio web de próxima generación",
                 text: "La arquitectura headless está diseñada para la web actual, con la versatilidad suficiente para impulsar desde micrositios interactivos hasta plataformas a gran escala. Headless with Payload se integra con cualquier flujo de trabajo personalizado para ofrecer una gestión de contenido sencilla, acceso granular en tiempo real y control de versiones, todo ello con tiempos de carga ultrarrápidos para una experiencia digital fluida.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "El CMS que siempre quisiste",
                 text: "Utiliza Payload para todo, en serio. Payload está diseñado para ofrecer la máxima flexibilidad, tanto para crear aplicaciones y sitios web como otros productos digitales. Úsalo como un CMS centralizado y comparte contenido en toda tu infraestructura digital, garantizando una experiencia de edición excepcional para que los gestores de contenido estén siempre satisfechos.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Gestión intuitiva de contenido",
                 text: "Las herramientas de Payload, líderes en su categoría, se adaptan a tus necesidades gracias a funciones como la intuitiva interfaz de usuario para la gestión de contenido, las herramientas integradas de SEO y pruebas A/B, la gestión de flujos de trabajo, la creación de formularios, el control de acceso basado en roles, la vista previa en vivo y mucho más.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Socios oficiales de carga útil",
                 text: "La versatilidad y la arquitectura moderna de Payload la convierten en la opción ideal para empresas que buscan crear experiencias digitales flexibles, de alto rendimiento y preparadas para el futuro. Nos enorgullece ser socios oficiales de Payload, con la experiencia y los conocimientos necesarios para alcanzar los objetivos estratégicos y técnicos de cualquier proyecto digital.",

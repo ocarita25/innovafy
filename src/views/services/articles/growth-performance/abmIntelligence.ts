@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/growth-performance/abm-intelligence"
+const slug = "growth-performance/abm-intelligence"
 
 export const abmIntelligencePage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const abmIntelligencePage: ServicePageType =
     heading: {
         pill: "Advanced Growth & ABM Intelligence",
         title: "Advanced Growth & ABM Intelligence",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,19 +40,19 @@ export const abmIntelligencePage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Tráfico de alta calidad",
                 text: "Atraemos visitantes con interés real en tus productos o servicios, optimizando el rendimiento de las campañas y generando oportunidades con mayor potencial de conversión.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Leads calificados y listos para vender",
                 text: "Implementamos filtros estratégicos que permiten captar clientes con alta probabilidad de compra, optimizando los ciclos comerciales y mejorando la eficiencia del equipo de ventas.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Ventas corporativas estratégicas",
                 text: "Desarrollamos un enfoque dirigido a cuentas clave para concentrar los esfuerzos comerciales, facilitar el cierre de contratos de alto valor y construir relaciones comerciales a largo plazo.",
@@ -59,19 +60,19 @@ export const abmIntelligencePage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Tráfico sin valor",
         //         text: "Muchas marcas atraen visitantes que no tienen intención real de compra, lo que reduce el rendimiento de las campañas y limita la generación de oportunidades efectivas.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Clientes poco calificados",
         //         text: "La falta de un filtro estratégico genera leads con baja probabilidad de compra, afectando los ciclos comerciales y disminuyendo la eficiencia del equipo de ventas.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Ventas corporativas ineficientes",
         //         text: "Sin un enfoque dirigido a cuentas clave, los esfuerzos comerciales se dispersan, reduciendo la capacidad de cerrar contratos de alto valor y largo plazo.",

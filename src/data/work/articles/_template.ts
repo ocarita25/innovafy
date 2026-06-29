@@ -7,6 +7,7 @@ const videoPath = `/videos/work/articles/${slug}`
 export const Article: WorkArticleType = {
     slug: slug,
     title: "",
+    industry: "",
     category: ['innovacion'],
     link: "",
     intro: "",

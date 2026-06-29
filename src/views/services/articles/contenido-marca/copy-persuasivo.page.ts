@@ -1,7 +1,8 @@
 import { People, Rings, Sparks, World } from "@/assets/icons/services";
 import type { ServicePageType } from "@/types/ServicePage.types";
+import { servicesImgCLOUD } from "@/constants/resources";
 
-const path = "services/contenido-marca/copy-persuasivo"
+const slug = "contenido-marca/copy-persuasivo"
 
 export const copyPersuasivoPage: ServicePageType =
 {
@@ -9,7 +10,7 @@ export const copyPersuasivoPage: ServicePageType =
     heading: {
         pill: "Conversion Copy & Persuasive Writing",
         title: "Conversion Copy & Persuasive Writing",
-        heroImage: `/images/${path}/heroImage.webp`,
+        heroImage: `${servicesImgCLOUD}/${slug}/heroImage.webp`,
         mediaType: "image"
     },
     description: {
@@ -39,25 +40,25 @@ export const copyPersuasivoPage: ServicePageType =
         ],
         valuePropositions: [
             {
-                media: `/images/${path}/value1.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value1.webp`,
                 mediaType: "image",
                 title: "Textos persuasivos que convierten",
                 text: "Redactamos mensajes estratégicos que comunican valor, persuaden y motivan al usuario a realizar acciones concretas.",
             },
             {
-                media: `/images/${path}/value2.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value2.webp`,
                 mediaType: "image",
                 title: "Mensajes claros y orientados a valor",
                 text: "Construimos una narrativa clara y coherente que transmite la propuesta de valor de forma efectiva, aumentando el interés en tus productos o servicios.",
             },
             {
-                media: `/images/${path}/value3.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value3.webp`,
                 mediaType: "image",
                 title: "Páginas optimizadas para conversión",
                 text: "Desarrollamos estructuras de copy enfocadas en conversión que mejoran la decisión de compra y maximizan el rendimiento del tráfico pagado y orgánico.",
             },
             {
-                media: `/images/${path}/value4.webp`,
+                media: `${servicesImgCLOUD}/${slug}/value4.webp`,
                 mediaType: "image",
                 title: "Anuncios con alto rendimiento",
                 text: "Creamos creatividades con mensajes directos y persuasivos que generan más clics, engagement y mejores resultados en campañas publicitarias.",
@@ -65,25 +66,25 @@ export const copyPersuasivoPage: ServicePageType =
         ]
         // valuePropositions: [
         //     {
-        //         media: `/images/${path}/value1.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value1.webp`,
         //         mediaType: "image",
         //         title: "Textos que no venden",
         //         text: "Muchas marcas comunican sin intención estratégica, generando mensajes planos que no persuaden ni motivan al usuario a tomar una acción concreta.",
         //     },
         //     {
-        //         media: `/images/${path}/value2.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value2.webp`,
         //         mediaType: "image",
         //         title: "Mensajes confusos",
         //         text: "La falta de claridad narrativa dificulta transmitir el valor real de la oferta, provocando interpretaciones erróneas y bajo interés en los productos o servicios.",
         //     },
         //     {
-        //         media: `/images/${path}/value3.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value3.webp`,
         //         mediaType: "image",
         //         title: "Páginas con baja conversión",
         //         text: "Sin una estructura de copy optimizada, las páginas pierden impacto, afectando la decisión de compra y reduciendo la efectividad del tráfico pagado u orgánico.",
         //     },
         //     {
-        //         media: `/images/${path}/value4.webp`,
+        //         media: `${servicesImgCLOUD}/${slug}/value4.webp`,
         //         mediaType: "image",
         //         title: "Anuncios poco efectivos",
         //         text: "Creatividades sin un mensaje directo y persuasivo generan poco clic, bajo engagement y una disminución del rendimiento de las campañas publicitarias.",

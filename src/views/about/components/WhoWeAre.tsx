@@ -2,7 +2,7 @@ import Headings from '@/components/common/Headings'
 import PannedText from '@/components/common/PannedText'
 import Scrollable from '@/components/common/Scrollable'
 import ThemeTrigger from '@/components/common/ThemeTrigger'
-import Customers from './Customers'
+import { imgCLOUD } from '@/constants/resources'
 
 const WhoWeAre = () => {
 
@@ -18,9 +18,8 @@ const WhoWeAre = () => {
             bgOriginal={bgOriginal}
             className={"about-humans"}
         >
-            <Customers />
             <div className="about-humans-team aspect-[5/4] max-w-dvw">
-                <h2 className="about-humans-team-heading">
+                <h2 className="about-humans-team-heading playfair">
                     <div className="absolute whitespace-nowrap z-[1] top-[23%] left-[49.61%] -translate-x-1/2">
                         <Scrollable yOriginal={0} yTarget={-35} initScale={0.85} scale={1.05} start="top+=200 bottom" end="bottom 50%">
                             Somos
@@ -34,20 +33,19 @@ const WhoWeAre = () => {
                 </h2>
                 <div className="about-humans-team-wrapper">
                     <picture className="team-image-main">
-                        <img src='/images/about/we_are_humans.webp' alt="Team" className="w-full h-auto m-0 max-w-full object-cover" />
+                        <img src={`${imgCLOUD}/about/we_are_humans.webp`} alt="Team" className="w-full h-auto m-0 max-w-full object-cover" />
                     </picture>
                     <picture className="team-image-back">
-                        <img src='/images/about/we_are_humans.webp' alt="Team" className="w-full h-auto m-0 max-w-full object-cover" />
+                        <img src={`${imgCLOUD}/about/we_are_humans.webp`} alt="Team" className="w-full h-auto m-0 max-w-full object-cover" />
                     </picture>
                     <picture className="team-image-front">
-                        <img src='/images/about/we_are_humans.webp' alt="Team" className="w-full h-auto m-0 max-w-full object-cover" />
+                        <img src={`${imgCLOUD}/about/we_are_humans.webp`} alt="Team" className="w-full h-auto m-0 max-w-full object-cover" />
                     </picture>
                 </div>
             </div>
             <Headings as="h2" variant="section" className="p-fluid text-white">
-                <PannedText className="leading-[1.2]" aria-label="Hemos impulsado una renovación total en nuestra metodología:  Inovafy es ahora un Ecosistema de Innovación Digital 360°. Centralizamos Marketing Estratégico, Branding, Contenido, Audiovisual y Desarrollo Web/App de primer nivel, potenciados con Automatización IA. Todo se ejecuta 100% interno (de principio a fin) para garantizar la máxima calidad y visión estratégica. ¡Estamos de vuelta!">
-                    Somos un Ecosistema de <span className="text-color-primary">Innovación Digital 360°</span>. que integra estrategia, creatividad, tecnología y automatización IA, con ejecución 100% interna.
-                    {/* Hemos impulsado una renovación total en nuestra metodología:  Inovafy es ahora un Ecosistema de Innovación Digital 360°. Centralizamos Marketing Estratégico, Branding, Contenido, Audiovisual y Desarrollo Web/App de primer nivel, potenciados con Automatización IA. Todo se ejecuta 100% interno (de principio a fin) para garantizar la máxima calidad y visión estratégica. ¡Estamos de vuelta! */}
+                <PannedText className="inline-flex leading-[1.2]" aria-label="Hemos impulsado una renovación total en nuestra metodología:  Inovafy es ahora un Ecosistema de Innovación Digital 360°. Centralizamos Marketing Estratégico, Branding, Contenido, Audiovisual y Desarrollo Web/App de primer nivel, potenciados con Automatización IA. Todo se ejecuta 100% interno (de principio a fin) para garantizar la máxima calidad y visión estratégica. ¡Estamos de vuelta!">
+                    Somos un Ecosistema de <span className="text-color-primary playfair italic">Innovación Digital 360°</span>. que integra estrategia, creatividad, tecnología y automatización IA, con ejecución 100% interna.
                 </PannedText>
             </Headings>
         </ThemeTrigger>

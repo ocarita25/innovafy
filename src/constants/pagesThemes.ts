@@ -6,7 +6,8 @@ export const backgroundThemes: ThemeColorsType[] = [
         pages: ["/"],
         bgColor: "#f4f0f1",
         // bgColor: "#eff9fb",
-        accent: "var(--default-accent)",
+        accent: "#4700ff",
+        // accent: "var(--default-accent)",
         textPrimary: "var(--text-default-primary)",
     },
     {
@@ -14,7 +15,8 @@ export const backgroundThemes: ThemeColorsType[] = [
         pages: ["/trabajo/*"],
         // bgColor: "#eff9fb",
         bgColor: "#F4F0FF",
-        accent: "var(--default-accent)",
+        // accent: "#5700ff",
+        accent: "#3556ce",
         textPrimary: "var(--text-default-primary)",
     },
     {
@@ -22,14 +24,15 @@ export const backgroundThemes: ThemeColorsType[] = [
         pages: ["/thinking/*"],
         bgColor: "#e7edff",
         // bgColor: "#eff9fb",
-        accent: "var(--default-accent)",
+        accent: "#3556ce",
         textPrimary: "var(--text-default-primary)",
     },
     {
         id: 2,
         pages: ["/acerca-de"],
         bgColor: "#D8E7EE",
-        accent: "var(--blue-primary)",
+        accent: "#5700ff",
+        // accent: "var(--blue-primary)",
         textPrimary: "var(--blue-secondary)",
     },
     {
@@ -38,6 +41,14 @@ export const backgroundThemes: ThemeColorsType[] = [
         bgColor: "#D1CDD8",
         accent: "var(--purple-primary)",
         textPrimary: "var(--purple-secondary)",
+        textSecondary: "#fff",
+    },
+    {
+        id: 200,
+        pages: ["/planes"],
+        bgColor: "#1A1520",
+        accent: "#5700FF",
+        textPrimary: "#333",
         textSecondary: "#fff",
     },
     {

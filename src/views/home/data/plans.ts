@@ -6,6 +6,7 @@ interface PlanType {
     slug: "esencial" | "avanzado" | "premium"
     isFeatured: boolean,
     category: string,
+    title?: string,
     description: string,
     cost: string,
     target: string,
@@ -41,13 +42,14 @@ export const plansData: PlanType[] = [
     {
         slug: "esencial",
         isFeatured: false,
-        category: 'PLAN ESENCIAL',
+        category: 'Esencial',
+        title: 'Plan Esencial',
         description: 'Presencia sólida para empezar a crecer',
         cost: "949.90",
         // target: 'EMPRENDEDORES',
         // targetDescription: 'o negocios que necesitan verse profesional y comenzar a generar tracción',
         target: '',
-        targetDescription: 'marcas que necesitan una presencia profesional y constante en redes sociales.',
+        targetDescription: 'Para emprendedores que necesitan construir su presencia digital desde cero con imagen profesional.',
         features: [
             "Gestión profesional de redes sociales",
             "Contenido mensual estratégico",
@@ -59,11 +61,12 @@ export const plansData: PlanType[] = [
     {
         slug: "avanzado",
         isFeatured: true,
-        category: 'PLAN AVANZADO',
+        category: 'Avanzado',
+        title: 'Plan Avanzado',
         description: 'Estrategia y conversión para escalar',
         cost: "1559.90",
         target: '',
-        targetDescription: 'marcas que buscan una gestión integral de redes sociales con enfoque estratégico y resultados medibles.',
+        targetDescription: 'Para PYMEs que quieren visibilidad real, producción fotográfica y sus primeras campañas de pauta activas.',
         features: [
             "Gestión completa de redes sociales",
             "Contenido visual y audiovisual profesional",
@@ -75,11 +78,12 @@ export const plansData: PlanType[] = [
     {
         slug: "premium",
         isFeatured: false,
-        category: 'PLAN PREMIUM',
+        category: 'Premium',
+        title: 'Plan Premium',
         description: 'Performance, datos e inteligencia',
         cost: "1999.90",
         target: '',
-        targetDescription: 'marcas que necesitan un equipo creativo y estratégico dedicado, con foco en performance, lanzamientos y retorno de inversión.',
+        targetDescription: 'Solución 360º: equipo dedicado, producción pro, todas las plataformas de pauta, web y branding completo.',
         // target: 'EMPRESAS CONSOLIDADAS',
         // targetDescription: 'que buscan liderazfo, eficiencia y decisiones basadas en datos',
         features: [

@@ -10,8 +10,18 @@ import { Outlet } from "react-router-dom"
 
 function LayoutContent() {
 
+    const color = [
+        "bg-[#fff]",
+        "bg-[#261e40]",
+        "bg-[#23045c]",
+        "bg-[#29174a]",
+        "bg-[#1C2430]"
+    ]
+
+    const colorBg = color[0]
+
     return (
-        <div id="app-scroll-container" className='grid z-1 items-start w-full max-w-dvw bg-[#1C2430]'>
+        <div id="app-scroll-container" className={`grid z-1 items-start w-full max-w-dvw ${colorBg}`}>
             <Header />
             <ExpandingCard className="z-10 bg-theme-background w-full relative col-1 row-1">
                 <Outlet />
