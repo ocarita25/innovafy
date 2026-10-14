@@ -7,6 +7,8 @@ import TextArea from '@/components/ui/TextArea';
 import { useModal } from '@/context/ModalContext';
 import React, { useEffect, useRef, useState } from 'react'
 
+const MAX_FILE_BYTES = 4 * 1024 * 1024;
+
 const Brief = ({ plan, text }: { plan?: string, text?: string }) => {
 
     const { showOverlay } = useModal();
@@ -30,32 +32,44 @@ const Brief = ({ plan, text }: { plan?: string, text?: string }) => {
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
 
-        setIsSending(true)
+        const form = e.currentTarget
+        const formData = new FormData(form)
 
-        showOverlay(<AlertModal status='loading' />)
-
-        const formData = new FormData(e.currentTarget);
-
-        formData.forEach(entries => {
-            console.log(entries);
-        });
-
-        const res = await fetch('http://127.0.0.1:8000/api/send-email', {
-            method: 'POST',
-            body: formData,
-        }).finally(() => {
-            setIsSending(false)
-        })
-
-        const data = await res.json();
-
-        if (!res.ok) {
+        // Si no hay archivo, el navegador igual envía una parte vacía: la quitamos
+        const file = fileRef.current?.files?.[0]
+        if (!file) {
+            formData.delete('file')
+        } else if (file.size > MAX_FILE_BYTES) {
             showOverlay(<AlertModal status='error' />)
-            throw new Error(data.error || "volver a enviar")
+            return
         }
 
-        showOverlay(<AlertModal status='finished' />)
-        console.log(data)
+        setIsSending(true)
+        showOverlay(<AlertModal status='loading' />)
+
+        try {
+            const res = await fetch('/api/send-email', {
+                method: 'POST',
+                body: formData,
+            })
+
+            // Si Vercel responde con texto plano (por ejemplo un 413), json() falla
+            const data = await res.json().catch(() => null)
+
+            if (!res.ok || !data?.ok) {
+                showOverlay(<AlertModal status='error' />)
+                return
+            }
+
+            showOverlay(<AlertModal status='finished' />)
+            form.reset()
+            setFileName("")
+        } catch {
+            // Error de red
+            showOverlay(<AlertModal status='error' />)
+        } finally {
+            setIsSending(false)
+        }
     }
 
     function handleInputFileButton() {
@@ -128,7 +142,7 @@ const Brief = ({ plan, text }: { plan?: string, text?: string }) => {
                 <TextArea ref={textRef} label='Cuéntanos del proyecto' name='message' hint='¿Necesitas un nuevo sitio web? ¿Una app? Dinos cómo podemos ayudarte.' cols={2} rows={7} required />
                 <div className='flex flex-col md:col-span-2'>
                     <label htmlFor='file' className='pb-4'>Adjunte cualquier documento pertinente</label>
-                    <span className='opacity-40'>Máximo 10 archivos de 25 MB cada uno. Máximo 100 MB en total.</span>
+                    <span className='opacity-40'>Máximo 4 MB.</span>
                     <div className='flex items-center gap-5 py-4 border-b border-gray-300 outline-0'>
                         <ButtonBlack onClick={handleInputFileButton}>Seleccionar Archivo</ButtonBlack>
                         <span>{fileName}</span>
