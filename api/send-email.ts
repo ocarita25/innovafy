@@ -36,6 +36,8 @@ const timestamp = () => {
 };
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+    console.log("Request:", req);
+
     if (req.method !== "POST") {
         return res.status(405).json({ ok: false, error: "Método no permitido" });
     }
