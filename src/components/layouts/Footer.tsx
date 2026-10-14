@@ -100,7 +100,7 @@ const Footer = () => {
                             text-[clamp(2.15rem,10vw,2.5rem)] min-[992px]:text-[clamp(4.375rem,4.63vw,5.82rem)] 
                             leading-none
                             `}>
-                        <a className={`group flex flex-col w-fit hover:text-[var(--theme-accent))] transition-all ease duration-200`} href='/contacto'>
+                        <Link className={`group flex flex-col w-fit hover:text-[var(--theme-accent))] transition-all ease duration-200`} to='/contacto'>
                             <span className='flex gap-4'>
                                 <span>Hagamos</span>
                                 <Arrow width='w-6 min-[992px]:w-[clamp(3rem,3dvw,4rem)]' stroke='2' className='group-hover:translate-x-5 transition' color={"var(--theme-accent)"} />
@@ -109,7 +109,7 @@ const Footer = () => {
                                 <span className='pr-3 min-[992px]:pr-5'>algo </span>
                                 <VerticalRoulette className='playfair italic text-[clamp(2rem,9vw,2.2rem)] min-[992px]:text-[clamp(3.85rem,4vw,5rem)] ' elements={footerWords} columns={1} minSize='768px' />
                             </span>
-                        </a>
+                        </Link>
 
                     </div>
                     <FooterContacts />

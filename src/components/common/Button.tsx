@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 type ButtonProps = {
   children: React.ReactNode,
@@ -14,16 +15,16 @@ type ButtonBlackProps = {
 
 export const ButtonBlack = ({ children, sameSite = false, href, ...props }: ButtonBlackProps) => {
   return (
-    <a
+    <Link
       {...props}
       target={sameSite ? '' : '_blank'}
-      href={href}
+      to={href || ""}
       className={cn(
         'button bg-black hover:bg-[#5700ff] text-white  transition-colors duration-120 ease-in',
         props.className
       )}>
       {children}
-    </a>
+    </Link>
   )
 }
 
