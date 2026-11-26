@@ -9,4 +9,4 @@ Estos recursos deben ir en 'public/videos'
 
 ## Dale un vistazo a la página
 
-https://portafolio-gules-one-58.vercel.app/
+https://inovafy.vercel.app/
